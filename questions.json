@@ -361,7 +361,7 @@
   {
     "id": 32,
     "topic": "Sequence Structures",
-    "text": "What value will be displayed in the numeric and numeric 2 indicatord after the VI complete the executions? a) c)",
+    "text": "What value will be displayed in the numeric and numeric 2 indicators after the VI completes execution?",
     "image": [
       "images/CLAD1 (1)_p11_q32_7652.jpeg",
       "images/CLAD1 (1)_p11_q32_3169.jpeg",
@@ -372,8 +372,8 @@
       "d)",
       "IMAGE: images/CLAD1 (1)_p11_q32_9481.jpeg"
     ],
-    "correctAnswer": 3,
-    "explanation": "Leaving Error Out unwired in the calling VI triggers Automatic Error Handling when the SubVI returns an error."
+    "correctAnswer": 0,
+    "explanation": "Numeric indicators display the last indexed values: Numeric = 10, Numeric 2 = 15."
   },
   {
     "id": 33,
@@ -405,8 +405,8 @@
       "The VI containing this value should have an broken run arrow",
       "LABVIEW will return an error while running this program"
     ],
-    "correctAnswer": 2,
-    "explanation": "Wiring a File Path data type directly to a Case Selector terminal is fully valid in LabVIEW."
+    "correctAnswer": 0,
+    "explanation": "Multiplying DBL and U32 numeric types coerces the operation to the higher precision DBL data type. The output of the Multiply function will be DBL."
   },
   {
     "id": 35,
@@ -2385,7 +2385,7 @@
       "A scalar cannot be multipled with an array"
     ],
     "correctAnswer": 2,
-    "explanation": "SubVIs can be added by dragging files onto diagrams or navigating palette menus (Both A and B)."
+    "explanation": "A For Loop requires a wired Count Terminal [N] or an auto-indexing input array. If the Count terminal is unwired with no array input, LabVIEW cannot determine iteration count and the run arrow becomes broken."
   },
   {
     "id": 193,
@@ -2698,7 +2698,7 @@
       "A scalar cannot be Multiplied with an array"
     ],
     "correctAnswer": 0,
-    "explanation": "Array insertion logic yields output array pattern shown in Option A."
+    "explanation": "The coercion dot on the Multiply function indicates LabVIEW is converting data types to match. A coercion dot itself does not cause a broken run arrow, but if dimension mismatches exist between scalar and array connections it can."
   },
   {
     "id": 217,
