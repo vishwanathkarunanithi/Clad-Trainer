@@ -425,6 +425,28 @@ function setupEventListeners() {
 
     // Admin Code Generation
     document.getElementById('admin-generate-code-btn').addEventListener('click', () => {
+        // --- NEW: Reset Session Termination ---
+        isSessionTerminated = false;
+        localStorage.removeItem('isSessionTerminated');
+        const endBtn = document.getElementById('admin-end-exam-btn');
+        if (endBtn) {
+            endBtn.textContent = "🛑 End Exam Now (2-Min Warning)";
+            endBtn.disabled = false;
+            endBtn.style.background = "#e11d48";
+        }
+        
+        // Broadcast SESSION_RESET to clear retained MQTT emergency warnings
+        const resetPayload = JSON.stringify({ type: 'SESSION_RESET', triggerTime: Date.now() });
+        if (mqttClient && mqttClient.connected) {
+            mqttClient.publish(MQTT_TOPIC, resetPayload, { qos: 1, retain: true });
+        } else {
+            const client = mqtt.connect(MQTT_BROKER);
+            client.on('connect', () => {
+                client.publish(MQTT_TOPIC, resetPayload, { qos: 1, retain: true }, () => client.end());
+            });
+        }
+        // ----------------------------------------
+
         const testId = document.getElementById('admin-test-select').value;
         const duration = document.getElementById('admin-test-duration').value;
         const startTimeVal = document.getElementById('admin-start-time').value;
