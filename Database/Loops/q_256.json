@@ -1,9 +1,10 @@
 {
     "id": 256,
     "topic": "Loops",
-    "text": "Comparing with I16 & U16 Which statement is true? A)The I16 starts at -32,536 and the U16 at 0.",
+    "text": "Comparing with I16 & U16 Which statement is true?",
     "image": [],
     "options": [
+        "The I16 starts at -32,536 and the U16 at 0.",
         "The I16 starts at 0 and the U16 at -32,536",
         "The I16 has 17 bits, one of them for the sign and the U16 has 16 bits",
         "Both can represent the same amount of numbers"

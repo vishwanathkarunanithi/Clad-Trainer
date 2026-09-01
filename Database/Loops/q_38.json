@@ -6,7 +6,8 @@
         "images/CLAD1 (1)_p14_q38_2932.jpeg"
     ],
     "options": [
-        "1 millisecond b) 1 secound",
+        "1 millisecond",
+        "1 secound",
         "Indefinity",
         "It does not  wait it returned immediatly"
     ],
