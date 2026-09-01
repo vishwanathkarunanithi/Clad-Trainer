@@ -1,0 +1,16 @@
+{
+    "id": 257,
+    "topic": "Error Handling",
+    "text": "Array indicator has no.of dimensions?",
+    "image": [
+        "images/CLAD9_p9_q257_1590.png"
+    ],
+    "options": [
+        "1D array",
+        "2D array",
+        "3D array",
+        "scalar element"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

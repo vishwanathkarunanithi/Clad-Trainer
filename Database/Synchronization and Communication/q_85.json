@@ -1,0 +1,14 @@
+{
+    "id": 85,
+    "topic": "Synchronization and Communication",
+    "text": "All of the following statements regarding SubVIs are true, EXCEPT:",
+    "image": [],
+    "options": [
+        "They require less memory.",
+        "They allow for easier debugging.",
+        "They allow you to use the same code for many future applications.",
+        "All of the above statements are true."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

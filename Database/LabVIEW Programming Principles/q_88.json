@@ -1,0 +1,14 @@
+{
+    "id": 88,
+    "topic": "LabVIEW Programming Principles",
+    "text": "The __________ chooses the best tool based on where the mouse pointer is placed in the LabVIEW environment.",
+    "image": [],
+    "options": [
+        "Wiring Tool",
+        "General Tool",
+        "Automatic Tool Selector",
+        "Operate Tool"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

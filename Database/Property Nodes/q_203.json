@@ -1,0 +1,16 @@
+{
+    "id": 203,
+    "topic": "Property Nodes",
+    "text": "Which of the following statements is TRUE about this block diagram?",
+    "image": [
+        "images/CLAD8_p3_q203_7092.png"
+    ],
+    "options": [
+        "Random Number 2 will always execute before Random Number 3.",
+        "The will Loop will never finish executing because Random Number 1 can never be larger than 0.999.",
+        "The Output of the Subtraction function will always be 0.",
+        "The Add function is guaranteed to be the Last function to execute on this diagram"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

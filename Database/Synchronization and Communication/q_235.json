@@ -1,0 +1,16 @@
+{
+    "id": 235,
+    "topic": "Synchronization and Communication",
+    "text": "What will be the value in the output?",
+    "image": [
+        "images/CLAD9_p1_q235_5899.png"
+    ],
+    "options": [
+        "5",
+        "4",
+        "2",
+        "Indeterminate"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

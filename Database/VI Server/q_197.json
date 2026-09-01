@@ -1,0 +1,14 @@
+{
+    "id": 197,
+    "topic": "VI Server",
+    "text": "Which VI server node do you use to access the method of a front panel objects?",
+    "image": [],
+    "options": [
+        "Property node",
+        "Constructor node",
+        "Invoke node",
+        "Variable node"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

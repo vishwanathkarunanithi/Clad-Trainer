@@ -1,0 +1,16 @@
+{
+    "id": 241,
+    "topic": "Synchronization and Communication",
+    "text": "In the following snippet which boolean will be in true state for longer duration?",
+    "image": [
+        "images/CLAD9_p4_q241_1488.png"
+    ],
+    "options": [
+        "Green",
+        "Yellow",
+        "Red",
+        "All will be in true state for equal amount of time"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

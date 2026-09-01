@@ -1,0 +1,14 @@
+{
+    "id": 109,
+    "topic": "Property Nodes",
+    "text": "Which of the following statements about probing wire values for debugging is false?",
+    "image": [],
+    "options": [
+        "Retain wire values allows you to see the last value in the wire after execution",
+        "Setting probes on a wire allows you to see values on the wire after execution",
+        "Retain wire values allows you to see all the values from each loop iteration after execution",
+        "Setting probes on a wire allows you to see the last value of an iteration of a loop after execution"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

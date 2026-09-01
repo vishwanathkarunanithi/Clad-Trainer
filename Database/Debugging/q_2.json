@@ -1,0 +1,16 @@
+{
+    "id": 2,
+    "topic": "Debugging",
+    "text": "What value will be displayed in the size indicator after the VI completes execution?",
+    "image": [
+        "images/CLAD1 (1)_p0_q2_8221.jpeg"
+    ],
+    "options": [
+        "2",
+        "3",
+        "4",
+        "6"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

@@ -1,0 +1,14 @@
+{
+    "id": 238,
+    "topic": "Design Patterns",
+    "text": "What will be the default Time out value in event structure ?",
+    "image": [],
+    "options": [
+        "1",
+        "0",
+        "-1",
+        "None of the above"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

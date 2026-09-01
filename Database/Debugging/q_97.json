@@ -1,0 +1,16 @@
+{
+    "id": 97,
+    "topic": "Debugging",
+    "text": "The not \u2013 ok button in the customizing control window is used to represent _________",
+    "image": [
+        "images/CLAD11_p6_q97_3629.png"
+    ],
+    "options": [
+        "Valid custom controls",
+        "Invalid custom controls",
+        "Error in custom controls",
+        "Both b and c"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

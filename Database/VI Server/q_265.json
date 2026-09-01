@@ -1,0 +1,14 @@
+{
+    "id": 265,
+    "topic": "VI Server",
+    "text": "Which configuration defines a queue that is similar to a notifier with regard to data buffering?",
+    "image": [],
+    "options": [
+        "max queue size=0",
+        "max queue size=1",
+        "queue with timeout 0",
+        "queue with timeout 1"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

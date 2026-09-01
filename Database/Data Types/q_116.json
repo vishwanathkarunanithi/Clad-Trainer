@@ -1,0 +1,16 @@
+{
+    "id": 116,
+    "topic": "Data Types",
+    "text": "The  loop  iteration  is  wired  to  both  the  index  and  the  new  element/sub array input terminals of the Insert Into Array function . What values will be displayed in the Max value  and  Min value  indicators after the VI completes execution?",
+    "image": [
+        "images/CLAD2_p6_q116_6354.jpeg"
+    ],
+    "options": [
+        "Max Value = 4, Min Value = 0",
+        "Max Value = 4, Min Value = 1",
+        "Max Value = 5, Min Value = 0",
+        "Max Value = 5, Min Value = 1"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

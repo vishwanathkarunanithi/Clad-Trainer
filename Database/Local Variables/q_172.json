@@ -1,0 +1,16 @@
+{
+    "id": 172,
+    "topic": "Local Variables",
+    "text": "Which express VI executes last?",
+    "image": [
+        "images/CLAD7_p10_q172_9885.jpeg"
+    ],
+    "options": [
+        "Indeterminate",
+        "Write to measurement",
+        "Create histogram",
+        "Curve fitting"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

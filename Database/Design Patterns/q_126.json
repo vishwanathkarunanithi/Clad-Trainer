@@ -1,0 +1,14 @@
+{
+    "id": 126,
+    "topic": "Design Patterns",
+    "text": "Which is not a benefit of using LabVIEW Project Explorer?",
+    "image": [],
+    "options": [
+        "Easily find and organize files from within the development environment.",
+        "Make copies of Vis and save them on disk.",
+        "Prevent, detect, and resolve incorrect links.",
+        "Preserve Links when moving or renaming files."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

@@ -1,0 +1,16 @@
+{
+    "id": 93,
+    "topic": "Charts and Graphs",
+    "text": "In this VI will the data of the main VI object references get into the while loop and execute it?",
+    "image": [
+        "images/CLAD11_p5_q93_5598.png"
+    ],
+    "options": [
+        "Yes, the control references will pass through and execute the VI.",
+        "No, the control references will not pass through and execute the VI.",
+        "The loop will not execute since 2 values are flowing into it.",
+        "The loop will iterate once since, it is a while loop even though it will not execute."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

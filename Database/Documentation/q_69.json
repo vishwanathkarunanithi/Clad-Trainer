@@ -1,0 +1,16 @@
+{
+    "id": 69,
+    "topic": "Documentation",
+    "text": "Which one is correct about this code?",
+    "image": [
+        "images/CLAD11_p2_q69_3396.jpeg"
+    ],
+    "options": [
+        "Error",
+        "no error",
+        "8 bytes",
+        "it will ask the path during the execution"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

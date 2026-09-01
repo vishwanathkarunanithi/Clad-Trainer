@@ -1,0 +1,14 @@
+{
+    "id": 81,
+    "topic": "Local Variables",
+    "text": "In what instance would you use the Probe tool rather than Highlight Execution?",
+    "image": [],
+    "options": [
+        "To see the flow of data",
+        "To see the value of a wire in real-time",
+        "To look into a SubVI, as the process is running",
+        "To slowdown the VI and show data values in wires"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

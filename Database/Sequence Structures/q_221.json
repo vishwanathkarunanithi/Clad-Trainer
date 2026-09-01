@@ -1,0 +1,14 @@
+{
+    "id": 221,
+    "topic": "Sequence Structures",
+    "text": "Which of the following groups contains items that are all controls?",
+    "image": [],
+    "options": [
+        "Rocker, Horizontal Fill Slide, Cluster Constant",
+        "Text Box, Build Array, Table",
+        "Knob, waveform, Graph, OK button",
+        "Dial, Tab Control, Property Node"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

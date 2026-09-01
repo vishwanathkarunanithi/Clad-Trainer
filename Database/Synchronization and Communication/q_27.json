@@ -1,0 +1,16 @@
+{
+    "id": 27,
+    "topic": "Synchronization and Communication",
+    "text": " Both  cases  of  the  case  structure  are  shown  below.  Which  of  the  following statements is true regarding the execution of this code?",
+    "image": [
+        "images/CLAD1 (1)_p9_q27_5694.jpeg"
+    ],
+    "options": [
+        "The status indicator will never display \u201cinitialize\u201d",
+        "The status indicator will never display \u201cRunning\u201d.",
+        "The status indicator will display \u201crunning\u201d once, then it will display \u201cinitialize\u201d.",
+        "The status indicator will display \u201cInitialize\u201d once, then it will display \u201cRunning\u201d"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

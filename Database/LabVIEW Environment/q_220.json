@@ -1,0 +1,16 @@
+{
+    "id": 220,
+    "topic": "LabVIEW Environment",
+    "text": "The  length and index  input terminals on the  Delete from Array  function are not wired. What will be value of the output of the Delete from Array function after the VI completes execution?",
+    "image": [
+        "images/CLAD8_p10_q220_9979.png"
+    ],
+    "options": [
+        "Array=[1,2],deleted element=3",
+        "Array=[2,3],deleted element=1",
+        "Array=[1,2,3],deleted element=0",
+        "The VI is broken because the index input to Delete From Array is unwired"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

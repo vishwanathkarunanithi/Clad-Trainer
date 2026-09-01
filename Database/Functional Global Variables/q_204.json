@@ -1,0 +1,16 @@
+{
+    "id": 204,
+    "topic": "Functional Global Variables",
+    "text": "The Timer selection Enum is set to \u201cBessel\u201d. What values will be displayed in Numeric when the VI completes execution?",
+    "image": [
+        "images/CLAD8_p3_q204_3472.png"
+    ],
+    "options": [
+        "0",
+        "22",
+        "Indeterminate Must see the code in other cases to the determine the value",
+        "The VI does not stop execution and runs indefinitely"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

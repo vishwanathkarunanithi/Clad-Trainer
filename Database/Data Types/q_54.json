@@ -1,0 +1,14 @@
+{
+    "id": 54,
+    "topic": "Data Types",
+    "text": "You must store data that other engineers must analyze with Microsoft Excel. Which file storage format should you use?",
+    "image": [],
+    "options": [
+        "Tab-delimited ASCII",
+        "Custom binary format",
+        "TDM",
+        "Datalog"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

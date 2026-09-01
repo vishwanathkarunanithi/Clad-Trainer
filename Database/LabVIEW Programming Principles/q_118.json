@@ -1,0 +1,19 @@
+{
+    "id": 118,
+    "topic": "LabVIEW Programming Principles",
+    "text": "What value will be displayed in the out indicator when the VI completes execution?",
+    "image": [
+        "images/CLAD2_p6_q118_4429.jpeg",
+        "images/CLAD2_p6_q118_7914.jpeg",
+        "images/CLAD2_p6_q118_3305.jpeg",
+        "images/CLAD2_p6_q118_9313.jpeg"
+    ],
+    "options": [
+        "Case 0",
+        "Case 1",
+        "Case 2",
+        "Case 3"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

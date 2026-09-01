@@ -1,0 +1,16 @@
+{
+    "id": 91,
+    "topic": "Functional Global Variables",
+    "text": "Which function will execute first?",
+    "image": [
+        "images/CLAD11_p5_q91_7351.png"
+    ],
+    "options": [
+        "Add",
+        "Division",
+        "Unknown",
+        "None of the above"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

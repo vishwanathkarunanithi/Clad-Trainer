@@ -1,0 +1,16 @@
+{
+    "id": 177,
+    "topic": "File I/O",
+    "text": "Which of the following statement is true about the numeric array?",
+    "image": [
+        "images/CLAD7_p12_q177_2666.jpeg"
+    ],
+    "options": [
+        "It is an indicator",
+        "It contain each 4 element",
+        "It contain each 3 element",
+        "It is a two dimensional"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

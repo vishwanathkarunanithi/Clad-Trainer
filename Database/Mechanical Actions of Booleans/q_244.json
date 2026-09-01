@@ -1,0 +1,14 @@
+{
+    "id": 244,
+    "topic": "Mechanical Actions of Booleans",
+    "text": "What happens if we place a numeric indicator into a cluster that already consists a numeric control? Select the appropriate answer.",
+    "image": [],
+    "options": [
+        "The complete cluster turns into a cluster indicator with two numeric indicators",
+        "The numeric indicator turns into a numeric control and the cluster remains into a control cluster with two controls",
+        "Cluster will get disabled",
+        "LabVIEW throws an error"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

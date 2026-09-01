@@ -1,0 +1,14 @@
+{
+    "id": 248,
+    "topic": "Mechanical Actions of Booleans",
+    "text": "If possible, a Sequence structure should be replaced with a(n):",
+    "image": [],
+    "options": [
+        "Event structure",
+        "For loop",
+        "State machine",
+        "While loop"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

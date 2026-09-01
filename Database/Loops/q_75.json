@@ -1,0 +1,14 @@
+{
+    "id": 75,
+    "topic": "Loops",
+    "text": "A coercion dot indicates that:",
+    "image": [],
+    "options": [
+        "The data types are consistent",
+        "A polymorphic operation will be performed on the data",
+        "A data buffer is created to handle data conversion",
+        "Data values are being coerced because they are out of range"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

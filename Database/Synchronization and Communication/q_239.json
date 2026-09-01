@@ -1,0 +1,16 @@
+{
+    "id": 239,
+    "topic": "Synchronization and Communication",
+    "text": "When will this VI stops? i.  After 100 iteration it stops automatically ii. Change of state of the boolean control for 100 times to stops the VI iii. Program will not stop, it needs to be Aborted",
+    "image": [
+        "images/CLAD9_p3_q239_2609.jpeg"
+    ],
+    "options": [
+        "Both i & ii",
+        "Both ii & iii",
+        "Both i & iii",
+        "i, ii, & iii"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

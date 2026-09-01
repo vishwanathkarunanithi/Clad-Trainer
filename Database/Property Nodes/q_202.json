@@ -1,0 +1,17 @@
+{
+    "id": 202,
+    "topic": "Property Nodes",
+    "text": "In the process of debugging a VI, you have placed a breakpoint before Square Function VI as Shown below in order to Single-Step through the code. When you suspend execution at that breakpoint, what will happen if you press the (Step Over) button?",
+    "image": [
+        "images/CLAD8_p2_q202_4821.png",
+        "images/CLAD8_p2_q202_6598.png"
+    ],
+    "options": [
+        "LabVIEW will complete the execution of the current VI and return to the calling VI(if one exists)",
+        "LabVIEW will skip the execution of Square Function VI.in order to Step Over that function and continue single-stepping through the VI.",
+        "LabVIEW will open up the block diagram of Square Function VI to allow you to single step through the code inside the function",
+        "LabVIEW will execute the Square Function. i and then highlight the next node to be executes as you continue Single-Stepping through the VI."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

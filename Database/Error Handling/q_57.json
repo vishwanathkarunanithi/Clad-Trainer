@@ -1,0 +1,13 @@
+{
+    "id": 57,
+    "topic": "Error Handling",
+    "text": "It is possible to have two VIs of the same name in a project, as long as:",
+    "image": [],
+    "options": [
+        "They are contained in separate virtual folders",
+        "One of the two is a dependency",
+        "They cannot exist in the same project"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

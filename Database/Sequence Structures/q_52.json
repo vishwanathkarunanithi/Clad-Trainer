@@ -1,0 +1,14 @@
+{
+    "id": 52,
+    "topic": "Sequence Structures",
+    "text": "What is the best method to stop a While loop on an error condition?",
+    "image": [],
+    "options": [
+        "Compare the Status boolean of an error cluster with a constant and wire it to the Stop terminal",
+        "Connect the error wire directly to the Stop terminal",
+        "Create an Event structure to handle the error event",
+        "Use the Error Handler VI to automatically handle the error"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

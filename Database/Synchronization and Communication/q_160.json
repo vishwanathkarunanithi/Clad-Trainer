@@ -1,0 +1,16 @@
+{
+    "id": 160,
+    "topic": "Synchronization and Communication",
+    "text": "The array is in U8 if the LABVIEW executes the program what is the size of the binary file?",
+    "image": [
+        "images/CLAD7_p6_q160_5022.jpeg"
+    ],
+    "options": [
+        "10 bytes",
+        "11 bytes",
+        "19 bytes",
+        "17 bytes"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

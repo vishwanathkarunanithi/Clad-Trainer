@@ -1,0 +1,16 @@
+{
+    "id": 209,
+    "topic": "LabVIEW Programming Principles",
+    "text": "Why is there a shadow around the  Numeric control?",
+    "image": [
+        "images/CLAD8_p6_q209_8556.png"
+    ],
+    "options": [
+        "Its data type conflicts",
+        "It is linked to a broken type definition",
+        "It was not dropped within Cluster and Instead is Overlapping it",
+        "Clusters and contain only one datatype"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

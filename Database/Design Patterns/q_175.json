@@ -1,0 +1,14 @@
+{
+    "id": 175,
+    "topic": "Design Patterns",
+    "text": "What do you use to change the colour of a control on the front panel of a vi?",
+    "image": [],
+    "options": [
+        "Property node",
+        "Invoke node",
+        "Local variable",
+        "Shared variable"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

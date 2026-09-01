@@ -1,0 +1,18 @@
+{
+    "id": 222,
+    "topic": "Functional Global Variables",
+    "text": "If the user clicks the increment button on the INPUT control as fast as possible when the VI runs, how often will the Time indicator update?",
+    "image": [
+        "images/CLAD8_p10_q222_6055.png",
+        "images/CLAD8_p11_q222_7917.png",
+        "images/CLAD8_p11_q222_1496.jpeg"
+    ],
+    "options": [
+        "Continuously",
+        "Every 1 second",
+        "Every 1000 seconds",
+        "Every 10000 seconds"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

@@ -1,0 +1,16 @@
+{
+    "id": 253,
+    "topic": "VI Server",
+    "text": "What will be the value in output indicator?",
+    "image": [
+        "images/CLAD9_p8_q253_5324.png"
+    ],
+    "options": [
+        "0",
+        "1",
+        "infinite",
+        "None of the above"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

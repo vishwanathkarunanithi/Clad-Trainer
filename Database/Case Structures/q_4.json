@@ -1,0 +1,16 @@
+{
+    "id": 4,
+    "topic": "Case Structures",
+    "text": "How many times does the for loop iterate?",
+    "image": [
+        "images/CLAD1 (1)_p1_q4_1932.jpeg"
+    ],
+    "options": [
+        "1",
+        "4",
+        "5",
+        "6"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

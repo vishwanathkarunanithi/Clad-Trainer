@@ -1,0 +1,16 @@
+{
+    "id": 131,
+    "topic": "Synchronization and Communication",
+    "text": "In the following block diagram, how many Iterations does the while loop execute?",
+    "image": [
+        "images/CLAD2_p10_q131_6587.jpeg"
+    ],
+    "options": [
+        "0",
+        "1",
+        "2",
+        "infinite"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

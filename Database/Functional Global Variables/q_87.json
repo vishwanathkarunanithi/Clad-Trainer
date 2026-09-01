@@ -1,0 +1,14 @@
+{
+    "id": 87,
+    "topic": "Functional Global Variables",
+    "text": "When placing a new function, control, indicator, or constant, the feature wires the terminals together if placed within close enough proximity.",
+    "image": [],
+    "options": [
+        "Block Diagram Cleanup",
+        "Automatic Error Handling",
+        "Automatic Wiring",
+        "Retain Wire Values"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

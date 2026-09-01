@@ -1,0 +1,14 @@
+{
+    "id": 246,
+    "topic": "File I/O",
+    "text": "For implementing state diagrams that allow future application scalability, the best choice for a base structure is?",
+    "image": [],
+    "options": [
+        "Sequence structure",
+        "Case structure",
+        "Formula node",
+        "Object-Oriented structure"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

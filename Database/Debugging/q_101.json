@@ -1,0 +1,14 @@
+{
+    "id": 101,
+    "topic": "Debugging",
+    "text": "LabVIEW store Boolean data as         bit value.",
+    "image": [],
+    "options": [
+        "8",
+        "16",
+        "4",
+        "32"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

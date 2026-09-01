@@ -1,0 +1,14 @@
+{
+    "id": 89,
+    "topic": "Data Types",
+    "text": "The ________________ is typically used during run time to change the value of a control.",
+    "image": [],
+    "options": [
+        "Operate Tool",
+        "Automatic Tool Selector",
+        "Select Tool",
+        "Shortcut Menu Tool"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

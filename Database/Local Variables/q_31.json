@@ -1,0 +1,16 @@
+{
+    "id": 31,
+    "topic": "Local Variables",
+    "text": "What is the best method to prevent the coresion dot on the VI by using this method?",
+    "image": [
+        "images/CLAD1 (1)_p11_q31_9757.jpeg"
+    ],
+    "options": [
+        "Create the case structure data type making the          enum data type",
+        "Create the input terminal with a data type of enum",
+        "Create the enum as an type definition were the type def of the element",
+        "Create the while loop terminal with tunnel"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

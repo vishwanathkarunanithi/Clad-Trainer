@@ -1,0 +1,16 @@
+{
+    "id": 180,
+    "topic": "Property Nodes",
+    "text": "What is the best practice to prevent coercion dots on a VI like this one?",
+    "image": [
+        "images/CLAD7_p13_q180_3781.jpeg"
+    ],
+    "options": [
+        "Create the case selector data type with matching the enum data type",
+        "Create the selector terminal with the data type of numeric",
+        "Create the enum  as type definition and only use the type def",
+        "Create the while loop terminal with indicating enable"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

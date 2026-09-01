@@ -1,0 +1,16 @@
+{
+    "id": 15,
+    "topic": "Mechanical Actions of Booleans",
+    "text": "When  the  following  code  executes,  both  the  waveform_generation  VI  and  the waveform_file IO VI return an error. Which statement correctly describes how the errors will be handled by the simple error handler VI? The simple error handler VI will:",
+    "image": [
+        "images/CLAD1 (1)_p5_q15_5397.jpeg"
+    ],
+    "options": [
+        "Display no dialog box and pass the waveform file IO error to the error out terminal.",
+        "Display an OK Message dialog box that will display the waveform file IO VI error with an OK button to acknowledge the error. It will pass that cluster to the error out terminal.",
+        "Display an OK Message dialog box that will display the waveform generation VI error with an OK button to acknowledge the error. It will pass that cluster to the error out terminal.",
+        "Display an OK Message dialog box that will display the waveform generation VI error with an OK button to acknowledge the error. It will then pass a default\u201dno error\u201d cluster."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

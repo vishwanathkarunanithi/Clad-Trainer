@@ -1,0 +1,16 @@
+{
+    "id": 252,
+    "topic": "Timing",
+    "text": "How many bytes does LabVIEW write to the file when the code executes?",
+    "image": [
+        "images/CLAD9_p7_q252_3948.jpeg"
+    ],
+    "options": [
+        "4 bytes",
+        "11 bytes",
+        "24 bytes",
+        "17 bytes"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

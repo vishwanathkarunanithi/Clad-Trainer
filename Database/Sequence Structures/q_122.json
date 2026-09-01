@@ -1,0 +1,16 @@
+{
+    "id": 122,
+    "topic": "Sequence Structures",
+    "text": "What is the best practice to correct the coercion dots on a VI like this one?",
+    "image": [
+        "images/CLAD2_p8_q122_3678.jpeg"
+    ],
+    "options": [
+        "Create a case selector with a data type matching the enum data type.",
+        "Create the selector terminal   with a data type of numeric.",
+        "Create the enum as a Type definition and only use the Type def on the diagram.",
+        "Create the While Loop terminal with indexing enabled"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

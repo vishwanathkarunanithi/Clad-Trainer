@@ -1,0 +1,14 @@
+{
+    "id": 96,
+    "topic": "Error Handling",
+    "text": "If you change the type definition data type of a custom control from numeric to string. How LabVIEW converts the old default value to the new data type? (one or more answers may apply)",
+    "image": [],
+    "options": [
+        "LabVIEW cannot preserve the instance default value if the data type changes to an incompatible type.",
+        "LabVIEW sets the instance default to a value such as zero or an empty string.",
+        "LabVIEW will replace all the numeric values in the form of ASCII codes and display the respective ASCII string.",
+        "LabVIEW will repeat the same numeric values in the string controls/indicators"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

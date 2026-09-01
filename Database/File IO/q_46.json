@@ -1,0 +1,16 @@
+{
+    "id": 46,
+    "topic": "File I/O",
+    "text": "What value does the  Result  indicator display after the code snippet executes?",
+    "image": [
+        "images/CLAD10_p1_q46_9528.png"
+    ],
+    "options": [
+        "The time elapsed in milliseconds during the execution of SubVI",
+        "Zero",
+        "Number of seconds elapsed since January 1, 1970",
+        "The time elapsed in milliseconds during the execution of the sequence structure"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

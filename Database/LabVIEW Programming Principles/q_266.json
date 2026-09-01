@@ -1,0 +1,14 @@
+{
+    "id": 266,
+    "topic": "LabVIEW Programming Principles",
+    "text": "Which do you use to initialize all front panel objects to the default values?",
+    "image": [],
+    "options": [
+        "Property node",
+        "Invoke node",
+        "User interface event",
+        "User event"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

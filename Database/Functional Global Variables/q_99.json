@@ -1,0 +1,16 @@
+{
+    "id": 99,
+    "topic": "Functional Global Variables",
+    "text": "What is the output of subset deleted array?",
+    "image": [
+        "images/CLAD11_p7_q99_5319.png"
+    ],
+    "options": [
+        "1D array (0,5,3)",
+        "1D array (0,1,5)",
+        "None of the above.",
+        "1D array(1,5,7)"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

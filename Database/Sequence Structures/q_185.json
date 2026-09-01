@@ -1,0 +1,16 @@
+{
+    "id": 185,
+    "topic": "Sequence Structures",
+    "text": "Which condition will cause this while loop to stop?",
+    "image": [
+        "images/CLAD7_p15_q185_2760.jpeg"
+    ],
+    "options": [
+        "Error in error cluster",
+        "A non zero value in error code of the error cluster",
+        "A negative value in error code of the error cluster",
+        "A true value is the status Boolean of the error cluster"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

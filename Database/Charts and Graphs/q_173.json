@@ -1,0 +1,14 @@
+{
+    "id": 173,
+    "topic": "Charts and Graphs",
+    "text": "By default with automatic error handling enabled labview automatically handles any known error that occurs when a VI running by doing all of the following",
+    "image": [],
+    "options": [
+        "Suspending execution",
+        "Displaying the error list window",
+        "Highlighting the SubVI node or function when the error occurred",
+        "Displaying an error dialog box"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

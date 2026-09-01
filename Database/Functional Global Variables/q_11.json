@@ -1,0 +1,16 @@
+{
+    "id": 11,
+    "topic": "Functional Global Variables",
+    "text": "What is the behavior when the code executes?",
+    "image": [
+        "images/CLAD1 (1)_p4_q11_6987.jpeg"
+    ],
+    "options": [
+        "Loop 1 and Loop 2 run simultaneously",
+        "Loop 1 runs after Loop 2 stops",
+        "Loop 2 runs after Loop 1 stops",
+        "Loop 1 and Loop 2 are deadlocked."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

@@ -1,0 +1,14 @@
+{
+    "id": 242,
+    "topic": "Sequence Structures",
+    "text": "The             data structure can be compared to a purse or wallet because a purse or wallet can hold many different things just as this data structure can hold multiple data types.",
+    "image": [],
+    "options": [
+        "Array",
+        "Cluster",
+        "Bundle",
+        "Container"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

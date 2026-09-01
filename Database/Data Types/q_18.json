@@ -1,0 +1,16 @@
+{
+    "id": 18,
+    "topic": "Data Types",
+    "text": "In the following block diagram, how many iterations does the while loop execute?",
+    "image": [
+        "images/CLAD1 (1)_p6_q18_5357.jpeg"
+    ],
+    "options": [
+        "0.",
+        "1.",
+        "2.",
+        "Infinite."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

@@ -1,0 +1,16 @@
+{
+    "id": 170,
+    "topic": "LabVIEW Programming Principles",
+    "text": "Which change to the block diagram allows the VI to respond to every change event on the numeric control?",
+    "image": [
+        "images/CLAD7_p9_q170_7339.jpeg"
+    ],
+    "options": [
+        "Remove the one button dialogue on the event structure",
+        "Move the event structure on the while loop",
+        "Use the mouse up event instead of value change event",
+        "Use filter event"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

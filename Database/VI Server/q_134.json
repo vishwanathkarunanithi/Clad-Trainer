@@ -1,0 +1,16 @@
+{
+    "id": 134,
+    "topic": "VI Server",
+    "text": "Which of the following is true after the VI completes the execution?",
+    "image": [
+        "images/CLAD2_p11_q134_9472.jpeg"
+    ],
+    "options": [
+        "Data.bin can be opened by a custom made application that reads binary format",
+        "Data.bin will not allow data to bewritten because of a data type mismatch",
+        "Data.txt  Data.bin will write identical files",
+        "A latch condition will prohibit the two files from writing data at the same type"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

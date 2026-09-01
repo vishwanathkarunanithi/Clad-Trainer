@@ -1,0 +1,14 @@
+{
+    "id": 82,
+    "topic": "Mechanical Actions of Booleans",
+    "text": "All of the following statements are true, EXCEPT:",
+    "image": [],
+    "options": [
+        "You can make a Cluster of Clusters.",
+        "You can make an Array of Arrays.",
+        "You can make a Cluster of Arrays.",
+        "You can make an Array of Clusters."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

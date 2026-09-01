@@ -1,0 +1,14 @@
+{
+    "id": 138,
+    "topic": "Arrays and Clusters",
+    "text": "Which  structure  is  most  appropriate  forcode  that  reads  and  evaluate  continuous measurement and then stops and outputs asingle when the measured value reach a threshold?",
+    "image": [],
+    "options": [
+        "Case structure",
+        "For loop",
+        "While loop",
+        "Sequence structure"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

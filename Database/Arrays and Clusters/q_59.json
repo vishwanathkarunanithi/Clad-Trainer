@@ -1,0 +1,14 @@
+{
+    "id": 59,
+    "topic": "Arrays and Clusters",
+    "text": "Which statement best describes a Notify event, such as the value change of a Boolean control?",
+    "image": [],
+    "options": [
+        "Indication that an event occurred and LabVIEW did NOT process the event",
+        "Indication that an event occurred and was discarded by the user",
+        "Indication that an event occurred and LabVIEW processed the event",
+        "Indication that an event did NOT occur but specified Event timeout did occur"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

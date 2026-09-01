@@ -1,0 +1,14 @@
+{
+    "id": 233,
+    "topic": "LabVIEW Environment",
+    "text": "What will be state in the output boolean indicator?",
+    "image": [
+        "images/CLAD9_p1_q233_9650.png"
+    ],
+    "options": [
+        "True",
+        "False"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

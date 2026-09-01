@@ -1,0 +1,14 @@
+{
+    "id": 56,
+    "topic": "Arrays and Clusters",
+    "text": "Which VI memory components are ALWAYS resident for a SubVI?",
+    "image": [],
+    "options": [
+        "Data Space",
+        "Front Panel",
+        "Block Diagram",
+        "Code"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

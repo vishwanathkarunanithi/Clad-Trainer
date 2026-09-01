@@ -1,0 +1,15 @@
+{
+    "id": 67,
+    "topic": "Design Patterns",
+    "text": "Length of the concatenated string is?",
+    "image": [
+        "images/CLAD11_p2_q67_7334.jpeg"
+    ],
+    "options": [
+        "12 b.13",
+        "19",
+        "20"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

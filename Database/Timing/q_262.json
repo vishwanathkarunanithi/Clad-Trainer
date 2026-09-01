@@ -1,0 +1,16 @@
+{
+    "id": 262,
+    "topic": "Timing",
+    "text": "What will be the value in output array , If the Numeric value is 5",
+    "image": [
+        "images/CLAD9_p13_q262_4719.png"
+    ],
+    "options": [
+        "1D array {0,1,2,3,4}",
+        "1D array {1,1,2,3,5}",
+        "1D array {0,1,1,2,3}",
+        "1D array {1,1,2,3,4}"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

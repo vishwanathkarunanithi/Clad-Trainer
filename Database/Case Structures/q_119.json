@@ -1,0 +1,17 @@
+{
+    "id": 119,
+    "topic": "Case Structures",
+    "text": "What values in the Upper Limit and  Lower Limit controls  will produce the arrays displayed on the front panel?",
+    "image": [
+        "images/CLAD2_p7_q119_5781.jpeg",
+        "images/CLAD2_p7_q119_4783.jpeg"
+    ],
+    "options": [
+        "Upper Limit = 5, Lower Limit = 1",
+        "Upper Limit = 5, Lower Limit = 2",
+        "Upper Limit = 6, Lower Limit = 1",
+        "Upper Limit = 6, Lower Limit = 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

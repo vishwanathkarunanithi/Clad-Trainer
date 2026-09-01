@@ -1,0 +1,14 @@
+{
+    "id": 80,
+    "topic": "File I/O",
+    "text": "Which of the following is the best method to update an indicator on the front panel?",
+    "image": [],
+    "options": [
+        "Use a Value property node",
+        "Wire directly to the indicator terminal",
+        "Use a local variable",
+        "Use a functional global variable"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

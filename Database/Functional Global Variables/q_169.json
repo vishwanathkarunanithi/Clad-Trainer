@@ -1,0 +1,16 @@
+{
+    "id": 169,
+    "topic": "Functional Global Variables",
+    "text": "Which of the following scenarios would cause this vi to be broken?",
+    "image": [
+        "images/CLAD7_p9_q169_2542.jpeg"
+    ],
+    "options": [
+        "String has a default value other than \u201ctest1\u201d or \u201dtest 2\u201d",
+        "A string data type cannot be wired to a case selector",
+        "The selector tunnel is not wired within the case structure",
+        "The case structure does not have a default case"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

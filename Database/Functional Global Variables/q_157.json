@@ -1,0 +1,16 @@
+{
+    "id": 157,
+    "topic": "Functional Global Variables",
+    "text": "Concatenate inputs are selected in the build array function. Which dimension will be the value out has?",
+    "image": [
+        "images/CLAD7_p5_q157_4235.jpeg"
+    ],
+    "options": [
+        "2D",
+        "3D",
+        "4D",
+        "1D"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

@@ -1,0 +1,16 @@
+{
+    "id": 182,
+    "topic": "Local Variables",
+    "text": "What  string  will  be  displayed  in  the  result  indication  after  the  VI  completes  the execution?",
+    "image": [
+        "images/CLAD7_p14_q182_6953.jpeg"
+    ],
+    "options": [
+        "12345",
+        "01234",
+        "123456",
+        "012345"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

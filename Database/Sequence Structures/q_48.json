@@ -1,0 +1,14 @@
+{
+    "id": 48,
+    "topic": "Sequence Structures",
+    "text": "What functionality do Control References provide?",
+    "image": [],
+    "options": [
+        "Ability to add controls and indicators to a VI programmatically",
+        "Access to the properties of Front Panel objects in SubVIs",
+        "Control of multiple DAQ inputs through alias names",
+        "Ability to wire from controls to functions and SubVIs"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

@@ -1,0 +1,16 @@
+{
+    "id": 205,
+    "topic": "Documentation",
+    "text": "What types of data can be wired to the Obtain Queue function as the elements data type?",
+    "image": [
+        "images/CLAD8_p4_q205_9727.png"
+    ],
+    "options": [
+        "Only cluster,String,Numeric and Boolean",
+        "Any LabVIEW data type",
+        "Only Cluster and Strings",
+        "Only Numeric and Boolean"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

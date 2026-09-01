@@ -1,0 +1,14 @@
+{
+    "id": 236,
+    "topic": "Error Handling",
+    "text": "Which of the following can be connected to case structure conditional terminal?",
+    "image": [],
+    "options": [
+        "Array",
+        "Cluster",
+        "Error cluster",
+        "None of the above"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

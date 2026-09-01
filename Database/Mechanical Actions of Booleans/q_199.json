@@ -1,0 +1,16 @@
+{
+    "id": 199,
+    "topic": "Mechanical Actions of Booleans",
+    "text": "What value will be displayed in the Result indicator after the VIs completes execution?",
+    "image": [
+        "images/CLAD8_p1_q199_5874.png"
+    ],
+    "options": [
+        "0",
+        "1",
+        "10",
+        "Undefined. The VI runs indefinitely and must be aborted."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

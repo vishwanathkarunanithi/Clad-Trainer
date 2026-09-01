@@ -1,0 +1,14 @@
+{
+    "id": 162,
+    "topic": "Design Patterns",
+    "text": "Unlike which  display  an  entire  waveform  that  overwrites  the  data  stored, update periodically",
+    "image": [],
+    "options": [
+        "Graphs, charts",
+        "Charts, plots",
+        "Plots, graphs",
+        "Charts, graphs"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

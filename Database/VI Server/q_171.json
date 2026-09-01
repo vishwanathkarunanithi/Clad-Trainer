@@ -1,0 +1,14 @@
+{
+    "id": 171,
+    "topic": "VI Server",
+    "text": "You  generate 100  points  of that  are unevenly spaced  over a period  of time which indicator best displayed the data while maintaining the uneven spacing of its acquisition",
+    "image": [],
+    "options": [
+        "Digital waveform graph",
+        "Waveform graph",
+        "XY graph",
+        "Intensity graph"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

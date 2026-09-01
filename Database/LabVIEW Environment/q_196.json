@@ -1,0 +1,16 @@
+{
+    "id": 196,
+    "topic": "LabVIEW Environment",
+    "text": "What will be result in this code is executed?",
+    "image": [
+        "images/CLAD8_p0_q196_4601.png"
+    ],
+    "options": [
+        "1",
+        "2",
+        "3",
+        "1 and 3"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

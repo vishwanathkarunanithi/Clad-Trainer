@@ -1,0 +1,14 @@
+{
+    "id": 186,
+    "topic": "Sequence Structures",
+    "text": "Which loop function is the best method to auto indexing single elements of a 2d array",
+    "image": [],
+    "options": [
+        "Replace array function",
+        "Array subset function",
+        "One while loop",
+        "Two for loops"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

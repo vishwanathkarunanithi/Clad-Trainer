@@ -1,0 +1,14 @@
+{
+    "id": 39,
+    "topic": "LabVIEW Programming Principles",
+    "text": "Which of the following statement most correctly defines a labview functional global variable?",
+    "image": [],
+    "options": [
+        "A function in labview that looks like a variable and its not re-entract",
+        "A SubVI with a local variable that functions like a global variable",
+        "A SubVI with a uninitialized shift register and holds global data",
+        "A SubVI with a initialized shift register and holds global data"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

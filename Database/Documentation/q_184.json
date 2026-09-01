@@ -1,0 +1,14 @@
+{
+    "id": 184,
+    "topic": "Documentation",
+    "text": "Which  structure  is  the  most  appropriate  for  code  the  reads  and  elevate  continuous measurement and then stop and output a signal when the measured value reaches a threshold?",
+    "image": [],
+    "options": [
+        "Case structure",
+        "For loop",
+        "While loop",
+        "Sequence structure"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

@@ -1,0 +1,16 @@
+{
+    "id": 144,
+    "topic": "Local Variables",
+    "text": "The value in the count in minutes control is 4. When the VI is in execution what does the timer indicator display?",
+    "image": [
+        "images/CLAD2_p16_q144_1487.jpeg"
+    ],
+    "options": [
+        "Time counting up with the string format similar to 12:04:05.20",
+        "Time counting down with the string format similar to 12:03:55.45",
+        "Time counting up with the string format similar to 4:05.2",
+        "Time counting down with the string format similar to 4:05.2"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

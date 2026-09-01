@@ -1,0 +1,16 @@
+{
+    "id": 212,
+    "topic": "VI Server",
+    "text": "Which condition is TRUE at the end of execution?",
+    "image": [
+        "images/CLAD8_p7_q212_2411.png"
+    ],
+    "options": [
+        "The value of the Loop Iteration terminals is unbounded because the For Loop will not stop",
+        "The value of the Loop iteration terminal is one less than the value of the Loop Count terminal",
+        "The value of the Loop iteration terminal is equal to the value of the Loop Count terminal",
+        "The value of the Loop iteration terminal is one more than the value of the Loop Count terminal"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

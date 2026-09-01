@@ -1,0 +1,14 @@
+{
+    "id": 128,
+    "topic": "Case Structures",
+    "text": "Which mechanical actions will work with a Boolean control that has an associate local variable?",
+    "image": [],
+    "options": [
+        "Switch When Pressed, Latch When Pressed and Latch When Released",
+        "Latch When Pressed, Latch When Released and Latch Until Released",
+        "Switch when Released ,  , Latch When Released and , Latch When Pressed",
+        "Switch When Pressed, Switch when Released and Switch Until Released"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

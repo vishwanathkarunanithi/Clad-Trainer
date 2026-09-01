@@ -1,0 +1,14 @@
+{
+    "id": 264,
+    "topic": "Local Variables",
+    "text": "Which setting assigns specific key or key combinations to a front panel object?",
+    "image": [],
+    "options": [
+        "Key focus",
+        "Key Navigation",
+        "Radix",
+        "Distribute objects"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

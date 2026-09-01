@@ -1,0 +1,14 @@
+{
+    "id": 90,
+    "topic": "Charts and Graphs",
+    "text": "A ________  indicates that the VI is broken or not executable.",
+    "image": [],
+    "options": [
+        "Broken Run Arrow",
+        "Run Arrow",
+        "Wiring Diagram",
+        "VI Icon"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

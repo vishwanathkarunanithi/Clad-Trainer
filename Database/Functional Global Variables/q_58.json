@@ -1,0 +1,14 @@
+{
+    "id": 58,
+    "topic": "Functional Global Variables",
+    "text": "How do you create a Polymorphic VI?",
+    "image": [],
+    "options": [
+        "Open a VI\u2019s Properties (File >> VI Properties), and select \u2018This is a polymorphic VI.\u2019 in the Execution category. In the tab that appears, select which VIs you would like to include.",
+        "Create two or more VIs with the same connector pattern, select File >> New >> polymorphic VI, select one or more of the VIs you created to include as an instance in the polymorphic VI",
+        "Drop a Polymorphic VI function from the Function Palette >> Application Control, right-click it and choose \u2018Configure\u2019, and select the VIs that you would like to include.",
+        "Highlight two SubVIs on a block diagram, in the toolbar select Edit >> Create Polymorphic VI."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

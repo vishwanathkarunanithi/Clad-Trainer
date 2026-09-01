@@ -1,0 +1,16 @@
+{
+    "id": 249,
+    "topic": "Local Variables",
+    "text": "What will be the value in the output indicator?",
+    "image": [
+        "images/CLAD9_p6_q249_3275.png"
+    ],
+    "options": [
+        "0",
+        "2",
+        "3",
+        "4"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

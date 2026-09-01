@@ -1,0 +1,16 @@
+{
+    "id": 213,
+    "topic": "Timing",
+    "text": "When using single step debugging, the VI execution is paused at the increment node. Which of the following action is not possible?",
+    "image": [
+        "images/CLAD8_p7_q213_3959.png"
+    ],
+    "options": [
+        "Step Out of the Sequence Structure",
+        "Step Over the increment function",
+        "Finish Frame of the structure",
+        "Un-pause and continue execution"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

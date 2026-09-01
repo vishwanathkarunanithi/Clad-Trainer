@@ -1,0 +1,14 @@
+{
+    "id": 102,
+    "topic": "Design Patterns",
+    "text": "What value will be displayed in the string indicator after the VI complete execution? A) alpha B) Bravo",
+    "image": [
+        "images/CLAD2_p0_q102_7016.jpeg"
+    ],
+    "options": [
+        "Charlie",
+        "The value can\u2019t be determined from the given information"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

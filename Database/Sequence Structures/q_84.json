@@ -1,0 +1,14 @@
+{
+    "id": 84,
+    "topic": "Sequence Structures",
+    "text": "Which of the following statements is true?",
+    "image": [],
+    "options": [
+        "The default setting for a tunnel into or out of a For Loop has auto-indexing enabled if the data being passed is an array.",
+        "The default setting for a tunnel into or out of a While Loop has auto-indexing disabled if the data being passed is an array.",
+        "Both",
+        "and B."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

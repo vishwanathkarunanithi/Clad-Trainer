@@ -1,0 +1,16 @@
+{
+    "id": 125,
+    "topic": "Error Handling",
+    "text": "There is a breakpoint before the square function as shown below. When LabVIEW pause execution at that breakpoint, what will happen if you press the step into button?",
+    "image": [
+        "images/CLAD2_p9_q125_5313.jpeg"
+    ],
+    "options": [
+        "LabVIEW will highlight the square function but will not execute.",
+        "LabVIEW will open up the block diagram of the square function to allow you to single step through the code inside the square function.",
+        "LabVIEW will execute the square function and then highlight the next node to be executed as you continue single stepping through the VI.",
+        "LabVIEW will complete the execution of the VI and return to the calling VI (if one exits)."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

@@ -1,0 +1,14 @@
+{
+    "id": 76,
+    "topic": "Debugging",
+    "text": "Which of the following does not conform to data flow programming paradigm?",
+    "image": [],
+    "options": [
+        "Shift Registers",
+        "Tunnels",
+        "SubVIs",
+        "Local Variables"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

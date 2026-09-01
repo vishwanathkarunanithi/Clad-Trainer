@@ -1,0 +1,16 @@
+{
+    "id": 228,
+    "topic": "Timing",
+    "text": "When the VIs execution what does the Time indicator display?",
+    "image": [
+        "images/CLAD8_p14_q228_1070.png"
+    ],
+    "options": [
+        "Time counting up with the string format similar to 12.04.05.20",
+        "Time counting down with the string format similar to 12.03.55.45",
+        "Time counting up with the string format similar to 04.05.2",
+        "Time counting down with the string format similar to 3.55.5.20"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

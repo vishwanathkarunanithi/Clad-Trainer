@@ -1,0 +1,14 @@
+{
+    "id": 53,
+    "topic": "Charts and Graphs",
+    "text": "You are inputting data that represents a circle. The circle data includes an  x  position, a  y  position, and a radius. All three pieces of data are double-precision. In the future, you might need to store the color of the circle, represented as an integer. How should you represent the circle on your front panel window?",
+    "image": [],
+    "options": [
+        "Three separate controls for the two positions and the radius.",
+        "A cluster containing all of the data.",
+        "A type definition containing a cluster.",
+        "An array with three elements."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

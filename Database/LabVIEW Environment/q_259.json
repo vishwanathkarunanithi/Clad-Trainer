@@ -1,0 +1,14 @@
+{
+    "id": 259,
+    "topic": "LabVIEW Environment",
+    "text": "In what instance would you use the probe tool rather than highlight execution?",
+    "image": [],
+    "options": [
+        "To see flow of data",
+        "To see the value of the wire in real time",
+        "To look into a VI, as a process is running",
+        "To slow down the VI, and show data values in wires"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

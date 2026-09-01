@@ -1,0 +1,14 @@
+{
+    "id": 268,
+    "topic": "Charts and Graphs",
+    "text": "Which of the following can be used to plot data points that are NOT sampled at even intervals?",
+    "image": [],
+    "options": [
+        "XY Graph",
+        "Waveform Graph",
+        "Waveform Chart",
+        "Dynamic Chart"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

@@ -1,0 +1,17 @@
+{
+    "id": 115,
+    "topic": "Property Nodes",
+    "text": "The output tunnel on the error   wire passing through this Case Structure causes a broken arrow. Which of the shortcut menu items would preserve error data in all cases?",
+    "image": [
+        "images/CLAD2_p5_q115_9019.jpeg",
+        "images/CLAD2_p5_q115_3679.jpeg"
+    ],
+    "options": [
+        "Use Default if unwired",
+        "Linked input Tunnel>> Create& Wire Unwired cases",
+        "Cluster, class & variant Palette>> Build Cluster array",
+        "Create>>Indicator"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

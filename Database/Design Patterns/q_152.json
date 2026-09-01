@@ -1,0 +1,16 @@
+{
+    "id": 152,
+    "topic": "Design Patterns",
+    "text": "What value will be displayed in the numeric indicator when the vi complete execution?",
+    "image": [
+        "images/CLAD7_p2_q152_3292.jpeg"
+    ],
+    "options": [
+        "0",
+        "1",
+        "2",
+        "4"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

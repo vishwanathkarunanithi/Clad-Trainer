@@ -1,0 +1,14 @@
+{
+    "id": 78,
+    "topic": "VI Server",
+    "text": "Which of the following statements is false?",
+    "image": [],
+    "options": [
+        "A SubVI connector pane defines where to wire inputs and outputs",
+        "The color of a SubVI connector pane terminal matches the data type",
+        "You must have an icon/connector to use a SubVI",
+        "A SubVI icon can be edited from the functions palette"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

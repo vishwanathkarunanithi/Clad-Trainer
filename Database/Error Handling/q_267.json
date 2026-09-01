@@ -1,0 +1,14 @@
+{
+    "id": 267,
+    "topic": "Error Handling",
+    "text": "Which mechanism is used to implement a functional global variable?",
+    "image": [],
+    "options": [
+        "Uninitialized shift register",
+        "Local Variable",
+        "Property node",
+        "Control"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

@@ -1,0 +1,16 @@
+{
+    "id": 121,
+    "topic": "Timing",
+    "text": "Automatic error handling is enabled for this VI. Does  LabVIEW display an error to the user when the VI completes execution?",
+    "image": [
+        "images/CLAD2_p7_q121_8214.jpeg"
+    ],
+    "options": [
+        "Yes, the error is handled by the simple error Handler.",
+        "No, no error is displayed because none of these nodes can generate an error.",
+        "No, no error is displayed because closing the file reference clears the error.",
+        "Yes, twice, once for the simple error handler VI and once when automatic error handling displays the error from the unwired error out of simple error handler VI."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

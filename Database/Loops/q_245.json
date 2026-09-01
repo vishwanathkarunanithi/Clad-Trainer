@@ -1,0 +1,14 @@
+{
+    "id": 245,
+    "topic": "Loops",
+    "text": "Which of the following statement(s) is/are correct?",
+    "image": [],
+    "options": [
+        "Reference cluster terminal of  Bundle by name  function is required",
+        "Reference cluster terminal of  Bundle  function is required",
+        "Reference cluster terminal of  Bundle by name  function is recommended",
+        "Reference cluster terminal of  Bundle  function is recommended"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

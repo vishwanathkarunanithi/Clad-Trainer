@@ -1,0 +1,16 @@
+{
+    "id": 147,
+    "topic": "LabVIEW Programming Principles",
+    "text": "Which of the following statement is TRUE about numeric array?",
+    "image": [
+        "images/CLAD7_p0_q147_4706.jpeg"
+    ],
+    "options": [
+        "It is an indicator",
+        "It contains exactly 4 elements",
+        "It contains exactly 3 elements",
+        "It is two dimension"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

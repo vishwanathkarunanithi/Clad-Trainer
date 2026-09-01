@@ -1,0 +1,14 @@
+{
+    "id": 86,
+    "topic": "Design Patterns",
+    "text": "All of the following statements regarding the index of Arrays are true, EXCEPT:",
+    "image": [],
+    "options": [
+        "The index is used to access a particular element of an Array.",
+        "The index ranges from 1 to n, where n is the number of elements in the Array.",
+        "A 2-D Array has both a column index and a row index.",
+        "All of the above statements are true."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

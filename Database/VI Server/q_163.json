@@ -1,0 +1,14 @@
+{
+    "id": 163,
+    "topic": "VI Server",
+    "text": "Which data synchronization mechanism ensures that no data is lost when an application temporarily produce data faster that it is able to consume it?",
+    "image": [],
+    "options": [
+        "Notifier",
+        "Queue",
+        "Functional global variable",
+        "Local variable"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

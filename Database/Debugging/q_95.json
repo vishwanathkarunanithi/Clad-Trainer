@@ -1,0 +1,14 @@
+{
+    "id": 95,
+    "topic": "Debugging",
+    "text": "When you place a control in a VI, LabVIEW eliminates the connection between the file that created the custom control and the control in the VI. Unlike custom ______________, only ______________ contain instances that link to its definition.",
+    "image": [],
+    "options": [
+        "Controls , strict type definitions",
+        "Type definitions , strict type definitions",
+        "Controls , Type definitions",
+        "Controls , Indicators"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

@@ -1,0 +1,14 @@
+{
+    "id": 133,
+    "topic": "File I/O",
+    "text": "Which statement while creating the SubVI creation is FALSE?",
+    "image": [],
+    "options": [
+        "A SubVI connector pane defines where to wire inputs and outputs",
+        "The color of a subVI connector pane terminal matches the data type to which it connect",
+        "A SubVI must have an icon and connector pane",
+        "You can open a subVI from the front panel of the Mani VI."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

@@ -1,0 +1,16 @@
+{
+    "id": 19,
+    "topic": "Sequence Structures",
+    "text": "Which Boolean mechanical actions are valid to use when a Boolean control is used with local variables?",
+    "image": [
+        "images/CLAD1 (1)_p6_q19_9546.jpeg"
+    ],
+    "options": [
+        "Any Switch mechanical action.",
+        "Any Latch mechanical action.",
+        "All Six mechanical actions.",
+        "Only Switch when Pressed."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

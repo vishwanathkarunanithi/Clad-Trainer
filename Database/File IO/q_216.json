@@ -1,0 +1,16 @@
+{
+    "id": 216,
+    "topic": "File I/O",
+    "text": "Why does the VI result in a broken run arrow?",
+    "image": [
+        "images/CLAD8_p9_q216_3820.png"
+    ],
+    "options": [
+        "Because of the correction dot on the Multiply  function",
+        "Output does not match the dimension of the output of the Multiply function",
+        "The Count terminal is unwired",
+        "A scalar cannot be Multiplied with an array"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

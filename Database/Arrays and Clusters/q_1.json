@@ -1,0 +1,17 @@
+{
+    "id": 1,
+    "topic": "Arrays and Clusters",
+    "text": "Why is there a broken wire?",
+    "image": [
+        "images/CLAD1 (1)_p0_q1_2892.jpeg",
+        "images/CLAD1 (1)_p0_q1_9138.jpeg"
+    ],
+    "options": [
+        "The Cluster is not a type def.",
+        "The input cluster for the bundle by name function is not defined.",
+        "The numeric is not the right kind for the cluster.",
+        "The controls contain different types of data than the cluster."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

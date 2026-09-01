@@ -1,0 +1,18 @@
+{
+    "id": 113,
+    "topic": "Arrays and Clusters",
+    "text": "If the user click the increment button on the  input  control as fast as possible when the vi runs. How often will the  time  indicator update?",
+    "image": [
+        "images/CLAD2_p3_q113_1380.jpeg",
+        "images/CLAD2_p4_q113_6308.jpeg",
+        "images/CLAD2_p4_q113_4088.jpeg"
+    ],
+    "options": [
+        "Continuously",
+        "Every 1 second",
+        "No continuously",
+        "Every 1 Millisecond"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

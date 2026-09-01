@@ -1,0 +1,17 @@
+{
+    "id": 124,
+    "topic": "Timing",
+    "text": "Which statement is correct about the dimensionally of the array out 1 and array out2 indicators?",
+    "image": [
+        "images/CLAD2_p8_q124_9350.jpeg",
+        "images/CLAD2_p8_q124_9723.jpeg"
+    ],
+    "options": [
+        "Array Out 1 is a 2D array and Array Out 2 is a 2D array",
+        "Array Out 1 is a 3D array and Array Out 2 is a 3D array",
+        "Array Out 1 is a 2D array and Array Out 2 is a 3D array",
+        "Array Out 1 is a 3D array and Array Out 2 is a 2D array"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

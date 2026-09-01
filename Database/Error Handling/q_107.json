@@ -1,0 +1,16 @@
+{
+    "id": 107,
+    "topic": "Error Handling",
+    "text": "The  Stop Button  is paused when the  Iteration Count  indicator reads 1, and released exactly 2 seconds later. The button\u2019s mechanical action is configured with latch when pressed. What is the highest possible value displayed on the  Iteration Count  indicator when the VI completes execution?",
+    "image": [
+        "images/CLAD2_p1_q107_9130.jpeg"
+    ],
+    "options": [
+        "1",
+        "2",
+        "3",
+        "infinite"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

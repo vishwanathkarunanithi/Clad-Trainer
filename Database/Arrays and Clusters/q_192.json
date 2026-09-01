@@ -1,0 +1,16 @@
+{
+    "id": 192,
+    "topic": "Arrays and Clusters",
+    "text": "Why does the VI result in a broken run arrow?",
+    "image": [
+        "images/CLAD7_p16_q192_6038.jpeg"
+    ],
+    "options": [
+        "bcoz of the corrison dot on multiple function",
+        "Output does not matches the dimesion of the o\\p of the multiple function",
+        "The count terminal is unwired",
+        "A scalar cannot be multipled with an array"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

@@ -1,0 +1,14 @@
+{
+    "id": 77,
+    "topic": "Data Types",
+    "text": "Which of the following cannot be used to transfer data?",
+    "image": [],
+    "options": [
+        "Semaphores",
+        "Queues",
+        "Notifiers",
+        "Local variables"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

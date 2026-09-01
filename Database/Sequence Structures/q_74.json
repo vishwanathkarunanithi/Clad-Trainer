@@ -1,0 +1,14 @@
+{
+    "id": 74,
+    "topic": "Sequence Structures",
+    "text": "What is an advantage of using a Strictly Typed VI refnum?",
+    "image": [],
+    "options": [
+        "The data types of the target VI are known at compile time",
+        "The data types passed to the VI can change programmatically",
+        "You can flatten the data to a string to improve code performance",
+        "Causes dynamically loaded VIs to be loaded at the start of execution"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

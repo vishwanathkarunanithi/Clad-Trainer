@@ -1,0 +1,16 @@
+{
+    "id": 12,
+    "topic": "Documentation",
+    "text": "Array is an array of U8. How many bytes does LabVIEW write to the file when the code executes?",
+    "image": [
+        "images/CLAD1 (1)_p4_q12_5080.jpeg"
+    ],
+    "options": [
+        "9 Bytes",
+        "11 Bytes",
+        "13 Bytes",
+        "17 Bytes"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

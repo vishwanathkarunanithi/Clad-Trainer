@@ -1,0 +1,16 @@
+{
+    "id": 150,
+    "topic": "Arrays and Clusters",
+    "text": "What value will be displayed in the numeric indicator after the vi completes the expression?",
+    "image": [
+        "images/CLAD7_p1_q150_9572.jpeg"
+    ],
+    "options": [
+        "0",
+        "-1",
+        "2",
+        "The code will run indefinitely"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

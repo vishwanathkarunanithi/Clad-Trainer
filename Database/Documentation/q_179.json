@@ -1,0 +1,16 @@
+{
+    "id": 179,
+    "topic": "Documentation",
+    "text": "Which statement best describes the below code?",
+    "image": [
+        "images/CLAD7_p12_q179_4911.jpeg"
+    ],
+    "options": [
+        "Loop1 and loop 2run simultaneously",
+        "Loop 1 run loops 2 stops",
+        "Loop 2 runs loop 1 stop",
+        "Loop 1 and 2 are dead lock"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

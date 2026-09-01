@@ -1,0 +1,16 @@
+{
+    "id": 25,
+    "topic": "VI Server",
+    "text": "Which of the following statements is true about this block diagram?",
+    "image": [
+        "images/CLAD1 (1)_p8_q25_7086.jpeg"
+    ],
+    "options": [
+        "Random Number 2 will always execute before random number 3.",
+        "The while loop will never finish executing because random number 1 can never be larger than 0.999.",
+        "The output of the sub tractor function will always be 0.",
+        "The ADD function is guaranteed to be the last function to execute on this diagram."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

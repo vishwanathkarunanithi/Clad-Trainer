@@ -1,0 +1,16 @@
+{
+    "id": 263,
+    "topic": "Functional Global Variables",
+    "text": "What is the correct method to repair the broken wire?",
+    "image": [
+        "images/CLAD9_p14_q263_6074.png"
+    ],
+    "options": [
+        "Enable indexing on the tunnel.",
+        "Replace the tunnel with a shift register.",
+        "Replace the While loop with a case structure.",
+        "Change the time constant to a non-zero number."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

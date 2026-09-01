@@ -1,0 +1,16 @@
+{
+    "id": 229,
+    "topic": "Documentation",
+    "text": "Starting with the code below, you need to create a sub VI that will concatenate the two input strings, compare the Result to a standard string and output a Boolean Result. The star what must be a done to accomplish this goal?",
+    "image": [
+        "images/CLAD8_p14_q229_5406.png"
+    ],
+    "options": [
+        "Convert all the String constants to control",
+        "Convert Input String 1 and input String 2 to controls",
+        "Make sure that all the String constant are selected before creating Sub VI",
+        "Make Sure all controls and indicators are selected before creating the Sub VI"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

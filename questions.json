@@ -1,0 +1,3421 @@
+[
+    {
+        "id": 1,
+        "topic": "Arrays and Clusters",
+        "text": "Why is there a broken wire?",
+        "image": [
+            "images/CLAD1 (1)_p0_q1_2892.jpeg",
+            "images/CLAD1 (1)_p0_q1_9138.jpeg"
+        ],
+        "options": [
+            "The Cluster is not a type def.",
+            "The input cluster for the bundle by name function is not defined.",
+            "The numeric is not the right kind for the cluster.",
+            "The controls contain different types of data than the cluster."
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 2,
+        "topic": "Debugging",
+        "text": "What value will be displayed in the size indicator after the VI completes execution?",
+        "image": [
+            "images/CLAD1 (1)_p0_q2_8221.jpeg"
+        ],
+        "options": [
+            "2",
+            "3",
+            "4",
+            "6"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 3,
+        "topic": "VI Server",
+        "text": "What  value  will  be  displayed  in  the  numeric  indicator  after  the  VI  completes execution?",
+        "image": [
+            "images/CLAD1 (1)_p0_q3_4823.jpeg"
+        ],
+        "options": [
+            "2",
+            "3",
+            "4",
+            "6"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 4,
+        "topic": "Case Structures",
+        "text": "How many times does the for loop iterate?",
+        "image": [
+            "images/CLAD1 (1)_p1_q4_1932.jpeg"
+        ],
+        "options": [
+            "1",
+            "4",
+            "5",
+            "6"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 8,
+        "topic": "LabVIEW Programming Principles",
+        "text": "Which is not a benefit of using SubVIs?",
+        "image": [],
+        "options": [
+            "SubVIs help keep the block diagram less cluttered.",
+            "SubVIs simplifies debugging.",
+            "SubVIs allows more rapid creation of repeated code.",
+            "SubVIs eliminates race conditions."
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 9,
+        "topic": "LabVIEW Programming Principles",
+        "text": "What values will be displayed in the MAX Value and MIN Value indicators after the VI completes execution?",
+        "image": [
+            "images/CLAD1 (1)_p3_q9_3104.jpeg"
+        ],
+        "options": [
+            "Max Value = 4, Min Value = 2",
+            "Max Value = 5, Min Value = 1",
+            "Max Value = 5, Min Value = 2",
+            "Max Value = 4, Min Value = 3"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 10,
+        "topic": "Arrays and Clusters",
+        "text": "Which statement is TRUE? The While Loop Iterates:",
+        "image": [
+            "images/CLAD1 (1)_p3_q10_1653.jpeg"
+        ],
+        "options": [
+            "Four Times and stops",
+            "Ten times and stops",
+            "Once and stops",
+            "Indefinitely"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 11,
+        "topic": "Functional Global Variables",
+        "text": "What is the behavior when the code executes?",
+        "image": [
+            "images/CLAD1 (1)_p4_q11_6987.jpeg"
+        ],
+        "options": [
+            "Loop 1 and Loop 2 run simultaneously",
+            "Loop 1 runs after Loop 2 stops",
+            "Loop 2 runs after Loop 1 stops",
+            "Loop 1 and Loop 2 are deadlocked."
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 12,
+        "topic": "Documentation",
+        "text": "Array is an array of U8. How many bytes does LabVIEW write to the file when the code executes?",
+        "image": [
+            "images/CLAD1 (1)_p4_q12_5080.jpeg"
+        ],
+        "options": [
+            "9 Bytes",
+            "11 Bytes",
+            "13 Bytes",
+            "17 Bytes"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 15,
+        "topic": "Mechanical Actions of Booleans",
+        "text": "When  the  following  code  executes,  both  the  waveform_generation  VI  and  the waveform_file IO VI return an error. Which statement correctly describes how the errors will be handled by the simple error handler VI? The simple error handler VI will:",
+        "image": [
+            "images/CLAD1 (1)_p5_q15_5397.jpeg"
+        ],
+        "options": [
+            "Display no dialog box and pass the waveform file IO error to the error out terminal.",
+            "Display an OK Message dialog box that will display the waveform file IO VI error with an OK button to acknowledge the error. It will pass that cluster to the error out terminal.",
+            "Display an OK Message dialog box that will display the waveform generation VI error with an OK button to acknowledge the error. It will pass that cluster to the error out terminal.",
+            "Display an OK Message dialog box that will display the waveform generation VI error with an OK button to acknowledge the error. It will then pass a default\u201dno error\u201d cluster."
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 17,
+        "topic": "File I/O",
+        "text": "Which of the following can you use to enable a disabled control on a VI while it is executing?",
+        "image": [],
+        "options": [
+            "Right click the control to get the menu for properties and then enabled state.",
+            "Right click the control to get the menu for advanced and then enabled state.",
+            "Use a property to change the disabled property value.",
+            "Use an invoke node and use the reinitialize method."
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 18,
+        "topic": "Data Types",
+        "text": "In the following block diagram, how many iterations does the while loop execute?",
+        "image": [
+            "images/CLAD1 (1)_p6_q18_5357.jpeg"
+        ],
+        "options": [
+            "0.",
+            "1.",
+            "2.",
+            "Infinite."
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 19,
+        "topic": "Sequence Structures",
+        "text": "Which Boolean mechanical actions are valid to use when a Boolean control is used with local variables?",
+        "image": [
+            "images/CLAD1 (1)_p6_q19_9546.jpeg"
+        ],
+        "options": [
+            "Any Switch mechanical action.",
+            "Any Latch mechanical action.",
+            "All Six mechanical actions.",
+            "Only Switch when Pressed."
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 20,
+        "topic": "Event Structures",
+        "text": "What value is displayed in the  Output  indicator when the fifth iteration (i=4) of Loop 2 completes?",
+        "image": [
+            "images/CLAD1 (1)_p7_q20_7587.jpeg"
+        ],
+        "options": [
+            "Element 1.",
+            "Element 2.",
+            "Element 3.",
+            "Element1Element2Element3."
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 21,
+        "topic": "Case Structures",
+        "text": " You have a front panel control on a top-level VI that you must control from within a SubVI. What must you pass to the SubVI?",
+        "image": [],
+        "options": [
+            "The Controls Properties.",
+            "The controls methods.",
+            "The controls reference.",
+            "The controls data type."
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 22,
+        "topic": "Functional Global Variables",
+        "text": "Which of the following will not produce a broken wire?",
+        "image": [],
+        "options": [
+            "Multiple data sources wired directly to the same indicator.",
+            "Failing to wire the count [N] terminal on a for loop with no indexed input.",
+            "Wiring a path to a case selector.",
+            "Wiring together incompatible data types."
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 24,
+        "topic": "Documentation",
+        "text": "Which statement best describes the use of a notify event, such as the mouse enter?",
+        "image": [],
+        "options": [
+            "Indication that an event occurred and labview did not process the event.",
+            "Indication that an event occurred and processing is pending.",
+            "Indication that an event occurred and labview processed the event.",
+            "Indication that an event occurred and the event will be processed depending on the case."
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 25,
+        "topic": "VI Server",
+        "text": "Which of the following statements is true about this block diagram?",
+        "image": [
+            "images/CLAD1 (1)_p8_q25_7086.jpeg"
+        ],
+        "options": [
+            "Random Number 2 will always execute before random number 3.",
+            "The while loop will never finish executing because random number 1 can never be larger than 0.999.",
+            "The output of the sub tractor function will always be 0.",
+            "The ADD function is guaranteed to be the last function to execute on this diagram."
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 26,
+        "topic": "Timing",
+        "text": "The start index (0) input terminal of search 1D array is unwired. What value will be displayed in the index of element indicator after this code completes execution?",
+        "image": [
+            "images/CLAD1 (1)_p8_q26_4121.jpeg"
+        ],
+        "options": [
+            "-1.",
+            "0.",
+            "1.",
+            "2."
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 27,
+        "topic": "Synchronization and Communication",
+        "text": " Both  cases  of  the  case  structure  are  shown  below.  Which  of  the  following statements is true regarding the execution of this code?",
+        "image": [
+            "images/CLAD1 (1)_p9_q27_5694.jpeg"
+        ],
+        "options": [
+            "The status indicator will never display \u201cinitialize\u201d",
+            "The status indicator will never display \u201cRunning\u201d.",
+            "The status indicator will display \u201crunning\u201d once, then it will display \u201cinitialize\u201d.",
+            "The status indicator will display \u201cInitialize\u201d once, then it will display \u201cRunning\u201d"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 28,
+        "topic": "Sequence Structures",
+        "text": " The VI begains expression with the value of X=255 AND Y=0. What will be the value of X+Y after the VI complete the execution",
+        "image": [
+            "images/CLAD1 (1)_p9_q28_2281.jpeg"
+        ],
+        "options": [
+            "0",
+            "8",
+            "255",
+            "264"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 30,
+        "topic": "Event Structures",
+        "text": "The following VI is broken because of the unwired output tunnel on the case structure When the user right click the output tunnel why is the linked input tunnel menu item not enabled?",
+        "image": [
+            "images/CLAD1 (1)_p10_q30_7601.jpeg"
+        ],
+        "options": [
+            "Use default                                                                                                                            if unwired does the same thing as linked input tunnel in this situvation",
+            "Use default if unwired is not available for tunnel on for loops",
+            "Linked input tunnel requires atleast one input tunnel",
+            "Linked input tunnel  is only enabled on input tunnels"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 31,
+        "topic": "Local Variables",
+        "text": "What is the best method to prevent the coresion dot on the VI by using this method?",
+        "image": [
+            "images/CLAD1 (1)_p11_q31_9757.jpeg"
+        ],
+        "options": [
+            "Create the case structure data type making the          enum data type",
+            "Create the input terminal with a data type of enum",
+            "Create the enum as an type definition were the type def of the element",
+            "Create the while loop terminal with tunnel"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 32,
+        "topic": "Sequence Structures",
+        "text": "What value will be displayed in the numeric and numeric 2 indicatord after the VI complete the executions? a) c)",
+        "image": [
+            "images/CLAD1 (1)_p11_q32_7652.jpeg",
+            "images/CLAD1 (1)_p11_q32_3169.jpeg",
+            "images/CLAD1 (1)_p11_q32_5064.jpeg",
+            "images/CLAD1 (1)_p11_q32_6452.jpeg"
+        ],
+        "options": [
+            "d)",
+            "IMAGE: images/CLAD1 (1)_p11_q32_9481.jpeg"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 33,
+        "topic": "Charts and Graphs",
+        "text": "What value in the upper limit and lower limit controls produce the array displayed on the front pane?",
+        "image": [
+            "images/CLAD1 (1)_p12_q33_2911.jpeg",
+            "images/CLAD1 (1)_p12_q33_4369.jpeg"
+        ],
+        "options": [
+            "Upper limit=5,lower limit=1",
+            "Upper limit=5,lower limit=2",
+            "Upper limit=6,lower limit=1",
+            "Upper limit=6,lower limit=2"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 34,
+        "topic": "File I/O",
+        "text": "Which of the following statement is TRUE?",
+        "image": [
+            "images/CLAD1 (1)_p12_q34_5866.jpeg"
+        ],
+        "options": [
+            "The output of the multiply function is DBL",
+            "The output of the multiply function is U32",
+            "The VI containing this value should have an broken run arrow",
+            "LABVIEW will return an error while running this program"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 35,
+        "topic": "Local Variables",
+        "text": "What string would be in the RESULT indicator after the VI execute?",
+        "image": [
+            "images/CLAD1 (1)_p12_q35_1640.jpeg"
+        ],
+        "options": [
+            "12345",
+            "01234",
+            "012345",
+            "123456"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 36,
+        "topic": "Timing",
+        "text": "For  the  VI  shown  in  the  following  block  diagram,  automatic  error  handling  is enabled. If the file C:\\data.txt does not exist, will an error dialog box pop up?",
+        "image": [
+            "images/CLAD1 (1)_p13_q36_8082.jpeg"
+        ],
+        "options": [
+            "Yes, each time the error from the Open/Create/Replace File function is returned",
+            "Yes, each time a loop iteration completes",
+            "Yes, but only once, not on each iteration of the loop",
+            "No"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 37,
+        "topic": "Debugging",
+        "text": "Which change to the block diagram allows the VI to respond to every change event on the numeric control?",
+        "image": [
+            "images/CLAD1 (1)_p13_q37_4574.jpeg"
+        ],
+        "options": [
+            "Remove the one button dialoge on the event structure",
+            "Move the event structure on the while loop",
+            "Use the mouse up event instead of value change event",
+            "Use filter event"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 38,
+        "topic": "Loops",
+        "text": "The timeout input terminal of the dequeud element is unwired while running the program how long does the dequeud element wait for the element?",
+        "image": [
+            "images/CLAD1 (1)_p14_q38_2932.jpeg"
+        ],
+        "options": [
+            "1 millisecond b) 1 secound",
+            "Indefinity",
+            "It does not  wait it returned immediatly"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 39,
+        "topic": "LabVIEW Programming Principles",
+        "text": "Which of the following statement most correctly defines a labview functional global variable?",
+        "image": [],
+        "options": [
+            "A function in labview that looks like a variable and its not re-entract",
+            "A SubVI with a local variable that functions like a global variable",
+            "A SubVI with a uninitialized shift register and holds global data",
+            "A SubVI with a initialized shift register and holds global data"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 40,
+        "topic": "Functional Global Variables",
+        "text": "A VI\u2019s queue is confiqured in the following manner and the VI uses only Enqueue element function which statement describes the correct behavior when element are enqueued?",
+        "image": [
+            "images/CLAD1 (1)_p14_q40_4653.jpeg"
+        ],
+        "options": [
+            "Up to ten elements maximum will be in the queue",
+            "When full,the queue will not accept more element until an element is removed",
+            "New elements will continuously overwrite the one element in the queue",
+            "The queue will return ten elements for each dequeu"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 41,
+        "topic": "VI Server",
+        "text": "You have a front panel control on a top-level VI that you must control from within a subVI. What must you pass to the subVI?",
+        "image": [],
+        "options": [
+            "The control's properties",
+            "The control's methods",
+            "The control's reference",
+            "The control's data type"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 43,
+        "topic": "Documentation",
+        "text": "A VI has Automatic Error Handling enabled. It calls a SubVI that has Automatic Error Handling disabled. The Error Out terminal of the SubVI is unwired in the calling VI. The SubVI returns an error to the calling VI. Will an error dialog be posted because of Automatic Error Handling?",
+        "image": [],
+        "options": [
+            "No, since the SubVI has Automatic Error Handling disabled",
+            "Yes, since he SubVI has Automatic Error Handling disabled",
+            "No, since the Error Out terminal from the subVI is not wired in the calling VI.",
+            "Yes, since the Error Out terminal from the subVI is not wired in the calling VI."
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 45,
+        "topic": "Design Patterns",
+        "text": "Why is LabVIEW a data flow programming language?",
+        "image": [],
+        "options": [
+            "It uses icons instead of text to create applications",
+            "The flow of data through nodes on the block diagram determines execution",
+            "It does not have a Goto function to control execution",
+            "The memory location in which data is stored changes each iteration"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 46,
+        "topic": "File I/O",
+        "text": "What value does the  Result  indicator display after the code snippet executes?",
+        "image": [
+            "images/CLAD10_p1_q46_9528.png"
+        ],
+        "options": [
+            "The time elapsed in milliseconds during the execution of SubVI",
+            "Zero",
+            "Number of seconds elapsed since January 1, 1970",
+            "The time elapsed in milliseconds during the execution of the sequence structure"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 48,
+        "topic": "Sequence Structures",
+        "text": "What functionality do Control References provide?",
+        "image": [],
+        "options": [
+            "Ability to add controls and indicators to a VI programmatically",
+            "Access to the properties of Front Panel objects in SubVIs",
+            "Control of multiple DAQ inputs through alias names",
+            "Ability to wire from controls to functions and SubVIs"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 50,
+        "topic": "Data Types",
+        "text": "You customize a control, select Control from the Type Def. Status pull-down menu, and save the control as a .ctl file. You then use an instance of the custom control on your front panel window. If you open the .ctl file and modify the control, does the control on the front panel window change?",
+        "image": [],
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 51,
+        "topic": "LabVIEW Environment",
+        "text": "Which statement best describes a LabVIEW Project (.lvproj) file?",
+        "image": [],
+        "options": [
+            "A specialized folder that contains all files pertaining to an application",
+            "A file containing a front panel and block diagram where programming steps can be implemented",
+            "A compiled version of code mostly used for final deployment of an application",
+            "A file that contains references to, and provides organization for all files pertaining to an application"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 52,
+        "topic": "Sequence Structures",
+        "text": "What is the best method to stop a While loop on an error condition?",
+        "image": [],
+        "options": [
+            "Compare the Status boolean of an error cluster with a constant and wire it to the Stop terminal",
+            "Connect the error wire directly to the Stop terminal",
+            "Create an Event structure to handle the error event",
+            "Use the Error Handler VI to automatically handle the error"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 53,
+        "topic": "Charts and Graphs",
+        "text": "You are inputting data that represents a circle. The circle data includes an  x  position, a  y  position, and a radius. All three pieces of data are double-precision. In the future, you might need to store the color of the circle, represented as an integer. How should you represent the circle on your front panel window?",
+        "image": [],
+        "options": [
+            "Three separate controls for the two positions and the radius.",
+            "A cluster containing all of the data.",
+            "A type definition containing a cluster.",
+            "An array with three elements."
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 54,
+        "topic": "Data Types",
+        "text": "You must store data that other engineers must analyze with Microsoft Excel. Which file storage format should you use?",
+        "image": [],
+        "options": [
+            "Tab-delimited ASCII",
+            "Custom binary format",
+            "TDM",
+            "Datalog"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 56,
+        "topic": "Arrays and Clusters",
+        "text": "Which VI memory components are ALWAYS resident for a SubVI?",
+        "image": [],
+        "options": [
+            "Data Space",
+            "Front Panel",
+            "Block Diagram",
+            "Code"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 57,
+        "topic": "Error Handling",
+        "text": "It is possible to have two VIs of the same name in a project, as long as:",
+        "image": [],
+        "options": [
+            "They are contained in separate virtual folders",
+            "One of the two is a dependency",
+            "They cannot exist in the same project"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 58,
+        "topic": "Functional Global Variables",
+        "text": "How do you create a Polymorphic VI?",
+        "image": [],
+        "options": [
+            "Open a VI\u2019s Properties (File >> VI Properties), and select \u2018This is a polymorphic VI.\u2019 in the Execution category. In the tab that appears, select which VIs you would like to include.",
+            "Create two or more VIs with the same connector pattern, select File >> New >> polymorphic VI, select one or more of the VIs you created to include as an instance in the polymorphic VI",
+            "Drop a Polymorphic VI function from the Function Palette >> Application Control, right-click it and choose \u2018Configure\u2019, and select the VIs that you would like to include.",
+            "Highlight two SubVIs on a block diagram, in the toolbar select Edit >> Create Polymorphic VI."
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 59,
+        "topic": "Arrays and Clusters",
+        "text": "Which statement best describes a Notify event, such as the value change of a Boolean control?",
+        "image": [],
+        "options": [
+            "Indication that an event occurred and LabVIEW did NOT process the event",
+            "Indication that an event occurred and was discarded by the user",
+            "Indication that an event occurred and LabVIEW processed the event",
+            "Indication that an event did NOT occur but specified Event timeout did occur"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 60,
+        "topic": "LabVIEW Environment",
+        "text": "Which of the following apply to Property Nodes?  (More than one answer may apply.)",
+        "image": [],
+        "options": [
+            "Property Nodes allow attributes of front panel objects to be programmatically manipulated.",
+            "Property Nodes can't be used to update the values contained in a front panel object.",
+            "More than one Property Node can be used for a single front panel object.",
+            "Property Nodes contained in a SubVI will always cause the front panel to be loaded in memory."
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 61,
+        "topic": "Loops",
+        "text": "Value of numeric after the execution of this code?",
+        "image": [
+            "images/CLAD11_p0_q61_1010.jpeg"
+        ],
+        "options": [
+            "1",
+            "2",
+            "Error",
+            "0"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 62,
+        "topic": "Local Variables",
+        "text": "Numeric and numeric 2 value after the execution? a.0,3",
+        "image": [
+            "images/CLAD11_p0_q62_7306.jpeg"
+        ],
+        "options": [
+            "1,3",
+            "3,3",
+            "0,1"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 65,
+        "topic": "Functional Global Variables",
+        "text": "What is the name of this function?",
+        "image": [
+            "images/CLAD11_p1_q65_3982.jpeg"
+        ],
+        "options": [
+            "To variant",
+            "number to variant",
+            "round off",
+            "none of these"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 66,
+        "topic": "Documentation",
+        "text": "If value of 1, 2, 3 is FALSE, TRUE, TRUE respectively then the output value of a & b?",
+        "image": [
+            "images/CLAD11_p1_q66_5181.jpeg"
+        ],
+        "options": [
+            "FALSE, FALSE",
+            "FALSE, TRUE",
+            "TRUE, TRUE",
+            "TRUE, FALSE"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 67,
+        "topic": "Design Patterns",
+        "text": "Length of the concatenated string is?",
+        "image": [
+            "images/CLAD11_p2_q67_7334.jpeg"
+        ],
+        "options": [
+            "12 b.13",
+            "19",
+            "20"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 68,
+        "topic": "Error Handling",
+        "text": "If value x is 5 then the value of coerced and in range is?",
+        "image": [
+            "images/CLAD11_p2_q68_9727.jpeg"
+        ],
+        "options": [
+            "5, TRUE",
+            "0, TRUE",
+            "1,FALE",
+            "0,FALSE"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 69,
+        "topic": "Documentation",
+        "text": "Which one is correct about this code?",
+        "image": [
+            "images/CLAD11_p2_q69_3396.jpeg"
+        ],
+        "options": [
+            "Error",
+            "no error",
+            "8 bytes",
+            "it will ask the path during the execution"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 71,
+        "topic": "Charts and Graphs",
+        "text": "The default mode of waveform chart is?",
+        "image": [],
+        "options": [
+            "Strip chart",
+            "Scope chart",
+            "Sweep chart",
+            "XY chart"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 72,
+        "topic": "Property Nodes",
+        "text": "Can a wire be used to pass data between loops that are intended to run in parallel?",
+        "image": [],
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 73,
+        "topic": "File I/O",
+        "text": "Which of the following describes a Tab Control?",
+        "image": [],
+        "options": [
+            "A control that outputs ASCII values equal to the selected tab label",
+            "A type of enumerated control",
+            "A control that outputs a cluster of the controls / indicators on the tabs",
+            "A controls that outputs the tab order of the controls on the front panel"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 74,
+        "topic": "Sequence Structures",
+        "text": "What is an advantage of using a Strictly Typed VI refnum?",
+        "image": [],
+        "options": [
+            "The data types of the target VI are known at compile time",
+            "The data types passed to the VI can change programmatically",
+            "You can flatten the data to a string to improve code performance",
+            "Causes dynamically loaded VIs to be loaded at the start of execution"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 75,
+        "topic": "Loops",
+        "text": "A coercion dot indicates that:",
+        "image": [],
+        "options": [
+            "The data types are consistent",
+            "A polymorphic operation will be performed on the data",
+            "A data buffer is created to handle data conversion",
+            "Data values are being coerced because they are out of range"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 76,
+        "topic": "Debugging",
+        "text": "Which of the following does not conform to data flow programming paradigm?",
+        "image": [],
+        "options": [
+            "Shift Registers",
+            "Tunnels",
+            "SubVIs",
+            "Local Variables"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 77,
+        "topic": "Data Types",
+        "text": "Which of the following cannot be used to transfer data?",
+        "image": [],
+        "options": [
+            "Semaphores",
+            "Queues",
+            "Notifiers",
+            "Local variables"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 78,
+        "topic": "VI Server",
+        "text": "Which of the following statements is false?",
+        "image": [],
+        "options": [
+            "A SubVI connector pane defines where to wire inputs and outputs",
+            "The color of a SubVI connector pane terminal matches the data type",
+            "You must have an icon/connector to use a SubVI",
+            "A SubVI icon can be edited from the functions palette"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 79,
+        "topic": "VI Server",
+        "text": "What is one disadvantage of using the State Machine VI architecture?",
+        "image": [],
+        "options": [
+            "A State Machine can only traverse states in order",
+            "If two state changes occur at the same time, only the first state change will be handled and the second will be lost",
+            "The diagram becomes significantly larger when changing from a general architecture to a State Machine",
+            "State Machines cannot acquire data or use DAQ functions"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 80,
+        "topic": "File I/O",
+        "text": "Which of the following is the best method to update an indicator on the front panel?",
+        "image": [],
+        "options": [
+            "Use a Value property node",
+            "Wire directly to the indicator terminal",
+            "Use a local variable",
+            "Use a functional global variable"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 81,
+        "topic": "Local Variables",
+        "text": "In what instance would you use the Probe tool rather than Highlight Execution?",
+        "image": [],
+        "options": [
+            "To see the flow of data",
+            "To see the value of a wire in real-time",
+            "To look into a SubVI, as the process is running",
+            "To slowdown the VI and show data values in wires"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 82,
+        "topic": "Mechanical Actions of Booleans",
+        "text": "All of the following statements are true, EXCEPT:",
+        "image": [],
+        "options": [
+            "You can make a Cluster of Clusters.",
+            "You can make an Array of Arrays.",
+            "You can make a Cluster of Arrays.",
+            "You can make an Array of Clusters."
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 83,
+        "topic": "Timing",
+        "text": "You may associate the Connector Pane of a VI with objects from the:",
+        "image": [],
+        "options": [
+            "Front Panel.",
+            "Block Diagram.",
+            "Both",
+            "and B.",
+            "None of the above."
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 84,
+        "topic": "Sequence Structures",
+        "text": "Which of the following statements is true?",
+        "image": [],
+        "options": [
+            "The default setting for a tunnel into or out of a For Loop has auto-indexing enabled if the data being passed is an array.",
+            "The default setting for a tunnel into or out of a While Loop has auto-indexing disabled if the data being passed is an array.",
+            "Both",
+            "and B."
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 85,
+        "topic": "Synchronization and Communication",
+        "text": "All of the following statements regarding SubVIs are true, EXCEPT:",
+        "image": [],
+        "options": [
+            "They require less memory.",
+            "They allow for easier debugging.",
+            "They allow you to use the same code for many future applications.",
+            "All of the above statements are true."
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 86,
+        "topic": "Design Patterns",
+        "text": "All of the following statements regarding the index of Arrays are true, EXCEPT:",
+        "image": [],
+        "options": [
+            "The index is used to access a particular element of an Array.",
+            "The index ranges from 1 to n, where n is the number of elements in the Array.",
+            "A 2-D Array has both a column index and a row index.",
+            "All of the above statements are true."
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 87,
+        "topic": "Functional Global Variables",
+        "text": "When placing a new function, control, indicator, or constant, the feature wires the terminals together if placed within close enough proximity.",
+        "image": [],
+        "options": [
+            "Block Diagram Cleanup",
+            "Automatic Error Handling",
+            "Automatic Wiring",
+            "Retain Wire Values"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 88,
+        "topic": "LabVIEW Programming Principles",
+        "text": "The __________ chooses the best tool based on where the mouse pointer is placed in the LabVIEW environment.",
+        "image": [],
+        "options": [
+            "Wiring Tool",
+            "General Tool",
+            "Automatic Tool Selector",
+            "Operate Tool"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 89,
+        "topic": "Data Types",
+        "text": "The ________________ is typically used during run time to change the value of a control.",
+        "image": [],
+        "options": [
+            "Operate Tool",
+            "Automatic Tool Selector",
+            "Select Tool",
+            "Shortcut Menu Tool"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 90,
+        "topic": "Charts and Graphs",
+        "text": "A ________  indicates that the VI is broken or not executable.",
+        "image": [],
+        "options": [
+            "Broken Run Arrow",
+            "Run Arrow",
+            "Wiring Diagram",
+            "VI Icon"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 91,
+        "topic": "Functional Global Variables",
+        "text": "Which function will execute first?",
+        "image": [
+            "images/CLAD11_p5_q91_7351.png"
+        ],
+        "options": [
+            "Add",
+            "Division",
+            "Unknown",
+            "None of the above"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 92,
+        "topic": "Synchronization and Communication",
+        "text": "See the picture below and indentify the data type?",
+        "image": [
+            "images/CLAD11_p5_q92_4231.png"
+        ],
+        "options": [
+            "Cluster",
+            "Array",
+            "Has no data type associated with",
+            "Numeric"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 93,
+        "topic": "Charts and Graphs",
+        "text": "In this VI will the data of the main VI object references get into the while loop and execute it?",
+        "image": [
+            "images/CLAD11_p5_q93_5598.png"
+        ],
+        "options": [
+            "Yes, the control references will pass through and execute the VI.",
+            "No, the control references will not pass through and execute the VI.",
+            "The loop will not execute since 2 values are flowing into it.",
+            "The loop will iterate once since, it is a while loop even though it will not execute."
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 94,
+        "topic": "Case Structures",
+        "text": "If a control is customized as a strict type definition control, would it give the auto update from type definition option, when right click on it?",
+        "image": [],
+        "options": [
+            "No",
+            "Yes",
+            "Instead of auto \u2013 update option, update from type def option will be there.",
+            "None of the above."
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 95,
+        "topic": "Debugging",
+        "text": "When you place a control in a VI, LabVIEW eliminates the connection between the file that created the custom control and the control in the VI. Unlike custom ______________, only ______________ contain instances that link to its definition.",
+        "image": [],
+        "options": [
+            "Controls , strict type definitions",
+            "Type definitions , strict type definitions",
+            "Controls , Type definitions",
+            "Controls , Indicators"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 96,
+        "topic": "Error Handling",
+        "text": "If you change the type definition data type of a custom control from numeric to string. How LabVIEW converts the old default value to the new data type? (one or more answers may apply)",
+        "image": [],
+        "options": [
+            "LabVIEW cannot preserve the instance default value if the data type changes to an incompatible type.",
+            "LabVIEW sets the instance default to a value such as zero or an empty string.",
+            "LabVIEW will replace all the numeric values in the form of ASCII codes and display the respective ASCII string.",
+            "LabVIEW will repeat the same numeric values in the string controls/indicators"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 97,
+        "topic": "Debugging",
+        "text": "The not \u2013 ok button in the customizing control window is used to represent _________",
+        "image": [
+            "images/CLAD11_p6_q97_3629.png"
+        ],
+        "options": [
+            "Valid custom controls",
+            "Invalid custom controls",
+            "Error in custom controls",
+            "Both b and c"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 98,
+        "topic": "Local Variables",
+        "text": "Some of the more common application of string includes the following.",
+        "image": [],
+        "options": [
+            "Creating simple text message.",
+            "Controlling instrument by sending text commands to the instruments and returning data values in the form of either ASCII or binary strings which you then convert to numeric values.",
+            "None of the above.",
+            "A and B"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 99,
+        "topic": "Functional Global Variables",
+        "text": "What is the output of subset deleted array?",
+        "image": [
+            "images/CLAD11_p7_q99_5319.png"
+        ],
+        "options": [
+            "1D array (0,5,3)",
+            "1D array (0,1,5)",
+            "None of the above.",
+            "1D array(1,5,7)"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 100,
+        "topic": "Data Types",
+        "text": "Data types indicate what objects, inputs, and outputs, you can wire together.",
+        "image": [],
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 101,
+        "topic": "Debugging",
+        "text": "LabVIEW store Boolean data as         bit value.",
+        "image": [],
+        "options": [
+            "8",
+            "16",
+            "4",
+            "32"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 102,
+        "topic": "Design Patterns",
+        "text": "What value will be displayed in the string indicator after the VI complete execution? A) alpha B) Bravo",
+        "image": [
+            "images/CLAD2_p0_q102_7016.jpeg"
+        ],
+        "options": [
+            "Charlie",
+            "The value can\u2019t be determined from the given information"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 103,
+        "topic": "Case Structures",
+        "text": "When attempting to create a new file, a user receives an error 8, \u201cFile permission error.\u201d What could cause this?",
+        "image": [],
+        "options": [
+            "The user does not have permission to write in  the specific directory",
+            "The user does not have permission  to read the directory listing",
+            "The path is on a remote drive and the  network connection failed",
+            "The file is missing"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 104,
+        "topic": "Charts and Graphs",
+        "text": "Which of the following is a property or method of the VI class?",
+        "image": [],
+        "options": [
+            "Label text",
+            "Key focus",
+            "Default Values Reinitialize All To Default",
+            "Terminal Bounds Area Width"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 107,
+        "topic": "Error Handling",
+        "text": "The  Stop Button  is paused when the  Iteration Count  indicator reads 1, and released exactly 2 seconds later. The button\u2019s mechanical action is configured with latch when pressed. What is the highest possible value displayed on the  Iteration Count  indicator when the VI completes execution?",
+        "image": [
+            "images/CLAD2_p1_q107_9130.jpeg"
+        ],
+        "options": [
+            "1",
+            "2",
+            "3",
+            "infinite"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 108,
+        "topic": "Loops",
+        "text": "An application has multiple break points. Which of the following actions is not possible when the application pauses at one of the breakpoint?",
+        "image": [],
+        "options": [
+            "Using the pause button to move to the next break point in the black diagram",
+            "Using the step buttons to move to a next node determined by LabVIEW",
+            "Changing the values of front panel controls",
+            "Changing the values on the wire at the breakpoint"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 109,
+        "topic": "Property Nodes",
+        "text": "Which of the following statements about probing wire values for debugging is false?",
+        "image": [],
+        "options": [
+            "Retain wire values allows you to see the last value in the wire after execution",
+            "Setting probes on a wire allows you to see values on the wire after execution",
+            "Retain wire values allows you to see all the values from each loop iteration after execution",
+            "Setting probes on a wire allows you to see the last value of an iteration of a loop after execution"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 110,
+        "topic": "VI Server",
+        "text": "The following VI has run more than once. What value will be displayed in the Number Out indicator after this VI is executed the next time?",
+        "image": [
+            "images/CLAD2_p2_q110_8971.jpeg"
+        ],
+        "options": [
+            "1",
+            "3",
+            "0",
+            "Indeterminate"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 113,
+        "topic": "Arrays and Clusters",
+        "text": "If the user click the increment button on the  input  control as fast as possible when the vi runs. How often will the  time  indicator update?",
+        "image": [
+            "images/CLAD2_p3_q113_1380.jpeg",
+            "images/CLAD2_p4_q113_6308.jpeg",
+            "images/CLAD2_p4_q113_4088.jpeg"
+        ],
+        "options": [
+            "Continuously",
+            "Every 1 second",
+            "No continuously",
+            "Every 1 Millisecond"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 115,
+        "topic": "Property Nodes",
+        "text": "The output tunnel on the error   wire passing through this Case Structure causes a broken arrow. Which of the shortcut menu items would preserve error data in all cases?",
+        "image": [
+            "images/CLAD2_p5_q115_9019.jpeg",
+            "images/CLAD2_p5_q115_3679.jpeg"
+        ],
+        "options": [
+            "Use Default if unwired",
+            "Linked input Tunnel>> Create& Wire Unwired cases",
+            "Cluster, class & variant Palette>> Build Cluster array",
+            "Create>>Indicator"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 116,
+        "topic": "Data Types",
+        "text": "The  loop  iteration  is  wired  to  both  the  index  and  the  new  element/sub array input terminals of the Insert Into Array function . What values will be displayed in the Max value  and  Min value  indicators after the VI completes execution?",
+        "image": [
+            "images/CLAD2_p6_q116_6354.jpeg"
+        ],
+        "options": [
+            "Max Value = 4, Min Value = 0",
+            "Max Value = 4, Min Value = 1",
+            "Max Value = 5, Min Value = 0",
+            "Max Value = 5, Min Value = 1"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 117,
+        "topic": "Synchronization and Communication",
+        "text": "Which of the following can be used to easily display a circle with a simple data set?",
+        "image": [],
+        "options": [
+            "XY Graph",
+            "Waveform Graph",
+            "Waveform Chart",
+            "Dynamic Chart"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 118,
+        "topic": "LabVIEW Programming Principles",
+        "text": "What value will be displayed in the out indicator when the VI completes execution?",
+        "image": [
+            "images/CLAD2_p6_q118_4429.jpeg",
+            "images/CLAD2_p6_q118_7914.jpeg",
+            "images/CLAD2_p6_q118_3305.jpeg",
+            "images/CLAD2_p6_q118_9313.jpeg"
+        ],
+        "options": [
+            "Case 0",
+            "Case 1",
+            "Case 2",
+            "Case 3"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 119,
+        "topic": "Case Structures",
+        "text": "What values in the Upper Limit and  Lower Limit controls  will produce the arrays displayed on the front panel?",
+        "image": [
+            "images/CLAD2_p7_q119_5781.jpeg",
+            "images/CLAD2_p7_q119_4783.jpeg"
+        ],
+        "options": [
+            "Upper Limit = 5, Lower Limit = 1",
+            "Upper Limit = 5, Lower Limit = 2",
+            "Upper Limit = 6, Lower Limit = 1",
+            "Upper Limit = 6, Lower Limit = 2"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 120,
+        "topic": "Debugging",
+        "text": "How many values are in the output array indicator after the VI completes execution?",
+        "image": [
+            "images/CLAD2_p7_q120_3697.jpeg"
+        ],
+        "options": [
+            "0",
+            "1",
+            "2",
+            "5"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 121,
+        "topic": "Timing",
+        "text": "Automatic error handling is enabled for this VI. Does  LabVIEW display an error to the user when the VI completes execution?",
+        "image": [
+            "images/CLAD2_p7_q121_8214.jpeg"
+        ],
+        "options": [
+            "Yes, the error is handled by the simple error Handler.",
+            "No, no error is displayed because none of these nodes can generate an error.",
+            "No, no error is displayed because closing the file reference clears the error.",
+            "Yes, twice, once for the simple error handler VI and once when automatic error handling displays the error from the unwired error out of simple error handler VI."
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 122,
+        "topic": "Sequence Structures",
+        "text": "What is the best practice to correct the coercion dots on a VI like this one?",
+        "image": [
+            "images/CLAD2_p8_q122_3678.jpeg"
+        ],
+        "options": [
+            "Create a case selector with a data type matching the enum data type.",
+            "Create the selector terminal   with a data type of numeric.",
+            "Create the enum as a Type definition and only use the Type def on the diagram.",
+            "Create the While Loop terminal with indexing enabled"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 123,
+        "topic": "Synchronization and Communication",
+        "text": "Which of the following is a property or method of the VI class?",
+        "image": [],
+        "options": [
+            "Label Text",
+            "Key focus",
+            "Default values Reinitialize All TO Default",
+            "Terminal Bounds Area Width"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 124,
+        "topic": "Timing",
+        "text": "Which statement is correct about the dimensionally of the array out 1 and array out2 indicators?",
+        "image": [
+            "images/CLAD2_p8_q124_9350.jpeg",
+            "images/CLAD2_p8_q124_9723.jpeg"
+        ],
+        "options": [
+            "Array Out 1 is a 2D array and Array Out 2 is a 2D array",
+            "Array Out 1 is a 3D array and Array Out 2 is a 3D array",
+            "Array Out 1 is a 2D array and Array Out 2 is a 3D array",
+            "Array Out 1 is a 3D array and Array Out 2 is a 2D array"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 125,
+        "topic": "Error Handling",
+        "text": "There is a breakpoint before the square function as shown below. When LabVIEW pause execution at that breakpoint, what will happen if you press the step into button?",
+        "image": [
+            "images/CLAD2_p9_q125_5313.jpeg"
+        ],
+        "options": [
+            "LabVIEW will highlight the square function but will not execute.",
+            "LabVIEW will open up the block diagram of the square function to allow you to single step through the code inside the square function.",
+            "LabVIEW will execute the square function and then highlight the next node to be executed as you continue single stepping through the VI.",
+            "LabVIEW will complete the execution of the VI and return to the calling VI (if one exits)."
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 126,
+        "topic": "Design Patterns",
+        "text": "Which is not a benefit of using LabVIEW Project Explorer?",
+        "image": [],
+        "options": [
+            "Easily find and organize files from within the development environment.",
+            "Make copies of Vis and save them on disk.",
+            "Prevent, detect, and resolve incorrect links.",
+            "Preserve Links when moving or renaming files."
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 127,
+        "topic": "Debugging",
+        "text": "Which of the following techniques can be used for testing a VI\u2019s response to unexpected data values?",
+        "image": [],
+        "options": [
+            "Using NaN as the value for a string control.",
+            "Using -Inf as the value of a DBL numeric control.",
+            "Using \u201cNaN\u201d for the value of a DBL numeric control.",
+            "Using- Inf for the value of a I32 numeric control."
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 128,
+        "topic": "Case Structures",
+        "text": "Which mechanical actions will work with a Boolean control that has an associate local variable?",
+        "image": [],
+        "options": [
+            "Switch When Pressed, Latch When Pressed and Latch When Released",
+            "Latch When Pressed, Latch When Released and Latch Until Released",
+            "Switch when Released ,  , Latch When Released and , Latch When Pressed",
+            "Switch When Pressed, Switch when Released and Switch Until Released"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 130,
+        "topic": "Case Structures",
+        "text": "Which of the following can you use to enable a disabled control on a VI while it is executing?",
+        "image": [],
+        "options": [
+            "Right-click the control to get the menu for Properties and then Enabled State. B) Right-click the control to get to the menu for advanced and then Enabled State.",
+            "Use a property to change the Disabled property value.",
+            "Use an Invoke Node and use the reinitialize to default method."
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 131,
+        "topic": "Synchronization and Communication",
+        "text": "In the following block diagram, how many Iterations does the while loop execute?",
+        "image": [
+            "images/CLAD2_p10_q131_6587.jpeg"
+        ],
+        "options": [
+            "0",
+            "1",
+            "2",
+            "infinite"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 132,
+        "topic": "Mechanical Actions of Booleans",
+        "text": "Which of the following can be used to easily display the circle with a single data set?",
+        "image": [],
+        "options": [
+            "XY GRAPH",
+            "Waveform graph",
+            "Waveform chart",
+            "Dynamic chart"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 133,
+        "topic": "File I/O",
+        "text": "Which statement while creating the SubVI creation is FALSE?",
+        "image": [],
+        "options": [
+            "A SubVI connector pane defines where to wire inputs and outputs",
+            "The color of a subVI connector pane terminal matches the data type to which it connect",
+            "A SubVI must have an icon and connector pane",
+            "You can open a subVI from the front panel of the Mani VI."
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 134,
+        "topic": "VI Server",
+        "text": "Which of the following is true after the VI completes the execution?",
+        "image": [
+            "images/CLAD2_p11_q134_9472.jpeg"
+        ],
+        "options": [
+            "Data.bin can be opened by a custom made application that reads binary format",
+            "Data.bin will not allow data to bewritten because of a data type mismatch",
+            "Data.txt  Data.bin will write identical files",
+            "A latch condition will prohibit the two files from writing data at the same type"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 135,
+        "topic": "Property Nodes",
+        "text": "How does the labview handle the error when the code executes?",
+        "image": [
+            "images/CLAD2_p11_q135_5531.jpeg"
+        ],
+        "options": [
+            "The  VI  executes  without  error  because  the  missing  file  is  created  by open/create/replace file",
+            "Labview    displays    the    error    handling    dialog    box    10    times    listing open/create/replace file as the source of the error",
+            "Labview displays the error handling dialog box 10 times listing close file as the source of the error",
+            "Labview displays the error handling dialog box 9 times listing close file as the source of the error"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 136,
+        "topic": "Sequence Structures",
+        "text": "What value will be displayed in the numeric indicator after the VI completes the execution?",
+        "image": [
+            "images/CLAD2_p12_q136_4722.jpeg"
+        ],
+        "options": [
+            "0",
+            "4",
+            "5",
+            "8"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 137,
+        "topic": "Loops",
+        "text": "The operation and access input terminal are unwired and the open/create/replace file function which condition would not be produce error 7 file not found when the VI executes?",
+        "image": [
+            "images/CLAD2_p12_q137_9117.jpeg",
+            "images/CLAD2_p12_q137_1629.jpeg"
+        ],
+        "options": [
+            "The file myfile .txt does not exist",
+            "The location of myfile.txt is incorrect",
+            "The operation terminal is not set to create",
+            "The access is not set to write"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 138,
+        "topic": "Arrays and Clusters",
+        "text": "Which  structure  is  most  appropriate  forcode  that  reads  and  evaluate  continuous measurement and then stops and outputs asingle when the measured value reach a threshold?",
+        "image": [],
+        "options": [
+            "Case structure",
+            "For loop",
+            "While loop",
+            "Sequence structure"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 139,
+        "topic": "Debugging",
+        "text": "What is the behavior when the code execute?",
+        "image": [
+            "images/CLAD2_p13_q139_5235.jpeg"
+        ],
+        "options": [
+            "Loop 1 and loop 2 run simultaneously",
+            "Loop 1 runs after loop 2 stops",
+            "Loop 2 runs after loop 1 stops",
+            "Loop 1 and loop 2 are deadlocked"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 140,
+        "topic": "Loops",
+        "text": "There is a breakpoint before the square function as shown. When labview paused execution at the breakpoint what will happen if you press the (step into) button?",
+        "image": [
+            "images/CLAD2_p13_q140_1189.jpeg",
+            "images/CLAD2_p13_q140_4069.jpeg"
+        ],
+        "options": [
+            "Labview will highlight the square function but will not execute it",
+            "Labview will open up the block diagram of the square function to allow you to single step through the code inside the square function",
+            "Labview will open up the square function and then highlight the next node to be executed as you continue single-stepping through the VI",
+            "Labview will complete the execution of the VI and return  to the calling VI(if one exit)"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 142,
+        "topic": "Event Structures",
+        "text": "Which of the following statements about probing wire value for debugging is false?",
+        "image": [],
+        "options": [
+            "Retain wire values allows you to see the last value on the wire after execution",
+            "Setting probes on a wire allows you to see value on the wire after execution",
+            "Retain  wire value  allows  you  to  see the value from  each  loop  iteration  after execution",
+            "Setting probes on a wire allows you to see the last value of an iteration of a loop after execution"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 144,
+        "topic": "Local Variables",
+        "text": "The value in the count in minutes control is 4. When the VI is in execution what does the timer indicator display?",
+        "image": [
+            "images/CLAD2_p16_q144_1487.jpeg"
+        ],
+        "options": [
+            "Time counting up with the string format similar to 12:04:05.20",
+            "Time counting down with the string format similar to 12:03:55.45",
+            "Time counting up with the string format similar to 4:05.2",
+            "Time counting down with the string format similar to 4:05.2"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 147,
+        "topic": "LabVIEW Programming Principles",
+        "text": "Which of the following statement is TRUE about numeric array?",
+        "image": [
+            "images/CLAD7_p0_q147_4706.jpeg"
+        ],
+        "options": [
+            "It is an indicator",
+            "It contains exactly 4 elements",
+            "It contains exactly 3 elements",
+            "It is two dimension"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 150,
+        "topic": "Arrays and Clusters",
+        "text": "What value will be displayed in the numeric indicator after the vi completes the expression?",
+        "image": [
+            "images/CLAD7_p1_q150_9572.jpeg"
+        ],
+        "options": [
+            "0",
+            "-1",
+            "2",
+            "The code will run indefinitely"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 152,
+        "topic": "Design Patterns",
+        "text": "What value will be displayed in the numeric indicator when the vi complete execution?",
+        "image": [
+            "images/CLAD7_p2_q152_3292.jpeg"
+        ],
+        "options": [
+            "0",
+            "1",
+            "2",
+            "4"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 154,
+        "topic": "LabVIEW Programming Principles",
+        "text": "A VI calls a SubVI with error in error out terminals on the connector pane automatic error handling is enabled how do you prevent LABVIEW from displayed an error dialog box if the SubVI returns an error?",
+        "image": [],
+        "options": [
+            "Uncheck enable automatic error handling in new vi on the block diagram page of the tools>>options dialog box",
+            "Uncheck the allow debugging option on the execution page of the VI properties dialog box for the calling VI",
+            "Connect the error out terminal of the SubVI to a tunnel terminal or indicator in the calling VI",
+            "Uncheck  enable  automatic  error  handling  on  the  execution  page  of  the  VI properties dialog box of the SubVI"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 155,
+        "topic": "Sequence Structures",
+        "text": "When the user clicks the button control how many times is the increment function called?",
+        "image": [
+            "images/CLAD7_p4_q155_1606.jpeg"
+        ],
+        "options": [
+            "0",
+            "1",
+            "2",
+            "3"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 156,
+        "topic": "Event Structures",
+        "text": "For  the  VI  shown  in  the  following  block  diagram,  automatic  error  handling  is enabled. If the file C:\\data.txt does not exist, will an error dialog box pop up?",
+        "image": [
+            "images/CLAD7_p4_q156_5847.jpeg"
+        ],
+        "options": [
+            "Yes, each time the error from the Open/Create/Replace File function is returned",
+            "Yes, each time a loop iteration completes",
+            "Yes, but only once, not on each iteration of the loop",
+            "No"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 157,
+        "topic": "Functional Global Variables",
+        "text": "Concatenate inputs are selected in the build array function. Which dimension will be the value out has?",
+        "image": [
+            "images/CLAD7_p5_q157_4235.jpeg"
+        ],
+        "options": [
+            "2D",
+            "3D",
+            "4D",
+            "1D"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 159,
+        "topic": "File I/O",
+        "text": "Which of the following statements about probing wire value for debugging is false?",
+        "image": [],
+        "options": [
+            "Retain wire values allows you to see the last value on the wire after execution",
+            "Setting probes on a wire allows you to see value on the wire after execution",
+            "Retain wire value allows you to see the value from each loop iteration after execution",
+            "Setting probes on a wire allows you to see the last value of an iteration of a loop after execution"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 160,
+        "topic": "Synchronization and Communication",
+        "text": "The array is in U8 if the LABVIEW executes the program what is the size of the binary file?",
+        "image": [
+            "images/CLAD7_p6_q160_5022.jpeg"
+        ],
+        "options": [
+            "10 bytes",
+            "11 bytes",
+            "19 bytes",
+            "17 bytes"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 161,
+        "topic": "File I/O",
+        "text": "What value will be displayed in both the indicator after the VI executes",
+        "image": [
+            "images/CLAD7_p6_q161_7329.jpeg"
+        ],
+        "options": [
+            "Array[1,2],deleted portion=3",
+            "Array[2,3],deleted portion=1",
+            "Array[1,2,3],deleted portion=0",
+            "The vi does not delete any portion"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 162,
+        "topic": "Design Patterns",
+        "text": "Unlike which  display  an  entire  waveform  that  overwrites  the  data  stored, update periodically",
+        "image": [],
+        "options": [
+            "Graphs, charts",
+            "Charts, plots",
+            "Plots, graphs",
+            "Charts, graphs"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 163,
+        "topic": "VI Server",
+        "text": "Which data synchronization mechanism ensures that no data is lost when an application temporarily produce data faster that it is able to consume it?",
+        "image": [],
+        "options": [
+            "Notifier",
+            "Queue",
+            "Functional global variable",
+            "Local variable"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 164,
+        "topic": "Documentation",
+        "text": "Which statement best describes the use of a notify event such as the mouse enter?",
+        "image": [],
+        "options": [
+            "Indication that an event occurred and LABVIEW did not process the event",
+            "Indication that an event occurred and processing is pending",
+            "Indication that an event occurred and LABVIEW  process the event",
+            "Indication that an event occurred and the event would be process depending on the case"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 165,
+        "topic": "Data Types",
+        "text": "The value in the count in minutes control is 4. When the VI is in execution what does the timer indicator display?",
+        "image": [
+            "images/CLAD7_p7_q165_7154.jpeg"
+        ],
+        "options": [
+            "Time counting up with the string format similar to 12:04:05.20",
+            "Time counting down with the string format similar to 12:03:55.45",
+            "Time counting up with the string format similar to 4:05.2",
+            "Time counting down with the string format similar to 4:05.2"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 166,
+        "topic": "LabVIEW Programming Principles",
+        "text": "What value will be displayed in the element indicator after the vi completes execution?",
+        "image": [
+            "images/CLAD7_p8_q166_4084.jpeg"
+        ],
+        "options": [
+            "0",
+            "1",
+            "8",
+            "NAN"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 167,
+        "topic": "Sequence Structures",
+        "text": "What are the three main elements of the waveform data type?",
+        "image": [],
+        "options": [
+            "dt, X,Y",
+            "to, dt, Y",
+            "to, X, Y",
+            "to, dt, dy"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 168,
+        "topic": "Charts and Graphs",
+        "text": "Which event does not occur when a user moves to and clicks on a Boolean stop button?",
+        "image": [],
+        "options": [
+            "Key down",
+            "Mouse enter",
+            "Mouse down",
+            "Mouse down?"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 169,
+        "topic": "Functional Global Variables",
+        "text": "Which of the following scenarios would cause this vi to be broken?",
+        "image": [
+            "images/CLAD7_p9_q169_2542.jpeg"
+        ],
+        "options": [
+            "String has a default value other than \u201ctest1\u201d or \u201dtest 2\u201d",
+            "A string data type cannot be wired to a case selector",
+            "The selector tunnel is not wired within the case structure",
+            "The case structure does not have a default case"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 170,
+        "topic": "LabVIEW Programming Principles",
+        "text": "Which change to the block diagram allows the VI to respond to every change event on the numeric control?",
+        "image": [
+            "images/CLAD7_p9_q170_7339.jpeg"
+        ],
+        "options": [
+            "Remove the one button dialogue on the event structure",
+            "Move the event structure on the while loop",
+            "Use the mouse up event instead of value change event",
+            "Use filter event"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 171,
+        "topic": "VI Server",
+        "text": "You  generate 100  points  of that  are unevenly spaced  over a period  of time which indicator best displayed the data while maintaining the uneven spacing of its acquisition",
+        "image": [],
+        "options": [
+            "Digital waveform graph",
+            "Waveform graph",
+            "XY graph",
+            "Intensity graph"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 172,
+        "topic": "Local Variables",
+        "text": "Which express VI executes last?",
+        "image": [
+            "images/CLAD7_p10_q172_9885.jpeg"
+        ],
+        "options": [
+            "Indeterminate",
+            "Write to measurement",
+            "Create histogram",
+            "Curve fitting"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 173,
+        "topic": "Charts and Graphs",
+        "text": "By default with automatic error handling enabled labview automatically handles any known error that occurs when a VI running by doing all of the following",
+        "image": [],
+        "options": [
+            "Suspending execution",
+            "Displaying the error list window",
+            "Highlighting the SubVI node or function when the error occurred",
+            "Displaying an error dialog box"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 174,
+        "topic": "Arrays and Clusters",
+        "text": "There is a breakpoint before the square function as shown before. When labview paused (step into) button? execution at the breakpoint what will happen if you press the",
+        "image": [
+            "images/CLAD7_p10_q174_2886.jpeg"
+        ],
+        "options": [
+            "Labview will highlight the square function but will not execute it",
+            "Labview will open up the block diagram of the square function to allow you to single step through the code inside the square function",
+            "Labview will open up the square function and then highlight the next node to be executed as you continue single-stepping through the VI",
+            "Labview will complete the execution of the VI and return  to the calling VI(if one exit)"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 175,
+        "topic": "Design Patterns",
+        "text": "What do you use to change the colour of a control on the front panel of a vi?",
+        "image": [],
+        "options": [
+            "Property node",
+            "Invoke node",
+            "Local variable",
+            "Shared variable"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 177,
+        "topic": "File I/O",
+        "text": "Which of the following statement is true about the numeric array?",
+        "image": [
+            "images/CLAD7_p12_q177_2666.jpeg"
+        ],
+        "options": [
+            "It is an indicator",
+            "It contain each 4 element",
+            "It contain each 3 element",
+            "It is a two dimensional"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 179,
+        "topic": "Documentation",
+        "text": "Which statement best describes the below code?",
+        "image": [
+            "images/CLAD7_p12_q179_4911.jpeg"
+        ],
+        "options": [
+            "Loop1 and loop 2run simultaneously",
+            "Loop 1 run loops 2 stops",
+            "Loop 2 runs loop 1 stop",
+            "Loop 1 and 2 are dead lock"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 180,
+        "topic": "Property Nodes",
+        "text": "What is the best practice to prevent coercion dots on a VI like this one?",
+        "image": [
+            "images/CLAD7_p13_q180_3781.jpeg"
+        ],
+        "options": [
+            "Create the case selector data type with matching the enum data type",
+            "Create the selector terminal with the data type of numeric",
+            "Create the enum  as type definition and only use the type def",
+            "Create the while loop terminal with indicating enable"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 181,
+        "topic": "Timing",
+        "text": "Which statement is correct about the dimensionality of the array out 1 and array 2 indicators?",
+        "image": [
+            "images/CLAD7_p13_q181_7167.jpeg",
+            "images/CLAD7_p13_q181_3609.jpeg"
+        ],
+        "options": [
+            "array out 1 is a 2d array and array 2 is a 2d",
+            "Array out 1 is a 3d array and array 2 is a3d array",
+            "Array out 1 is a 2d array and array out 2 is a 3d",
+            "Array out 1 is a 3d array and array out 2 is a2d array"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 182,
+        "topic": "Local Variables",
+        "text": "What  string  will  be  displayed  in  the  result  indication  after  the  VI  completes  the execution?",
+        "image": [
+            "images/CLAD7_p14_q182_6953.jpeg"
+        ],
+        "options": [
+            "12345",
+            "01234",
+            "123456",
+            "012345"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 184,
+        "topic": "Documentation",
+        "text": "Which  structure  is  the  most  appropriate  for  code  the  reads  and  elevate  continuous measurement and then stop and output a signal when the measured value reaches a threshold?",
+        "image": [],
+        "options": [
+            "Case structure",
+            "For loop",
+            "While loop",
+            "Sequence structure"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 185,
+        "topic": "Sequence Structures",
+        "text": "Which condition will cause this while loop to stop?",
+        "image": [
+            "images/CLAD7_p15_q185_2760.jpeg"
+        ],
+        "options": [
+            "Error in error cluster",
+            "A non zero value in error code of the error cluster",
+            "A negative value in error code of the error cluster",
+            "A true value is the status Boolean of the error cluster"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 186,
+        "topic": "Sequence Structures",
+        "text": "Which loop function is the best method to auto indexing single elements of a 2d array",
+        "image": [],
+        "options": [
+            "Replace array function",
+            "Array subset function",
+            "One while loop",
+            "Two for loops"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 187,
+        "topic": "Documentation",
+        "text": "What values will be displayed in the string indicator after the vi completes execution?",
+        "image": [
+            "images/CLAD7_p15_q187_6815.jpeg"
+        ],
+        "options": [
+            "Alpha",
+            "Bravo",
+            "Charlie",
+            "The value can\u2019t be determine"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 188,
+        "topic": "Timing",
+        "text": "What value will be displayed in numeric indicator after the completion of execution?",
+        "image": [
+            "images/CLAD7_p15_q188_6384.jpeg"
+        ],
+        "options": [
+            "0",
+            "4",
+            "5",
+            "8"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 189,
+        "topic": "Arrays and Clusters",
+        "text": "What value will be displayed in numeric indicator after the completion of execution?",
+        "image": [
+            "images/CLAD7_p16_q189_2744.jpeg"
+        ],
+        "options": [
+            "11",
+            "17",
+            "25",
+            "49"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 190,
+        "topic": "Sequence Structures",
+        "text": "What value will be displayed in numeric indicator after the completion of execution a)16       c)48",
+        "image": [
+            "images/CLAD7_p16_q190_8851.jpeg"
+        ],
+        "options": [
+            "40",
+            "indefinite"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 191,
+        "topic": "File I/O",
+        "text": "Which of the following indicates the displays the history of value and have been wired to its block diagram terminal?",
+        "image": [],
+        "options": [
+            "Wave form chary",
+            "Waveform graph",
+            "Intensity graph",
+            "Waveform"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 192,
+        "topic": "Arrays and Clusters",
+        "text": "Why does the VI result in a broken run arrow?",
+        "image": [
+            "images/CLAD7_p16_q192_6038.jpeg"
+        ],
+        "options": [
+            "bcoz of the corrison dot on multiple function",
+            "Output does not matches the dimesion of the o\\p of the multiple function",
+            "The count terminal is unwired",
+            "A scalar cannot be multipled with an array"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 193,
+        "topic": "LabVIEW Programming Principles",
+        "text": "When attempting to create a new file, a user receives an error 8, file permission error what would cause this?",
+        "image": [],
+        "options": [
+            "The user does not have permission to write in the specific directory",
+            "The user does not have permission to read the directory listing",
+            "The path is on a remote driving and the network connected failed",
+            "The file is missing"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 194,
+        "topic": "Error Handling",
+        "text": "What value will be displayed in string indicator after the completion of execution?",
+        "image": [
+            "images/CLAD7_p17_q194_4208.jpeg"
+        ],
+        "options": [
+            "True = 1-1.000000",
+            "T=1=1.000000",
+            "TRUE=1.000000=1",
+            "1=1=1.000000"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 196,
+        "topic": "LabVIEW Environment",
+        "text": "What will be result in this code is executed?",
+        "image": [
+            "images/CLAD8_p0_q196_4601.png"
+        ],
+        "options": [
+            "1",
+            "2",
+            "3",
+            "1 and 3"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 197,
+        "topic": "VI Server",
+        "text": "Which VI server node do you use to access the method of a front panel objects?",
+        "image": [],
+        "options": [
+            "Property node",
+            "Constructor node",
+            "Invoke node",
+            "Variable node"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 198,
+        "topic": "Property Nodes",
+        "text": "When the VIs execution what does the Time indicator display?",
+        "image": [
+            "images/CLAD8_p1_q198_2074.png"
+        ],
+        "options": [
+            "Time counting up with the string format similar to 12.04.05.20",
+            "Time counting down with the string format similar to 12.03.55.45",
+            "Time counting up with the string format similar to 04.05.2",
+            "Time counting down with the string format similar to 3.55.5.20"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 199,
+        "topic": "Mechanical Actions of Booleans",
+        "text": "What value will be displayed in the Result indicator after the VIs completes execution?",
+        "image": [
+            "images/CLAD8_p1_q199_5874.png"
+        ],
+        "options": [
+            "0",
+            "1",
+            "10",
+            "Undefined. The VI runs indefinitely and must be aborted."
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 200,
+        "topic": "LabVIEW Programming Principles",
+        "text": "The following Sub VI is loaded into memory and then run. What is the value of SUM when the VI completes execution?",
+        "image": [
+            "images/CLAD8_p2_q200_6701.png"
+        ],
+        "options": [
+            "5",
+            "10",
+            "There is no way to know",
+            "0"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 201,
+        "topic": "Property Nodes",
+        "text": "Which of the following will not produce a broken wire?",
+        "image": [],
+        "options": [
+            "Multiple data sources wired directly to the same indicator",
+            "Failing to wire the count[N] terminal on a For Loop with no indexed input",
+            "Wiring a path to a case selector",
+            "Wiring together incompatible data types"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 202,
+        "topic": "Property Nodes",
+        "text": "In the process of debugging a VI, you have placed a breakpoint before Square Function VI as Shown below in order to Single-Step through the code. When you suspend execution at that breakpoint, what will happen if you press the (Step Over) button?",
+        "image": [
+            "images/CLAD8_p2_q202_4821.png",
+            "images/CLAD8_p2_q202_6598.png"
+        ],
+        "options": [
+            "LabVIEW will complete the execution of the current VI and return to the calling VI(if one exists)",
+            "LabVIEW will skip the execution of Square Function VI.in order to Step Over that function and continue single-stepping through the VI.",
+            "LabVIEW will open up the block diagram of Square Function VI to allow you to single step through the code inside the function",
+            "LabVIEW will execute the Square Function. i and then highlight the next node to be executes as you continue Single-Stepping through the VI."
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 203,
+        "topic": "Property Nodes",
+        "text": "Which of the following statements is TRUE about this block diagram?",
+        "image": [
+            "images/CLAD8_p3_q203_7092.png"
+        ],
+        "options": [
+            "Random Number 2 will always execute before Random Number 3.",
+            "The will Loop will never finish executing because Random Number 1 can never be larger than 0.999.",
+            "The Output of the Subtraction function will always be 0.",
+            "The Add function is guaranteed to be the Last function to execute on this diagram"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 204,
+        "topic": "Functional Global Variables",
+        "text": "The Timer selection Enum is set to \u201cBessel\u201d. What values will be displayed in Numeric when the VI completes execution?",
+        "image": [
+            "images/CLAD8_p3_q204_3472.png"
+        ],
+        "options": [
+            "0",
+            "22",
+            "Indeterminate Must see the code in other cases to the determine the value",
+            "The VI does not stop execution and runs indefinitely"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 205,
+        "topic": "Documentation",
+        "text": "What types of data can be wired to the Obtain Queue function as the elements data type?",
+        "image": [
+            "images/CLAD8_p4_q205_9727.png"
+        ],
+        "options": [
+            "Only cluster,String,Numeric and Boolean",
+            "Any LabVIEW data type",
+            "Only Cluster and Strings",
+            "Only Numeric and Boolean"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 207,
+        "topic": "Charts and Graphs",
+        "text": "Which of the following will not produce a broken wire?",
+        "image": [],
+        "options": [
+            "Multiple data sources wired directly to the same indicator",
+            "Failing to wire the count[N] terminal on a For Loop with no indexed input",
+            "Wiring a path to a case selector",
+            "Wiring together incompatible data type"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 208,
+        "topic": "Property Nodes",
+        "text": "How large is the file produced by this code?",
+        "image": [
+            "images/CLAD8_p5_q208_8381.png"
+        ],
+        "options": [
+            "1000 bytes",
+            "2000 bytes",
+            "4000 bytes",
+            "8000 bytes"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 209,
+        "topic": "LabVIEW Programming Principles",
+        "text": "Why is there a shadow around the  Numeric control?",
+        "image": [
+            "images/CLAD8_p6_q209_8556.png"
+        ],
+        "options": [
+            "Its data type conflicts",
+            "It is linked to a broken type definition",
+            "It was not dropped within Cluster and Instead is Overlapping it",
+            "Clusters and contain only one datatype"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 211,
+        "topic": "Charts and Graphs",
+        "text": "In the process of debugging a VI, you have placed a breakpoint before Square Function VI as Shown below in order to Single-Step through the code When you suspend execution at that breakpoint, what will happen if you press the (Step Over) button?",
+        "image": [
+            "images/CLAD8_p6_q211_7798.png",
+            "images/CLAD8_p6_q211_4461.png",
+            "images/CLAD8_p6_q211_8194.png"
+        ],
+        "options": [
+            "LabVIEW will complete the execution of the current VI and return to the calling VI(if one exists)",
+            "LabVIEW will skip the execution of Square Function VI.in order to Step Over that function and continue single-stepping through the VI.",
+            "LabVIEW will open up the block diagram of Square Function VI to allow you to single step through the code inside the function",
+            "LabVIEW will execute the Square Function. I and then highlight the next node to be executes as you continue Single-Stepping through the VI."
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 212,
+        "topic": "VI Server",
+        "text": "Which condition is TRUE at the end of execution?",
+        "image": [
+            "images/CLAD8_p7_q212_2411.png"
+        ],
+        "options": [
+            "The value of the Loop Iteration terminals is unbounded because the For Loop will not stop",
+            "The value of the Loop iteration terminal is one less than the value of the Loop Count terminal",
+            "The value of the Loop iteration terminal is equal to the value of the Loop Count terminal",
+            "The value of the Loop iteration terminal is one more than the value of the Loop Count terminal"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 213,
+        "topic": "Timing",
+        "text": "When using single step debugging, the VI execution is paused at the increment node. Which of the following action is not possible?",
+        "image": [
+            "images/CLAD8_p7_q213_3959.png"
+        ],
+        "options": [
+            "Step Out of the Sequence Structure",
+            "Step Over the increment function",
+            "Finish Frame of the structure",
+            "Un-pause and continue execution"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 215,
+        "topic": "Loops",
+        "text": "A VI calls a sub VI with Error in and Error out terminals on the connector pane. Automatic error handling is enabled. How do you prevent LabVIEW from displaying an error dialog box if the sub VI returns as error?",
+        "image": [],
+        "options": [
+            "Uncheck  Enable automatic error handling in new VIs on the Block Diagram page of the Tools>>Option dialog box",
+            "Uncheck the  Allow debugging  option on the Execution page of the VI properties dialog box for calling VI",
+            "Connect the Error Out terminals of the sub VI to a tunnel, the terminal or indicator in the calling VI",
+            "Uncheck Enable  automatic error handling on the Execution page of the VI Properties dialog box of the sub VI"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 216,
+        "topic": "File I/O",
+        "text": "Why does the VI result in a broken run arrow?",
+        "image": [
+            "images/CLAD8_p9_q216_3820.png"
+        ],
+        "options": [
+            "Because of the correction dot on the Multiply  function",
+            "Output does not match the dimension of the output of the Multiply function",
+            "The Count terminal is unwired",
+            "A scalar cannot be Multiplied with an array"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 217,
+        "topic": "File I/O",
+        "text": "What value will be displayed in the  Result indicator after the VI completes execution?",
+        "image": [
+            "images/CLAD8_p9_q217_5065.png"
+        ],
+        "options": [
+            "0",
+            "1",
+            "10",
+            "Undefined. The VI runs indefinitely and must be aborted."
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 218,
+        "topic": "LabVIEW Programming Principles",
+        "text": "If the value in x is 93 and y is 10, how much iteration does the loop execute?",
+        "image": [
+            "images/CLAD8_p9_q218_6416.png"
+        ],
+        "options": [
+            "0",
+            "9",
+            "10",
+            "LabVIEW will throw 3 run time error"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 219,
+        "topic": "Timing",
+        "text": "Which of the following will not produce a broken wire?",
+        "image": [],
+        "options": [
+            "Multiple data sources wired directly to the same indicator",
+            "Failing to wire the count[N] terminal on a For Loop with no indexed input",
+            "Wiring a path",
+            "Wiring together incompatible data types"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 220,
+        "topic": "LabVIEW Environment",
+        "text": "The  length and index  input terminals on the  Delete from Array  function are not wired. What will be value of the output of the Delete from Array function after the VI completes execution?",
+        "image": [
+            "images/CLAD8_p10_q220_9979.png"
+        ],
+        "options": [
+            "Array=[1,2],deleted element=3",
+            "Array=[2,3],deleted element=1",
+            "Array=[1,2,3],deleted element=0",
+            "The VI is broken because the index input to Delete From Array is unwired"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 221,
+        "topic": "Sequence Structures",
+        "text": "Which of the following groups contains items that are all controls?",
+        "image": [],
+        "options": [
+            "Rocker, Horizontal Fill Slide, Cluster Constant",
+            "Text Box, Build Array, Table",
+            "Knob, waveform, Graph, OK button",
+            "Dial, Tab Control, Property Node"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 222,
+        "topic": "Functional Global Variables",
+        "text": "If the user clicks the increment button on the INPUT control as fast as possible when the VI runs, how often will the Time indicator update?",
+        "image": [
+            "images/CLAD8_p10_q222_6055.png",
+            "images/CLAD8_p11_q222_7917.png",
+            "images/CLAD8_p11_q222_1496.jpeg"
+        ],
+        "options": [
+            "Continuously",
+            "Every 1 second",
+            "Every 1000 seconds",
+            "Every 10000 seconds"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 224,
+        "topic": "LabVIEW Environment",
+        "text": "There is a breakpoint before the Square function as shown below. When LabVIEW paused execution at that breakpoint, what will happen if you press the (Step Into) button?",
+        "image": [
+            "images/CLAD8_p12_q224_5511.png",
+            "images/CLAD8_p12_q224_2081.png"
+        ],
+        "options": [
+            "LabVIEW will highlights the Square function but will not execute it",
+            "LabVIEW will open up the block diagram of the Square function to allow you to single step through the code inside the Square function",
+            "LabVIEW will execute the Square function and then highlights the next node to be executes as you continue single-step through the VI",
+            "LabVIEW will complete the execution of the VI and return to the calling VI (if one exists)"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 225,
+        "topic": "Debugging",
+        "text": "What will be produced for code execution?",
+        "image": [
+            "images/CLAD8_p13_q225_8928.png"
+        ],
+        "options": [
+            "Up to ten elements maximum will be in the queue",
+            "When full, the queue will not accept more elements until an element is removed",
+            "New elements will continuously overwrite the one element in the queue",
+            "The queue will return ten elements for each dequeue"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 226,
+        "topic": "Sequence Structures",
+        "text": "Which condition is TRUE at the end of execution?",
+        "image": [
+            "images/CLAD8_p13_q226_8413.png"
+        ],
+        "options": [
+            "The value of the Loop Iteration terminals is unbounded because the For Loop will not stop",
+            "The value of the Loop iteration terminal is one less than the value of the Loop Count terminal",
+            "The value of the Loop iteration terminal is equal to the value of the Loop Count terminal",
+            "The value of the Loop iteration terminal is one more than the value of the Loop Count terminal"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 227,
+        "topic": "Timing",
+        "text": "Which VI server node do you use to access the method of a front panel objects?",
+        "image": [],
+        "options": [
+            "Property node",
+            "Constructor node",
+            "Invoke node",
+            "Variable node"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 228,
+        "topic": "Timing",
+        "text": "When the VIs execution what does the Time indicator display?",
+        "image": [
+            "images/CLAD8_p14_q228_1070.png"
+        ],
+        "options": [
+            "Time counting up with the string format similar to 12.04.05.20",
+            "Time counting down with the string format similar to 12.03.55.45",
+            "Time counting up with the string format similar to 04.05.2",
+            "Time counting down with the string format similar to 3.55.5.20"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 229,
+        "topic": "Documentation",
+        "text": "Starting with the code below, you need to create a sub VI that will concatenate the two input strings, compare the Result to a standard string and output a Boolean Result. The star what must be a done to accomplish this goal?",
+        "image": [
+            "images/CLAD8_p14_q229_5406.png"
+        ],
+        "options": [
+            "Convert all the String constants to control",
+            "Convert Input String 1 and input String 2 to controls",
+            "Make sure that all the String constant are selected before creating Sub VI",
+            "Make Sure all controls and indicators are selected before creating the Sub VI"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 230,
+        "topic": "Error Handling",
+        "text": "LabVIEW store Boolean data as         bit value. A)8 B)16",
+        "image": [],
+        "options": [
+            "4",
+            "32"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 231,
+        "topic": "Event Structures",
+        "text": "Which mechanical action causes a Boolean control in the false state to change to true when you click it and stay until you release it and LabVIEW has read the value",
+        "image": [],
+        "options": [
+            "Switch until released",
+            "Switch when released",
+            "Latch when pressed",
+            "Latch Until released"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 232,
+        "topic": "Mechanical Actions of Booleans",
+        "text": "What will be the value in the output array?",
+        "image": [
+            "images/CLAD9_p0_q232_9613.png"
+        ],
+        "options": [
+            "1D array of {0,1,2,3,4,5,6,7,8}",
+            "9D array of {0,1,2,3,4,5,6,7,8} in each dimensions",
+            "1D array of {9,9,9,9,9,9,9,9,9}",
+            "None of the above"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 233,
+        "topic": "LabVIEW Environment",
+        "text": "What will be state in the output boolean indicator?",
+        "image": [
+            "images/CLAD9_p1_q233_9650.png"
+        ],
+        "options": [
+            "True",
+            "False"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 234,
+        "topic": "Loops",
+        "text": "What will be the value in the output indicator?",
+        "image": [
+            "images/CLAD9_p1_q234_8001.png"
+        ],
+        "options": [
+            "0",
+            "5",
+            "10",
+            "Indeterminate"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 235,
+        "topic": "Synchronization and Communication",
+        "text": "What will be the value in the output?",
+        "image": [
+            "images/CLAD9_p1_q235_5899.png"
+        ],
+        "options": [
+            "5",
+            "4",
+            "2",
+            "Indeterminate"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 236,
+        "topic": "Error Handling",
+        "text": "Which of the following can be connected to case structure conditional terminal?",
+        "image": [],
+        "options": [
+            "Array",
+            "Cluster",
+            "Error cluster",
+            "None of the above"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 238,
+        "topic": "Design Patterns",
+        "text": "What will be the default Time out value in event structure ?",
+        "image": [],
+        "options": [
+            "1",
+            "0",
+            "-1",
+            "None of the above"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 239,
+        "topic": "Synchronization and Communication",
+        "text": "When will this VI stops? i.  After 100 iteration it stops automatically ii. Change of state of the boolean control for 100 times to stops the VI iii. Program will not stop, it needs to be Aborted",
+        "image": [
+            "images/CLAD9_p3_q239_2609.jpeg"
+        ],
+        "options": [
+            "Both i & ii",
+            "Both ii & iii",
+            "Both i & iii",
+            "i, ii, & iii"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 240,
+        "topic": "Mechanical Actions of Booleans",
+        "text": "What will be the value in array indicator?",
+        "image": [
+            "images/CLAD9_p4_q240_9145.png"
+        ],
+        "options": [
+            "1D array of {0,1,1,2,3,5,8,13,21,34}",
+            "1D array of {0,0,0,0,0,0,0,0,0,0}",
+            "1D array of {0,1,2,3,4,5,6,7,8,9}",
+            "1D array of {0,1,3,6,10,15,21,28,36,45}"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 241,
+        "topic": "Synchronization and Communication",
+        "text": "In the following snippet which boolean will be in true state for longer duration?",
+        "image": [
+            "images/CLAD9_p4_q241_1488.png"
+        ],
+        "options": [
+            "Green",
+            "Yellow",
+            "Red",
+            "All will be in true state for equal amount of time"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 242,
+        "topic": "Sequence Structures",
+        "text": "The             data structure can be compared to a purse or wallet because a purse or wallet can hold many different things just as this data structure can hold multiple data types.",
+        "image": [],
+        "options": [
+            "Array",
+            "Cluster",
+            "Bundle",
+            "Container"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 243,
+        "topic": "Synchronization and Communication",
+        "text": "In the below icon , the string has a value NATIONAL INSTRUMENTS, Regular expression has a value N and the offset value is left unwired. What will be the string value of after substring?",
+        "image": [
+            "images/CLAD9_p5_q243_3130.png"
+        ],
+        "options": [
+            "ATIONAL INSTRUMENTS",
+            "AL INSTRUMENTS",
+            "STRUMENTS",
+            "TS"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 244,
+        "topic": "Mechanical Actions of Booleans",
+        "text": "What happens if we place a numeric indicator into a cluster that already consists a numeric control? Select the appropriate answer.",
+        "image": [],
+        "options": [
+            "The complete cluster turns into a cluster indicator with two numeric indicators",
+            "The numeric indicator turns into a numeric control and the cluster remains into a control cluster with two controls",
+            "Cluster will get disabled",
+            "LabVIEW throws an error"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 245,
+        "topic": "Loops",
+        "text": "Which of the following statement(s) is/are correct?",
+        "image": [],
+        "options": [
+            "Reference cluster terminal of  Bundle by name  function is required",
+            "Reference cluster terminal of  Bundle  function is required",
+            "Reference cluster terminal of  Bundle by name  function is recommended",
+            "Reference cluster terminal of  Bundle  function is recommended"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 246,
+        "topic": "File I/O",
+        "text": "For implementing state diagrams that allow future application scalability, the best choice for a base structure is?",
+        "image": [],
+        "options": [
+            "Sequence structure",
+            "Case structure",
+            "Formula node",
+            "Object-Oriented structure"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 247,
+        "topic": "Charts and Graphs",
+        "text": "You set a Breakpoint in the code contained within the False case of a Case structure. Will the VI execution pause if the code in True case of the Case structure is being executed?",
+        "image": [],
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 248,
+        "topic": "Mechanical Actions of Booleans",
+        "text": "If possible, a Sequence structure should be replaced with a(n):",
+        "image": [],
+        "options": [
+            "Event structure",
+            "For loop",
+            "State machine",
+            "While loop"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 249,
+        "topic": "Local Variables",
+        "text": "What will be the value in the output indicator?",
+        "image": [
+            "images/CLAD9_p6_q249_3275.png"
+        ],
+        "options": [
+            "0",
+            "2",
+            "3",
+            "4"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 250,
+        "topic": "Event Structures",
+        "text": "Which of the following cannot be used to transfer data?",
+        "image": [],
+        "options": [
+            "Semaphores",
+            "Queues",
+            "Notifiers",
+            "Local variables"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 251,
+        "topic": "Arrays and Clusters",
+        "text": "What will be value in the array output indicator?",
+        "image": [
+            "images/CLAD9_p7_q251_8730.png"
+        ],
+        "options": [
+            "1D array {1,2,3,4,5}",
+            "1D array {2,3,4,5,1}",
+            "1D array {4,5,1,2,3}",
+            "1D array {5,1,2,3,4}"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 252,
+        "topic": "Timing",
+        "text": "How many bytes does LabVIEW write to the file when the code executes?",
+        "image": [
+            "images/CLAD9_p7_q252_3948.jpeg"
+        ],
+        "options": [
+            "4 bytes",
+            "11 bytes",
+            "24 bytes",
+            "17 bytes"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 253,
+        "topic": "VI Server",
+        "text": "What will be the value in output indicator?",
+        "image": [
+            "images/CLAD9_p8_q253_5324.png"
+        ],
+        "options": [
+            "0",
+            "1",
+            "infinite",
+            "None of the above"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 254,
+        "topic": "Functional Global Variables",
+        "text": "In the next VI, which will be the execution order (5 points) A) B) C) D) 26 The error cluster contains",
+        "image": [
+            "images/CLAD9_p8_q254_2036.png",
+            "images/CLAD9_p8_q254_2361.png",
+            "images/CLAD9_p8_q254_7658.png",
+            "images/CLAD9_p8_q254_8166.png",
+            "images/CLAD9_p8_q254_5292.png"
+        ],
+        "options": [
+            "A number, a string and a Boolean",
+            "An array of numbers, Boolean and String",
+            "A number, a Boolean and an Enum Type",
+            "None of the previous options"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 255,
+        "topic": "Property Nodes",
+        "text": "What will the output data type?",
+        "image": [
+            "images/CLAD9_p9_q255_1328.png"
+        ],
+        "options": [
+            "Extended",
+            "Double",
+            "I64",
+            "I32"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 256,
+        "topic": "Loops",
+        "text": "Comparing with I16 & U16 Which statement is true? A)The I16 starts at -32,536 and the U16 at 0.",
+        "image": [],
+        "options": [
+            "The I16 starts at 0 and the U16 at -32,536",
+            "The I16 has 17 bits, one of them for the sign and the U16 has 16 bits",
+            "Both can represent the same amount of numbers"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 257,
+        "topic": "Error Handling",
+        "text": "Array indicator has no.of dimensions?",
+        "image": [
+            "images/CLAD9_p9_q257_1590.png"
+        ],
+        "options": [
+            "1D array",
+            "2D array",
+            "3D array",
+            "scalar element"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 258,
+        "topic": "Charts and Graphs",
+        "text": "Which of the following is the best method to update the value of the indicator in the front panel?",
+        "image": [],
+        "options": [
+            "Use a value property node",
+            "Wire directly to the indicator terminal",
+            "Use a local variable",
+            "Use a global local variable"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 259,
+        "topic": "LabVIEW Environment",
+        "text": "In what instance would you use the probe tool rather than highlight execution?",
+        "image": [],
+        "options": [
+            "To see flow of data",
+            "To see the value of the wire in real time",
+            "To look into a VI, as a process is running",
+            "To slow down the VI, and show data values in wires"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 262,
+        "topic": "Timing",
+        "text": "What will be the value in output array , If the Numeric value is 5",
+        "image": [
+            "images/CLAD9_p13_q262_4719.png"
+        ],
+        "options": [
+            "1D array {0,1,2,3,4}",
+            "1D array {1,1,2,3,5}",
+            "1D array {0,1,1,2,3}",
+            "1D array {1,1,2,3,4}"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 263,
+        "topic": "Functional Global Variables",
+        "text": "What is the correct method to repair the broken wire?",
+        "image": [
+            "images/CLAD9_p14_q263_6074.png"
+        ],
+        "options": [
+            "Enable indexing on the tunnel.",
+            "Replace the tunnel with a shift register.",
+            "Replace the While loop with a case structure.",
+            "Change the time constant to a non-zero number."
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 264,
+        "topic": "Local Variables",
+        "text": "Which setting assigns specific key or key combinations to a front panel object?",
+        "image": [],
+        "options": [
+            "Key focus",
+            "Key Navigation",
+            "Radix",
+            "Distribute objects"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 265,
+        "topic": "VI Server",
+        "text": "Which configuration defines a queue that is similar to a notifier with regard to data buffering?",
+        "image": [],
+        "options": [
+            "max queue size=0",
+            "max queue size=1",
+            "queue with timeout 0",
+            "queue with timeout 1"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 266,
+        "topic": "LabVIEW Programming Principles",
+        "text": "Which do you use to initialize all front panel objects to the default values?",
+        "image": [],
+        "options": [
+            "Property node",
+            "Invoke node",
+            "User interface event",
+            "User event"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 267,
+        "topic": "Error Handling",
+        "text": "Which mechanism is used to implement a functional global variable?",
+        "image": [],
+        "options": [
+            "Uninitialized shift register",
+            "Local Variable",
+            "Property node",
+            "Control"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    },
+    {
+        "id": 268,
+        "topic": "Charts and Graphs",
+        "text": "Which of the following can be used to plot data points that are NOT sampled at even intervals?",
+        "image": [],
+        "options": [
+            "XY Graph",
+            "Waveform Graph",
+            "Waveform Chart",
+            "Dynamic Chart"
+        ],
+        "correctAnswer": 0,
+        "explanation": ""
+    }
+]

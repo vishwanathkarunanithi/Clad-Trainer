@@ -1,0 +1,14 @@
+{
+    "id": 60,
+    "topic": "LabVIEW Environment",
+    "text": "Which of the following apply to Property Nodes?  (More than one answer may apply.)",
+    "image": [],
+    "options": [
+        "Property Nodes allow attributes of front panel objects to be programmatically manipulated.",
+        "Property Nodes can't be used to update the values contained in a front panel object.",
+        "More than one Property Node can be used for a single front panel object.",
+        "Property Nodes contained in a SubVI will always cause the front panel to be loaded in memory."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

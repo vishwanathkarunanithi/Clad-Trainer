@@ -1,0 +1,16 @@
+{
+    "id": 68,
+    "topic": "Error Handling",
+    "text": "If value x is 5 then the value of coerced and in range is?",
+    "image": [
+        "images/CLAD11_p2_q68_9727.jpeg"
+    ],
+    "options": [
+        "5, TRUE",
+        "0, TRUE",
+        "1,FALE",
+        "0,FALSE"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

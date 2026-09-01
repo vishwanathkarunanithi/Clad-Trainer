@@ -1,0 +1,14 @@
+{
+    "id": 123,
+    "topic": "Synchronization and Communication",
+    "text": "Which of the following is a property or method of the VI class?",
+    "image": [],
+    "options": [
+        "Label Text",
+        "Key focus",
+        "Default values Reinitialize All TO Default",
+        "Terminal Bounds Area Width"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

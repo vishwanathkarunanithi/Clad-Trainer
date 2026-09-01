@@ -1,0 +1,16 @@
+{
+    "id": 166,
+    "topic": "LabVIEW Programming Principles",
+    "text": "What value will be displayed in the element indicator after the vi completes execution?",
+    "image": [
+        "images/CLAD7_p8_q166_4084.jpeg"
+    ],
+    "options": [
+        "0",
+        "1",
+        "8",
+        "NAN"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

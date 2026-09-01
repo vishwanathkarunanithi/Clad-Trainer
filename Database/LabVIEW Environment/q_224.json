@@ -1,0 +1,17 @@
+{
+    "id": 224,
+    "topic": "LabVIEW Environment",
+    "text": "There is a breakpoint before the Square function as shown below. When LabVIEW paused execution at that breakpoint, what will happen if you press the (Step Into) button?",
+    "image": [
+        "images/CLAD8_p12_q224_5511.png",
+        "images/CLAD8_p12_q224_2081.png"
+    ],
+    "options": [
+        "LabVIEW will highlights the Square function but will not execute it",
+        "LabVIEW will open up the block diagram of the Square function to allow you to single step through the code inside the Square function",
+        "LabVIEW will execute the Square function and then highlights the next node to be executes as you continue single-step through the VI",
+        "LabVIEW will complete the execution of the VI and return to the calling VI (if one exists)"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

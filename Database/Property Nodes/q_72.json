@@ -1,0 +1,12 @@
+{
+    "id": 72,
+    "topic": "Property Nodes",
+    "text": "Can a wire be used to pass data between loops that are intended to run in parallel?",
+    "image": [],
+    "options": [
+        "Yes",
+        "No"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

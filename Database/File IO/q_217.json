@@ -1,0 +1,16 @@
+{
+    "id": 217,
+    "topic": "File I/O",
+    "text": "What value will be displayed in the  Result indicator after the VI completes execution?",
+    "image": [
+        "images/CLAD8_p9_q217_5065.png"
+    ],
+    "options": [
+        "0",
+        "1",
+        "10",
+        "Undefined. The VI runs indefinitely and must be aborted."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

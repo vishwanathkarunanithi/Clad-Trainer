@@ -1,0 +1,16 @@
+{
+    "id": 174,
+    "topic": "Arrays and Clusters",
+    "text": "There is a breakpoint before the square function as shown before. When labview paused (step into) button? execution at the breakpoint what will happen if you press the",
+    "image": [
+        "images/CLAD7_p10_q174_2886.jpeg"
+    ],
+    "options": [
+        "Labview will highlight the square function but will not execute it",
+        "Labview will open up the block diagram of the square function to allow you to single step through the code inside the square function",
+        "Labview will open up the square function and then highlight the next node to be executed as you continue single-stepping through the VI",
+        "Labview will complete the execution of the VI and return  to the calling VI(if one exit)"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

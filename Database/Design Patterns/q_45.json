@@ -1,0 +1,14 @@
+{
+    "id": 45,
+    "topic": "Design Patterns",
+    "text": "Why is LabVIEW a data flow programming language?",
+    "image": [],
+    "options": [
+        "It uses icons instead of text to create applications",
+        "The flow of data through nodes on the block diagram determines execution",
+        "It does not have a Goto function to control execution",
+        "The memory location in which data is stored changes each iteration"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

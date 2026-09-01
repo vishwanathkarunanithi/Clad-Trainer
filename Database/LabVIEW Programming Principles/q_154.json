@@ -1,0 +1,14 @@
+{
+    "id": 154,
+    "topic": "LabVIEW Programming Principles",
+    "text": "A VI calls a SubVI with error in error out terminals on the connector pane automatic error handling is enabled how do you prevent LABVIEW from displayed an error dialog box if the SubVI returns an error?",
+    "image": [],
+    "options": [
+        "Uncheck enable automatic error handling in new vi on the block diagram page of the tools>>options dialog box",
+        "Uncheck the allow debugging option on the execution page of the VI properties dialog box for the calling VI",
+        "Connect the error out terminal of the SubVI to a tunnel terminal or indicator in the calling VI",
+        "Uncheck  enable  automatic  error  handling  on  the  execution  page  of  the  VI properties dialog box of the SubVI"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

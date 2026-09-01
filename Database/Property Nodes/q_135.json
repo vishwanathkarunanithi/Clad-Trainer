@@ -1,0 +1,16 @@
+{
+    "id": 135,
+    "topic": "Property Nodes",
+    "text": "How does the labview handle the error when the code executes?",
+    "image": [
+        "images/CLAD2_p11_q135_5531.jpeg"
+    ],
+    "options": [
+        "The  VI  executes  without  error  because  the  missing  file  is  created  by open/create/replace file",
+        "Labview    displays    the    error    handling    dialog    box    10    times    listing open/create/replace file as the source of the error",
+        "Labview displays the error handling dialog box 10 times listing close file as the source of the error",
+        "Labview displays the error handling dialog box 9 times listing close file as the source of the error"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

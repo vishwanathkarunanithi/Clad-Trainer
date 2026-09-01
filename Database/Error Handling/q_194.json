@@ -1,0 +1,16 @@
+{
+    "id": 194,
+    "topic": "Error Handling",
+    "text": "What value will be displayed in string indicator after the completion of execution?",
+    "image": [
+        "images/CLAD7_p17_q194_4208.jpeg"
+    ],
+    "options": [
+        "True = 1-1.000000",
+        "T=1=1.000000",
+        "TRUE=1.000000=1",
+        "1=1=1.000000"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

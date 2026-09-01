@@ -1,0 +1,16 @@
+{
+    "id": 34,
+    "topic": "File I/O",
+    "text": "Which of the following statement is TRUE?",
+    "image": [
+        "images/CLAD1 (1)_p12_q34_5866.jpeg"
+    ],
+    "options": [
+        "The output of the multiply function is DBL",
+        "The output of the multiply function is U32",
+        "The VI containing this value should have an broken run arrow",
+        "LABVIEW will return an error while running this program"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

@@ -1,0 +1,16 @@
+{
+    "id": 10,
+    "topic": "Arrays and Clusters",
+    "text": "Which statement is TRUE? The While Loop Iterates:",
+    "image": [
+        "images/CLAD1 (1)_p3_q10_1653.jpeg"
+    ],
+    "options": [
+        "Four Times and stops",
+        "Ten times and stops",
+        "Once and stops",
+        "Indefinitely"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

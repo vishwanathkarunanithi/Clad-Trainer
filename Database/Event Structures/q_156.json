@@ -1,0 +1,16 @@
+{
+    "id": 156,
+    "topic": "Event Structures",
+    "text": "For  the  VI  shown  in  the  following  block  diagram,  automatic  error  handling  is enabled. If the file C:\\data.txt does not exist, will an error dialog box pop up?",
+    "image": [
+        "images/CLAD7_p4_q156_5847.jpeg"
+    ],
+    "options": [
+        "Yes, each time the error from the Open/Create/Replace File function is returned",
+        "Yes, each time a loop iteration completes",
+        "Yes, but only once, not on each iteration of the loop",
+        "No"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

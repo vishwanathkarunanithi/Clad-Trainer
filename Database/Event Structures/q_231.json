@@ -1,0 +1,14 @@
+{
+    "id": 231,
+    "topic": "Event Structures",
+    "text": "Which mechanical action causes a Boolean control in the false state to change to true when you click it and stay until you release it and LabVIEW has read the value",
+    "image": [],
+    "options": [
+        "Switch until released",
+        "Switch when released",
+        "Latch when pressed",
+        "Latch Until released"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

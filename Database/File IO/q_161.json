@@ -1,0 +1,16 @@
+{
+    "id": 161,
+    "topic": "File I/O",
+    "text": "What value will be displayed in both the indicator after the VI executes",
+    "image": [
+        "images/CLAD7_p6_q161_7329.jpeg"
+    ],
+    "options": [
+        "Array[1,2],deleted portion=3",
+        "Array[2,3],deleted portion=1",
+        "Array[1,2,3],deleted portion=0",
+        "The vi does not delete any portion"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

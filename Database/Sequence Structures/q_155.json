@@ -1,0 +1,16 @@
+{
+    "id": 155,
+    "topic": "Sequence Structures",
+    "text": "When the user clicks the button control how many times is the increment function called?",
+    "image": [
+        "images/CLAD7_p4_q155_1606.jpeg"
+    ],
+    "options": [
+        "0",
+        "1",
+        "2",
+        "3"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

@@ -1,0 +1,14 @@
+{
+    "id": 17,
+    "topic": "File I/O",
+    "text": "Which of the following can you use to enable a disabled control on a VI while it is executing?",
+    "image": [],
+    "options": [
+        "Right click the control to get the menu for properties and then enabled state.",
+        "Right click the control to get the menu for advanced and then enabled state.",
+        "Use a property to change the disabled property value.",
+        "Use an invoke node and use the reinitialize method."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

@@ -1,0 +1,16 @@
+{
+    "id": 92,
+    "topic": "Synchronization and Communication",
+    "text": "See the picture below and indentify the data type?",
+    "image": [
+        "images/CLAD11_p5_q92_4231.png"
+    ],
+    "options": [
+        "Cluster",
+        "Array",
+        "Has no data type associated with",
+        "Numeric"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

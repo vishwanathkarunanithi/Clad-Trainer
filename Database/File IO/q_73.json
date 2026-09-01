@@ -1,0 +1,14 @@
+{
+    "id": 73,
+    "topic": "File I/O",
+    "text": "Which of the following describes a Tab Control?",
+    "image": [],
+    "options": [
+        "A control that outputs ASCII values equal to the selected tab label",
+        "A type of enumerated control",
+        "A control that outputs a cluster of the controls / indicators on the tabs",
+        "A controls that outputs the tab order of the controls on the front panel"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

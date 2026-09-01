@@ -1,0 +1,16 @@
+{
+    "id": 65,
+    "topic": "Functional Global Variables",
+    "text": "What is the name of this function?",
+    "image": [
+        "images/CLAD11_p1_q65_3982.jpeg"
+    ],
+    "options": [
+        "To variant",
+        "number to variant",
+        "round off",
+        "none of these"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

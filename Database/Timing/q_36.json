@@ -1,0 +1,16 @@
+{
+    "id": 36,
+    "topic": "Timing",
+    "text": "For  the  VI  shown  in  the  following  block  diagram,  automatic  error  handling  is enabled. If the file C:\\data.txt does not exist, will an error dialog box pop up?",
+    "image": [
+        "images/CLAD1 (1)_p13_q36_8082.jpeg"
+    ],
+    "options": [
+        "Yes, each time the error from the Open/Create/Replace File function is returned",
+        "Yes, each time a loop iteration completes",
+        "Yes, but only once, not on each iteration of the loop",
+        "No"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

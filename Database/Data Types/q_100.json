@@ -1,0 +1,12 @@
+{
+    "id": 100,
+    "topic": "Data Types",
+    "text": "Data types indicate what objects, inputs, and outputs, you can wire together.",
+    "image": [],
+    "options": [
+        "Yes",
+        "No"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

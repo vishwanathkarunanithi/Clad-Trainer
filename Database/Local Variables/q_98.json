@@ -1,0 +1,14 @@
+{
+    "id": 98,
+    "topic": "Local Variables",
+    "text": "Some of the more common application of string includes the following.",
+    "image": [],
+    "options": [
+        "Creating simple text message.",
+        "Controlling instrument by sending text commands to the instruments and returning data values in the form of either ASCII or binary strings which you then convert to numeric values.",
+        "None of the above.",
+        "A and B"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

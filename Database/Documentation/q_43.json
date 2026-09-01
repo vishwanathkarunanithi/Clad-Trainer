@@ -1,0 +1,14 @@
+{
+    "id": 43,
+    "topic": "Documentation",
+    "text": "A VI has Automatic Error Handling enabled. It calls a SubVI that has Automatic Error Handling disabled. The Error Out terminal of the SubVI is unwired in the calling VI. The SubVI returns an error to the calling VI. Will an error dialog be posted because of Automatic Error Handling?",
+    "image": [],
+    "options": [
+        "No, since the SubVI has Automatic Error Handling disabled",
+        "Yes, since he SubVI has Automatic Error Handling disabled",
+        "No, since the Error Out terminal from the subVI is not wired in the calling VI.",
+        "Yes, since the Error Out terminal from the subVI is not wired in the calling VI."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

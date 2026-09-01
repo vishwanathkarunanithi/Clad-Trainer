@@ -1,0 +1,16 @@
+{
+    "id": 208,
+    "topic": "Property Nodes",
+    "text": "How large is the file produced by this code?",
+    "image": [
+        "images/CLAD8_p5_q208_8381.png"
+    ],
+    "options": [
+        "1000 bytes",
+        "2000 bytes",
+        "4000 bytes",
+        "8000 bytes"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

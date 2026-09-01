@@ -1,0 +1,17 @@
+{
+    "id": 33,
+    "topic": "Charts and Graphs",
+    "text": "What value in the upper limit and lower limit controls produce the array displayed on the front pane?",
+    "image": [
+        "images/CLAD1 (1)_p12_q33_2911.jpeg",
+        "images/CLAD1 (1)_p12_q33_4369.jpeg"
+    ],
+    "options": [
+        "Upper limit=5,lower limit=1",
+        "Upper limit=5,lower limit=2",
+        "Upper limit=6,lower limit=1",
+        "Upper limit=6,lower limit=2"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

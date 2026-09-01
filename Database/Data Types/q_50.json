@@ -1,0 +1,12 @@
+{
+    "id": 50,
+    "topic": "Data Types",
+    "text": "You customize a control, select Control from the Type Def. Status pull-down menu, and save the control as a .ctl file. You then use an instance of the custom control on your front panel window. If you open the .ctl file and modify the control, does the control on the front panel window change?",
+    "image": [],
+    "options": [
+        "Yes",
+        "No"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

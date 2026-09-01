@@ -1,0 +1,16 @@
+{
+    "id": 251,
+    "topic": "Arrays and Clusters",
+    "text": "What will be value in the array output indicator?",
+    "image": [
+        "images/CLAD9_p7_q251_8730.png"
+    ],
+    "options": [
+        "1D array {1,2,3,4,5}",
+        "1D array {2,3,4,5,1}",
+        "1D array {4,5,1,2,3}",
+        "1D array {5,1,2,3,4}"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

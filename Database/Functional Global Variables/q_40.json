@@ -1,0 +1,16 @@
+{
+    "id": 40,
+    "topic": "Functional Global Variables",
+    "text": "A VI\u2019s queue is confiqured in the following manner and the VI uses only Enqueue element function which statement describes the correct behavior when element are enqueued?",
+    "image": [
+        "images/CLAD1 (1)_p14_q40_4653.jpeg"
+    ],
+    "options": [
+        "Up to ten elements maximum will be in the queue",
+        "When full,the queue will not accept more element until an element is removed",
+        "New elements will continuously overwrite the one element in the queue",
+        "The queue will return ten elements for each dequeu"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

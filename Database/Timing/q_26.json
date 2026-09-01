@@ -1,0 +1,16 @@
+{
+    "id": 26,
+    "topic": "Timing",
+    "text": "The start index (0) input terminal of search 1D array is unwired. What value will be displayed in the index of element indicator after this code completes execution?",
+    "image": [
+        "images/CLAD1 (1)_p8_q26_4121.jpeg"
+    ],
+    "options": [
+        "-1.",
+        "0.",
+        "1.",
+        "2."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

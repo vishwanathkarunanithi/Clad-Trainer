@@ -1,0 +1,14 @@
+{
+    "id": 71,
+    "topic": "Charts and Graphs",
+    "text": "The default mode of waveform chart is?",
+    "image": [],
+    "options": [
+        "Strip chart",
+        "Scope chart",
+        "Sweep chart",
+        "XY chart"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

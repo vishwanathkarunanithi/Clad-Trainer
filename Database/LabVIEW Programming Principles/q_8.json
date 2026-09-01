@@ -1,0 +1,14 @@
+{
+    "id": 8,
+    "topic": "LabVIEW Programming Principles",
+    "text": "Which is not a benefit of using SubVIs?",
+    "image": [],
+    "options": [
+        "SubVIs help keep the block diagram less cluttered.",
+        "SubVIs simplifies debugging.",
+        "SubVIs allows more rapid creation of repeated code.",
+        "SubVIs eliminates race conditions."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

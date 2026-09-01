@@ -1,0 +1,12 @@
+{
+    "id": 247,
+    "topic": "Charts and Graphs",
+    "text": "You set a Breakpoint in the code contained within the False case of a Case structure. Will the VI execution pause if the code in True case of the Case structure is being executed?",
+    "image": [],
+    "options": [
+        "Yes",
+        "No"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

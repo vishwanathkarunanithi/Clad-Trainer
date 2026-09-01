@@ -1,0 +1,14 @@
+{
+    "id": 94,
+    "topic": "Case Structures",
+    "text": "If a control is customized as a strict type definition control, would it give the auto update from type definition option, when right click on it?",
+    "image": [],
+    "options": [
+        "No",
+        "Yes",
+        "Instead of auto \u2013 update option, update from type def option will be there.",
+        "None of the above."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

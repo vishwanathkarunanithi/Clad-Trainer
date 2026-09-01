@@ -1,0 +1,16 @@
+{
+    "id": 28,
+    "topic": "Sequence Structures",
+    "text": " The VI begains expression with the value of X=255 AND Y=0. What will be the value of X+Y after the VI complete the execution",
+    "image": [
+        "images/CLAD1 (1)_p9_q28_2281.jpeg"
+    ],
+    "options": [
+        "0",
+        "8",
+        "255",
+        "264"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

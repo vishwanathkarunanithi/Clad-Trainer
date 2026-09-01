@@ -1,0 +1,16 @@
+{
+    "id": 136,
+    "topic": "Sequence Structures",
+    "text": "What value will be displayed in the numeric indicator after the VI completes the execution?",
+    "image": [
+        "images/CLAD2_p12_q136_4722.jpeg"
+    ],
+    "options": [
+        "0",
+        "4",
+        "5",
+        "8"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

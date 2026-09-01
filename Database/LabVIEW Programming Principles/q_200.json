@@ -1,0 +1,16 @@
+{
+    "id": 200,
+    "topic": "LabVIEW Programming Principles",
+    "text": "The following Sub VI is loaded into memory and then run. What is the value of SUM when the VI completes execution?",
+    "image": [
+        "images/CLAD8_p2_q200_6701.png"
+    ],
+    "options": [
+        "5",
+        "10",
+        "There is no way to know",
+        "0"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

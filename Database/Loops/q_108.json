@@ -1,0 +1,14 @@
+{
+    "id": 108,
+    "topic": "Loops",
+    "text": "An application has multiple break points. Which of the following actions is not possible when the application pauses at one of the breakpoint?",
+    "image": [],
+    "options": [
+        "Using the pause button to move to the next break point in the black diagram",
+        "Using the step buttons to move to a next node determined by LabVIEW",
+        "Changing the values of front panel controls",
+        "Changing the values on the wire at the breakpoint"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

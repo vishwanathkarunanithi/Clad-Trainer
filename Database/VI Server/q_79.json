@@ -1,0 +1,14 @@
+{
+    "id": 79,
+    "topic": "VI Server",
+    "text": "What is one disadvantage of using the State Machine VI architecture?",
+    "image": [],
+    "options": [
+        "A State Machine can only traverse states in order",
+        "If two state changes occur at the same time, only the first state change will be handled and the second will be lost",
+        "The diagram becomes significantly larger when changing from a general architecture to a State Machine",
+        "State Machines cannot acquire data or use DAQ functions"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

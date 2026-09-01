@@ -1,0 +1,16 @@
+{
+    "id": 61,
+    "topic": "Loops",
+    "text": "Value of numeric after the execution of this code?",
+    "image": [
+        "images/CLAD11_p0_q61_1010.jpeg"
+    ],
+    "options": [
+        "1",
+        "2",
+        "Error",
+        "0"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

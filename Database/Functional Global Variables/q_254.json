@@ -1,0 +1,20 @@
+{
+    "id": 254,
+    "topic": "Functional Global Variables",
+    "text": "In the next VI, which will be the execution order (5 points) A) B) C) D) 26 The error cluster contains",
+    "image": [
+        "images/CLAD9_p8_q254_2036.png",
+        "images/CLAD9_p8_q254_2361.png",
+        "images/CLAD9_p8_q254_7658.png",
+        "images/CLAD9_p8_q254_8166.png",
+        "images/CLAD9_p8_q254_5292.png"
+    ],
+    "options": [
+        "A number, a string and a Boolean",
+        "An array of numbers, Boolean and String",
+        "A number, a Boolean and an Enum Type",
+        "None of the previous options"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

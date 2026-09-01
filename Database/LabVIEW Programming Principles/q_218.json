@@ -1,0 +1,16 @@
+{
+    "id": 218,
+    "topic": "LabVIEW Programming Principles",
+    "text": "If the value in x is 93 and y is 10, how much iteration does the loop execute?",
+    "image": [
+        "images/CLAD8_p9_q218_6416.png"
+    ],
+    "options": [
+        "0",
+        "9",
+        "10",
+        "LabVIEW will throw 3 run time error"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

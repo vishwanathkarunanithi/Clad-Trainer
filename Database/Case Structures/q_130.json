@@ -1,0 +1,13 @@
+{
+    "id": 130,
+    "topic": "Case Structures",
+    "text": "Which of the following can you use to enable a disabled control on a VI while it is executing?",
+    "image": [],
+    "options": [
+        "Right-click the control to get the menu for Properties and then Enabled State. B) Right-click the control to get to the menu for advanced and then Enabled State.",
+        "Use a property to change the Disabled property value.",
+        "Use an Invoke Node and use the reinitialize to default method."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

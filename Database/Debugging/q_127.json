@@ -1,0 +1,14 @@
+{
+    "id": 127,
+    "topic": "Debugging",
+    "text": "Which of the following techniques can be used for testing a VI\u2019s response to unexpected data values?",
+    "image": [],
+    "options": [
+        "Using NaN as the value for a string control.",
+        "Using -Inf as the value of a DBL numeric control.",
+        "Using \u201cNaN\u201d for the value of a DBL numeric control.",
+        "Using- Inf for the value of a I32 numeric control."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

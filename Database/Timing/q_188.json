@@ -1,0 +1,16 @@
+{
+    "id": 188,
+    "topic": "Timing",
+    "text": "What value will be displayed in numeric indicator after the completion of execution?",
+    "image": [
+        "images/CLAD7_p15_q188_6384.jpeg"
+    ],
+    "options": [
+        "0",
+        "4",
+        "5",
+        "8"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

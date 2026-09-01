@@ -1,0 +1,16 @@
+{
+    "id": 66,
+    "topic": "Documentation",
+    "text": "If value of 1, 2, 3 is FALSE, TRUE, TRUE respectively then the output value of a & b?",
+    "image": [
+        "images/CLAD11_p1_q66_5181.jpeg"
+    ],
+    "options": [
+        "FALSE, FALSE",
+        "FALSE, TRUE",
+        "TRUE, TRUE",
+        "TRUE, FALSE"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

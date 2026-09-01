@@ -1,0 +1,16 @@
+{
+    "id": 37,
+    "topic": "Debugging",
+    "text": "Which change to the block diagram allows the VI to respond to every change event on the numeric control?",
+    "image": [
+        "images/CLAD1 (1)_p13_q37_4574.jpeg"
+    ],
+    "options": [
+        "Remove the one button dialoge on the event structure",
+        "Move the event structure on the while loop",
+        "Use the mouse up event instead of value change event",
+        "Use filter event"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

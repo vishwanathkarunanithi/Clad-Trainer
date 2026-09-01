@@ -1,0 +1,14 @@
+{
+    "id": 258,
+    "topic": "Charts and Graphs",
+    "text": "Which of the following is the best method to update the value of the indicator in the front panel?",
+    "image": [],
+    "options": [
+        "Use a value property node",
+        "Wire directly to the indicator terminal",
+        "Use a local variable",
+        "Use a global local variable"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

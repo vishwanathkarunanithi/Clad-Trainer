@@ -1,0 +1,16 @@
+{
+    "id": 9,
+    "topic": "LabVIEW Programming Principles",
+    "text": "What values will be displayed in the MAX Value and MIN Value indicators after the VI completes execution?",
+    "image": [
+        "images/CLAD1 (1)_p3_q9_3104.jpeg"
+    ],
+    "options": [
+        "Max Value = 4, Min Value = 2",
+        "Max Value = 5, Min Value = 1",
+        "Max Value = 5, Min Value = 2",
+        "Max Value = 4, Min Value = 3"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

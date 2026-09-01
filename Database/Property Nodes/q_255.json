@@ -1,0 +1,16 @@
+{
+    "id": 255,
+    "topic": "Property Nodes",
+    "text": "What will the output data type?",
+    "image": [
+        "images/CLAD9_p9_q255_1328.png"
+    ],
+    "options": [
+        "Extended",
+        "Double",
+        "I64",
+        "I32"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

@@ -1,0 +1,14 @@
+{
+    "id": 41,
+    "topic": "VI Server",
+    "text": "You have a front panel control on a top-level VI that you must control from within a subVI. What must you pass to the subVI?",
+    "image": [],
+    "options": [
+        "The control's properties",
+        "The control's methods",
+        "The control's reference",
+        "The control's data type"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

@@ -1,0 +1,16 @@
+{
+    "id": 243,
+    "topic": "Synchronization and Communication",
+    "text": "In the below icon , the string has a value NATIONAL INSTRUMENTS, Regular expression has a value N and the offset value is left unwired. What will be the string value of after substring?",
+    "image": [
+        "images/CLAD9_p5_q243_3130.png"
+    ],
+    "options": [
+        "ATIONAL INSTRUMENTS",
+        "AL INSTRUMENTS",
+        "STRUMENTS",
+        "TS"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

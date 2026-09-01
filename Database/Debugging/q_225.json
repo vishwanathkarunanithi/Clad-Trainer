@@ -1,0 +1,16 @@
+{
+    "id": 225,
+    "topic": "Debugging",
+    "text": "What will be produced for code execution?",
+    "image": [
+        "images/CLAD8_p13_q225_8928.png"
+    ],
+    "options": [
+        "Up to ten elements maximum will be in the queue",
+        "When full, the queue will not accept more elements until an element is removed",
+        "New elements will continuously overwrite the one element in the queue",
+        "The queue will return ten elements for each dequeue"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

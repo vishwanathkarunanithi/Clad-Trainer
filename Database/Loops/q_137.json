@@ -1,0 +1,17 @@
+{
+    "id": 137,
+    "topic": "Loops",
+    "text": "The operation and access input terminal are unwired and the open/create/replace file function which condition would not be produce error 7 file not found when the VI executes?",
+    "image": [
+        "images/CLAD2_p12_q137_9117.jpeg",
+        "images/CLAD2_p12_q137_1629.jpeg"
+    ],
+    "options": [
+        "The file myfile .txt does not exist",
+        "The location of myfile.txt is incorrect",
+        "The operation terminal is not set to create",
+        "The access is not set to write"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

@@ -1,0 +1,16 @@
+{
+    "id": 240,
+    "topic": "Mechanical Actions of Booleans",
+    "text": "What will be the value in array indicator?",
+    "image": [
+        "images/CLAD9_p4_q240_9145.png"
+    ],
+    "options": [
+        "1D array of {0,1,1,2,3,5,8,13,21,34}",
+        "1D array of {0,0,0,0,0,0,0,0,0,0}",
+        "1D array of {0,1,2,3,4,5,6,7,8,9}",
+        "1D array of {0,1,3,6,10,15,21,28,36,45}"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

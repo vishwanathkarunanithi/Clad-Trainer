@@ -1,0 +1,15 @@
+{
+    "id": 38,
+    "topic": "Loops",
+    "text": "The timeout input terminal of the dequeud element is unwired while running the program how long does the dequeud element wait for the element?",
+    "image": [
+        "images/CLAD1 (1)_p14_q38_2932.jpeg"
+    ],
+    "options": [
+        "1 millisecond b) 1 secound",
+        "Indefinity",
+        "It does not  wait it returned immediatly"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

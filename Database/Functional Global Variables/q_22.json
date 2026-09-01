@@ -1,0 +1,14 @@
+{
+    "id": 22,
+    "topic": "Functional Global Variables",
+    "text": "Which of the following will not produce a broken wire?",
+    "image": [],
+    "options": [
+        "Multiple data sources wired directly to the same indicator.",
+        "Failing to wire the count [N] terminal on a for loop with no indexed input.",
+        "Wiring a path to a case selector.",
+        "Wiring together incompatible data types."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

@@ -1,0 +1,14 @@
+{
+    "id": 193,
+    "topic": "LabVIEW Programming Principles",
+    "text": "When attempting to create a new file, a user receives an error 8, file permission error what would cause this?",
+    "image": [],
+    "options": [
+        "The user does not have permission to write in the specific directory",
+        "The user does not have permission to read the directory listing",
+        "The path is on a remote driving and the network connected failed",
+        "The file is missing"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

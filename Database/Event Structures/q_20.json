@@ -1,0 +1,16 @@
+{
+    "id": 20,
+    "topic": "Event Structures",
+    "text": "What value is displayed in the  Output  indicator when the fifth iteration (i=4) of Loop 2 completes?",
+    "image": [
+        "images/CLAD1 (1)_p7_q20_7587.jpeg"
+    ],
+    "options": [
+        "Element 1.",
+        "Element 2.",
+        "Element 3.",
+        "Element1Element2Element3."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

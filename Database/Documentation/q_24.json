@@ -1,0 +1,14 @@
+{
+    "id": 24,
+    "topic": "Documentation",
+    "text": "Which statement best describes the use of a notify event, such as the mouse enter?",
+    "image": [],
+    "options": [
+        "Indication that an event occurred and labview did not process the event.",
+        "Indication that an event occurred and processing is pending.",
+        "Indication that an event occurred and labview processed the event.",
+        "Indication that an event occurred and the event will be processed depending on the case."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

@@ -1,0 +1,16 @@
+{
+    "id": 3,
+    "topic": "VI Server",
+    "text": "What  value  will  be  displayed  in  the  numeric  indicator  after  the  VI  completes execution?",
+    "image": [
+        "images/CLAD1 (1)_p0_q3_4823.jpeg"
+    ],
+    "options": [
+        "2",
+        "3",
+        "4",
+        "6"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

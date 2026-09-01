@@ -1,0 +1,15 @@
+{
+    "id": 83,
+    "topic": "Timing",
+    "text": "You may associate the Connector Pane of a VI with objects from the:",
+    "image": [],
+    "options": [
+        "Front Panel.",
+        "Block Diagram.",
+        "Both",
+        "and B.",
+        "None of the above."
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

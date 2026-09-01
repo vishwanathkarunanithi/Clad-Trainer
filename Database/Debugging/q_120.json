@@ -1,0 +1,16 @@
+{
+    "id": 120,
+    "topic": "Debugging",
+    "text": "How many values are in the output array indicator after the VI completes execution?",
+    "image": [
+        "images/CLAD2_p7_q120_3697.jpeg"
+    ],
+    "options": [
+        "0",
+        "1",
+        "2",
+        "5"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

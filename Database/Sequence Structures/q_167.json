@@ -1,0 +1,14 @@
+{
+    "id": 167,
+    "topic": "Sequence Structures",
+    "text": "What are the three main elements of the waveform data type?",
+    "image": [],
+    "options": [
+        "dt, X,Y",
+        "to, dt, Y",
+        "to, X, Y",
+        "to, dt, dy"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

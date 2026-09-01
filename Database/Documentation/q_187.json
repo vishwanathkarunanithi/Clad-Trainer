@@ -1,0 +1,16 @@
+{
+    "id": 187,
+    "topic": "Documentation",
+    "text": "What values will be displayed in the string indicator after the vi completes execution?",
+    "image": [
+        "images/CLAD7_p15_q187_6815.jpeg"
+    ],
+    "options": [
+        "Alpha",
+        "Bravo",
+        "Charlie",
+        "The value can\u2019t be determine"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

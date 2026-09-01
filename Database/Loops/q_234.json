@@ -1,0 +1,16 @@
+{
+    "id": 234,
+    "topic": "Loops",
+    "text": "What will be the value in the output indicator?",
+    "image": [
+        "images/CLAD9_p1_q234_8001.png"
+    ],
+    "options": [
+        "0",
+        "5",
+        "10",
+        "Indeterminate"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}

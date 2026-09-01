@@ -1,0 +1,16 @@
+{
+    "id": 30,
+    "topic": "Event Structures",
+    "text": "The following VI is broken because of the unwired output tunnel on the case structure When the user right click the output tunnel why is the linked input tunnel menu item not enabled?",
+    "image": [
+        "images/CLAD1 (1)_p10_q30_7601.jpeg"
+    ],
+    "options": [
+        "Use default                                                                                                                            if unwired does the same thing as linked input tunnel in this situvation",
+        "Use default if unwired is not available for tunnel on for loops",
+        "Linked input tunnel requires atleast one input tunnel",
+        "Linked input tunnel  is only enabled on input tunnels"
+    ],
+    "correctAnswer": 0,
+    "explanation": ""
+}
