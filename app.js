@@ -53,7 +53,9 @@ async function init() {
                 return;
             }
             
-            let durationMins = parseInt(durationInput);
+            const urlParams = new URLSearchParams(window.location.search);
+            const scheduledTime = urlParams.get('time');
+            let durationMins = scheduledTime ? parseInt(scheduledTime) : parseInt(durationInput);
             if (isNaN(durationMins) || durationMins < 5) durationMins = 60;
 
             studentInfo = {
@@ -123,33 +125,77 @@ const syllabusWeightage = {
 // Select questions based on weightage
 function selectQuestions(allQuestions, testId) {
     let selected = [];
-    let pool = [...allQuestions];
-    pool = shuffleArray(pool); // Truly random every time
+    let pool = shuffleArray([...allQuestions]);
     
-    // Group by topic
-    let grouped = {};
+    let groupedTheory = {};
+    let groupedPractical = {};
+    
     pool.forEach(q => {
         let t = q.topic || "General";
-        if (!grouped[t]) grouped[t] = [];
-        grouped[t].push(q);
+        let isTheory = !q.image || q.image.length === 0;
+        if (isTheory) {
+            if (!groupedTheory[t]) groupedTheory[t] = [];
+            groupedTheory[t].push(q);
+        } else {
+            if (!groupedPractical[t]) groupedPractical[t] = [];
+            groupedPractical[t].push(q);
+        }
     });
 
+    let totalTheoryCount = 0;
+    const MAX_THEORY = 10;
+    
     for (const [topic, count] of Object.entries(syllabusWeightage)) {
-        if (grouped[topic] && grouped[topic].length >= count) {
-            selected = selected.concat(grouped[topic].splice(0, count));
-        } else if (grouped[topic]) {
-            selected = selected.concat(grouped[topic].splice(0, grouped[topic].length));
+        let topicSelected = [];
+        let tPool = groupedTheory[topic] || [];
+        let pPool = groupedPractical[topic] || [];
+        
+        let targetTheory = Math.floor(count * 0.25);
+        if (targetTheory === 0 && Math.random() < 0.25) targetTheory = 1;
+        
+        let actualTheory = 0;
+        while (actualTheory < targetTheory && tPool.length > 0 && totalTheoryCount < MAX_THEORY) {
+            topicSelected.push(tPool.shift());
+            actualTheory++;
+            totalTheoryCount++;
+        }
+        
+        let remainingForTopic = count - actualTheory;
+        while (remainingForTopic > 0 && pPool.length > 0) {
+            topicSelected.push(pPool.shift());
+            remainingForTopic--;
+        }
+        
+        while (remainingForTopic > 0 && tPool.length > 0 && totalTheoryCount < MAX_THEORY) {
+            topicSelected.push(tPool.shift());
+            totalTheoryCount++;
+            remainingForTopic--;
+        }
+        
+        while (remainingForTopic > 0 && tPool.length > 0) {
+            topicSelected.push(tPool.shift());
+            totalTheoryCount++;
+            remainingForTopic--;
+        }
+        
+        selected = selected.concat(topicSelected);
+    }
+    
+    let missing = 40 - selected.length;
+    if (missing > 0) {
+        let remainingP = Object.values(groupedPractical).flat();
+        let remainingT = Object.values(groupedTheory).flat();
+        
+        while (missing > 0 && remainingP.length > 0) {
+            selected.push(remainingP.shift());
+            missing--;
+        }
+        while (missing > 0 && remainingT.length > 0) {
+            selected.push(remainingT.shift());
+            missing--;
         }
     }
     
-    // If we don't have enough to fill exactly 40 by topic, fill with remaining
-    let missing = 40 - selected.length;
-    if (missing > 0) {
-        let remaining = pool.filter(q => !selected.includes(q));
-        selected = selected.concat(remaining.slice(0, missing));
-    }
-    
-    // Final shuffle so topics are mixed
     return shuffleArray(selected).slice(0, 40);
 }
 

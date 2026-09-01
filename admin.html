@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Portal - CLAD Trainer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1e3a8a;
+            --secondary-color: #3b82f6;
+            --bg-color: #f3f4f6;
+        }
+        body {
+            background-color: var(--bg-color);
+            font-family: 'Inter', sans-serif;
+        }
+        .admin-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        #dashboard-section {
+            display: none;
+        }
+    </style>
+</head>
+<body class="p-6">
+
+    <div class="max-w-4xl mx-auto">
+        <!-- Header -->
+        <header class="mb-8 flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/National_Instruments_logo.svg/1200px-National_Instruments_logo.svg.png" alt="NI Logo" class="h-10">
+                <h1 class="text-3xl font-bold text-blue-900">Admin Portal</h1>
+            </div>
+            <a href="index.html" class="text-blue-600 hover:underline">Back to Student Portal</a>
+        </header>
+
+        <!-- Login Section -->
+        <div id="login-section" class="admin-card p-8 max-w-md mx-auto mt-20 text-center">
+            <h2 class="text-2xl font-semibold mb-6">Admin Login</h2>
+            <input type="password" id="admin-pass" class="w-full p-3 border rounded mb-4" placeholder="Enter Password">
+            <button id="login-btn" class="w-full bg-blue-800 text-white p-3 rounded font-semibold hover:bg-blue-700">Login</button>
+            <p id="login-error" class="text-red-500 mt-3 hidden">Incorrect password.</p>
+        </div>
+
+        <!-- Dashboard Section -->
+        <div id="dashboard-section">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Link Generator -->
+                <div class="admin-card p-6">
+                    <h2 class="text-xl font-bold text-gray-800 mb-4">🔗 Generate Test Link</h2>
+                    <p class="text-gray-600 mb-4 text-sm">Create a unique link with a pre-configured time limit. Students opening this link will not see the setup screen.</p>
+                    
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Time Limit (Minutes)</label>
+                    <input type="number" id="test-time" class="w-full p-2 border rounded mb-4" value="60" min="5">
+                    
+                    <button id="generate-btn" class="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700 mb-4">Generate Link</button>
+                    
+                    <div id="generated-link-container" class="hidden">
+                        <label class="block text-sm font-medium text-green-700 mb-1">Share this link with students:</label>
+                        <textarea id="generated-link" class="w-full p-2 border border-green-300 bg-green-50 rounded text-sm mb-2" rows="3" readonly></textarea>
+                        <button id="copy-btn" class="text-blue-600 text-sm font-semibold hover:underline">📋 Copy Link</button>
+                    </div>
+                </div>
+
+                <!-- Live Tracking -->
+                <div class="admin-card p-6">
+                    <h2 class="text-xl font-bold text-gray-800 mb-4">📊 Live Results Tracking</h2>
+                    <p class="text-gray-600 mb-4 text-sm">View all student results live. You must publish your Google Sheet to the web for this to work.</p>
+                    
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Google Sheet URL / ID</label>
+                    <input type="text" id="sheet-url" class="w-full p-2 border rounded mb-4" placeholder="Paste Google Sheet Link Here">
+                    
+                    <button id="open-sheet-btn" class="w-full bg-green-600 text-white p-2 rounded hover:bg-green-700">Open Live Sheet</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
