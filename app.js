@@ -121,9 +121,13 @@ function setupRealtimeChannel() {
     }
 }
 
+let isSessionTerminated = false;
+
 // Handle Broadcast Received by Students
 function handleRealtimeBroadcast(data) {
     if (data.type === 'EMERGENCY_END_WARNING') {
+        isSessionTerminated = true;
+        
         // Show the 2-minute emergency banner on student screens
         if (emergencyBanner) emergencyBanner.style.display = 'block';
 
@@ -133,6 +137,16 @@ function handleRealtimeBroadcast(data) {
         if (screens.test.classList.contains('active')) {
             timeRemaining = Math.min(timeRemaining, warningRemaining);
             updateTimerDisplay();
+        } else if (screens.studentEntry.classList.contains('active')) {
+            // If student is still on entry screen, lock them out!
+            const banner = document.getElementById('test-status-banner');
+            const regForm = document.getElementById('student-reg-form');
+            if (banner) {
+                banner.className = 'status-badge badge-locked';
+                banner.innerHTML = '🛑 <strong>Session Ended by Instructor.</strong><br>This assessment session has been closed. No new entries permitted.';
+                banner.style.display = 'block';
+            }
+            if (regForm) regForm.style.display = 'none';
         }
 
         // Update emergency countdown display
@@ -150,12 +164,15 @@ function handleRealtimeBroadcast(data) {
                 }
             }
         }, 1000);
+    } else if (data.type === 'SESSION_RESET') {
+        isSessionTerminated = false;
     }
 }
 
 // Broadcast End Test from Admin
 function broadcastEndExam() {
-    if (confirm("⚠️ Are you sure you want to end the examination session for ALL students?\n\nA 2-minute warning countdown will instantly appear on all student screens before auto-submitting.")) {
+    if (confirm("⚠️ Are you sure you want to end the examination session for ALL students?\n\nA 2-minute warning countdown will instantly appear on all student screens before auto-submitting, and no new students will be allowed to enter.")) {
+        isSessionTerminated = true;
         const payload = JSON.stringify({
             type: 'EMERGENCY_END_WARNING',
             durationSec: 120,
@@ -163,12 +180,11 @@ function broadcastEndExam() {
         });
 
         if (mqttClient && mqttClient.connected) {
-            mqttClient.publish(MQTT_TOPIC, payload, { qos: 1 });
+            mqttClient.publish(MQTT_TOPIC, payload, { qos: 1, retain: true });
         } else {
-            // Fallback connect & send
             const client = mqtt.connect(MQTT_BROKER);
             client.on('connect', () => {
-                client.publish(MQTT_TOPIC, payload, { qos: 1 }, () => {
+                client.publish(MQTT_TOPIC, payload, { qos: 1, retain: true }, () => {
                     client.end();
                 });
             });
@@ -176,7 +192,7 @@ function broadcastEndExam() {
 
         const btn = document.getElementById('admin-end-exam-btn');
         if (btn) {
-            btn.textContent = "✅ 2-Min Warning Broadcast Sent!";
+            btn.textContent = "✅ Session Ended (2-Min Warning Broadcasted)";
             btn.disabled = true;
             btn.style.background = "#16a34a";
         }
@@ -483,6 +499,180 @@ function setupEventListeners() {
     // Result Screen Buttons
     restartBtn.addEventListener('click', () => showScreen('welcome'));
     document.getElementById('download-cert-btn').addEventListener('click', downloadCertificate);
+    
+    const qpBtn = document.getElementById('download-qp-btn');
+    if (qpBtn) {
+        qpBtn.addEventListener('click', downloadQuestionPaper);
+    }
+}
+
+// Download / Print Question Paper (Questions & Options ONLY - No Answers)
+function downloadQuestionPaper() {
+    const candidateName = studentInfo.name || 'Candidate';
+    const regNo = studentInfo.reg || 'N/A';
+    const classSec = `${studentInfo.cls || 'N/A'} - ${studentInfo.sec || 'N/A'}`;
+    const testTitle = studentInfo.testId || 'CLAD Assessment';
+    const examDate = new Date().toLocaleDateString();
+
+    let questionsHtml = '';
+    const letters = ['A', 'B', 'C', 'D', 'E', 'F'];
+
+    questions.forEach((q, idx) => {
+        let imageHtml = '';
+        if (q.image && Array.isArray(q.image) && q.image.length > 0) {
+            imageHtml = `<div style="text-align: center; margin: 15px 0;">`;
+            q.image.forEach(imgSrc => {
+                imageHtml += `<img src="${imgSrc}" style="max-width: 90%; max-height: 280px; object-fit: contain; border: 1px solid #e2e8f0; border-radius: 4px; padding: 4px; margin: 4px;">`;
+            });
+            imageHtml += `</div>`;
+        }
+
+        let optionsHtml = '<div style="display: flex; flex-direction: column; gap: 8px; margin-top: 10px;">';
+        q.options.forEach((opt, optIdx) => {
+            let optText = opt;
+            if (typeof opt === 'string' && opt.startsWith('IMAGE: ')) {
+                const imgSrc = opt.replace('IMAGE: ', '');
+                optText = `<img src="${imgSrc}" style="max-height: 80px; vertical-align: middle;">`;
+            }
+            optionsHtml += `
+                <div style="display: flex; align-items: flex-start; gap: 10px; font-size: 14px;">
+                    <span style="display: inline-block; width: 22px; height: 22px; border: 1px solid #94a3b8; border-radius: 50%; text-align: center; line-height: 20px; font-weight: 700; font-size: 12px; color: #334155; flex-shrink: 0;">${letters[optIdx]}</span>
+                    <span style="color: #1e293b;">${optText}</span>
+                </div>
+            `;
+        });
+        optionsHtml += '</div>';
+
+        questionsHtml += `
+            <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 18px; margin-bottom: 20px; page-break-inside: avoid;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                    <span style="font-weight: 800; color: #0077c8; font-size: 14px;">QUESTION ${idx + 1} OF ${questions.length}</span>
+                    <span style="font-size: 12px; color: #64748b;">${q.topic || 'General'}</span>
+                </div>
+                <div style="font-size: 15px; font-weight: 600; color: #0f172a; line-height: 1.5; white-space: pre-line;">${q.text}</div>
+                ${imageHtml}
+                ${optionsHtml}
+            </div>
+        `;
+    });
+
+    const qpHtml = `
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Question Paper - ${candidateName} - ${testTitle}</title>
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <style>
+            @page {
+                size: portrait;
+                margin: 15mm;
+            }
+            * { box-sizing: border-box; }
+            body {
+                font-family: 'Plus Jakarta Sans', Arial, sans-serif;
+                color: #0f172a;
+                background: #f8fafc;
+                margin: 0;
+                padding: 20px;
+                line-height: 1.5;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .paper-container {
+                max-width: 850px;
+                margin: 0 auto;
+            }
+            .header-box {
+                background: #ffffff;
+                border: 2px solid #0077c8;
+                border-radius: 8px;
+                padding: 20px;
+                margin-bottom: 25px;
+                text-align: center;
+            }
+            .brand-title {
+                font-size: 24px;
+                font-weight: 800;
+                color: #0077c8;
+                margin: 0 0 4px 0;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+            }
+            .exam-title {
+                font-size: 17px;
+                font-weight: 700;
+                color: #1e293b;
+                margin: 0 0 15px 0;
+            }
+            .candidate-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 8px;
+                text-align: left;
+                font-size: 13px;
+                background: #f0f7fc;
+                padding: 12px 16px;
+                border-radius: 6px;
+                border: 1px solid #bae6fd;
+            }
+            @media print {
+                body { background: #ffffff; padding: 0; }
+                .paper-container { max-width: 100%; }
+                .header-box { border-color: #0077c8; }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="paper-container">
+            <div class="header-box">
+                <div class="brand-title">National Instruments</div>
+                <div class="exam-title">Certified LabVIEW Associate Developer (CLAD) — Question Paper</div>
+                <div class="candidate-grid">
+                    <div><strong>Candidate:</strong> ${candidateName}</div>
+                    <div><strong>Register Number:</strong> ${regNo}</div>
+                    <div><strong>Class & Section:</strong> ${classSec}</div>
+                    <div><strong>Date of Assessment:</strong> ${examDate}</div>
+                </div>
+            </div>
+
+            <div style="font-size: 13px; color: #475569; margin-bottom: 15px; font-weight: 600;">
+                Total Questions: ${questions.length} • Standard Examination Booklet (Official Questions)
+            </div>
+
+            ${questionsHtml}
+
+            <div style="text-align: center; font-size: 12px; color: #64748b; margin-top: 30px; border-top: 1px solid #e2e8f0; padding-top: 15px;">
+                National Instruments CLAD Assessment System • End of Question Paper Booklet
+            </div>
+        </div>
+        <script>
+            window.onload = function() {
+                setTimeout(function() {
+                    window.print();
+                }, 300);
+            };
+        </script>
+    </body>
+    </html>
+    `;
+
+    const printWin = window.open('', '_blank');
+    if (printWin) {
+        printWin.document.open();
+        printWin.document.write(qpHtml);
+        printWin.document.close();
+
+        // Mark as downloaded and clear local question memory as requested
+        const qpBtn = document.getElementById('download-qp-btn');
+        if (qpBtn) {
+            qpBtn.textContent = '✅ Question Paper Downloaded';
+            qpBtn.style.background = '#16a34a';
+            qpBtn.disabled = true;
+        }
+    } else {
+        alert("Pop-up blocked. Please allow popups to save your Question Paper PDF.");
+    }
 }
 
 // Validate Test Code & Check Time-Lock
@@ -490,6 +680,14 @@ function validateAndApplyTestCode(codeStr) {
     const banner = document.getElementById('test-status-banner');
     const regForm = document.getElementById('student-reg-form');
     
+    if (isSessionTerminated) {
+        banner.className = 'status-badge badge-locked';
+        banner.innerHTML = '🛑 <strong>No Active Test Session.</strong><br>The instructor has ended this examination session. No further attempts are permitted.';
+        banner.style.display = 'block';
+        regForm.style.display = 'none';
+        return;
+    }
+
     const config = decodeTestCode(codeStr);
     if (!config) {
         banner.className = 'status-badge badge-locked';
