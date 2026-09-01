@@ -300,7 +300,7 @@ function setupEventListeners() {
     
     const handleAdminLogin = () => {
         const pwd = document.getElementById('admin-password').value.trim();
-        if (pwd === 'admin123') {
+        if (pwd === 'Vishwa12@..') {
             document.getElementById('admin-login-error').style.display = 'none';
             showScreen('adminDashboard');
         } else {

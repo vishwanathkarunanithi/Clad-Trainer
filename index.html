@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>National Instruments - CLAD Assessment Portal</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <!-- html2pdf for generating completion certificates -->
+    <!-- html2pdf for generating certificates -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" defer></script>
 </head>
 <body>
@@ -15,8 +15,16 @@
         <header>
             <div class="header-content">
                 <div class="logo-container">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/National_Instruments_logo.svg/1200px-National_Instruments_logo.svg.png" alt="NI Logo">
-                    <h1>CLAD Assessment Portal</h1>
+                    <div class="ni-badge-icon">
+                        <!-- NI Logo Vector Icon -->
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h1>National Instruments</h1>
+                        <p style="font-size: 0.75rem; color: #94a3b8; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase;">CLAD Assessment Platform</p>
+                    </div>
                 </div>
                 <div class="timer" id="timer" style="display: none;">01:00:00</div>
             </div>
@@ -25,57 +33,80 @@
         <main>
             <!-- 1. WELCOME SCREEN (Role Selection) -->
             <div id="welcome-screen" class="screen active portal-card text-center">
-                <h2 style="font-size: 1.8rem; font-weight: 800; color: #1e3a8a; margin-bottom: 0.5rem;">Welcome to CLAD Trainer</h2>
-                <p style="color: var(--text-secondary);">Select your portal to continue:</p>
+                <div style="display: inline-block; padding: 0.4rem 1rem; border-radius: 30px; background: rgba(37, 99, 235, 0.15); border: 1px solid rgba(37, 99, 235, 0.3); color: #93c5fd; font-size: 0.85rem; font-weight: 700; margin-bottom: 1.25rem;">
+                    ⚡ Certified LabVIEW Associate Developer
+                </div>
+                <h2 style="font-size: 2.2rem; font-weight: 800; color: #ffffff; letter-spacing: -0.02em; margin-bottom: 0.75rem;">
+                    Assessment Examination Portal
+                </h2>
+                <p style="color: var(--text-muted); font-size: 1.05rem; max-width: 580px; margin: 0 auto;">
+                    Select your access portal to begin a scheduled examination or manage student assessment schedules.
+                </p>
 
                 <div class="welcome-grid">
                     <div class="role-card" id="btn-goto-student">
-                        <div class="role-icon">👨‍🎓</div>
-                        <div class="role-title">Student / Guest Login</div>
-                        <div class="role-desc">Enter your test code or link to begin your scheduled assessment.</div>
+                        <div class="role-icon-wrapper">👨‍🎓</div>
+                        <div class="role-title">Student / Candidate</div>
+                        <div class="role-desc">Enter your designated test code or practice session to begin examination.</div>
+                        <div style="margin-top: 1.25rem; font-size: 0.85rem; font-weight: 700; color: #60a5fa; display: flex; align-items: center; gap: 4px;">
+                            Enter Student Portal &rarr;
+                        </div>
                     </div>
 
                     <div class="role-card" id="btn-goto-admin">
-                        <div class="role-icon">👨‍🏫</div>
-                        <div class="role-title">Admin / Faculty Login</div>
-                        <div class="role-desc">Schedule mock tests, set activation timers, and track student submissions live.</div>
+                        <div class="role-icon-wrapper">👨‍🏫</div>
+                        <div class="role-title">Faculty / Admin</div>
+                        <div class="role-desc">Configure mock test codes, set exact start time locks, and view live Google Sheets.</div>
+                        <div style="margin-top: 1.25rem; font-size: 0.85rem; font-weight: 700; color: #60a5fa; display: flex; align-items: center; gap: 4px;">
+                            Faculty Access &rarr;
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- 2. ADMIN LOGIN SCREEN -->
-            <div id="admin-login-screen" class="screen portal-card" style="max-width: 440px; margin: 0 auto;">
-                <h2 style="font-size: 1.5rem; font-weight: 700; color: #1e3a8a; margin-bottom: 1.5rem; text-align: center;">Admin Verification</h2>
+            <div id="admin-login-screen" class="screen portal-card" style="max-width: 460px; margin: 0 auto;">
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <div class="role-icon-wrapper" style="margin: 0 auto 1rem auto;">🔐</div>
+                    <h2 style="font-size: 1.6rem; font-weight: 800; color: #ffffff;">Faculty Authentication</h2>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">Enter your administrator access key</p>
+                </div>
                 
                 <div class="form-group">
-                    <label for="admin-password">Enter Admin Password:</label>
-                    <input type="password" id="admin-password" class="input-field" placeholder="Enter password (default: admin123)">
+                    <label for="admin-password">Admin Password</label>
+                    <input type="password" id="admin-password" class="input-field" placeholder="Enter your admin password">
                 </div>
 
-                <div id="admin-login-error" style="display: none; color: var(--danger-color); font-size: 0.9rem; margin-bottom: 1rem; text-align: center; font-weight: 600;">
+                <div id="admin-login-error" style="display: none; color: #f87171; font-size: 0.9rem; margin-bottom: 1.25rem; text-align: center; font-weight: 600; background: rgba(239, 68, 68, 0.1); padding: 0.6rem; border-radius: var(--radius-sm); border: 1px solid rgba(239, 68, 68, 0.25);">
                     ❌ Incorrect Password. Please try again.
                 </div>
 
-                <button id="admin-login-submit" class="btn btn-primary btn-block" style="margin-bottom: 0.75rem;">Login to Dashboard</button>
-                <button id="admin-login-back" class="btn btn-secondary btn-block">Back to Home</button>
+                <button id="admin-login-submit" class="btn btn-primary btn-block" style="margin-bottom: 0.85rem;">Login to Dashboard</button>
+                <button id="admin-login-back" class="btn btn-secondary btn-block">Back to Main Menu</button>
             </div>
 
             <!-- 3. ADMIN DASHBOARD SCREEN -->
             <div id="admin-dashboard-screen" class="screen portal-card">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border-color);">
-                    <h2 style="font-size: 1.4rem; font-weight: 700; color: #1e3a8a;">👨‍🏫 Faculty Admin Dashboard</h2>
-                    <button id="admin-logout-btn" class="btn btn-secondary" style="padding: 0.4rem 0.8rem; font-size: 0.85rem;">Logout</button>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--border-subtle);">
+                    <div>
+                        <h2 style="font-size: 1.5rem; font-weight: 800; color: #ffffff;">Faculty Control Dashboard</h2>
+                        <p style="color: var(--text-muted); font-size: 0.85rem;">Schedule examinations and manage assessment pipelines</p>
+                    </div>
+                    <button id="admin-logout-btn" class="btn btn-secondary" style="padding: 0.45rem 1rem; font-size: 0.85rem;">Logout</button>
                 </div>
 
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 1.75rem;">
                     <!-- Schedule Test Section -->
-                    <div style="background: #f8fafc; padding: 1.5rem; border-radius: 12px; border: 1px solid var(--border-color);">
-                        <h3 style="font-size: 1.15rem; font-weight: 700; color: #1e40af; margin-bottom: 1rem;">📅 Schedule a Test</h3>
+                    <div style="background: rgba(15, 23, 42, 0.6); padding: 1.75rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+                        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 1.25rem;">
+                            <span style="font-size: 1.3rem;">📅</span>
+                            <h3 style="font-size: 1.2rem; font-weight: 700; color: #93c5fd;">Schedule Assessment</h3>
+                        </div>
                         
                         <div class="form-group">
-                            <label for="admin-test-select">Select Mock Test:</label>
+                            <label for="admin-test-select">Select Mock Test Dataset:</label>
                             <select id="admin-test-select" class="select-field">
-                                <option value="All">All Topics (Standard CLAD Exam - 40 Qs)</option>
+                                <option value="All">All Topics (Standard CLAD Weightage - 40 Qs)</option>
                                 <!-- Mock 1 to 25 populated by JS -->
                             </select>
                         </div>
@@ -84,7 +115,7 @@
                             <div class="form-group">
                                 <label for="admin-test-duration">Duration (Minutes):</label>
                                 <select id="admin-test-duration" class="select-field">
-                                    <option value="60">60 Minutes (1 Hour)</option>
+                                    <option value="60">60 Minutes (Standard)</option>
                                     <option value="45">45 Minutes</option>
                                     <option value="30">30 Minutes</option>
                                     <option value="15">15 Minutes</option>
@@ -92,67 +123,73 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="admin-start-time">Activation Time:</label>
+                                <label for="admin-start-time">Activation Date & Time:</label>
                                 <input type="datetime-local" id="admin-start-time" class="input-field">
                             </div>
                         </div>
 
-                        <p style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 1rem;">
-                            💡 <em>Students opening before this time will be locked out. Whenever they open after this time, their individual test timer begins.</em>
+                        <p style="font-size: 0.82rem; color: #94a3b8; margin-bottom: 1.25rem; background: rgba(30, 41, 59, 0.5); padding: 0.75rem; border-radius: var(--radius-sm); border-left: 3px solid #38bdf8;">
+                            🔒 <strong>Time Lock Guarantee:</strong> Candidates opening before this timestamp are locked out. Opening at or after starts their full individual timer.
                         </p>
 
-                        <button id="admin-generate-code-btn" class="btn btn-primary btn-block">Generate Test Code & Link</button>
+                        <button id="admin-generate-code-btn" class="btn btn-primary btn-block">Generate Access Code & Link</button>
 
                         <!-- Generated Output -->
-                        <div id="generated-code-box" style="display: none; margin-top: 1.25rem; background: #ffffff; padding: 1rem; border-radius: 8px; border: 1.5px dashed var(--accent-color);">
-                            <label style="display: block; font-weight: 700; font-size: 0.85rem; color: #1e40af; margin-bottom: 0.3rem;">📋 Shareable Test Code:</label>
-                            <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
-                                <input type="text" id="output-test-code" class="input-field" readonly style="font-weight: 700; font-family: monospace; background: #f8fafc;">
-                                <button id="btn-copy-code" class="btn btn-secondary" style="flex-shrink: 0;">Copy</button>
+                        <div id="generated-code-box" style="display: none; margin-top: 1.5rem; background: rgba(15, 23, 42, 0.9); padding: 1.25rem; border-radius: var(--radius-sm); border: 1.5px dashed var(--primary);">
+                            <label style="display: block; font-weight: 700; font-size: 0.85rem; color: #93c5fd; margin-bottom: 0.4rem;">📋 Candidate Access Code:</label>
+                            <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+                                <input type="text" id="output-test-code" class="input-field" readonly style="font-weight: 700; font-family: 'JetBrains Mono', monospace; background: rgba(30, 41, 59, 0.6); color: #38bdf8;">
+                                <button id="btn-copy-code" class="btn btn-secondary" style="flex-shrink: 0;">Copy Code</button>
                             </div>
 
-                            <label style="display: block; font-weight: 700; font-size: 0.85rem; color: #1e40af; margin-bottom: 0.3rem;">🔗 Direct Student Link:</label>
+                            <label style="display: block; font-weight: 700; font-size: 0.85rem; color: #93c5fd; margin-bottom: 0.4rem;">🔗 Direct Candidate URL:</label>
                             <div style="display: flex; gap: 0.5rem;">
-                                <input type="text" id="output-test-link" class="input-field" readonly style="font-size: 0.85rem; background: #f8fafc;">
-                                <button id="btn-copy-link" class="btn btn-secondary" style="flex-shrink: 0;">Copy</button>
+                                <input type="text" id="output-test-link" class="input-field" readonly style="font-size: 0.82rem; background: rgba(30, 41, 59, 0.6); color: #cbd5e1;">
+                                <button id="btn-copy-link" class="btn btn-secondary" style="flex-shrink: 0;">Copy Link</button>
                             </div>
                         </div>
                     </div>
 
                     <!-- Live Results Tracking Section -->
-                    <div style="background: #f8fafc; padding: 1.5rem; border-radius: 12px; border: 1px solid var(--border-color); display: flex; flex-direction: column; justify-content: space-between;">
+                    <div style="background: rgba(15, 23, 42, 0.6); padding: 1.75rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle); display: flex; flex-direction: column; justify-content: space-between;">
                         <div>
-                            <h3 style="font-size: 1.15rem; font-weight: 700; color: #166534; margin-bottom: 1rem;">📊 Live Results Tracking</h3>
-                            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1rem;">
-                                Student submissions automatically update in real-time in your Google Sheet. Click below to view live scores and download the master Excel export:
+                            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 1.25rem;">
+                                <span style="font-size: 1.3rem;">📊</span>
+                                <h3 style="font-size: 1.2rem; font-weight: 700; color: #6ee7b7;">Live Google Sheets Tracker</h3>
+                            </div>
+                            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+                                Candidate assessment scores, timestamps, and breakdown are automatically recorded concurrently into your connected Google Sheet.
                             </p>
                             
                             <div class="form-group">
-                                <label for="admin-sheet-url">Google Sheet View / Edit URL:</label>
+                                <label for="admin-sheet-url">Google Sheet Master URL:</label>
                                 <input type="text" id="admin-sheet-url" class="input-field" placeholder="https://docs.google.com/spreadsheets/d/...">
                             </div>
                         </div>
 
-                        <button id="admin-open-sheet-btn" class="btn btn-success btn-block" style="margin-top: 1rem;">
-                            📈 Open Google Sheet Live Tracker
+                        <button id="admin-open-sheet-btn" class="btn btn-success btn-block" style="margin-top: 1rem; padding: 0.95rem;">
+                            📈 Open Google Sheet Live Scores
                         </button>
                     </div>
                 </div>
             </div>
 
             <!-- 4. STUDENT / GUEST ENTRY SCREEN -->
-            <div id="student-entry-screen" class="screen portal-card" style="max-width: 540px; margin: 0 auto;">
+            <div id="student-entry-screen" class="screen portal-card" style="max-width: 580px; margin: 0 auto;">
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
-                    <h2 style="font-size: 1.5rem; font-weight: 800; color: #1e3a8a;">👨‍🎓 Student Assessment</h2>
-                    <button id="student-back-btn" class="btn btn-secondary" style="padding: 0.3rem 0.7rem; font-size: 0.8rem;">Back</button>
+                    <div>
+                        <h2 style="font-size: 1.6rem; font-weight: 800; color: #ffffff;">Candidate Registration</h2>
+                        <p style="color: var(--text-muted); font-size: 0.85rem;">National Instruments CLAD Assessment</p>
+                    </div>
+                    <button id="student-back-btn" class="btn btn-secondary" style="padding: 0.35rem 0.8rem; font-size: 0.8rem;">Back</button>
                 </div>
 
                 <!-- Test Code Input Box -->
                 <div class="form-group">
-                    <label for="student-test-code">Enter Test Code (from Instructor):</label>
-                    <div style="display: flex; gap: 0.5rem;">
-                        <input type="text" id="student-test-code" class="input-field" placeholder="e.g. CLAD-..." style="font-family: monospace; font-weight: 600;">
-                        <button id="btn-validate-code" class="btn btn-primary" style="flex-shrink: 0;">Apply</button>
+                    <label for="student-test-code">Assessment Access Code</label>
+                    <div style="display: flex; gap: 0.6rem;">
+                        <input type="text" id="student-test-code" class="input-field" placeholder="Enter code from instructor" style="font-family: 'JetBrains Mono', monospace; font-weight: 600; color: #38bdf8;">
+                        <button id="btn-validate-code" class="btn btn-primary" style="flex-shrink: 0; padding: 0.75rem 1.25rem;">Apply Code</button>
                     </div>
                 </div>
 
@@ -161,33 +198,34 @@
 
                 <!-- Student Registration Form (Visible when unlocked) -->
                 <div id="student-reg-form" style="display: none; margin-top: 1.5rem;">
-                    <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-primary); margin-bottom: 1rem; border-top: 1px solid var(--border-color); padding-top: 1rem;">
-                        Student Information
-                    </h3>
+                    <div style="border-top: 1px solid var(--border-subtle); padding-top: 1.25rem; margin-bottom: 1.25rem;">
+                        <h3 style="font-size: 1.1rem; font-weight: 700; color: #ffffff; margin-bottom: 0.25rem;">Candidate Credentials</h3>
+                        <p style="font-size: 0.82rem; color: var(--text-muted);">These details will appear on your official certificate</p>
+                    </div>
 
                     <div class="form-group">
                         <label for="student-name">Full Name *</label>
-                        <input type="text" id="student-name" class="input-field" placeholder="Enter your full name" required>
+                        <input type="text" id="student-name" class="input-field" placeholder="E.g., Vishwanath K" required>
                     </div>
 
                     <div class="form-group">
                         <label for="student-reg">Register / Roll Number *</label>
-                        <input type="text" id="student-reg" class="input-field" placeholder="e.g. 21EC001" required>
+                        <input type="text" id="student-reg" class="input-field" placeholder="E.g., 21EC101" required>
                     </div>
 
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="student-class">Class / Year *</label>
-                            <input type="text" id="student-class" class="input-field" placeholder="e.g. III B.Tech" required>
+                            <label for="student-class">Class / Degree *</label>
+                            <input type="text" id="student-class" class="input-field" placeholder="E.g., III B.Tech ECE" required>
                         </div>
                         <div class="form-group">
-                            <label for="student-sec">Section / Department *</label>
-                            <input type="text" id="student-sec" class="input-field" placeholder="e.g. ECE-A" required>
+                            <label for="student-sec">Section / Batch *</label>
+                            <input type="text" id="student-sec" class="input-field" placeholder="E.g., Sec-A" required>
                         </div>
                     </div>
 
-                    <button id="student-start-btn" class="btn btn-success btn-block" style="font-size: 1.1rem; padding: 0.9rem; margin-top: 0.5rem;">
-                        🚀 Start Assessment Now
+                    <button id="student-start-btn" class="btn btn-success btn-block" style="font-size: 1.1rem; padding: 1rem; margin-top: 0.5rem;">
+                        🚀 Start Examination Now
                     </button>
                 </div>
             </div>
@@ -195,13 +233,16 @@
             <!-- 5. TEST SCREEN -->
             <div id="test-screen" class="screen">
                 <div class="card-header">
-                    <h3 id="test-active-title">CLAD Certification Assessment</h3>
-                    <button id="header-exit-btn" class="btn btn-danger" style="padding: 0.35rem 0.8rem; font-size: 0.8rem;">Exit Assessment</button>
+                    <div>
+                        <h3 id="test-active-title">CLAD Certification Assessment</h3>
+                        <span style="font-size: 0.75rem; color: #94a3b8;">40 Questions • Official Weightage</span>
+                    </div>
+                    <button id="header-exit-btn" class="btn btn-danger" style="padding: 0.4rem 0.9rem; font-size: 0.8rem;">Exit Test</button>
                 </div>
 
                 <div class="question-content">
                     <span class="question-number" id="q-number">Question #1</span>
-                    <p class="question-text" id="q-text">Loading question...</p>
+                    <p class="question-text" id="q-text">Loading question content...</p>
                     <div class="question-image-container" id="q-image-container" style="display: none;">
                         <img id="q-image" src="" alt="Question Diagram">
                     </div>
@@ -213,29 +254,32 @@
 
                 <div class="navigation-buttons">
                     <div class="question-progress-text" id="q-progress-footer">1 / 40</div>
-                    <div style="display: flex; gap: 0.5rem;">
+                    <div style="display: flex; gap: 0.75rem;">
                         <button id="prev-btn" class="btn btn-secondary" disabled>&larr; Previous</button>
                         <button id="next-btn" class="btn btn-primary">Next &rarr;</button>
                     </div>
                 </div>
 
                 <div class="submit-container">
-                    <div>Candidate: <strong id="footer-name"></strong> (<span id="footer-reg"></span>)</div>
-                    <button id="submit-btn" class="btn btn-success" style="padding: 0.5rem 1.25rem;">Finish & Submit Test</button>
+                    <div>Candidate: <strong id="footer-name" style="color: #ffffff;"></strong> (<span id="footer-reg"></span>)</div>
+                    <button id="submit-btn" class="btn btn-success" style="padding: 0.6rem 1.4rem;">Finish & Submit Test</button>
                 </div>
             </div>
 
             <!-- 6. RESULT SCREEN -->
-            <div id="result-screen" class="screen portal-card">
-                <h2 style="font-size: 1.8rem; font-weight: 800; color: #1e3a8a; margin-bottom: 0.5rem;">Assessment Completed! 🎉</h2>
-                <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">Your responses have been successfully evaluated and submitted.</p>
+            <div id="result-screen" class="screen portal-card text-center">
+                <div style="display: inline-block; padding: 0.4rem 1rem; border-radius: 30px; background: rgba(16, 185, 129, 0.15); border: 1px solid rgba(16, 185, 129, 0.3); color: #6ee7b7; font-size: 0.85rem; font-weight: 700; margin-bottom: 1rem;">
+                    ✓ Assessment Completed
+                </div>
+                <h2 style="font-size: 2.2rem; font-weight: 800; color: #ffffff; margin-bottom: 0.5rem;">Official Evaluation Result</h2>
+                <p style="color: var(--text-muted); margin-bottom: 1.75rem;">Your score has been registered in the master gradebook.</p>
 
-                <div style="background: #f8fafc; padding: 1.25rem; border-radius: 12px; margin-bottom: 1.5rem; text-align: left; border: 1px solid var(--border-color);">
+                <div style="background: rgba(15, 23, 42, 0.6); padding: 1.35rem; border-radius: var(--radius-md); margin-bottom: 1.75rem; text-align: left; border: 1px solid var(--border-subtle);">
                     <div class="form-row">
-                        <div><strong>Name:</strong> <span id="res-name"></span></div>
-                        <div><strong>Register No:</strong> <span id="res-reg"></span></div>
-                        <div><strong>Class & Section:</strong> <span id="res-class-sec"></span></div>
-                        <div><strong>Date:</strong> <span id="res-date"></span></div>
+                        <div><strong style="color: #94a3b8;">Candidate:</strong> <span id="res-name" style="color: #ffffff; font-weight: 700;"></span></div>
+                        <div><strong style="color: #94a3b8;">Register No:</strong> <span id="res-reg" style="color: #ffffff; font-weight: 700;"></span></div>
+                        <div><strong style="color: #94a3b8;">Class & Sec:</strong> <span id="res-class-sec" style="color: #ffffff; font-weight: 700;"></span></div>
+                        <div><strong style="color: #94a3b8;">Date:</strong> <span id="res-date" style="color: #ffffff; font-weight: 700;"></span></div>
                     </div>
                 </div>
 
@@ -244,19 +288,19 @@
                         <span id="final-score">0</span>
                         <span class="total-score">%</span>
                     </div>
-                    <p style="font-size: 1.1rem; color: var(--text-secondary); font-weight: 500;">
-                        Questions Attempted: <strong id="attempted-count" style="color: var(--text-primary);">0</strong> / <span id="total-questions-count">40</span>
+                    <p style="font-size: 1.15rem; color: #cbd5e1; font-weight: 600;">
+                        Questions Attempted: <strong id="attempted-count" style="color: #38bdf8;">0</strong> / <span id="total-questions-count">40</span>
                     </p>
                 </div>
 
-                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2rem;">
-                    <button id="download-cert-btn" class="btn btn-primary" style="padding: 0.8rem 1.5rem;">🎓 Download Certificate (PDF)</button>
-                    <button id="restart-btn" class="btn btn-secondary" style="padding: 0.8rem 1.5rem;">Take Another Assessment</button>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2.5rem;">
+                    <button id="download-cert-btn" class="btn btn-primary" style="padding: 0.9rem 1.8rem;">🎓 Download Official Certificate (PDF)</button>
+                    <button id="restart-btn" class="btn btn-secondary" style="padding: 0.9rem 1.8rem;">Return to Main Portal</button>
                 </div>
 
                 <!-- Answer Key & Detailed Breakdown -->
                 <div class="answer-key-section">
-                    <h3 style="font-size: 1.3rem; font-weight: 700; color: #1e3a8a; margin-bottom: 1rem;">Detailed Question Analysis</h3>
+                    <h3 style="font-size: 1.4rem; font-weight: 800; color: #ffffff; margin-bottom: 1.25rem;">Detailed Solution Review</h3>
                     <div id="answer-key-container">
                         <!-- Populated by JS -->
                     </div>
@@ -264,30 +308,29 @@
             </div>
 
             <!-- Hidden Certificate Template for html2pdf -->
-            <div id="certificate-template" style="position: absolute; left: -9999px; top: -9999px; width: 850px; padding: 40px; background: white; border: 12px solid #1e3a8a; text-align: center; font-family: 'Inter', sans-serif;">
+            <div id="certificate-template" style="position: absolute; left: -9999px; top: -9999px; width: 850px; padding: 40px; background: white; border: 12px solid #0077c8; text-align: center; font-family: 'Plus Jakarta Sans', Arial, sans-serif;">
                 <div style="border: 2px solid #93c5fd; padding: 30px;">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/National_Instruments_logo.svg/1200px-National_Instruments_logo.svg.png" alt="NI Logo" style="height: 38px; margin-bottom: 15px;">
-                    <h1 style="font-size: 38px; color: #1e3a8a; font-weight: 800; margin-bottom: 5px;">Certificate of Completion</h1>
-                    <h2 style="font-size: 20px; color: #4b5563; font-weight: 600; margin-bottom: 30px;">Certified LabVIEW Associate Developer (CLAD) Mock Examination</h2>
+                    <h1 style="font-size: 36px; color: #0077c8; font-weight: 800; margin-bottom: 5px; text-transform: uppercase;">National Instruments</h1>
+                    <h2 style="font-size: 22px; color: #1e293b; font-weight: 700; margin-bottom: 30px;">Certificate of Assessment Completion</h2>
 
-                    <p style="font-size: 16px; color: #6b7280; margin-bottom: 8px;">This is proudly presented to</p>
-                    <h3 style="font-size: 32px; color: #0f172a; font-weight: 800; margin-bottom: 10px; border-bottom: 2px solid #e2e8f0; display: inline-block; padding-bottom: 5px;" id="cert-name">[Student Name]</h3>
+                    <p style="font-size: 16px; color: #64748b; margin-bottom: 8px;">This is proudly presented to</p>
+                    <h3 style="font-size: 32px; color: #0f172a; font-weight: 800; margin-bottom: 10px; border-bottom: 2px solid #cbd5e1; display: inline-block; padding-bottom: 5px;" id="cert-name">[Student Name]</h3>
                     <p style="font-size: 15px; color: #475569; margin-bottom: 25px;">Register Number: <strong id="cert-reg">[Reg]</strong> | Class: <strong id="cert-class">[Class]</strong></p>
 
-                    <p style="font-size: 16px; color: #334155; margin-bottom: 15px;">for successfully completing the standardized assessment with a proficiency score of:</p>
+                    <p style="font-size: 16px; color: #334155; margin-bottom: 15px;">for successfully completing the <strong>Certified LabVIEW Associate Developer (CLAD)</strong> Examination with a proficiency score of:</p>
 
-                    <div style="background: #f1f5f9; padding: 15px 35px; border-radius: 8px; display: inline-block; margin-bottom: 25px; border: 1px solid #cbd5e1;">
-                        <h1 style="font-size: 48px; color: #1e3a8a; margin: 0; font-weight: 800;" id="cert-score">0%</h1>
+                    <div style="background: #f1f5f9; padding: 15px 40px; border-radius: 8px; display: inline-block; margin-bottom: 25px; border: 1px solid #cbd5e1;">
+                        <h1 style="font-size: 52px; color: #0077c8; margin: 0; font-weight: 800;" id="cert-score">0%</h1>
                     </div>
 
-                    <div style="display: flex; justify-content: space-between; margin-top: 30px; padding-top: 20px; border-top: 1px solid #e2e8f0;">
+                    <div style="display: flex; justify-content: space-between; margin-top: 30px; padding-top: 20px; border-top: 1px solid #cbd5e1;">
                         <div style="text-align: left;">
-                            <p style="font-weight: 700; color: #1e3a8a; font-size: 14px;">Assessment Date</p>
+                            <p style="font-weight: 700; color: #0077c8; font-size: 14px;">Assessment Date</p>
                             <p id="cert-date" style="font-size: 14px; color: #64748b;"></p>
                         </div>
                         <div style="text-align: right;">
-                            <p style="font-weight: 700; color: #1e3a8a; font-size: 14px;">National Instruments Badges</p>
-                            <p style="font-style: italic; font-size: 13px; color: #64748b;">Verified Assessment Engine</p>
+                            <p style="font-weight: 700; color: #0077c8; font-size: 14px;">National Instruments</p>
+                            <p style="font-style: italic; font-size: 13px; color: #64748b;">CLAD Certification Engine</p>
                         </div>
                     </div>
                 </div>
