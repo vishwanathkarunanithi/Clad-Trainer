@@ -736,35 +736,176 @@ function finishAssessment() {
     });
 }
 
-// Download Certificate PDF
+// Download / Print Certificate (Native High-Quality PDF / Print)
 function downloadCertificate() {
-    const element = document.getElementById('certificate-template');
-    const btn = document.getElementById('download-cert-btn');
-    const originalText = btn.textContent;
-    btn.textContent = "Generating PDF...";
-    btn.disabled = true;
+    const candidateName = studentInfo.name || 'Candidate';
+    const regNo = studentInfo.reg || 'N/A';
+    const classSec = `${studentInfo.cls || 'N/A'} - ${studentInfo.sec || 'N/A'}`;
+    const scoreVal = document.getElementById('final-score').textContent || '0';
+    const certDate = new Date().toLocaleDateString();
 
-    const opt = {
-        margin: 0,
-        filename: `${studentInfo.name || 'Candidate'}_CLAD_Certificate.pdf`,
-        image: { type: 'jpeg', quality: 0.98 },
-        html2canvas: { scale: 2 },
-        jsPDF: { unit: 'in', format: 'letter', orientation: 'landscape' }
-    };
+    const certHtml = `
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CLAD Certificate - ${candidateName}</title>
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+        <style>
+            @page {
+                size: letter landscape;
+                margin: 0;
+            }
+            * { box-sizing: border-box; }
+            body {
+                margin: 0;
+                padding: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                background: #f8fafc;
+                font-family: 'Plus Jakarta Sans', Arial, sans-serif;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .cert-container {
+                width: 100%;
+                max-width: 900px;
+                background: #ffffff;
+                border: 12px solid #0077c8;
+                padding: 35px;
+                text-align: center;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            }
+            .cert-inner {
+                border: 2px solid #bae6fd;
+                padding: 30px 20px;
+            }
+            .brand-title {
+                font-size: 36px;
+                color: #0077c8;
+                font-weight: 800;
+                margin: 0 0 4px 0;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+            }
+            .cert-subtitle {
+                font-size: 20px;
+                color: #1e293b;
+                font-weight: 700;
+                margin: 0 0 25px 0;
+            }
+            .presented-text {
+                font-size: 15px;
+                color: #64748b;
+                margin: 0 0 6px 0;
+            }
+            .candidate-name {
+                font-size: 34px;
+                color: #0f172a;
+                font-weight: 800;
+                margin: 0 0 8px 0;
+                border-bottom: 2px solid #e2e8f0;
+                display: inline-block;
+                padding-bottom: 4px;
+            }
+            .candidate-meta {
+                font-size: 14px;
+                color: #475569;
+                margin: 0 0 20px 0;
+            }
+            .completion-text {
+                font-size: 15px;
+                color: #334155;
+                margin: 0 0 15px 0;
+                max-width: 650px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .score-box {
+                background: #f8fafc;
+                border: 1px solid #cbd5e1;
+                border-radius: 8px;
+                padding: 10px 35px;
+                display: inline-block;
+                margin-bottom: 20px;
+            }
+            .score-val {
+                font-size: 46px;
+                font-weight: 800;
+                color: #0077c8;
+                margin: 0;
+                line-height: 1;
+            }
+            .cert-footer {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 25px;
+                padding-top: 15px;
+                border-top: 1px solid #e2e8f0;
+            }
+            .footer-left { text-align: left; }
+            .footer-right { text-align: right; }
+            .footer-title {
+                font-weight: 700;
+                color: #0077c8;
+                font-size: 13px;
+                margin: 0 0 3px 0;
+            }
+            .footer-sub {
+                margin: 0;
+                font-size: 12px;
+                color: #64748b;
+            }
+            @media print {
+                body { background: white; padding: 0; }
+                .cert-container { box-shadow: none; border-width: 10px; width: 100%; }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="cert-container">
+            <div class="cert-inner">
+                <div class="brand-title">National Instruments</div>
+                <div class="cert-subtitle">Certificate of Assessment Completion</div>
+                <div class="presented-text">This is proudly presented to</div>
+                <div class="candidate-name">${candidateName}</div>
+                <div class="candidate-meta">Register Number: <strong>${regNo}</strong> | Class: <strong>${classSec}</strong></div>
+                <div class="completion-text">for successfully completing the <strong>Certified LabVIEW Associate Developer (CLAD)</strong> Examination with a proficiency score of:</div>
+                <div class="score-box">
+                    <div class="score-val">${scoreVal}%</div>
+                </div>
+                <div class="cert-footer">
+                    <div class="footer-left">
+                        <div class="footer-title">Assessment Date</div>
+                        <div class="footer-sub">${certDate}</div>
+                    </div>
+                    <div class="footer-right">
+                        <div class="footer-title">National Instruments</div>
+                        <div class="footer-sub" style="font-style: italic;">CLAD Certification Engine</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            window.onload = function() {
+                setTimeout(function() {
+                    window.print();
+                }, 300);
+            };
+        </script>
+    </body>
+    </html>
+    `;
 
-    if (window.html2pdf) {
-        html2pdf().set(opt).from(element).save().then(() => {
-            btn.textContent = originalText;
-            btn.disabled = false;
-        }).catch(err => {
-            console.error("Certificate error:", err);
-            btn.textContent = "Download Failed";
-            btn.disabled = false;
-        });
+    const printWindow = window.open('', '_blank');
+    if (printWindow) {
+        printWindow.document.open();
+        printWindow.document.write(certHtml);
+        printWindow.document.close();
     } else {
-        alert("PDF generator is still loading. Please try again in a few seconds.");
-        btn.textContent = originalText;
-        btn.disabled = false;
+        window.print();
     }
 }
 
