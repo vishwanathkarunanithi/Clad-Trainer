@@ -121,12 +121,13 @@ function setupRealtimeChannel() {
     }
 }
 
-let isSessionTerminated = false;
+let isSessionTerminated = localStorage.getItem('isSessionTerminated') === 'true';
 
 // Handle Broadcast Received by Students
 function handleRealtimeBroadcast(data) {
     if (data.type === 'EMERGENCY_END_WARNING') {
         isSessionTerminated = true;
+        localStorage.setItem('isSessionTerminated', 'true');
         
         // Show the 2-minute emergency banner on student screens
         if (emergencyBanner) emergencyBanner.style.display = 'block';
@@ -166,6 +167,7 @@ function handleRealtimeBroadcast(data) {
         }, 1000);
     } else if (data.type === 'SESSION_RESET') {
         isSessionTerminated = false;
+        localStorage.removeItem('isSessionTerminated');
     }
 }
 
@@ -173,6 +175,7 @@ function handleRealtimeBroadcast(data) {
 function broadcastEndExam() {
     if (confirm("⚠️ Are you sure you want to end the examination session for ALL students?\n\nA 2-minute warning countdown will instantly appear on all student screens before auto-submitting, and no new students will be allowed to enter.")) {
         isSessionTerminated = true;
+        localStorage.setItem('isSessionTerminated', 'true');
         const payload = JSON.stringify({
             type: 'EMERGENCY_END_WARNING',
             durationSec: 120,
