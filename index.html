@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>National Instruments - CLAD Assessment Portal</title>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=3.0">
+    <link rel="stylesheet" href="styles.css?v=4.0">
     <!-- html2pdf for generating certificates -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" defer></script>
+    <!-- MQTT for Instant Real-Time Admin-to-Student Broadcasts -->
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
 </head>
 <body>
     <div class="app-container">
@@ -16,7 +18,6 @@
             <div class="header-content">
                 <div class="logo-container">
                     <div class="ni-badge-icon">
-                        <!-- NI Logo Vector Icon -->
                         <svg viewBox="0 0 24 24">
                             <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
                         </svg>
@@ -29,6 +30,16 @@
                 <div class="timer" id="timer" style="display: none;">01:00:00</div>
             </div>
         </header>
+
+        <!-- Emergency 2-Minute Broadcast Warning Banner (for Students) -->
+        <div id="emergency-warning-banner" style="display: none; background: #fee2e2; border: 2px solid #ef4444; border-radius: var(--radius-md); padding: 1.25rem; margin-bottom: 1.5rem; text-align: center; box-shadow: 0 10px 25px -5px rgba(239, 68, 68, 0.25); animation: pulseAlert 1.5s infinite;">
+            <div style="font-size: 1.15rem; font-weight: 800; color: #991b1b; margin-bottom: 0.25rem;">
+                ⚠️ INSTRUCTOR NOTICE: ASSESSMENT ENDING
+            </div>
+            <p style="color: #b91c1c; font-size: 0.95rem; font-weight: 600;">
+                The faculty has ended this session. Your assessment will automatically submit in: <strong id="emergency-countdown-display" style="font-family: 'JetBrains Mono', monospace; font-size: 1.2rem; background: #ffffff; padding: 2px 8px; border-radius: 4px; border: 1px solid #f87171;">02:00</strong>
+            </p>
+        </div>
 
         <main>
             <!-- 1. WELCOME SCREEN (Role Selection) -->
@@ -56,7 +67,7 @@
                     <div class="role-card" id="btn-goto-admin">
                         <div class="role-icon-wrapper">👨‍🏫</div>
                         <div class="role-title">Faculty / Admin</div>
-                        <div class="role-desc">Schedule tests, set start and closing times, and track live submissions.</div>
+                        <div class="role-desc">Schedule tests, live-end sessions with 2-min warning, and view Google Sheets.</div>
                         <div style="margin-top: 1.25rem; font-size: 0.88rem; font-weight: 700; color: var(--primary); display: flex; align-items: center; gap: 4px;">
                             Faculty Access &rarr;
                         </div>
@@ -90,9 +101,20 @@
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.75rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border-color);">
                     <div>
                         <h2 style="font-size: 1.4rem; font-weight: 800; color: #0f172a;">Faculty Assessment Control</h2>
-                        <p style="color: var(--text-secondary); font-size: 0.85rem;">Configure test windows and view live student evaluations</p>
+                        <p style="color: var(--text-secondary); font-size: 0.85rem;">Live examination session management & live tracking</p>
                     </div>
                     <button id="admin-logout-btn" class="btn btn-secondary" style="padding: 0.4rem 0.85rem; font-size: 0.85rem;">Logout</button>
+                </div>
+
+                <!-- Emergency Real-Time Control Card -->
+                <div style="background: #fff1f2; border: 1.5px solid #fecdd3; border-radius: var(--radius-md); padding: 1.25rem 1.5rem; margin-bottom: 1.75rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+                    <div>
+                        <h3 style="font-size: 1.1rem; font-weight: 800; color: #9f1239; margin-bottom: 0.2rem;">⚡ Live Exam Broadcast Control</h3>
+                        <p style="font-size: 0.85rem; color: #be123c;">Instantly broadcast a 2-minute ending warning to all connected student devices and close the exam.</p>
+                    </div>
+                    <button id="admin-end-exam-btn" class="btn btn-danger" style="background: #e11d48; color: white; border: none; font-weight: 700; padding: 0.75rem 1.25rem;">
+                        🛑 End Exam Now (2-Min Warning)
+                    </button>
                 </div>
 
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;">
@@ -128,13 +150,8 @@
                             </div>
                         </div>
 
-                        <div class="form-group">
-                            <label for="admin-end-time">Test Closing / End Time (Optional):</label>
-                            <input type="datetime-local" id="admin-end-time" class="input-field">
-                        </div>
-
                         <p style="font-size: 0.82rem; color: #475569; margin-bottom: 1.25rem; background: #ffffff; padding: 0.75rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color); border-left: 3px solid var(--primary);">
-                            🔒 <strong>Time Window Controls:</strong> Locked before Start Time. Closes automatically after End Time.
+                            🔒 <strong>Start Control:</strong> Students opening before the Start Time are locked out.
                         </p>
 
                         <button id="admin-generate-code-btn" class="btn btn-primary btn-block">Generate Access Code & Link</button>
@@ -344,6 +361,6 @@
     </div>
 
     <!-- Application Script -->
-    <script src="app.js?v=3.0"></script>
+    <script src="app.js?v=4.0"></script>
 </body>
 </html>

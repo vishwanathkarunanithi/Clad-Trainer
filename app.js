@@ -9,11 +9,16 @@ let studentInfo = {};
 let activeTestConfig = {
     testId: "All",
     duration: 60,
-    startTime: 0 // 0 means immediately available
+    startTime: 0
 };
 
 const MARKS_PER_QUESTION = 2.5;
 const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzH6LhVuapl_6w602GozE1zzwrzx9ZDH_jO_OAcfOWJ3yQgtAzzjR94uuCkqAK4NkuT/exec';
+const MQTT_BROKER = 'wss://broker.hivemq.com:8884/mqtt';
+const MQTT_TOPIC = 'ni_clad_exam_live_control_vishwanath_2026';
+
+let mqttClient = null;
+let emergencyCountdownInterval = null;
 
 // Syllabus Weightage Definition (40 Questions total)
 const syllabusWeightage = {
@@ -62,6 +67,8 @@ const nextBtn = document.getElementById('next-btn');
 const submitBtn = document.getElementById('submit-btn');
 const headerExitBtn = document.getElementById('header-exit-btn');
 const restartBtn = document.getElementById('restart-btn');
+const emergencyBanner = document.getElementById('emergency-warning-banner');
+const emergencyCountdownDisplay = document.getElementById('emergency-countdown-display');
 
 // Show Screen Helper
 function showScreen(screenKey) {
@@ -88,14 +95,101 @@ function shuffleArray(array) {
     return arr;
 }
 
+// Setup Real-Time MQTT Channel
+function setupRealtimeChannel() {
+    try {
+        if (typeof mqtt !== 'undefined') {
+            const clientId = 'clad_user_' + Math.random().toString(16).substr(2, 8);
+            mqttClient = mqtt.connect(MQTT_BROKER, { clientId: clientId, keepalive: 60 });
+
+            mqttClient.on('connect', () => {
+                console.log("Connected to Real-Time Broadcast Network.");
+                mqttClient.subscribe(MQTT_TOPIC);
+            });
+
+            mqttClient.on('message', (topic, message) => {
+                try {
+                    const data = JSON.parse(message.toString());
+                    handleRealtimeBroadcast(data);
+                } catch (e) {
+                    console.error("MQTT Message Parse Error", e);
+                }
+            });
+        }
+    } catch (err) {
+        console.warn("Real-time network connection skipped:", err);
+    }
+}
+
+// Handle Broadcast Received by Students
+function handleRealtimeBroadcast(data) {
+    if (data.type === 'EMERGENCY_END_WARNING') {
+        // Show the 2-minute emergency banner on student screens
+        if (emergencyBanner) emergencyBanner.style.display = 'block';
+
+        let warningRemaining = data.durationSec || 120;
+
+        // If taking test, synchronize remaining time to 2 minutes
+        if (screens.test.classList.contains('active')) {
+            timeRemaining = Math.min(timeRemaining, warningRemaining);
+            updateTimerDisplay();
+        }
+
+        // Update emergency countdown display
+        clearInterval(emergencyCountdownInterval);
+        emergencyCountdownInterval = setInterval(() => {
+            warningRemaining--;
+            const m = Math.floor(warningRemaining / 60).toString().padStart(2, '0');
+            const s = (warningRemaining % 60).toString().padStart(2, '0');
+            if (emergencyCountdownDisplay) emergencyCountdownDisplay.textContent = `${m}:${s}`;
+
+            if (warningRemaining <= 0) {
+                clearInterval(emergencyCountdownInterval);
+                if (screens.test.classList.contains('active')) {
+                    finishAssessment();
+                }
+            }
+        }, 1000);
+    }
+}
+
+// Broadcast End Test from Admin
+function broadcastEndExam() {
+    if (confirm("⚠️ Are you sure you want to end the examination session for ALL students?\n\nA 2-minute warning countdown will instantly appear on all student screens before auto-submitting.")) {
+        const payload = JSON.stringify({
+            type: 'EMERGENCY_END_WARNING',
+            durationSec: 120,
+            triggerTime: Date.now()
+        });
+
+        if (mqttClient && mqttClient.connected) {
+            mqttClient.publish(MQTT_TOPIC, payload, { qos: 1 });
+        } else {
+            // Fallback connect & send
+            const client = mqtt.connect(MQTT_BROKER);
+            client.on('connect', () => {
+                client.publish(MQTT_TOPIC, payload, { qos: 1 }, () => {
+                    client.end();
+                });
+            });
+        }
+
+        const btn = document.getElementById('admin-end-exam-btn');
+        if (btn) {
+            btn.textContent = "✅ 2-Min Warning Broadcast Sent!";
+            btn.disabled = true;
+            btn.style.background = "#16a34a";
+        }
+    }
+}
+
 // Encode Test Config to Code
 function encodeTestCode(config) {
     try {
         const payload = JSON.stringify({
             t: config.testId,
             d: parseInt(config.duration),
-            s: config.startTime ? new Date(config.startTime).getTime() : 0,
-            e: config.endTime ? new Date(config.endTime).getTime() : 0
+            s: config.startTime ? new Date(config.startTime).getTime() : 0
         });
         return btoa(payload).replace(/=/g, '');
     } catch (e) {
@@ -113,15 +207,13 @@ function decodeTestCode(codeStr) {
         return {
             testId: parsed.t || "All",
             duration: parseInt(parsed.d) || 60,
-            startTime: parsed.s || 0,
-            endTime: parsed.e || 0
+            startTime: parsed.s || 0
         };
     } catch (e) {
         return {
             testId: codeStr.trim(),
             duration: 60,
-            startTime: 0,
-            endTime: 0
+            startTime: 0
         };
     }
 }
@@ -130,7 +222,6 @@ function decodeTestCode(codeStr) {
 function selectQuestions(allQs, testConfig) {
     let pool = shuffleArray([...allQs]);
     
-    // Group all questions into Theory and Practical (Diagram)
     let groupedTheory = {};
     let groupedPractical = {};
     
@@ -149,15 +240,13 @@ function selectQuestions(allQs, testConfig) {
 
     let selected = [];
     let totalTheoryCount = 0;
-    const MAX_THEORY = 10; // Rule: Maximum 10 theory questions in the test
+    const MAX_THEORY = 10;
 
-    // Select according to syllabus weightage
     for (const [topic, count] of Object.entries(syllabusWeightage)) {
         let topicSelected = [];
         let tPool = groupedTheory[topic] || [];
         let pPool = groupedPractical[topic] || [];
         
-        // Target max ~25% theory per topic
         let targetTheory = Math.floor(count * 0.25);
         if (targetTheory === 0 && Math.random() < 0.25) targetTheory = 1;
         
@@ -168,21 +257,18 @@ function selectQuestions(allQs, testConfig) {
             totalTheoryCount++;
         }
         
-        // Fill remaining with practical
         let remainingForTopic = count - actualTheory;
         while (remainingForTopic > 0 && pPool.length > 0) {
             topicSelected.push(pPool.shift());
             remainingForTopic--;
         }
         
-        // Backfill with theory if practical runs short
         while (remainingForTopic > 0 && tPool.length > 0 && totalTheoryCount < MAX_THEORY) {
             topicSelected.push(tPool.shift());
             totalTheoryCount++;
             remainingForTopic--;
         }
         
-        // Absolute fallback to complete topic quota
         while (remainingForTopic > 0 && tPool.length > 0) {
             topicSelected.push(tPool.shift());
             totalTheoryCount++;
@@ -192,7 +278,6 @@ function selectQuestions(allQs, testConfig) {
         selected = selected.concat(topicSelected);
     }
 
-    // If total selected < 40, backfill with remaining
     let missing = 40 - selected.length;
     if (missing > 0) {
         let remainingP = Object.values(groupedPractical).flat().filter(q => !selected.includes(q));
@@ -213,7 +298,6 @@ function selectQuestions(allQs, testConfig) {
         }
     }
 
-    // Final Thorough Global Shuffle so theory and topics are seamlessly mixed
     return shuffleArray(selected).slice(0, 40);
 }
 
@@ -226,6 +310,8 @@ async function initApp() {
         console.error("Could not load questions.json", err);
     }
 
+    setupRealtimeChannel();
+
     // Setup Admin Test Selector options (Mock Test 1 to 25)
     const adminTestSelect = document.getElementById('admin-test-select');
     if (adminTestSelect) {
@@ -237,13 +323,10 @@ async function initApp() {
         }
     }
 
-    // Setup Default Start Time in Admin to now + 5 minutes
+    // Setup Default Start Time in Admin to now
     const adminStartTimeInput = document.getElementById('admin-start-time');
     if (adminStartTimeInput) {
         const now = new Date();
-        now.setMinutes(now.getMinutes() + 5);
-        now.setSeconds(0);
-        now.setMilliseconds(0);
         const isoString = new Date(now.getTime() - now.getTimezoneOffset() * 60000).toISOString().slice(0, 16);
         adminStartTimeInput.value = isoString;
     }
@@ -280,7 +363,6 @@ function setupEventListeners() {
     // Welcome Screen Buttons
     document.getElementById('btn-goto-student').addEventListener('click', () => {
         showScreen('studentEntry');
-        // If code field is empty, provide default practice code
         const codeInput = document.getElementById('student-test-code');
         if (!codeInput.value.trim()) {
             const defaultCode = encodeTestCode({ testId: "All", duration: 60, startTime: 0 });
@@ -316,18 +398,22 @@ function setupEventListeners() {
 
     document.getElementById('admin-logout-btn').addEventListener('click', () => showScreen('welcome'));
 
+    // Admin Real-Time End Exam Broadcast
+    const endExamBtn = document.getElementById('admin-end-exam-btn');
+    if (endExamBtn) {
+        endExamBtn.addEventListener('click', broadcastEndExam);
+    }
+
     // Admin Code Generation
     document.getElementById('admin-generate-code-btn').addEventListener('click', () => {
         const testId = document.getElementById('admin-test-select').value;
         const duration = document.getElementById('admin-test-duration').value;
         const startTimeVal = document.getElementById('admin-start-time').value;
-        const endTimeVal = document.getElementById('admin-end-time') ? document.getElementById('admin-end-time').value : '';
 
         const config = {
             testId: testId,
             duration: duration,
-            startTime: startTimeVal,
-            endTime: endTimeVal
+            startTime: startTimeVal
         };
 
         const code = encodeTestCode(config);
@@ -416,22 +502,8 @@ function validateAndApplyTestCode(codeStr) {
     activeTestConfig = config;
     const now = Date.now();
     const scheduledTime = config.startTime;
-    const expiryTime = config.endTime;
 
-    // 1. Check if test has expired / closed
-    if (expiryTime && now > expiryTime) {
-        const closedDate = new Date(expiryTime);
-        const formattedTime = closedDate.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-        const formattedDate = closedDate.toLocaleDateString();
-
-        banner.className = 'status-badge badge-locked';
-        banner.innerHTML = `🛑 <strong>Assessment Closed!</strong><br>The test window for this session closed on <strong>${formattedDate} at ${formattedTime}</strong>.<br><small>No further attempts are accepted.</small>`;
-        banner.style.display = 'block';
-        regForm.style.display = 'none';
-        return;
-    }
-
-    // 2. Check if activation time has not arrived yet
+    // Check if activation time has not arrived yet
     if (scheduledTime && now < scheduledTime) {
         const unlockDate = new Date(scheduledTime);
         const formattedTime = unlockDate.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
@@ -444,15 +516,9 @@ function validateAndApplyTestCode(codeStr) {
         return;
     }
 
-    // 3. Unlocked & Active!
-    let expiryNotice = '';
-    if (expiryTime) {
-        const expDate = new Date(expiryTime);
-        expiryNotice = ` | Closes at: <strong>${expDate.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</strong>`;
-    }
-
+    // Unlocked & Active!
     banner.className = 'status-badge badge-active';
-    banner.innerHTML = `✅ <strong>Assessment Active: ${config.testId}</strong><br>Duration: <strong>${config.duration} Minutes</strong>${expiryNotice}. Fill your details below to start.`;
+    banner.innerHTML = `✅ <strong>Assessment Active: ${config.testId}</strong><br>Duration: <strong>${config.duration} Minutes</strong>. Fill your details below to start.`;
     banner.style.display = 'block';
     regForm.style.display = 'block';
 }
@@ -478,12 +544,10 @@ function startAssessment() {
         testId: activeTestConfig.testId
     };
 
-    // Populate footer candidate info
     document.getElementById('footer-name').textContent = studentInfo.name;
     document.getElementById('footer-reg').textContent = studentInfo.reg;
     document.getElementById('test-active-title').textContent = `CLAD Assessment - ${studentInfo.testId}`;
 
-    // Select questions
     questions = selectQuestions(allQuestions, activeTestConfig);
     userAnswers = new Array(questions.length).fill(null);
     currentQuestionIndex = 0;
@@ -520,8 +584,8 @@ function updateTimerDisplay() {
         timerDisplay.style.color = '#dc2626';
         timerDisplay.style.background = '#fee2e2';
     } else {
-        timerDisplay.style.color = 'var(--danger-color)';
-        timerDisplay.style.background = '#fef2f2';
+        timerDisplay.style.color = 'var(--danger)';
+        timerDisplay.style.background = 'var(--danger-bg)';
     }
 }
 
@@ -542,7 +606,6 @@ function renderQuestion() {
     qProgressFooter.textContent = `${currentQuestionIndex + 1} / ${questions.length}`;
     qText.textContent = q.text;
 
-    // Handle Diagrams
     qImageContainer.innerHTML = '';
     if (q.image && Array.isArray(q.image) && q.image.length > 0) {
         q.image.forEach(imgSrc => {
@@ -556,7 +619,6 @@ function renderQuestion() {
         qImageContainer.style.display = 'none';
     }
 
-    // Render Options
     optionsContainer.innerHTML = '';
     const letters = ['A', 'B', 'C', 'D', 'E', 'F'];
 
@@ -583,7 +645,6 @@ function renderQuestion() {
         optionsContainer.appendChild(optionDiv);
     });
 
-    // Navigation buttons state
     prevBtn.disabled = currentQuestionIndex === 0;
     nextBtn.disabled = currentQuestionIndex === questions.length - 1;
 }
@@ -591,6 +652,9 @@ function renderQuestion() {
 // Finish & Evaluate Assessment
 function finishAssessment() {
     clearInterval(timerInterval);
+    clearInterval(emergencyCountdownInterval);
+    if (emergencyBanner) emergencyBanner.style.display = 'none';
+    
     showScreen('result');
 
     let correctCount = 0;
@@ -634,7 +698,6 @@ function finishAssessment() {
     const percentage = ((correctCount / questions.length) * 100).toFixed(1);
     const currentDate = new Date().toLocaleDateString();
 
-    // Populate Results View
     document.getElementById('res-name').textContent = studentInfo.name;
     document.getElementById('res-reg').textContent = studentInfo.reg;
     document.getElementById('res-class-sec').textContent = `${studentInfo.cls} - ${studentInfo.sec}`;
@@ -643,17 +706,14 @@ function finishAssessment() {
     document.getElementById('attempted-count').textContent = attemptedCount;
     document.getElementById('total-questions-count').textContent = questions.length;
 
-    // Visual circular progress
     document.querySelector('.score-circle').style.setProperty('--score-percent', percentage);
 
-    // Populate Hidden Certificate Template
     document.getElementById('cert-name').textContent = studentInfo.name;
     document.getElementById('cert-reg').textContent = studentInfo.reg;
     document.getElementById('cert-class').textContent = `${studentInfo.cls} - ${studentInfo.sec}`;
     document.getElementById('cert-score').textContent = `${percentage}%`;
     document.getElementById('cert-date').textContent = currentDate;
 
-    // Submit to Google Sheets
     const payload = {
         testId: studentInfo.testId,
         date: currentDate,
