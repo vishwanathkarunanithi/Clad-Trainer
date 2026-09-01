@@ -351,23 +351,19 @@ function calculateAndRenderResults() {
         total: questions.length
     };
     
-    fetch('/save-result', {
+    const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzH6LhVuapl_6w602GozE1zzwrzx9ZDH_jO_OAcfOWJ3yQgtAzzjR94uuCkqAK4NkuT/exec';
+    
+    fetch(GOOGLE_SCRIPT_URL, {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json'
+            'Content-Type': 'text/plain;charset=utf-8',
         },
         body: JSON.stringify(resultData)
-    }).then(res => res.json())
-      .then(data => {
-          if (data.error) {
-              console.error("Error saving result to Excel:", data.error);
-          } else {
-              console.log("Successfully saved result to Excel!");
-          }
-      })
-      .catch(err => {
-          console.error("Could not reach backend server to save Excel data:", err);
-      });
+    }).then(res => {
+        console.log("Successfully sent result to Google Sheets!");
+    }).catch(err => {
+        console.error("Could not reach Google Sheets to save data:", err);
+    });
 }
 
 document.getElementById('download-cert-btn').addEventListener('click', () => {
