@@ -1269,7 +1269,7 @@
   {
     "id": 102,
     "topic": "Design Patterns",
-    "text": "What value will be displayed in the string indicator after the VI complete execution? A) alpha B) Bravo",
+    "text": "What value will be displayed in the string indicator after the VI complete execution?",
     "image": [
       "images/CLAD2_p0_q102_7016.jpeg"
     ],
@@ -2346,7 +2346,7 @@
   {
     "id": 190,
     "topic": "Sequence Structures",
-    "text": "What value will be displayed in numeric indicator after the completion of execution a)16       c)48",
+    "text": "What value will be displayed in numeric indicator after the completion of execution",
     "image": [
       "images/CLAD7_p16_q190_8851.jpeg"
     ],
@@ -2892,7 +2892,7 @@
   {
     "id": 230,
     "topic": "Error Handling",
-    "text": "LabVIEW store Boolean data as         bit value. A)8 B)16",
+    "text": "LabVIEW store Boolean data as         bit value.",
     "image": [],
     "options": [
       "4",
@@ -3232,7 +3232,7 @@
   {
     "id": 254,
     "topic": "Functional Global Variables",
-    "text": "In the next VI, which will be the execution order (5 points) A) B) C) D) 26 The error cluster contains",
+    "text": "In the next VI, which will be the execution order?",
     "image": [
       "images/CLAD9_p8_q254_2036.png",
       "images/CLAD9_p8_q254_2361.png",
