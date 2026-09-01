@@ -94,7 +94,8 @@ function encodeTestCode(config) {
         const payload = JSON.stringify({
             t: config.testId,
             d: parseInt(config.duration),
-            s: config.startTime ? new Date(config.startTime).getTime() : 0
+            s: config.startTime ? new Date(config.startTime).getTime() : 0,
+            e: config.endTime ? new Date(config.endTime).getTime() : 0
         });
         return btoa(payload).replace(/=/g, '');
     } catch (e) {
@@ -107,20 +108,20 @@ function decodeTestCode(codeStr) {
     if (!codeStr) return null;
     try {
         let clean = codeStr.trim();
-        // Add padding if missing
         while (clean.length % 4 !== 0) clean += '=';
         const parsed = JSON.parse(atob(clean));
         return {
             testId: parsed.t || "All",
             duration: parseInt(parsed.d) || 60,
-            startTime: parsed.s || 0
+            startTime: parsed.s || 0,
+            endTime: parsed.e || 0
         };
     } catch (e) {
-        // Fallback for simple raw test name
         return {
             testId: codeStr.trim(),
             duration: 60,
-            startTime: 0
+            startTime: 0,
+            endTime: 0
         };
     }
 }
@@ -320,11 +321,13 @@ function setupEventListeners() {
         const testId = document.getElementById('admin-test-select').value;
         const duration = document.getElementById('admin-test-duration').value;
         const startTimeVal = document.getElementById('admin-start-time').value;
+        const endTimeVal = document.getElementById('admin-end-time') ? document.getElementById('admin-end-time').value : '';
 
         const config = {
             testId: testId,
             duration: duration,
-            startTime: startTimeVal
+            startTime: startTimeVal,
+            endTime: endTimeVal
         };
 
         const code = encodeTestCode(config);
@@ -404,7 +407,7 @@ function validateAndApplyTestCode(codeStr) {
     const config = decodeTestCode(codeStr);
     if (!config) {
         banner.className = 'status-badge badge-locked';
-        banner.innerHTML = '❌ Invalid Test Code. Please verify with your instructor.';
+        banner.innerHTML = '❌ <strong>Invalid Test Code.</strong> Please verify with your instructor.';
         banner.style.display = 'block';
         regForm.style.display = 'none';
         return;
@@ -413,24 +416,45 @@ function validateAndApplyTestCode(codeStr) {
     activeTestConfig = config;
     const now = Date.now();
     const scheduledTime = config.startTime;
+    const expiryTime = config.endTime;
 
-    // Time-Lock Check: Has activation time arrived?
+    // 1. Check if test has expired / closed
+    if (expiryTime && now > expiryTime) {
+        const closedDate = new Date(expiryTime);
+        const formattedTime = closedDate.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+        const formattedDate = closedDate.toLocaleDateString();
+
+        banner.className = 'status-badge badge-locked';
+        banner.innerHTML = `🛑 <strong>Assessment Closed!</strong><br>The test window for this session closed on <strong>${formattedDate} at ${formattedTime}</strong>.<br><small>No further attempts are accepted.</small>`;
+        banner.style.display = 'block';
+        regForm.style.display = 'none';
+        return;
+    }
+
+    // 2. Check if activation time has not arrived yet
     if (scheduledTime && now < scheduledTime) {
         const unlockDate = new Date(scheduledTime);
         const formattedTime = unlockDate.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
         const formattedDate = unlockDate.toLocaleDateString();
 
         banner.className = 'status-badge badge-locked';
-        banner.innerHTML = `🔒 <strong>Test Locked!</strong><br>This assessment is scheduled to open on <strong>${formattedDate} at ${formattedTime}</strong>.<br><small>Please return at or after that time to begin.</small>`;
+        banner.innerHTML = `🔒 <strong>Assessment Locked!</strong><br>This session opens on <strong>${formattedDate} at ${formattedTime}</strong>.<br><small>Please return at or after that time to begin.</small>`;
         banner.style.display = 'block';
         regForm.style.display = 'none';
-    } else {
-        // Unlocked & Active!
-        banner.className = 'status-badge badge-active';
-        banner.innerHTML = `✅ <strong>Assessment Unlocked: ${config.testId}</strong><br>Duration: <strong>${config.duration} Minutes</strong>. Fill your details below to start.`;
-        banner.style.display = 'block';
-        regForm.style.display = 'block';
+        return;
     }
+
+    // 3. Unlocked & Active!
+    let expiryNotice = '';
+    if (expiryTime) {
+        const expDate = new Date(expiryTime);
+        expiryNotice = ` | Closes at: <strong>${expDate.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</strong>`;
+    }
+
+    banner.className = 'status-badge badge-active';
+    banner.innerHTML = `✅ <strong>Assessment Active: ${config.testId}</strong><br>Duration: <strong>${config.duration} Minutes</strong>${expiryNotice}. Fill your details below to start.`;
+    banner.style.display = 'block';
+    regForm.style.display = 'block';
 }
 
 // Start Assessment

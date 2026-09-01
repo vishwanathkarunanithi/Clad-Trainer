@@ -123,13 +123,18 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="admin-start-time">Activation Date & Time:</label>
+                                <label for="admin-start-time">Activation Start Time:</label>
                                 <input type="datetime-local" id="admin-start-time" class="input-field">
                             </div>
                         </div>
 
+                        <div class="form-group">
+                            <label for="admin-end-time">Test Closing / End Time (Optional):</label>
+                            <input type="datetime-local" id="admin-end-time" class="input-field">
+                        </div>
+
                         <p style="font-size: 0.82rem; color: #94a3b8; margin-bottom: 1.25rem; background: rgba(30, 41, 59, 0.5); padding: 0.75rem; border-radius: var(--radius-sm); border-left: 3px solid #38bdf8;">
-                            🔒 <strong>Time Lock Guarantee:</strong> Candidates opening before this timestamp are locked out. Opening at or after starts their full individual timer.
+                            🔒 <strong>Time Window Controls:</strong> Locked before Start Time. Closes automatically after End Time.
                         </p>
 
                         <button id="admin-generate-code-btn" class="btn btn-primary btn-block">Generate Access Code & Link</button>
