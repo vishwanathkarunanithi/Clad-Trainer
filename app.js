@@ -562,64 +562,85 @@ function downloadQuestionPaper() {
     <head>
         <meta charset="UTF-8">
         <title>Question Paper - ${candidateName} - ${testTitle}</title>
-        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@600;700&display=swap" rel="stylesheet">
         <style>
             @page {
-                size: portrait;
-                margin: 15mm;
+                size: A4 portrait;
+                margin: 12mm 15mm;
             }
             * { box-sizing: border-box; }
-            body {
+            html, body {
                 font-family: 'Plus Jakarta Sans', Arial, sans-serif;
                 color: #0f172a;
-                background: #f8fafc;
+                background: #ffffff;
                 margin: 0;
-                padding: 20px;
-                line-height: 1.5;
+                padding: 0;
+                line-height: 1.55;
                 -webkit-print-color-adjust: exact;
                 print-color-adjust: exact;
             }
             .paper-container {
-                max-width: 850px;
+                max-width: 820px;
                 margin: 0 auto;
+                padding: 10px 0;
             }
             .header-box {
-                background: #ffffff;
                 border: 2px solid #0077c8;
                 border-radius: 8px;
-                padding: 20px;
-                margin-bottom: 25px;
+                padding: 18px 22px;
+                margin-bottom: 22px;
                 text-align: center;
+                background: #ffffff;
+                page-break-inside: avoid;
             }
             .brand-title {
-                font-size: 24px;
+                font-size: 22px;
                 font-weight: 800;
                 color: #0077c8;
-                margin: 0 0 4px 0;
+                margin: 0 0 2px 0;
                 text-transform: uppercase;
                 letter-spacing: 0.5px;
             }
             .exam-title {
-                font-size: 17px;
+                font-size: 16px;
                 font-weight: 700;
                 color: #1e293b;
-                margin: 0 0 15px 0;
+                margin: 0 0 14px 0;
             }
             .candidate-grid {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
-                gap: 8px;
+                gap: 8px 16px;
                 text-align: left;
                 font-size: 13px;
                 background: #f0f7fc;
-                padding: 12px 16px;
+                padding: 10px 14px;
                 border-radius: 6px;
                 border: 1px solid #bae6fd;
             }
+            .paper-meta-bar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 13px;
+                color: #475569;
+                font-weight: 600;
+                margin-bottom: 20px;
+                padding-bottom: 8px;
+                border-bottom: 1.5px solid #e2e8f0;
+            }
+            .paper-footer {
+                text-align: center;
+                font-size: 12px;
+                color: #64748b;
+                margin-top: 35px;
+                padding-top: 15px;
+                border-top: 1px solid #e2e8f0;
+                page-break-inside: avoid;
+            }
             @media print {
-                body { background: #ffffff; padding: 0; }
-                .paper-container { max-width: 100%; }
-                .header-box { border-color: #0077c8; }
+                body { padding: 0; background: #ffffff; }
+                .paper-container { max-width: 100%; width: 100%; }
             }
         </style>
     </head>
@@ -632,18 +653,20 @@ function downloadQuestionPaper() {
                     <div><strong>Candidate:</strong> ${candidateName}</div>
                     <div><strong>Register Number:</strong> ${regNo}</div>
                     <div><strong>Class & Section:</strong> ${classSec}</div>
-                    <div><strong>Date of Assessment:</strong> ${examDate}</div>
+                    <div><strong>Assessment Date:</strong> ${examDate}</div>
                 </div>
             </div>
 
-            <div style="font-size: 13px; color: #475569; margin-bottom: 15px; font-weight: 600;">
-                Total Questions: ${questions.length} • Standard Examination Booklet (Official Questions)
+            <div class="paper-meta-bar">
+                <span>Total Questions: <strong>${questions.length}</strong></span>
+                <span>Session: <strong>${testTitle}</strong></span>
+                <span>Official Assessment Booklet</span>
             </div>
 
             ${questionsHtml}
 
-            <div style="text-align: center; font-size: 12px; color: #64748b; margin-top: 30px; border-top: 1px solid #e2e8f0; padding-top: 15px;">
-                National Instruments CLAD Assessment System • End of Question Paper Booklet
+            <div class="paper-footer">
+                National Instruments CLAD Assessment System • End of Examination Booklet
             </div>
         </div>
         <script>
@@ -951,72 +974,73 @@ function downloadCertificate() {
         <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
         <style>
             @page {
-                size: letter landscape;
-                margin: 0;
+                size: A4 landscape;
+                margin: 8mm 10mm;
             }
             * { box-sizing: border-box; }
-            body {
+            html, body {
                 margin: 0;
-                padding: 30px;
+                padding: 15px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 min-height: 100vh;
-                background: #f8fafc;
+                background: #ffffff;
                 font-family: 'Plus Jakarta Sans', Arial, sans-serif;
                 -webkit-print-color-adjust: exact;
                 print-color-adjust: exact;
             }
             .cert-container {
                 width: 100%;
-                max-width: 900px;
+                max-width: 950px;
                 background: #ffffff;
-                border: 12px solid #0077c8;
-                padding: 35px;
+                border: 10px solid #0077c8;
+                padding: 30px 35px;
                 text-align: center;
-                box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+                box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+                margin: auto;
             }
             .cert-inner {
                 border: 2px solid #bae6fd;
-                padding: 30px 20px;
+                padding: 25px 20px;
             }
             .brand-title {
-                font-size: 36px;
+                font-size: 34px;
                 color: #0077c8;
                 font-weight: 800;
-                margin: 0 0 4px 0;
+                margin: 0 0 3px 0;
                 letter-spacing: 1px;
                 text-transform: uppercase;
             }
             .cert-subtitle {
-                font-size: 20px;
+                font-size: 19px;
                 color: #1e293b;
                 font-weight: 700;
-                margin: 0 0 25px 0;
+                margin: 0 0 20px 0;
             }
             .presented-text {
-                font-size: 15px;
+                font-size: 14.5px;
                 color: #64748b;
-                margin: 0 0 6px 0;
+                margin: 0 0 5px 0;
             }
             .candidate-name {
-                font-size: 34px;
+                font-size: 32px;
                 color: #0f172a;
                 font-weight: 800;
-                margin: 0 0 8px 0;
+                margin: 0 0 6px 0;
                 border-bottom: 2px solid #e2e8f0;
                 display: inline-block;
-                padding-bottom: 4px;
+                padding-bottom: 3px;
             }
             .candidate-meta {
                 font-size: 14px;
                 color: #475569;
-                margin: 0 0 20px 0;
+                margin: 0 0 16px 0;
             }
             .completion-text {
-                font-size: 15px;
+                font-size: 14.5px;
                 color: #334155;
-                margin: 0 0 15px 0;
+                margin: 0 0 14px 0;
                 max-width: 650px;
                 margin-left: auto;
                 margin-right: auto;
@@ -1025,12 +1049,12 @@ function downloadCertificate() {
                 background: #f8fafc;
                 border: 1px solid #cbd5e1;
                 border-radius: 8px;
-                padding: 10px 35px;
+                padding: 8px 30px;
                 display: inline-block;
-                margin-bottom: 20px;
+                margin-bottom: 16px;
             }
             .score-val {
-                font-size: 46px;
+                font-size: 42px;
                 font-weight: 800;
                 color: #0077c8;
                 margin: 0;
@@ -1039,8 +1063,8 @@ function downloadCertificate() {
             .cert-footer {
                 display: flex;
                 justify-content: space-between;
-                margin-top: 25px;
-                padding-top: 15px;
+                margin-top: 20px;
+                padding-top: 12px;
                 border-top: 1px solid #e2e8f0;
             }
             .footer-left { text-align: left; }
@@ -1049,7 +1073,7 @@ function downloadCertificate() {
                 font-weight: 700;
                 color: #0077c8;
                 font-size: 13px;
-                margin: 0 0 3px 0;
+                margin: 0 0 2px 0;
             }
             .footer-sub {
                 margin: 0;
@@ -1057,8 +1081,8 @@ function downloadCertificate() {
                 color: #64748b;
             }
             @media print {
-                body { background: white; padding: 0; }
-                .cert-container { box-shadow: none; border-width: 10px; width: 100%; }
+                html, body { height: 100%; width: 100%; padding: 0; background: #ffffff; }
+                .cert-container { box-shadow: none; border-width: 8px; width: 100%; max-width: 100%; }
             }
         </style>
     </head>
