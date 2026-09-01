@@ -1,103 +1,21 @@
+// Global State
+let allQuestions = [];
 let questions = [];
 let currentQuestionIndex = 0;
 let userAnswers = [];
 let timerInterval;
-let timeRemaining = 3600; // 1 hour in seconds
-const MARKS_PER_QUESTION = 2.5;
+let timeRemaining = 3600;
 let studentInfo = {};
+let activeTestConfig = {
+    testId: "All",
+    duration: 60,
+    startTime: 0 // 0 means immediately available
+};
 
-// DOM Elements
-const startScreen = document.getElementById('start-screen');
-const testScreen = document.getElementById('test-screen');
-const resultScreen = document.getElementById('result-screen');
-const startBtn = document.getElementById('start-btn');
-const submitBtn = document.getElementById('submit-btn');
-const restartBtn = document.getElementById('restart-btn');
-const prevBtn = document.getElementById('prev-btn');
-const nextBtn = document.getElementById('next-btn');
+const MARKS_PER_QUESTION = 2.5;
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzH6LhVuapl_6w602GozE1zzwrzx9ZDH_jO_OAcfOWJ3yQgtAzzjR94uuCkqAK4NkuT/exec';
 
-const timerDisplay = document.getElementById('timer');
-const progressBar = document.getElementById('progress');
-const qNumber = document.getElementById('q-number');
-const qText = document.getElementById('q-text');
-const qImageContainer = document.getElementById('q-image-container');
-const qImage = document.getElementById('q-image');
-const optionsContainer = document.getElementById('options');
-const qProgressFooter = document.getElementById('q-progress-footer');
-const closeAssessmentBtn = document.getElementById('close-assessment-btn');
-
-// Initialize App
-async function init() {
-    try {
-        const response = await fetch('questions.json');
-        const allQuestions = await response.json();
-        
-        // Populate test selector
-        const testSelector = document.getElementById('test-selector');
-        for (let i = 1; i <= 25; i++) {
-            const opt = document.createElement('option');
-            opt.value = i;
-            opt.textContent = `Mock Test ${i}`;
-            testSelector.appendChild(opt);
-        }
-        
-        startBtn.addEventListener('click', () => {
-            const nameInput = document.getElementById('student-name').value.trim();
-            const regInput = document.getElementById('register-number').value.trim();
-            const classInput = document.getElementById('student-class').value.trim();
-            const secInput = document.getElementById('student-section').value.trim();
-            const durationInput = document.getElementById('test-duration').value;
-
-            if (!nameInput || !regInput || !classInput || !secInput) {
-                alert("Please fill out all registration fields before starting.");
-                return;
-            }
-            
-            const urlParams = new URLSearchParams(window.location.search);
-            const scheduledTime = urlParams.get('time');
-            let durationMins = scheduledTime ? parseInt(scheduledTime) : parseInt(durationInput);
-            if (isNaN(durationMins) || durationMins < 5) durationMins = 60;
-
-            studentInfo = {
-                name: nameInput,
-                reg: regInput,
-                cls: classInput,
-                sec: secInput,
-                duration: durationMins * 60
-            };
-            
-            // Set footer fields
-            document.getElementById('footer-name').textContent = studentInfo.name;
-            document.getElementById('footer-reg').textContent = studentInfo.reg;
-
-            const testId = parseInt(testSelector.value);
-            startTest(allQuestions, testId);
-        });
-        
-        submitBtn.addEventListener('click', submitTest);
-        if (closeAssessmentBtn) closeAssessmentBtn.addEventListener('click', submitTest);
-        restartBtn.addEventListener('click', resetTest);
-        prevBtn.addEventListener('click', () => navigate(-1));
-        nextBtn.addEventListener('click', () => navigate(1));
-    } catch (error) {
-        console.error('Failed to load questions:', error);
-        qText.textContent = "Error loading questions. Ensure questions.json exists.";
-    }
-}
-
-// Utility: Shuffle Array
-function shuffleArray(array) {
-    let curId = array.length;
-    while (0 !== curId) {
-        let randId = Math.floor(Math.random() * curId);
-        curId -= 1;
-        let tmp = array[curId];
-        array[curId] = array[randId];
-        array[randId] = tmp;
-    }
-    return array;
-}
-
+// Syllabus Weightage Definition (40 Questions total)
 const syllabusWeightage = {
     "LabVIEW Programming Principles": 3,
     "LabVIEW Environment": 2,
@@ -122,34 +40,123 @@ const syllabusWeightage = {
     "Functional Global Variables": 1
 };
 
-// Select questions based on weightage
-function selectQuestions(allQuestions, testId) {
-    let selected = [];
-    let pool = shuffleArray([...allQuestions]);
+// DOM Elements
+const screens = {
+    welcome: document.getElementById('welcome-screen'),
+    adminLogin: document.getElementById('admin-login-screen'),
+    adminDashboard: document.getElementById('admin-dashboard-screen'),
+    studentEntry: document.getElementById('student-entry-screen'),
+    test: document.getElementById('test-screen'),
+    result: document.getElementById('result-screen')
+};
+
+const timerDisplay = document.getElementById('timer');
+const qNumber = document.getElementById('q-number');
+const qText = document.getElementById('q-text');
+const qImageContainer = document.getElementById('q-image-container');
+const qImage = document.getElementById('q-image');
+const optionsContainer = document.getElementById('options');
+const qProgressFooter = document.getElementById('q-progress-footer');
+const prevBtn = document.getElementById('prev-btn');
+const nextBtn = document.getElementById('next-btn');
+const submitBtn = document.getElementById('submit-btn');
+const headerExitBtn = document.getElementById('header-exit-btn');
+const restartBtn = document.getElementById('restart-btn');
+
+// Show Screen Helper
+function showScreen(screenKey) {
+    Object.values(screens).forEach(s => s && s.classList.remove('active'));
+    if (screens[screenKey]) {
+        screens[screenKey].classList.add('active');
+    }
+    // Toggle header timer visibility
+    if (screenKey === 'test') {
+        timerDisplay.style.display = 'block';
+    } else {
+        timerDisplay.style.display = 'none';
+    }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Utility: Shuffle Array
+function shuffleArray(array) {
+    let arr = [...array];
+    for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+}
+
+// Encode Test Config to Code
+function encodeTestCode(config) {
+    try {
+        const payload = JSON.stringify({
+            t: config.testId,
+            d: parseInt(config.duration),
+            s: config.startTime ? new Date(config.startTime).getTime() : 0
+        });
+        return btoa(payload).replace(/=/g, '');
+    } catch (e) {
+        return "";
+    }
+}
+
+// Decode Test Code
+function decodeTestCode(codeStr) {
+    if (!codeStr) return null;
+    try {
+        let clean = codeStr.trim();
+        // Add padding if missing
+        while (clean.length % 4 !== 0) clean += '=';
+        const parsed = JSON.parse(atob(clean));
+        return {
+            testId: parsed.t || "All",
+            duration: parseInt(parsed.d) || 60,
+            startTime: parsed.s || 0
+        };
+    } catch (e) {
+        // Fallback for simple raw test name
+        return {
+            testId: codeStr.trim(),
+            duration: 60,
+            startTime: 0
+        };
+    }
+}
+
+// Question Selector: Enforces Syllabus Weightage, Max 10 Theory, Mixed Shuffling
+function selectQuestions(allQs, testConfig) {
+    let pool = shuffleArray([...allQs]);
     
+    // Group all questions into Theory and Practical (Diagram)
     let groupedTheory = {};
     let groupedPractical = {};
     
     pool.forEach(q => {
-        let t = q.topic || "General";
-        let isTheory = !q.image || q.image.length === 0;
+        const topic = q.topic || "LabVIEW Programming Principles";
+        const isTheory = !q.image || (Array.isArray(q.image) && q.image.length === 0);
+        
         if (isTheory) {
-            if (!groupedTheory[t]) groupedTheory[t] = [];
-            groupedTheory[t].push(q);
+            if (!groupedTheory[topic]) groupedTheory[topic] = [];
+            groupedTheory[topic].push(q);
         } else {
-            if (!groupedPractical[t]) groupedPractical[t] = [];
-            groupedPractical[t].push(q);
+            if (!groupedPractical[topic]) groupedPractical[topic] = [];
+            groupedPractical[topic].push(q);
         }
     });
 
+    let selected = [];
     let totalTheoryCount = 0;
-    const MAX_THEORY = 10;
-    
+    const MAX_THEORY = 10; // Rule: Maximum 10 theory questions in the test
+
+    // Select according to syllabus weightage
     for (const [topic, count] of Object.entries(syllabusWeightage)) {
         let topicSelected = [];
         let tPool = groupedTheory[topic] || [];
         let pPool = groupedPractical[topic] || [];
         
+        // Target max ~25% theory per topic
         let targetTheory = Math.floor(count * 0.25);
         if (targetTheory === 0 && Math.random() < 0.25) targetTheory = 1;
         
@@ -160,18 +167,21 @@ function selectQuestions(allQuestions, testId) {
             totalTheoryCount++;
         }
         
+        // Fill remaining with practical
         let remainingForTopic = count - actualTheory;
         while (remainingForTopic > 0 && pPool.length > 0) {
             topicSelected.push(pPool.shift());
             remainingForTopic--;
         }
         
+        // Backfill with theory if practical runs short
         while (remainingForTopic > 0 && tPool.length > 0 && totalTheoryCount < MAX_THEORY) {
             topicSelected.push(tPool.shift());
             totalTheoryCount++;
             remainingForTopic--;
         }
         
+        // Absolute fallback to complete topic quota
         while (remainingForTopic > 0 && tPool.length > 0) {
             topicSelected.push(tPool.shift());
             totalTheoryCount++;
@@ -180,14 +190,20 @@ function selectQuestions(allQuestions, testId) {
         
         selected = selected.concat(topicSelected);
     }
-    
+
+    // If total selected < 40, backfill with remaining
     let missing = 40 - selected.length;
     if (missing > 0) {
-        let remainingP = Object.values(groupedPractical).flat();
-        let remainingT = Object.values(groupedTheory).flat();
+        let remainingP = Object.values(groupedPractical).flat().filter(q => !selected.includes(q));
+        let remainingT = Object.values(groupedTheory).flat().filter(q => !selected.includes(q));
         
         while (missing > 0 && remainingP.length > 0) {
             selected.push(remainingP.shift());
+            missing--;
+        }
+        while (missing > 0 && remainingT.length > 0 && totalTheoryCount < MAX_THEORY) {
+            selected.push(remainingT.shift());
+            totalTheoryCount++;
             missing--;
         }
         while (missing > 0 && remainingT.length > 0) {
@@ -195,20 +211,261 @@ function selectQuestions(allQuestions, testId) {
             missing--;
         }
     }
-    
+
+    // Final Thorough Global Shuffle so theory and topics are seamlessly mixed
     return shuffleArray(selected).slice(0, 40);
 }
 
-// Start Test
-function startTest(allQuestions, testId) {
-    questions = selectQuestions(allQuestions, testId);
+// App Initialization
+async function initApp() {
+    try {
+        const response = await fetch('questions.json');
+        allQuestions = await response.json();
+    } catch (err) {
+        console.error("Could not load questions.json", err);
+    }
+
+    // Setup Admin Test Selector options (Mock Test 1 to 25)
+    const adminTestSelect = document.getElementById('admin-test-select');
+    if (adminTestSelect) {
+        for (let i = 1; i <= 25; i++) {
+            const opt = document.createElement('option');
+            opt.value = `Mock Test ${i}`;
+            opt.textContent = `Mock Test ${i}`;
+            adminTestSelect.appendChild(opt);
+        }
+    }
+
+    // Setup Default Start Time in Admin to now + 5 minutes
+    const adminStartTimeInput = document.getElementById('admin-start-time');
+    if (adminStartTimeInput) {
+        const now = new Date();
+        now.setMinutes(now.getMinutes() + 5);
+        now.setSeconds(0);
+        now.setMilliseconds(0);
+        const isoString = new Date(now.getTime() - now.getTimezoneOffset() * 60000).toISOString().slice(0, 16);
+        adminStartTimeInput.value = isoString;
+    }
+
+    // Load saved sheet URL
+    const savedSheet = localStorage.getItem('clad_sheet_url');
+    if (savedSheet && document.getElementById('admin-sheet-url')) {
+        document.getElementById('admin-sheet-url').value = savedSheet;
+    }
+
+    setupEventListeners();
+    checkUrlParameters();
+}
+
+// URL Parameter Handling
+function checkUrlParameters() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const codeParam = urlParams.get('code');
+    const adminParam = urlParams.get('admin');
+
+    if (adminParam === 'true') {
+        showScreen('adminLogin');
+    } else if (codeParam) {
+        showScreen('studentEntry');
+        document.getElementById('student-test-code').value = codeParam;
+        validateAndApplyTestCode(codeParam);
+    } else {
+        showScreen('welcome');
+    }
+}
+
+// Event Listeners
+function setupEventListeners() {
+    // Welcome Screen Buttons
+    document.getElementById('btn-goto-student').addEventListener('click', () => {
+        showScreen('studentEntry');
+        // If code field is empty, provide default practice code
+        const codeInput = document.getElementById('student-test-code');
+        if (!codeInput.value.trim()) {
+            const defaultCode = encodeTestCode({ testId: "All", duration: 60, startTime: 0 });
+            codeInput.value = defaultCode;
+            validateAndApplyTestCode(defaultCode);
+        }
+    });
+
+    document.getElementById('btn-goto-admin').addEventListener('click', () => {
+        showScreen('adminLogin');
+        document.getElementById('admin-password').value = '';
+        document.getElementById('admin-login-error').style.display = 'none';
+        document.getElementById('admin-password').focus();
+    });
+
+    // Admin Login
+    document.getElementById('admin-login-back').addEventListener('click', () => showScreen('welcome'));
+    
+    const handleAdminLogin = () => {
+        const pwd = document.getElementById('admin-password').value.trim();
+        if (pwd === 'admin123') {
+            document.getElementById('admin-login-error').style.display = 'none';
+            showScreen('adminDashboard');
+        } else {
+            document.getElementById('admin-login-error').style.display = 'block';
+        }
+    };
+
+    document.getElementById('admin-login-submit').addEventListener('click', handleAdminLogin);
+    document.getElementById('admin-password').addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') handleAdminLogin();
+    });
+
+    document.getElementById('admin-logout-btn').addEventListener('click', () => showScreen('welcome'));
+
+    // Admin Code Generation
+    document.getElementById('admin-generate-code-btn').addEventListener('click', () => {
+        const testId = document.getElementById('admin-test-select').value;
+        const duration = document.getElementById('admin-test-duration').value;
+        const startTimeVal = document.getElementById('admin-start-time').value;
+
+        const config = {
+            testId: testId,
+            duration: duration,
+            startTime: startTimeVal
+        };
+
+        const code = encodeTestCode(config);
+        const baseUrl = window.location.origin + window.location.pathname;
+        const fullLink = `${baseUrl}?code=${code}`;
+
+        document.getElementById('output-test-code').value = code;
+        document.getElementById('output-test-link').value = fullLink;
+        document.getElementById('generated-code-box').style.display = 'block';
+    });
+
+    // Copy Code & Link
+    document.getElementById('btn-copy-code').addEventListener('click', () => {
+        const input = document.getElementById('output-test-code');
+        input.select();
+        navigator.clipboard.writeText(input.value);
+        const btn = document.getElementById('btn-copy-code');
+        btn.textContent = 'Copied!';
+        setTimeout(() => btn.textContent = 'Copy', 2000);
+    });
+
+    document.getElementById('btn-copy-link').addEventListener('click', () => {
+        const input = document.getElementById('output-test-link');
+        input.select();
+        navigator.clipboard.writeText(input.value);
+        const btn = document.getElementById('btn-copy-link');
+        btn.textContent = 'Copied!';
+        setTimeout(() => btn.textContent = 'Copy', 2000);
+    });
+
+    // Open Live Sheet
+    document.getElementById('admin-open-sheet-btn').addEventListener('click', () => {
+        const url = document.getElementById('admin-sheet-url').value.trim();
+        if (url) {
+            localStorage.setItem('clad_sheet_url', url);
+            window.open(url, '_blank');
+        } else {
+            alert('Please paste your Google Sheet link first.');
+        }
+    });
+
+    // Student Screen
+    document.getElementById('student-back-btn').addEventListener('click', () => showScreen('welcome'));
+    
+    document.getElementById('btn-validate-code').addEventListener('click', () => {
+        const code = document.getElementById('student-test-code').value.trim();
+        validateAndApplyTestCode(code);
+    });
+
+    // Start Assessment Button
+    document.getElementById('student-start-btn').addEventListener('click', startAssessment);
+
+    // Test Screen Buttons
+    prevBtn.addEventListener('click', () => navigateQuestion(-1));
+    nextBtn.addEventListener('click', () => navigateQuestion(1));
+    submitBtn.addEventListener('click', () => {
+        if (confirm("Are you sure you want to finish and submit your test?")) {
+            finishAssessment();
+        }
+    });
+    headerExitBtn.addEventListener('click', () => {
+        if (confirm("Warning: Exiting will submit your current answers. Proceed?")) {
+            finishAssessment();
+        }
+    });
+
+    // Result Screen Buttons
+    restartBtn.addEventListener('click', () => showScreen('welcome'));
+    document.getElementById('download-cert-btn').addEventListener('click', downloadCertificate);
+}
+
+// Validate Test Code & Check Time-Lock
+function validateAndApplyTestCode(codeStr) {
+    const banner = document.getElementById('test-status-banner');
+    const regForm = document.getElementById('student-reg-form');
+    
+    const config = decodeTestCode(codeStr);
+    if (!config) {
+        banner.className = 'status-badge badge-locked';
+        banner.innerHTML = '❌ Invalid Test Code. Please verify with your instructor.';
+        banner.style.display = 'block';
+        regForm.style.display = 'none';
+        return;
+    }
+
+    activeTestConfig = config;
+    const now = Date.now();
+    const scheduledTime = config.startTime;
+
+    // Time-Lock Check: Has activation time arrived?
+    if (scheduledTime && now < scheduledTime) {
+        const unlockDate = new Date(scheduledTime);
+        const formattedTime = unlockDate.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+        const formattedDate = unlockDate.toLocaleDateString();
+
+        banner.className = 'status-badge badge-locked';
+        banner.innerHTML = `🔒 <strong>Test Locked!</strong><br>This assessment is scheduled to open on <strong>${formattedDate} at ${formattedTime}</strong>.<br><small>Please return at or after that time to begin.</small>`;
+        banner.style.display = 'block';
+        regForm.style.display = 'none';
+    } else {
+        // Unlocked & Active!
+        banner.className = 'status-badge badge-active';
+        banner.innerHTML = `✅ <strong>Assessment Unlocked: ${config.testId}</strong><br>Duration: <strong>${config.duration} Minutes</strong>. Fill your details below to start.`;
+        banner.style.display = 'block';
+        regForm.style.display = 'block';
+    }
+}
+
+// Start Assessment
+function startAssessment() {
+    const name = document.getElementById('student-name').value.trim();
+    const reg = document.getElementById('student-reg').value.trim();
+    const cls = document.getElementById('student-class').value.trim();
+    const sec = document.getElementById('student-sec').value.trim();
+
+    if (!name || !reg || !cls || !sec) {
+        alert("Please fill in all registration fields.");
+        return;
+    }
+
+    studentInfo = {
+        name: name,
+        reg: reg,
+        cls: cls,
+        sec: sec,
+        duration: activeTestConfig.duration * 60,
+        testId: activeTestConfig.testId
+    };
+
+    // Populate footer candidate info
+    document.getElementById('footer-name').textContent = studentInfo.name;
+    document.getElementById('footer-reg').textContent = studentInfo.reg;
+    document.getElementById('test-active-title').textContent = `CLAD Assessment - ${studentInfo.testId}`;
+
+    // Select questions
+    questions = selectQuestions(allQuestions, activeTestConfig);
     userAnswers = new Array(questions.length).fill(null);
     currentQuestionIndex = 0;
-    timeRemaining = studentInfo.duration || 3600;
-    
-    startScreen.classList.remove('active');
-    testScreen.classList.add('active');
-    
+    timeRemaining = studentInfo.duration;
+
+    showScreen('test');
     startTimer();
     renderQuestion();
 }
@@ -216,13 +473,15 @@ function startTest(allQuestions, testId) {
 // Timer Logic
 function startTimer() {
     updateTimerDisplay();
+    clearInterval(timerInterval);
     timerInterval = setInterval(() => {
         timeRemaining--;
         updateTimerDisplay();
-        
+
         if (timeRemaining <= 0) {
             clearInterval(timerInterval);
-            submitTest();
+            alert("⏰ Time is up! Submitting your assessment automatically.");
+            finishAssessment();
         }
     }, 1000);
 }
@@ -232,118 +491,108 @@ function updateTimerDisplay() {
     const m = Math.floor((timeRemaining % 3600) / 60).toString().padStart(2, '0');
     const s = (timeRemaining % 60).toString().padStart(2, '0');
     timerDisplay.textContent = `${h}:${m}:${s}`;
-    
-    if (timeRemaining < 300) { // Less than 5 mins
+
+    if (timeRemaining < 300) {
+        timerDisplay.style.color = '#dc2626';
+        timerDisplay.style.background = '#fee2e2';
+    } else {
         timerDisplay.style.color = 'var(--danger-color)';
-        timerDisplay.style.background = 'rgba(239, 68, 68, 0.2)';
+        timerDisplay.style.background = '#fef2f2';
     }
 }
 
-// Navigation
-function navigate(direction) {
-    currentQuestionIndex += direction;
-    renderQuestion();
+// Question Navigation & Rendering
+function navigateQuestion(dir) {
+    const newIdx = currentQuestionIndex + dir;
+    if (newIdx >= 0 && newIdx < questions.length) {
+        currentQuestionIndex = newIdx;
+        renderQuestion();
+    }
 }
 
-// Render Current Question
 function renderQuestion() {
     const q = questions[currentQuestionIndex];
-    
-    // Update Header & Progress
+    if (!q) return;
+
     qNumber.textContent = `Question #${currentQuestionIndex + 1}`;
     qProgressFooter.textContent = `${currentQuestionIndex + 1} / ${questions.length}`;
-    
-    // Update Content
     qText.textContent = q.text;
-    
-    qImageContainer.innerHTML = ''; // clear previous images
+
+    // Handle Diagrams
+    qImageContainer.innerHTML = '';
     if (q.image && Array.isArray(q.image) && q.image.length > 0) {
         q.image.forEach(imgSrc => {
             const img = document.createElement('img');
             img.src = imgSrc;
-            img.alt = 'Question Image';
-            img.style.maxWidth = '100%';
-            img.style.borderRadius = '4px';
-            img.style.marginBottom = '10px';
+            img.alt = 'Question Diagram';
             qImageContainer.appendChild(img);
         });
         qImageContainer.style.display = 'block';
     } else {
         qImageContainer.style.display = 'none';
     }
-    
+
     // Render Options
     optionsContainer.innerHTML = '';
     const letters = ['A', 'B', 'C', 'D', 'E', 'F'];
-    
+
     q.options.forEach((opt, idx) => {
         const optionDiv = document.createElement('div');
         optionDiv.className = `option ${userAnswers[currentQuestionIndex] === idx ? 'selected' : ''}`;
-        
+
         let optContent = opt;
-        if (opt.startsWith('IMAGE: ')) {
+        if (typeof opt === 'string' && opt.startsWith('IMAGE: ')) {
             const imgSrc = opt.replace('IMAGE: ', '');
-            optContent = `<img src="${imgSrc}" alt="Option Image" style="max-height: 150px; border-radius: 4px;">`;
+            optContent = `<img src="${imgSrc}" alt="Option Image" style="max-height: 120px; border-radius: 4px;">`;
         }
-        
+
         optionDiv.innerHTML = `
             <div class="option-letter">${letters[idx]}</div>
             <div class="option-text">${optContent}</div>
         `;
-        optionDiv.addEventListener('click', () => selectOption(idx));
+
+        optionDiv.addEventListener('click', () => {
+            userAnswers[currentQuestionIndex] = idx;
+            renderQuestion();
+        });
+
         optionsContainer.appendChild(optionDiv);
     });
-    
-    // Update Buttons
+
+    // Navigation buttons state
     prevBtn.disabled = currentQuestionIndex === 0;
     nextBtn.disabled = currentQuestionIndex === questions.length - 1;
 }
 
-// Select Option
-function selectOption(index) {
-    userAnswers[currentQuestionIndex] = index;
-    renderQuestion();
-}
-
-// Submit Test
-function submitTest() {
+// Finish & Evaluate Assessment
+function finishAssessment() {
     clearInterval(timerInterval);
-    
-    testScreen.classList.remove('active');
-    resultScreen.classList.add('active');
-    
-    calculateAndRenderResults();
-}
+    showScreen('result');
 
-// Calculate Score and Render Answer Key
-function calculateAndRenderResults() {
     let correctCount = 0;
     let attemptedCount = 0;
     const answerKeyContainer = document.getElementById('answer-key-container');
     answerKeyContainer.innerHTML = '';
-    
     const letters = ['A', 'B', 'C', 'D', 'E', 'F'];
-    
+
     questions.forEach((q, i) => {
         const userAns = userAnswers[i];
         if (userAns !== null) attemptedCount++;
-        
         const isCorrect = userAns === q.correctAnswer;
-        
         if (isCorrect) correctCount++;
-        
-        // Generate Answer Key Item
+
         const item = document.createElement('div');
         item.className = `key-item ${isCorrect ? 'correct' : 'incorrect'}`;
-        
-        let optText = q.options[userAns];
-        if (optText && optText.startsWith('IMAGE: ')) optText = "[Image Option]";
-        let correctOptText = q.options[q.correctAnswer] || "[No Option]";
-        if (correctOptText.startsWith('IMAGE: ')) correctOptText = "[Image Option]";
+
+        let optText = q.options[userAns] || "Not Answered";
+        let correctOptText = q.options[q.correctAnswer] || "N/A";
+
+        if (typeof optText === 'string' && optText.startsWith('IMAGE: ')) optText = "[Image Option]";
+        if (typeof correctOptText === 'string' && correctOptText.startsWith('IMAGE: ')) correctOptText = "[Image Option]";
 
         let userAnsText = userAns !== null ? `${letters[userAns]}) ${optText}` : 'Not Answered';
         let correctAnsText = `${letters[q.correctAnswer]}) ${correctOptText}`;
-        
+
         item.innerHTML = `
             <div class="key-question">Q${i + 1}: ${q.text}</div>
             <div class="key-answers">
@@ -354,102 +603,86 @@ function calculateAndRenderResults() {
             </div>
             ${q.explanation ? `<div class="explanation"><strong>Explanation:</strong> ${q.explanation}</div>` : ''}
         `;
-        
+
         answerKeyContainer.appendChild(item);
     });
-    
-    const finalScore = correctCount * MARKS_PER_QUESTION;
-    const maxScore = questions.length * MARKS_PER_QUESTION;
+
     const percentage = ((correctCount / questions.length) * 100).toFixed(1);
-    
-    // Set Student Details
-    document.getElementById('res-name').textContent = studentInfo.name || "N/A";
-    document.getElementById('res-reg').textContent = studentInfo.reg || "N/A";
-    document.getElementById('res-class-sec').textContent = `${studentInfo.cls || "N/A"} - ${studentInfo.sec || "N/A"}`;
-    
-    document.getElementById('final-score').textContent = `${percentage}`;
-    document.getElementById('attempted-count').textContent = attemptedCount;
-    
-    // Update Score Circle Percentage for visual effect
-    document.querySelector('.score-circle').style.setProperty('--score-percent', percentage);
-    
-    // Setup Certificate Data
-    document.getElementById('cert-name').textContent = studentInfo.name || "N/A";
-    document.getElementById('cert-reg').textContent = studentInfo.reg || "N/A";
-    document.getElementById('cert-class').textContent = `${studentInfo.cls || "N/A"} - ${studentInfo.sec || "N/A"}`;
-    document.getElementById('cert-score').textContent = `${percentage}%`;
-    document.getElementById('cert-attempted').textContent = attemptedCount;
-    document.getElementById('cert-total').textContent = questions.length;
-    
     const currentDate = new Date().toLocaleDateString();
+
+    // Populate Results View
+    document.getElementById('res-name').textContent = studentInfo.name;
+    document.getElementById('res-reg').textContent = studentInfo.reg;
+    document.getElementById('res-class-sec').textContent = `${studentInfo.cls} - ${studentInfo.sec}`;
+    document.getElementById('res-date').textContent = currentDate;
+    document.getElementById('final-score').textContent = percentage;
+    document.getElementById('attempted-count').textContent = attemptedCount;
+    document.getElementById('total-questions-count').textContent = questions.length;
+
+    // Visual circular progress
+    document.querySelector('.score-circle').style.setProperty('--score-percent', percentage);
+
+    // Populate Hidden Certificate Template
+    document.getElementById('cert-name').textContent = studentInfo.name;
+    document.getElementById('cert-reg').textContent = studentInfo.reg;
+    document.getElementById('cert-class').textContent = `${studentInfo.cls} - ${studentInfo.sec}`;
+    document.getElementById('cert-score').textContent = `${percentage}%`;
     document.getElementById('cert-date').textContent = currentDate;
-    
-    // Send Data to Backend Excel Server
-    const testId = document.getElementById('test-selector').value;
-    const resultData = {
-        testId: testId,
+
+    // Submit to Google Sheets
+    const payload = {
+        testId: studentInfo.testId,
         date: currentDate,
-        name: studentInfo.name || "N/A",
-        reg: studentInfo.reg || "N/A",
-        classSec: `${studentInfo.cls || "N/A"} - ${studentInfo.sec || "N/A"}`,
+        name: studentInfo.name,
+        reg: studentInfo.reg,
+        classSec: `${studentInfo.cls} - ${studentInfo.sec}`,
         score: percentage,
         attempted: attemptedCount,
         total: questions.length
     };
-    
-    const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzH6LhVuapl_6w602GozE1zzwrzx9ZDH_jO_OAcfOWJ3yQgtAzzjR94uuCkqAK4NkuT/exec';
-    
+
     fetch(GOOGLE_SCRIPT_URL, {
         method: 'POST',
-        headers: {
-            'Content-Type': 'text/plain;charset=utf-8',
-        },
-        body: JSON.stringify(resultData)
-    }).then(res => {
-        console.log("Successfully sent result to Google Sheets!");
+        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+        body: JSON.stringify(payload)
+    }).then(() => {
+        console.log("Result saved to Google Sheets successfully.");
     }).catch(err => {
-        console.error("Could not reach Google Sheets to save data:", err);
+        console.error("Could not reach Google Sheets:", err);
     });
 }
 
-document.getElementById('download-cert-btn').addEventListener('click', () => {
+// Download Certificate PDF
+function downloadCertificate() {
     const element = document.getElementById('certificate-template');
-    const originalText = document.getElementById('download-cert-btn').textContent;
-    document.getElementById('download-cert-btn').textContent = "Downloading...";
-    document.getElementById('download-cert-btn').disabled = true;
-    
-    const opt = {
-        margin:       0,
-        filename:     `${studentInfo.name || 'Student'}_CLAD_Mock_Certificate.pdf`,
-        image:        { type: 'jpeg', quality: 0.98 },
-        html2canvas:  { scale: 2 },
-        jsPDF:        { unit: 'in', format: 'letter', orientation: 'landscape' }
-    };
-    
-    html2pdf().set(opt).from(element).save().then(() => {
-        document.getElementById('download-cert-btn').textContent = originalText;
-        document.getElementById('download-cert-btn').disabled = false;
-    }).catch(err => {
-        console.error("Certificate generation failed: ", err);
-        document.getElementById('download-cert-btn').textContent = "Download Failed";
-        document.getElementById('download-cert-btn').disabled = false;
-    });
-});
+    const btn = document.getElementById('download-cert-btn');
+    const originalText = btn.textContent;
+    btn.textContent = "Generating PDF...";
+    btn.disabled = true;
 
-// Reset Test
-function resetTest() {
-    timeRemaining = 3600;
-    currentQuestionIndex = 0;
-    questions = shuffleArray(questions);
-    userAnswers = new Array(questions.length).fill(null);
-    
-    resultScreen.classList.remove('active');
-    startScreen.classList.add('active');
-    
-    timerDisplay.style.color = '';
-    timerDisplay.style.background = 'rgba(239, 68, 68, 0.1)';
-    document.getElementById('timer').textContent = "01:00:00";
+    const opt = {
+        margin: 0,
+        filename: `${studentInfo.name || 'Candidate'}_CLAD_Certificate.pdf`,
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2 },
+        jsPDF: { unit: 'in', format: 'letter', orientation: 'landscape' }
+    };
+
+    if (window.html2pdf) {
+        html2pdf().set(opt).from(element).save().then(() => {
+            btn.textContent = originalText;
+            btn.disabled = false;
+        }).catch(err => {
+            console.error("Certificate error:", err);
+            btn.textContent = "Download Failed";
+            btn.disabled = false;
+        });
+    } else {
+        alert("PDF generator is still loading. Please try again in a few seconds.");
+        btn.textContent = originalText;
+        btn.disabled = false;
+    }
 }
 
-// Boot App
-window.addEventListener('DOMContentLoaded', init);
+// Start
+window.addEventListener('DOMContentLoaded', initApp);
