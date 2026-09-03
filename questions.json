@@ -6757,10 +6757,14 @@
     "id": 496,
     "topic": "Industry Specific Test",
     "text": "Question #5\nIf an error occurs in Startup.vi , which VI can pass the error code to the Shutdown case?\n(automatic error handling is disabled)",
-    "options": [],
+    "options": [
+      "<img src='images/qb3_q496_1.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/qb3_q496_3.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/qb3_q496_5.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/qb3_q496_7.png' style='max-width:100%; border-radius:8px;'>"
+    ],
     "original_q_num": 5,
-    "correctAnswer": 4,
-    "image": "images/qb3_q496_0.png"
+    "correctAnswer": 4
   },
   {
     "id": 497,
@@ -6822,10 +6826,14 @@
     "id": 501,
     "topic": "Industry Specific Test",
     "text": "Question #14\nThe SubVI PROCESS.vi represents a test that outputs a string each time the test runs, with no \nCarriage Return or End of Line constant in the string.\nYour VI must repeatedly run the SubVI PROCESS.vi until it returns a true on the Boolean output, \nthen allow the user to select the location for the log. The VI must log all the data, putting data from \neach run of PROCESS.vi on a separate line.\nWhich of the following VIs meets these requirements?",
-    "options": [],
+    "options": [
+      "<img src='images/qb3_q501_1.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/qb3_q501_3.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/qb3_q501_5.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/qb3_q501_7.png' style='max-width:100%; border-radius:8px;'>"
+    ],
     "original_q_num": 14,
-    "correctAnswer": 4,
-    "image": "images/qb3_q501_0.png"
+    "correctAnswer": 4
   },
   {
     "id": 502,
@@ -6859,10 +6867,14 @@
     "id": 504,
     "topic": "Industry Specific Test",
     "text": "Question #14\nThe Acquire state of a state machine acquires data from your DAQ device and continues acquiring \ndata until an error occurs or the user clicks Stop.\nWhich diagram correctly illustrates this requirement?",
-    "options": [],
+    "options": [
+      "<img src='images/qb3_q504_1.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/qb3_q504_3.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/qb3_q504_5.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/qb3_q504_7.png' style='max-width:100%; border-radius:8px;'>"
+    ],
     "original_q_num": 14,
-    "correctAnswer": 4,
-    "image": "images/qb3_q504_0.png"
+    "correctAnswer": 4
   },
   {
     "id": 505,
@@ -6882,7 +6894,12 @@
     "id": 506,
     "topic": "Industry Specific Test",
     "text": "Question #3\nThis VI reads temperature  in C but needs to display the rolling average and current temperature in \nF.  Temperature conversion must be done outside the loop to initialize the shift registers, and also \ninside the loop for the  current temperature.  Which would be the best simplification of this code?",
-    "options": [],
+    "options": [
+      "<img src='images/qb3_q506_2.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/qb3_q506_4.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/qb3_q506_6.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/qb3_q506_8.png' style='max-width:100%; border-radius:8px;'>"
+    ],
     "original_q_num": 3,
     "correctAnswer": 3,
     "image": "images/qb3_q506_0.png"
@@ -6891,7 +6908,12 @@
     "id": 507,
     "topic": "Industry Specific Test",
     "text": "Question #5\nWhat value will be displayed in the Array Out indicator after the VI completes execution?",
-    "options": [],
+    "options": [
+      "<img src='images/qb3_q507_2.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/qb3_q507_4.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/qb3_q507_6.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/qb3_q507_8.png' style='max-width:100%; border-radius:8px;'>"
+    ],
     "original_q_num": 5,
     "correctAnswer": 4,
     "image": "images/qb3_q507_0.png"
@@ -6942,7 +6964,12 @@
     "id": 511,
     "topic": "Industry Specific Test",
     "text": "Question #12\nThe front panel of a SubVI is shown.  Which VI would use the front panel shown and add a New \nPurchase to the Total Purchases for a customer?",
-    "options": [],
+    "options": [
+      "<img src='images/qb3_q511_2.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/qb3_q511_4.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/qb3_q511_6.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/qb3_q511_8.png' style='max-width:100%; border-radius:8px;'>"
+    ],
     "original_q_num": 12,
     "correctAnswer": 1,
     "image": "images/qb3_q511_0.png"
@@ -6951,7 +6978,12 @@
     "id": 512,
     "topic": "Industry Specific Test",
     "text": "Question #1\nWhat will the Max Value and Max Value 1 indicator look like after the VI completes execution?",
-    "options": [],
+    "options": [
+      "<img src='images/qb3_q512_2.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/qb3_q512_4.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/qb3_q512_6.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/qb3_q512_8.png' style='max-width:100%; border-radius:8px;'>"
+    ],
     "original_q_num": 1,
     "correctAnswer": 1,
     "image": "images/qb3_q512_0.png"
