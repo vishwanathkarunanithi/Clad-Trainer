@@ -326,7 +326,7 @@ function selectQuestions(allQs, testConfig) {
 // App Initialization
 async function initApp() {
     try {
-        const response = await fetch('questions.json?v=8.0');
+        const response = await fetch('questions.json');
         allQuestions = await response.json();
     } catch (err) {
         console.error("Could not load questions.json", err);
