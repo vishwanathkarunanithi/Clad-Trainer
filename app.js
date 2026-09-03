@@ -326,7 +326,7 @@ function selectQuestions(allQs, testConfig) {
 // App Initialization
 async function initApp() {
     try {
-        const response = await fetch('questions.json');
+        const response = await fetch('questions.json?v=8.0');
         allQuestions = await response.json();
     } catch (err) {
         console.error("Could not load questions.json", err);
@@ -342,6 +342,17 @@ async function initApp() {
             opt.value = `Mock Test ${i}`;
             opt.textContent = `Mock Test ${i}`;
             adminTestSelect.appendChild(opt);
+        }
+        
+        // Add specific tests dynamically
+        if (allQuestions && allQuestions.length > 0) {
+            const specificTopics = [...new Set(allQuestions.map(q => q.topic))].filter(t => t && (t.startsWith('Company Specific') || t.startsWith('Industry Specific')));
+            specificTopics.forEach(topic => {
+                const opt = document.createElement('option');
+                opt.value = topic;
+                opt.textContent = topic;
+                adminTestSelect.appendChild(opt);
+            });
         }
     }
 
