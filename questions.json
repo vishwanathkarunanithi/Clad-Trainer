@@ -3426,158 +3426,6 @@
     "explanation": "LabVIEW Project Explorer organizes disk files and references, but file duplication is managed via OS/ disk menus."
   },
   {
-    "id": 269,
-    "topic": "Industry Specific Test",
-    "text": "Question #5 If an error occurs in Startup.vi , which VI can pass the error code to the Shutdown case? (automatic error handling is disabled)",
-    "options": [],
-    "original_q_num": 5,
-    "correctAnswer": 4
-  },
-  {
-    "id": 270,
-    "topic": "Industry Specific Test",
-    "text": "Question #7 The file C:\\data.txt does not exist. How does LabVIEW handle the error when the code executes? LabVIEW displays the error handling dialog box 10 times, listing Close File as the source of the error. LabVIEW displays the error handling dialog box 10 times, listing Open/Create/Replace File as the source of the error. LabVIEW displays the error handling dialog box 9 times, listing Close File as the source of the error. The VI executes without error because the missing file is created by Open/Create/Replace File.",
-    "options": [],
-    "original_q_num": 7,
-    "correctAnswer": 2
-  },
-  {
-    "id": 271,
-    "topic": "Industry Specific Test",
-    "text": "Question #1 In the following For Loop, why is the DAQmx task reference passed through shift registers instead of tunnels? Shift registers are more efficient than tunnels. The DAQmx Read VI changes the value of the reference from one iteration to the next. Loops cannot have a mixture of tunnels and shift registers. To ensure a valid reference is passed out of the loop if it runs zero times.",
-    "options": [],
-    "original_q_num": 1,
-    "correctAnswer": 4
-  },
-  {
-    "id": 272,
-    "topic": "Industry Specific Test",
-    "text": "Question #8 What is the root cause the Case Structure's case selector to show numbers instead of the Enum text? The Coercion dots prevent the text from displaying. The Enum constants have inconsistent sets of cases. The Case Structure Options are set to display Enum as Numeric. The Enum constants are not Type Defs.",
-    "options": [],
-    "original_q_num": 8,
-    "correctAnswer": 4
-  },
-  {
-    "id": 273,
-    "topic": "Industry Specific Test",
-    "text": "Question #12 When the code is run, the State indicator will: Display \"Running\" once, then it will display \"Initialize\". Never display \"Initialize\". Never display \"Running\". Display \"Initialize\" once, then it will display \"Running\".",
-    "options": [],
-    "original_q_num": 12,
-    "correctAnswer": 4
-  },
-  {
-    "id": 274,
-    "topic": "Industry Specific Test",
-    "text": "Question #14 The SubVI PROCESS.vi represents a test that outputs a string each time the test runs, with no Carriage Return or End of Line constant in the string. Your VI must repeatedly run the SubVI PROCESS.vi until it returns a true on the Boolean output, then allow the user to select the location for the log. The VI must log all the data, putting data from each run of PROCESS.vi on a separate line. Which of the following VIs meets these requirements?",
-    "options": [],
-    "original_q_num": 14,
-    "correctAnswer": 3
-  },
-  {
-    "id": 275,
-    "topic": "Industry Specific Test",
-    "text": "Question #1 What is the order of execution of the subVIs in this diagram, from first to last? Test A Test B and Test D in parallel Test C This VI is broken. Test A and Test D in parallel Test B Test C Test A Test B Test C Test D",
-    "options": [],
-    "original_q_num": 1,
-    "correctAnswer": 3
-  },
-  {
-    "id": 276,
-    "topic": "Industry Specific Test",
-    "text": "Question #9 What value will be displayed in the Out indicator when this VI completes execution? Case0 Case3 Case1 Case2",
-    "options": [],
-    "original_q_num": 9,
-    "correctAnswer": 1
-  },
-  {
-    "id": 277,
-    "topic": "Industry Specific Test",
-    "text": "Question #14 The Acquire state of a state machine acquires data from your DAQ device and continues acquiring data until an error occurs or the user clicks Stop. Which diagram correctly illustrates this requirement?",
-    "options": [],
-    "original_q_num": 14,
-    "correctAnswer": 4
-  },
-  {
-    "id": 278,
-    "topic": "Industry Specific Test",
-    "text": "Question #13 When run, this VI will: Prompt for a location to create a text file and read all the data from that file 1 time. Prompt for the location of an existing file and read all the data from that file 1 time. Error out because the  location of an existing file is not specified. Prompt for the location of an existing file and read all data from that file 5 times.",
-    "options": [],
-    "original_q_num": 13,
-    "correctAnswer": 4
-  },
-  {
-    "id": 279,
-    "topic": "Industry Specific Test",
-    "text": "Question #3 This VI reads temperature  in C but needs to display the rolling average and current temperature in F.  Temperature conversion must be done outside the loop to initialize the shift registers, and also inside the loop for the  current temperature.  Which would be the best simplification of this code?",
-    "options": [],
-    "original_q_num": 3,
-    "correctAnswer": 3
-  },
-  {
-    "id": 280,
-    "topic": "Industry Specific Test",
-    "text": "Question #5 What value will be displayed in the Array Out indicator after the VI completes execution?",
-    "options": [],
-    "original_q_num": 5,
-    "correctAnswer": 4
-  },
-  {
-    "id": 281,
-    "topic": "Industry Specific Test",
-    "text": "Question #7 After this VI has run 3 times, what value is displayed in the indicators Loop Iterations and Time? Loop Iterations = 0, Time = Seconds between the 2nd and 3rd time the VI ran. Loop Iterations = 3, Time = Seconds between the 1st and 3rd time the VI ran. Loop Iterations = 3, Time = Seconds between the 2nd and 3rd time the VI ran. Loop Iterations = 0, Time = Seconds between the 1st and 3rd time the VI ran.",
-    "options": [],
-    "original_q_num": 7,
-    "correctAnswer": 1
-  },
-  {
-    "id": 282,
-    "topic": "Industry Specific Test",
-    "text": "Question #9 After running this VI, what is the value of Product? -126 NAN 129 130",
-    "options": [],
-    "original_q_num": 9,
-    "correctAnswer": 1
-  },
-  {
-    "id": 283,
-    "topic": "Industry Specific Test",
-    "text": "Question #10 What will be the value of the outputs of the Delete From Array function after the VI completes execution? array = [1, 2], deleted element = 3 The VI is broken because the \"index\" input to Delete From Array is unwired. array = [2, 3], deleted element = 1 array = [1, 2, 3], deleted element = 0",
-    "options": [],
-    "original_q_num": 10,
-    "correctAnswer": 1
-  },
-  {
-    "id": 284,
-    "topic": "Industry Specific Test",
-    "text": "Question #12 The front panel of a SubVI is shown.  Which VI would use the front panel shown and add a New Purchase to the Total Purchases for a customer?",
-    "options": [],
-    "original_q_num": 12,
-    "correctAnswer": 3
-  },
-  {
-    "id": 285,
-    "topic": "Industry Specific Test",
-    "text": "Question #1 What will the Max Value and Max Value 1 indicator look like after the VI completes execution?",
-    "options": [],
-    "original_q_num": 1,
-    "correctAnswer": 1
-  },
-  {
-    "id": 286,
-    "topic": "Industry Specific Test",
-    "text": "Question #8 The SubVI is opened and then run three times. What is the value of Sum when the VI completes execution? Indeterminate 15 5 10",
-    "options": [],
-    "original_q_num": 8,
-    "correctAnswer": 2
-  },
-  {
-    "id": 287,
-    "topic": "Industry Specific Test",
-    "text": "Question #12 If you disable automatic error handling, what happens if an error occurs when you run the code shown below? When the error occurs, LabVIEW immediately suspends execution and displays an error dialog. LabVIEW executes all nodes in the VI and then displays an error dialog. When the error occurs, LabVIEW immediately suspends execution but does not display any error information. LabVIEW executes all nodes in the VI without displaying any error information.",
-    "options": [],
-    "original_q_num": 12,
-    "correctAnswer": 1
-  },
-  {
     "id": 288,
     "topic": "Company Specific Test - Badge-1",
     "text": "Identify the correct option based on the image.",
@@ -6904,5 +6752,236 @@
     ],
     "correctAnswer": 1,
     "original_file": "Waveform chart and graph"
+  },
+  {
+    "id": 496,
+    "topic": "Industry Specific Test",
+    "text": "Question #5\nIf an error occurs in Startup.vi , which VI can pass the error code to the Shutdown case?\n(automatic error handling is disabled)",
+    "options": [],
+    "original_q_num": 5,
+    "correctAnswer": 4,
+    "image": "images/qb3_q496_0.png"
+  },
+  {
+    "id": 497,
+    "topic": "Industry Specific Test",
+    "text": "Question #7\nThe file C:\\data.txt does not exist.\nHow does LabVIEW handle the error when the code executes?",
+    "options": [
+      "LabVIEW displays the error handling dialog box 10 times, listing Close File as the source of \nthe error.",
+      "LabVIEW displays the error handling dialog box 10 times, listing Open/Create/Replace File \nas the source of the error.",
+      "LabVIEW displays the error handling dialog box 9 times, listing Close File as the source of \nthe error.",
+      "The VI executes without error because the missing file is created by Open/Create/Replace \nFile."
+    ],
+    "original_q_num": 7,
+    "correctAnswer": 1,
+    "image": "images/qb3_q497_0.jpeg"
+  },
+  {
+    "id": 498,
+    "topic": "Industry Specific Test",
+    "text": "Question #1\nIn the following For Loop, why is the DAQmx task reference passed through shift registers instead of \ntunnels?",
+    "options": [
+      "Shift registers are more efficient than tunnels.",
+      "The DAQmx Read VI changes the value of the reference from one iteration to the next.",
+      "Loops cannot have a mixture of tunnels and shift registers.",
+      "To ensure a valid reference is passed out of the loop if it runs zero times."
+    ],
+    "original_q_num": 1,
+    "correctAnswer": 1,
+    "image": "images/qb3_q498_0.png"
+  },
+  {
+    "id": 499,
+    "topic": "Industry Specific Test",
+    "text": "Question #8\nWhat is the root cause the Case Structure's case selector to show numbers instead of the Enum \ntext?",
+    "options": [
+      "The Coercion dots prevent the text from displaying.",
+      "The Enum constants have inconsistent sets of cases.",
+      "The Case Structure Options are set to display Enum as Numeric.",
+      "The Enum constants are not Type Defs."
+    ],
+    "original_q_num": 8,
+    "correctAnswer": 2,
+    "image": "images/qb3_q499_0.png"
+  },
+  {
+    "id": 500,
+    "topic": "Industry Specific Test",
+    "text": "Question #12\nWhen the code is run, the State indicator will:",
+    "options": [
+      "Display \"Running\" once, then it will display \"Initialize\".",
+      "Never display \"Initialize\".",
+      "Never display \"Running\".",
+      "Display \"Initialize\" once, then it will display \"Running\"."
+    ],
+    "original_q_num": 12,
+    "correctAnswer": 1,
+    "image": "images/qb3_q500_0.png"
+  },
+  {
+    "id": 501,
+    "topic": "Industry Specific Test",
+    "text": "Question #14\nThe SubVI PROCESS.vi represents a test that outputs a string each time the test runs, with no \nCarriage Return or End of Line constant in the string.\nYour VI must repeatedly run the SubVI PROCESS.vi until it returns a true on the Boolean output, \nthen allow the user to select the location for the log. The VI must log all the data, putting data from \neach run of PROCESS.vi on a separate line.\nWhich of the following VIs meets these requirements?",
+    "options": [],
+    "original_q_num": 14,
+    "correctAnswer": 4,
+    "image": "images/qb3_q501_0.png"
+  },
+  {
+    "id": 502,
+    "topic": "Industry Specific Test",
+    "text": "Question #1\nWhat is the order of execution of the subVIs in this diagram, from first to last?",
+    "options": [
+      "Test A Test B and Test D in parallel Test C",
+      "This VI is broken.",
+      "Test A and Test D in parallel Test B Test C",
+      "Test A Test B Test C Test D"
+    ],
+    "original_q_num": 1,
+    "correctAnswer": 1,
+    "image": "images/qb3_q502_0.png"
+  },
+  {
+    "id": 503,
+    "topic": "Industry Specific Test",
+    "text": "Question #9\nWhat value will be displayed in the Out indicator when this VI completes execution?",
+    "options": [
+      "Case0",
+      "Case3",
+      "Case1",
+      "Case2"
+    ],
+    "original_q_num": 9,
+    "correctAnswer": 1,
+    "image": "images/qb3_q503_0.png"
+  },
+  {
+    "id": 504,
+    "topic": "Industry Specific Test",
+    "text": "Question #14\nThe Acquire state of a state machine acquires data from your DAQ device and continues acquiring \ndata until an error occurs or the user clicks Stop.\nWhich diagram correctly illustrates this requirement?",
+    "options": [],
+    "original_q_num": 14,
+    "correctAnswer": 4,
+    "image": "images/qb3_q504_0.png"
+  },
+  {
+    "id": 505,
+    "topic": "Industry Specific Test",
+    "text": "Question #13\nWhen run, this VI will:",
+    "options": [
+      "Prompt for a location to create a text file and read all the data from that file 1 time.",
+      "Prompt for the location of an existing file and read all the data from that file 1 time.",
+      "Error out because the  location of an existing file is not specified.",
+      "Prompt for the location of an existing file and read all data from that file 5 times."
+    ],
+    "original_q_num": 13,
+    "correctAnswer": 4,
+    "image": "images/qb3_q505_0.png"
+  },
+  {
+    "id": 506,
+    "topic": "Industry Specific Test",
+    "text": "Question #3\nThis VI reads temperature  in C but needs to display the rolling average and current temperature in \nF.  Temperature conversion must be done outside the loop to initialize the shift registers, and also \ninside the loop for the  current temperature.  Which would be the best simplification of this code?",
+    "options": [],
+    "original_q_num": 3,
+    "correctAnswer": 3,
+    "image": "images/qb3_q506_0.png"
+  },
+  {
+    "id": 507,
+    "topic": "Industry Specific Test",
+    "text": "Question #5\nWhat value will be displayed in the Array Out indicator after the VI completes execution?",
+    "options": [],
+    "original_q_num": 5,
+    "correctAnswer": 4,
+    "image": "images/qb3_q507_0.png"
+  },
+  {
+    "id": 508,
+    "topic": "Industry Specific Test",
+    "text": "Question #7\nAfter this VI has run 3 times, what value is displayed in the indicators Loop Iterations and Time?",
+    "options": [
+      "Loop Iterations = 0, Time = Seconds between the 2nd and 3rd time the VI ran.",
+      "Loop Iterations = 3, Time = Seconds between the 1st and 3rd time the VI ran.",
+      "Loop Iterations = 3, Time = Seconds between the 2nd and 3rd time the VI ran.",
+      "Loop Iterations = 0, Time = Seconds between the 1st and 3rd time the VI ran."
+    ],
+    "original_q_num": 7,
+    "correctAnswer": 1,
+    "image": "images/qb3_q508_0.png"
+  },
+  {
+    "id": 509,
+    "topic": "Industry Specific Test",
+    "text": "Question #9\nAfter running this VI, what is the value of Product?",
+    "options": [
+      "-126",
+      "NAN",
+      "129",
+      "130"
+    ],
+    "original_q_num": 9,
+    "correctAnswer": 1,
+    "image": "images/qb3_q509_0.png"
+  },
+  {
+    "id": 510,
+    "topic": "Industry Specific Test",
+    "text": "Question #10\nWhat will be the value of the outputs of the Delete From Array function after the VI completes \nexecution?",
+    "options": [
+      "array = [1, 2], deleted element = 3",
+      "The VI is broken because the \"index\" input to Delete From Array is unwired.",
+      "array = [2, 3], deleted element = 1",
+      "array = [1, 2, 3], deleted element = 0"
+    ],
+    "original_q_num": 10,
+    "correctAnswer": 1,
+    "image": "images/qb3_q510_0.png"
+  },
+  {
+    "id": 511,
+    "topic": "Industry Specific Test",
+    "text": "Question #12\nThe front panel of a SubVI is shown.  Which VI would use the front panel shown and add a New \nPurchase to the Total Purchases for a customer?",
+    "options": [],
+    "original_q_num": 12,
+    "correctAnswer": 1,
+    "image": "images/qb3_q511_0.png"
+  },
+  {
+    "id": 512,
+    "topic": "Industry Specific Test",
+    "text": "Question #1\nWhat will the Max Value and Max Value 1 indicator look like after the VI completes execution?",
+    "options": [],
+    "original_q_num": 1,
+    "correctAnswer": 1,
+    "image": "images/qb3_q512_0.png"
+  },
+  {
+    "id": 513,
+    "topic": "Industry Specific Test",
+    "text": "Question #8\nThe SubVI is opened and then run three times.\nWhat is the value of Sum when the VI completes execution?",
+    "options": [
+      "Indeterminate",
+      "15",
+      "5",
+      "10"
+    ],
+    "original_q_num": 8,
+    "correctAnswer": 2,
+    "image": "images/qb3_q513_0.png"
+  },
+  {
+    "id": 514,
+    "topic": "Industry Specific Test",
+    "text": "Question #12\nIf you disable automatic error handling, what happens if an error occurs when you run the code \nshown below?",
+    "options": [
+      "When the error occurs, LabVIEW immediately suspends execution and displays an error \ndialog.",
+      "LabVIEW executes all nodes in the VI and then displays an error dialog.",
+      "When the error occurs, LabVIEW immediately suspends execution but does not display any \nerror information.",
+      "LabVIEW executes all nodes in the VI without displaying any error information."
+    ],
+    "original_q_num": 12,
+    "correctAnswer": 1,
+    "image": "images/qb3_q514_0.png"
   }
 ]
