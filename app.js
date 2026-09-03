@@ -239,6 +239,9 @@ function decodeTestCode(codeStr) {
 
 // Question Selector: Enforces Syllabus Weightage, Max 10 Theory, Mixed Shuffling
 function selectQuestions(allQs, testConfig) {
+    if (testConfig.testId && (testConfig.testId.startsWith('Company Specific') || testConfig.testId.startsWith('Industry Specific'))) {
+        return [...allQs].filter(q => q.topic === testConfig.testId);
+    }
     let pool = shuffleArray([...allQs]);
     
     let groupedTheory = {};
