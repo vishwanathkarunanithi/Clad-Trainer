@@ -6675,7 +6675,7 @@
       "<img src='images/qb3_q506_8.png' style='max-width:100%; border-radius:8px;'>"
     ],
     "original_q_num": 3,
-    "correctAnswer": 1,
+    "correctAnswer": 2,
     "image": "images/qb3_q506_0.png"
   },
   {
@@ -6792,7 +6792,7 @@
   },
   {
     "id": 600,
-    "topic": "CLAD PRACTICE QUESTIONS indravarun",
+    "topic": "CLAD Practice Test 1",
     "text": "Question #1\nWhat is the\u00a0most likely\u00a0cause of the coercion dot in this VI?",
     "options": [
       "The shift register\u00a0is coercing the enum constants into their string values.",
@@ -6808,7 +6808,7 @@
   },
   {
     "id": 601,
-    "topic": "CLAD PRACTICE QUESTIONS indravarun",
+    "topic": "CLAD Practice Test 1",
     "text": "Question #2\nYou want to initialize a state machine with values read from an INI file. You need to read the values from the INI file\u00a0only once\u00a0on initialization, and you do not need to modify the values\u00a0in that\u00a0file.\nWhich\u00a0diagram is the\u00a0best implementation of the\u00a0Initialize\u00a0case?",
     "options": [
       "<img src='images/indravarun_q601_0.png' style='max-width:100%; border-radius:8px;'>",
@@ -6821,7 +6821,7 @@
   },
   {
     "id": 602,
-    "topic": "CLAD PRACTICE QUESTIONS indravarun",
+    "topic": "CLAD Practice Test 1",
     "text": "Question #3\nWhen using the DAQmx API to acquire data from hardware, what is an\u00a0advantage of using a state machine architecture, with cases for initialization, configuration, reading, stopping and closing?",
     "options": [
       "Select\u00a0ALL\u00a0that apply.",
@@ -6835,7 +6835,7 @@
   },
   {
     "id": 603,
-    "topic": "CLAD PRACTICE QUESTIONS indravarun",
+    "topic": "CLAD Practice Test 1",
     "text": "Question #4\nIn the following state diagram for an NI-DAQmx application, which state\u00a0most likely\u00a0contains the\u00a0DAQmx Timing\u00a0VI?",
     "options": [
       "Config",
@@ -6851,7 +6851,7 @@
   },
   {
     "id": 604,
-    "topic": "CLAD PRACTICE QUESTIONS indravarun",
+    "topic": "CLAD Practice Test 1",
     "text": "Question #5\nWhen is it appropriate to create a state diagram?",
     "options": [
       "Select\u00a0ALL\u00a0that apply.Top of Form",
@@ -6865,7 +6865,7 @@
   },
   {
     "id": 605,
-    "topic": "CLAD PRACTICE QUESTIONS indravarun",
+    "topic": "CLAD Practice Test 1",
     "text": "Question #6\nBoolean Master,\u00a0Boolean 1,\u00a0Boolean 2\u00a0and\u00a0Boolean 3\u00a0are all set to TRUE before the VI runs.Bottom of Form",
     "options": [
       "The following actions are performed:"
@@ -6878,7 +6878,7 @@
   },
   {
     "id": 606,
-    "topic": "CLAD PRACTICE QUESTIONS indravarun",
+    "topic": "CLAD Practice Test 1",
     "text": "Question #1\nThe VI is run.",
     "options": [],
     "original_q_num": 1,
@@ -6886,7 +6886,7 @@
   },
   {
     "id": 607,
-    "topic": "CLAD PRACTICE QUESTIONS indravarun",
+    "topic": "CLAD Practice Test 1",
     "text": "Question #2\nAfter 1 second,\u00a0Boolean Master\u00a0is set to FALSE.",
     "options": [],
     "original_q_num": 2,
@@ -6894,7 +6894,7 @@
   },
   {
     "id": 608,
-    "topic": "CLAD PRACTICE QUESTIONS indravarun",
+    "topic": "CLAD Practice Test 1",
     "text": "Question #3\nThe\u00a0stop\u00a0button is clicked.",
     "options": [
       "What are the values of\u00a0Boolean 1,\u00a0Boolean 2, and\u00a0Boolean 3\u00a0after these actions are performed?"
@@ -6907,7 +6907,7 @@
   },
   {
     "id": 609,
-    "topic": "CLAD PRACTICE QUESTIONS indravarun",
+    "topic": "CLAD Practice Test 1",
     "text": "Question #7\nWhat is the best practice to prevent coercion dots like the\u00a0one on this VI?",
     "options": [
       "Create the While Loop terminals with indexing enabled.",
@@ -6923,7 +6923,7 @@
   },
   {
     "id": 610,
-    "topic": "CLAD PRACTICE QUESTIONS indravarun",
+    "topic": "CLAD Practice Test 1",
     "text": "Question #8\nYou have created a new subVI for other team members to use in their applications.",
     "options": [
       "Of the following choices, what is the\u00a0most\u00a0helpful thing you can do for users of your subVI?Top of Form",
@@ -6937,7 +6937,7 @@
   },
   {
     "id": 611,
-    "topic": "CLAD PRACTICE QUESTIONS indravarun",
+    "topic": "CLAD Practice Test 1",
     "text": "Question #9\nWhich diagram illustrates the\u00a0most performant\u00a0way to save data to a text file\u00a0inside a While Loop?",
     "options": [
       "a)",
@@ -6956,7 +6956,7 @@
   },
   {
     "id": 612,
-    "topic": "CLAD PRACTICE QUESTIONS indravarun",
+    "topic": "CLAD Practice Test 1",
     "text": "Question #10\nWhich object is\u00a0NOT\u00a0a standard component of a Simple State Machine?Top of Form",
     "options": [
       "Case Structure",
@@ -6970,7 +6970,7 @@
   },
   {
     "id": 613,
-    "topic": "CLAD PRACTICE QUESTIONS indravarun",
+    "topic": "CLAD Practice Test 1",
     "text": "Question #11\nWhich VI will log\u00a0every sample\u00a0above the\u00a0Threshold\u00a0value to a\u00a0comma-separated text file?",
     "options": [
       "The \"False\" case of each case structure passes the error wire and the reference wire (if present) straight through without modification."
@@ -6984,7 +6984,7 @@
   },
   {
     "id": 614,
-    "topic": "CLAD PRACTICE QUESTIONS indravarun",
+    "topic": "CLAD Practice Test 1",
     "text": "Question #12\nWhat are the advantages of using a\u00a0state machine design pattern over a\u00a0Flat Sequence Structure to\u00a0enforce sequential\u00a0execution in code?",
     "options": [
       "Select\u00a0ALL\u00a0that apply.Top of Form",
@@ -6998,7 +6998,7 @@
   },
   {
     "id": 615,
-    "topic": "CLAD PRACTICE QUESTIONS indravarun",
+    "topic": "CLAD Practice Test 1",
     "text": "Question #13\nWhat do the small white arrows on the\u00a0VISA resource name\u00a0tunnels signify?",
     "options": [
       "The tunnels will be automatically connected when new cases are added.",
@@ -7014,7 +7014,7 @@
   },
   {
     "id": 616,
-    "topic": "CLAD PRACTICE QUESTIONS indravarun",
+    "topic": "CLAD Practice Test 1",
     "text": "Question #14\nWhat is the best practice to prevent coercion dots like the\u00a0one on this VI?",
     "options": [
       "Convert all Enums to separate Type Definitions.",
@@ -7030,7 +7030,7 @@
   },
   {
     "id": 617,
-    "topic": "CLAD PRACTICE QUESTIONS indravarun",
+    "topic": "CLAD Practice Test 1",
     "text": "Question #15\nWhen you run this VI, you are prompted to select a file. Assuming you select a valid text file containing multiple lines, what is the value of the first element of\u00a0Array\u00a0when the VI finishes running?",
     "options": [
       "The first character of the file",
@@ -7047,7 +7047,7 @@
   },
   {
     "id": 618,
-    "topic": "CLAD PRACTICE QUESTIONS indravarun",
+    "topic": "CLAD Practice Test 1",
     "text": "Question #16\nWhich of the following statements is TRUE regarding the execution of this code?",
     "options": [
       "The\u00a0State\u00a0indicator will display \"Running\" for one second, then it will display \"Initialize\".",
@@ -7063,7 +7063,7 @@
   },
   {
     "id": 619,
-    "topic": "CLAD PRACTICE QUESTIONS indravarun",
+    "topic": "CLAD Practice Test 1",
     "text": "Question #17\nWhat is the order of execution of the subVIs in this diagram, from first to last?",
     "options": [
       "Test A",
@@ -7086,7 +7086,7 @@
   },
   {
     "id": 620,
-    "topic": "CLAD PRACTICE QUESTIONS indravarun",
+    "topic": "CLAD Practice Test 1",
     "text": "Question #18\nIn the For Loop, why is the DAQmx task reference\u00a0passed through shift registers instead of tunnels?",
     "options": [
       "Loops cannot have a mixture of tunnels and shift registers.",
@@ -7102,7 +7102,7 @@
   },
   {
     "id": 621,
-    "topic": "CLAD PRACTICE QUESTIONS indravarun",
+    "topic": "CLAD Practice Test 1",
     "text": "Question #19\nWhich is\u00a0NOT\u00a0a\u00a0benefit of using subVIs?Top of Form",
     "options": [
       "Less duplicated code",
@@ -7115,7 +7115,7 @@
   },
   {
     "id": 622,
-    "topic": "CLAD PRACTICE QUESTIONS indravarun",
+    "topic": "CLAD Practice Test 1",
     "text": "Question #20\nWhen you add a new frame to your state machine, this is the resulting broken code:",
     "options": [
       "Which LabVIEW feature would have automatically created pass-through VISA reference and error wires for you?",
@@ -7132,7 +7132,7 @@
   },
   {
     "id": 700,
-    "topic": "CLAD 40 QUESTIONS indra",
+    "topic": "CLAD Practice Test 2",
     "text": "Question #1\nWhat is the\u00a0most likely\u00a0cause of the coercion dot in this VI?",
     "options": [
       "The shift register\u00a0is coercing the enum constants into their string values.",
@@ -7148,7 +7148,7 @@
   },
   {
     "id": 701,
-    "topic": "CLAD 40 QUESTIONS indra",
+    "topic": "CLAD Practice Test 2",
     "text": "Question #2\nYou want to initialize a state machine with values read from an INI file. You need to read the values from the INI file\u00a0only once\u00a0on initialization, and you do not need to modify the values\u00a0in that\u00a0file.\nWhich\u00a0diagram is the\u00a0best implementation of the\u00a0Initialize\u00a0case?",
     "options": [
       "<img src='images/indra_701_0.png' style='max-width:100%; border-radius:8px;'>",
@@ -7161,7 +7161,7 @@
   },
   {
     "id": 702,
-    "topic": "CLAD 40 QUESTIONS indra",
+    "topic": "CLAD Practice Test 2",
     "text": "Question #3\nWhen using the DAQmx API to acquire data from hardware, what is an\u00a0advantage of using a state machine architecture, with cases for initialization, configuration, reading, stopping and closing?",
     "options": [
       "Select\u00a0ALL\u00a0that apply.",
@@ -7175,7 +7175,7 @@
   },
   {
     "id": 703,
-    "topic": "CLAD 40 QUESTIONS indra",
+    "topic": "CLAD Practice Test 2",
     "text": "Question #4\nIn the following state diagram for an NI-DAQmx application, which state\u00a0most likely\u00a0contains the\u00a0DAQmx Timing\u00a0VI?",
     "options": [
       "Config",
@@ -7191,7 +7191,7 @@
   },
   {
     "id": 704,
-    "topic": "CLAD 40 QUESTIONS indra",
+    "topic": "CLAD Practice Test 2",
     "text": "Question #5\nWhen is it appropriate to create a state diagram?",
     "options": [
       "Select\u00a0ALL\u00a0that apply.Top of Form",
@@ -7205,7 +7205,7 @@
   },
   {
     "id": 705,
-    "topic": "CLAD 40 QUESTIONS indra",
+    "topic": "CLAD Practice Test 2",
     "text": "Question #6\nBoolean Master,\u00a0Boolean 1,\u00a0Boolean 2\u00a0and\u00a0Boolean 3\u00a0are all set to TRUE before the VI runs.Bottom of Form",
     "options": [
       "The following actions are performed:"
@@ -7218,7 +7218,7 @@
   },
   {
     "id": 706,
-    "topic": "CLAD 40 QUESTIONS indra",
+    "topic": "CLAD Practice Test 2",
     "text": "Question #1\nThe VI is run.",
     "options": [],
     "original_q_num": 1,
@@ -7226,7 +7226,7 @@
   },
   {
     "id": 707,
-    "topic": "CLAD 40 QUESTIONS indra",
+    "topic": "CLAD Practice Test 2",
     "text": "Question #2\nAfter 1 second,\u00a0Boolean Master\u00a0is set to FALSE.",
     "options": [],
     "original_q_num": 2,
@@ -7234,7 +7234,7 @@
   },
   {
     "id": 708,
-    "topic": "CLAD 40 QUESTIONS indra",
+    "topic": "CLAD Practice Test 2",
     "text": "Question #3\nThe\u00a0stop\u00a0button is clicked.",
     "options": [
       "What are the values of\u00a0Boolean 1,\u00a0Boolean 2, and\u00a0Boolean 3\u00a0after these actions are performed?"
@@ -7247,7 +7247,7 @@
   },
   {
     "id": 709,
-    "topic": "CLAD 40 QUESTIONS indra",
+    "topic": "CLAD Practice Test 2",
     "text": "Question #7\nWhat is the best practice to prevent coercion dots like the\u00a0one on this VI?",
     "options": [
       "Create the While Loop terminals with indexing enabled.",
@@ -7263,7 +7263,7 @@
   },
   {
     "id": 710,
-    "topic": "CLAD 40 QUESTIONS indra",
+    "topic": "CLAD Practice Test 2",
     "text": "Question #8\nYou have created a new subVI for other team members to use in their applications.",
     "options": [
       "Of the following choices, what is the\u00a0most\u00a0helpful thing you can do for users of your subVI?Top of Form",
@@ -7277,7 +7277,7 @@
   },
   {
     "id": 711,
-    "topic": "CLAD 40 QUESTIONS indra",
+    "topic": "CLAD Practice Test 2",
     "text": "Question #9\nWhich diagram illustrates the\u00a0most performant\u00a0way to save data to a text file\u00a0inside a While Loop?",
     "options": [
       "a)",
@@ -7296,7 +7296,7 @@
   },
   {
     "id": 712,
-    "topic": "CLAD 40 QUESTIONS indra",
+    "topic": "CLAD Practice Test 2",
     "text": "Question #10\nWhich object is\u00a0NOT\u00a0a standard component of a Simple State Machine?Top of Form",
     "options": [
       "Case Structure",
@@ -7310,7 +7310,7 @@
   },
   {
     "id": 713,
-    "topic": "CLAD 40 QUESTIONS indra",
+    "topic": "CLAD Practice Test 2",
     "text": "Question #11\nWhich VI will log\u00a0every sample\u00a0above the\u00a0Threshold\u00a0value to a\u00a0comma-separated text file?",
     "options": [
       "The \"False\" case of each case structure passes the error wire and the reference wire (if present) straight through without modification."
@@ -7324,7 +7324,7 @@
   },
   {
     "id": 714,
-    "topic": "CLAD 40 QUESTIONS indra",
+    "topic": "CLAD Practice Test 2",
     "text": "Question #12\nWhat are the advantages of using a\u00a0state machine design pattern over a\u00a0Flat Sequence Structure to\u00a0enforce sequential\u00a0execution in code?",
     "options": [
       "Select\u00a0ALL\u00a0that apply.Top of Form",
@@ -7338,7 +7338,7 @@
   },
   {
     "id": 715,
-    "topic": "CLAD 40 QUESTIONS indra",
+    "topic": "CLAD Practice Test 2",
     "text": "Question #13\nWhat do the small white arrows on the\u00a0VISA resource name\u00a0tunnels signify?",
     "options": [
       "The tunnels will be automatically connected when new cases are added.",
@@ -7354,7 +7354,7 @@
   },
   {
     "id": 716,
-    "topic": "CLAD 40 QUESTIONS indra",
+    "topic": "CLAD Practice Test 2",
     "text": "Question #14\nWhat is the best practice to prevent coercion dots like the\u00a0one on this VI?",
     "options": [
       "Convert all Enums to separate Type Definitions.",
@@ -7370,7 +7370,7 @@
   },
   {
     "id": 717,
-    "topic": "CLAD 40 QUESTIONS indra",
+    "topic": "CLAD Practice Test 2",
     "text": "Question #15\nWhen you run this VI, you are prompted to select a file. Assuming you select a valid text file containing multiple lines, what is the value of the first element of\u00a0Array\u00a0when the VI finishes running?",
     "options": [
       "The first character of the file",
@@ -7387,7 +7387,7 @@
   },
   {
     "id": 718,
-    "topic": "CLAD 40 QUESTIONS indra",
+    "topic": "CLAD Practice Test 2",
     "text": "Question #16\nWhich of the following statements is TRUE regarding the execution of this code?",
     "options": [
       "The\u00a0State\u00a0indicator will display \"Running\" for one second, then it will display \"Initialize\".",
@@ -7403,7 +7403,7 @@
   },
   {
     "id": 719,
-    "topic": "CLAD 40 QUESTIONS indra",
+    "topic": "CLAD Practice Test 2",
     "text": "Question #17\nWhat is the order of execution of the subVIs in this diagram, from first to last?",
     "options": [
       "Test A",
@@ -7426,7 +7426,7 @@
   },
   {
     "id": 720,
-    "topic": "CLAD 40 QUESTIONS indra",
+    "topic": "CLAD Practice Test 2",
     "text": "Question #18\nIn the For Loop, why is the DAQmx task reference\u00a0passed through shift registers instead of tunnels?",
     "options": [
       "Loops cannot have a mixture of tunnels and shift registers.",
@@ -7442,7 +7442,7 @@
   },
   {
     "id": 721,
-    "topic": "CLAD 40 QUESTIONS indra",
+    "topic": "CLAD Practice Test 2",
     "text": "Question #19\nWhich is\u00a0NOT\u00a0a\u00a0benefit of using subVIs?Top of Form",
     "options": [
       "Less duplicated code",
@@ -7455,7 +7455,7 @@
   },
   {
     "id": 722,
-    "topic": "CLAD 40 QUESTIONS indra",
+    "topic": "CLAD Practice Test 2",
     "text": "Question #20\nWhen you add a new frame to your state machine, this is the resulting broken code:",
     "options": [
       "Which LabVIEW feature would have automatically created pass-through VISA reference and error wires for you?",
@@ -7472,7 +7472,7 @@
   },
   {
     "id": 723,
-    "topic": "CLAD 40 QUESTIONS indra",
+    "topic": "CLAD Practice Test 2",
     "text": "Question #21\nThis VI reads temperature \u00a0in degrees Celsius but needs to display the rolling average and current temperature in degrees Fahrenheit. \u00a0Temperature conversion must be done outside the loop to initialize the shift registers, and also inside the loop for the current temperature. \u00a0Which would be the best way to simplify this code?",
     "options": [
       "<img src='images/indra_723_1.png' style='max-width:100%; border-radius:8px;'>",
@@ -7486,7 +7486,7 @@
   },
   {
     "id": 724,
-    "topic": "CLAD 40 QUESTIONS indra",
+    "topic": "CLAD Practice Test 2",
     "text": "Question #22\nWhy is there a coercion dot on the bottom input of the\u00a0Add\u00a0function?",
     "options": [
       "The inputs have different representations",
@@ -7502,7 +7502,7 @@
   },
   {
     "id": 725,
-    "topic": "CLAD 40 QUESTIONS indra",
+    "topic": "CLAD Practice Test 2",
     "text": "Question #23\nAssuming the subVI does not return an error, in what order will the functions execute?",
     "options": [
       "The\u00a0Starting Test\u00a0dialog box, then the subVI, then the\u00a0Test Complete\u00a0dialog box.",
@@ -7518,7 +7518,7 @@
   },
   {
     "id": 726,
-    "topic": "CLAD 40 QUESTIONS indra",
+    "topic": "CLAD Practice Test 2",
     "text": "Question #24\nWhat value is displayed in the\u00a0Numeric\u00a0indicator after\u00a0this code executes?",
     "options": [
       "Top of Form",
@@ -7535,7 +7535,7 @@
   },
   {
     "id": 727,
-    "topic": "CLAD 40 QUESTIONS indra",
+    "topic": "CLAD Practice Test 2",
     "text": "Question #25\nWhen placed at the \"INSERT CODE HERE\" location, which function or subVI can be used to extract one of the waveform channels output by the DAQmx Read VI?",
     "options": [
       "Top of Form"
@@ -7552,7 +7552,7 @@
   },
   {
     "id": 728,
-    "topic": "CLAD 40 QUESTIONS indra",
+    "topic": "CLAD Practice Test 2",
     "text": "Question #26\nAfter running this VI, what is the value of\u00a0Array?",
     "options": [
       "Top of Form"
@@ -7569,7 +7569,7 @@
   },
   {
     "id": 729,
-    "topic": "CLAD 40 QUESTIONS indra",
+    "topic": "CLAD Practice Test 2",
     "text": "Question #27\nAfter running this VI for at least two seconds, what is the value of the\u00a0Final Scaled Output\u00a0indicator after the user clicks\u00a0stop\u00a0on the front panel?",
     "options": [
       "Top of Form",
@@ -7586,7 +7586,7 @@
   },
   {
     "id": 730,
-    "topic": "CLAD 40 QUESTIONS indra",
+    "topic": "CLAD Practice Test 2",
     "text": "Question #28\nYour application has item prices stored as numeric values in the format XXX.XX. \u00a0Your VI must\u00a0convert the price to text in the format $XXX.XX\u00a0and make the text\u00a0price available for later display. \u00a0The original numeric value must also be retained.",
     "options": [
       "Which VI best meets these requirements?",
@@ -7603,7 +7603,7 @@
   },
   {
     "id": 731,
-    "topic": "CLAD 40 QUESTIONS indra",
+    "topic": "CLAD Practice Test 2",
     "text": "Question #29\nWhat string will be displayed in the\u00a0Result\u00a0indicator after the VI completes execution?",
     "options": [
       "Top of Form",
@@ -7621,7 +7621,7 @@
   },
   {
     "id": 732,
-    "topic": "CLAD 40 QUESTIONS indra",
+    "topic": "CLAD Practice Test 2",
     "text": "Question #30\nWhich For Loop will remove all values in the array between 2 and 3?Top of Form",
     "options": [
       "<img src='images/indra_732_0.png' style='max-width:100%; border-radius:8px;'>",
@@ -7634,7 +7634,7 @@
   },
   {
     "id": 733,
-    "topic": "CLAD 40 QUESTIONS indra",
+    "topic": "CLAD Practice Test 2",
     "text": "Question #31\nWhat value will be displayed in the\u00a0index of element\u00a0indicator after the VI completes execution?",
     "options": [
       "Top of Form",
@@ -7651,7 +7651,7 @@
   },
   {
     "id": 734,
-    "topic": "CLAD 40 QUESTIONS indra",
+    "topic": "CLAD Practice Test 2",
     "text": "Question #32\nWhen the cursor is over the broken wire, the error message shown is displayed.",
     "options": [
       "Data Array In\u00a0is correct. \u00a0How would this error best be corrected?",
@@ -7669,7 +7669,7 @@
   },
   {
     "id": 735,
-    "topic": "CLAD 40 QUESTIONS indra",
+    "topic": "CLAD Practice Test 2",
     "text": "Question #33\nHow does this VI behave after the Run button is clicked?",
     "options": [
       "Top of Form",
@@ -7686,7 +7686,7 @@
   },
   {
     "id": 736,
-    "topic": "CLAD 40 QUESTIONS indra",
+    "topic": "CLAD Practice Test 2",
     "text": "Question #34\nWhich is\u00a0NOT\u00a0a valid data type for the selector terminal on a Case structure?Top of Form",
     "options": [
       "Enum",
@@ -7699,7 +7699,7 @@
   },
   {
     "id": 737,
-    "topic": "CLAD 40 QUESTIONS indra",
+    "topic": "CLAD Practice Test 2",
     "text": "Question #35\nWhen\u00a0Time Target (s)\u00a0is set to 5, which option best describes the VI state\u00a04 seconds\u00a0after the VI started running and\u00a06 seconds\u00a0after the VI started running?",
     "options": [
       "Top of Form",
@@ -7720,7 +7720,7 @@
   },
   {
     "id": 738,
-    "topic": "CLAD 40 QUESTIONS indra",
+    "topic": "CLAD Practice Test 2",
     "text": "Question #36\nWhat value will be displayed in the\u00a0Numeric\u00a0indicator when the VI completes execution?",
     "options": [
       "Top of Form",
@@ -7739,7 +7739,7 @@
   },
   {
     "id": 739,
-    "topic": "CLAD 40 QUESTIONS indra",
+    "topic": "CLAD Practice Test 2",
     "text": "Question #37\nControl Cluster\u00a0and\u00a0Control Cluster 2\u00a0are both linked to a Type Definition called\u00a0Control Cluster Master.",
     "options": [
       "The Type Definition is\u00a0opened (left front panel image).\u00a0 The \u201cString Input\u201d is deleted from the Type Def cluster and a new numerical input is placed in the cluster (right front panel image).\u00a0 The changes are applied\u00a0in the Type Def window.",
@@ -7761,7 +7761,7 @@
   },
   {
     "id": 740,
-    "topic": "CLAD 40 QUESTIONS indra",
+    "topic": "CLAD Practice Test 2",
     "text": "Question #38\nThis VI is opened and then run 3 times. What values are displayed in the\u00a0Loop Iterations\u00a0and\u00a0Time\u00a0indicators after the third run?",
     "options": [
       "Top of Form",
@@ -7778,7 +7778,7 @@
   },
   {
     "id": 741,
-    "topic": "CLAD 40 QUESTIONS indra",
+    "topic": "CLAD Practice Test 2",
     "text": "Question #39\nWhich is\u00a0NOT\u00a0an element of the Waveform data type?Top of Form",
     "options": [
       "Array of data points (Y)",
@@ -7792,7 +7792,7 @@
   },
   {
     "id": 742,
-    "topic": "CLAD 40 QUESTIONS indra",
+    "topic": "CLAD Practice Test 2",
     "text": "Question #40\nWhich VI will generate this\u00a0Waveform Graph\u00a0value?",
     "options": [
       "Top of Form"
@@ -7809,7 +7809,7 @@
   },
   {
     "id": 800,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "What value is displayed in the Value Out indicator after the VI completes execution?",
     "options": [
       "0",
@@ -7825,7 +7825,7 @@
   },
   {
     "id": 801,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "What error is reported to the user?",
     "options": [
       "Error 1014, because Merge Errors outputs the first error to occur chronologically",
@@ -7841,7 +7841,7 @@
   },
   {
     "id": 802,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "Which Property Node can change the text color attributes of ANY digital numeric control used on the panel of a VI?",
     "options": [
       "<img src='images/padma_802_opt_0.jpeg' style='max-width:100%; border-radius:8px;'>",
@@ -7854,7 +7854,7 @@
   },
   {
     "id": 803,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "",
     "options": [
       "Which of the following terminals cannot control how many times a For loop executes?",
@@ -7870,7 +7870,7 @@
   },
   {
     "id": 804,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "",
     "options": [
       "<img src='images/padma_804_opt_1.jpeg' style='max-width:100%; border-radius:8px;'>",
@@ -7886,7 +7886,7 @@
   },
   {
     "id": 805,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "Generate Front Panel Activity function",
     "options": [
       "Simple Error Handler.vi",
@@ -7899,7 +7899,7 @@
   },
   {
     "id": 806,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "It contains exactly 12 elements",
     "options": [
       "It contains exactly 8 elements",
@@ -7912,7 +7912,7 @@
   },
   {
     "id": 807,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "The Control Refnum changes into that control",
     "options": [
       "The Control Refnum becomes strictly typed",
@@ -7925,7 +7925,7 @@
   },
   {
     "id": 808,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "D:",
     "options": [
       "What values will be displayed in the Output Cluster indicator after the VI completes execution?",
@@ -7941,7 +7941,7 @@
   },
   {
     "id": 809,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "D:",
     "options": [
       "<img src='images/padma_809_opt_1.jpeg' style='max-width:100%; border-radius:8px;'>",
@@ -7957,7 +7957,7 @@
   },
   {
     "id": 810,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "",
     "options": [
       "<img src='images/padma_810_opt_1.jpeg' style='max-width:100%; border-radius:8px;'>",
@@ -7973,7 +7973,7 @@
   },
   {
     "id": 811,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "128",
     "options": [
       "-128",
@@ -7986,7 +7986,7 @@
   },
   {
     "id": 812,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "Data truncation Dot",
     "options": [
       "Data typecast Dot",
@@ -7999,7 +7999,7 @@
   },
   {
     "id": 813,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "Type Def.",
     "options": [
       "Strict Type Def.",
@@ -8012,7 +8012,7 @@
   },
   {
     "id": 814,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "Queue",
     "options": [
       "Notifier",
@@ -8025,7 +8025,7 @@
   },
   {
     "id": 815,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "B:",
     "options": [
       "<img src='images/padma_815_opt_1.jpeg' style='max-width:100%; border-radius:8px;'>",
@@ -8041,7 +8041,7 @@
   },
   {
     "id": 816,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "B:",
     "options": [
       "<img src='images/padma_816_opt_1.jpeg' style='max-width:100%; border-radius:8px;'>",
@@ -8057,7 +8057,7 @@
   },
   {
     "id": 817,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "A:",
     "options": [
       "<img src='images/padma_817_opt_1.jpeg' style='max-width:100%; border-radius:8px;'>",
@@ -8073,7 +8073,7 @@
   },
   {
     "id": 818,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "",
     "options": [
       "<img src='images/padma_818_opt_1.jpeg' style='max-width:100%; border-radius:8px;'>",
@@ -8089,7 +8089,7 @@
   },
   {
     "id": 819,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "",
     "options": [
       "Which statement about sequence structures is FALSE?",
@@ -8105,7 +8105,7 @@
   },
   {
     "id": 820,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "Sequence structures stop when an error is detected.",
     "options": [
       "<img src='images/padma_820_opt_0.jpeg' style='max-width:100%; border-radius:8px;'>",
@@ -8118,7 +8118,7 @@
   },
   {
     "id": 821,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "14 Bytes",
     "options": [
       "The SubVI PROCESS represents a test that outputs a string each time the test runs, with no Carriage Return or End of Line constant in the string.",
@@ -8131,7 +8131,7 @@
   },
   {
     "id": 822,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "B:",
     "options": [
       "<img src='images/padma_822_opt_1.jpeg' style='max-width:100%; border-radius:8px;'>",
@@ -8147,7 +8147,7 @@
   },
   {
     "id": 823,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "0123",
     "options": [
       "1.00 2.00 3.00",
@@ -8160,7 +8160,7 @@
   },
   {
     "id": 824,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "",
     "options": [
       "<img src='images/padma_824_opt_1.jpeg' style='max-width:100%; border-radius:8px;'>",
@@ -8176,7 +8176,7 @@
   },
   {
     "id": 825,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "",
     "options": [
       "To display the data flowing through wires as the VI runs",
@@ -8192,7 +8192,7 @@
   },
   {
     "id": 826,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "What value will be displayed in the Out indicator when this VI completes execution?",
     "options": [
       "Case0",
@@ -8208,7 +8208,7 @@
   },
   {
     "id": 827,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "Which of the following statements is TRUE about the following code segment?",
     "options": [
       "The loop will execute once and the indicator Iteration will have a value of one",
@@ -8224,7 +8224,7 @@
   },
   {
     "id": 828,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "Why is a shift register used for the file refnum input on the For Loop?",
     "options": [
       "If the Values to Write to File array is empty, the For Loop will run zero times, but the refnum value will be passed through to the shift register output",
@@ -8240,7 +8240,7 @@
   },
   {
     "id": 829,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "Which VI will acquire 1000 samples immediately after PFI0 transitions from low to high?",
     "options": [
       "<img src='images/padma_829_opt_0.jpeg' style='max-width:100%; border-radius:8px;'>",
@@ -8253,7 +8253,7 @@
   },
   {
     "id": 830,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "What value is displayed in the Numeric indicator after the VI executes?",
     "options": [
       "0",
@@ -8269,7 +8269,7 @@
   },
   {
     "id": 831,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "The \"start index (0)\" input terminal of Search 1D Array is unwired.",
     "options": [
       "<img src='images/padma_831_opt_0.jpeg' style='max-width:100%; border-radius:8px;'>",
@@ -8282,7 +8282,7 @@
   },
   {
     "id": 832,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "D .4",
     "options": [
       "You have a front panel control on a top-level VI that you must manipulate from within a SubVI.",
@@ -8295,7 +8295,7 @@
   },
   {
     "id": 833,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "The control's reference",
     "options": [
       "The control's data type",
@@ -8308,7 +8308,7 @@
   },
   {
     "id": 834,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "DBL  with value -4",
     "options": [
       "DBL  with value -3",
@@ -8321,7 +8321,7 @@
   },
   {
     "id": 835,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "C:",
     "options": [
       "D:",
@@ -8337,7 +8337,7 @@
   },
   {
     "id": 836,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "C:",
     "options": [
       "<img src='images/padma_836_opt_1.jpeg' style='max-width:100%; border-radius:8px;'>",
@@ -8353,7 +8353,7 @@
   },
   {
     "id": 837,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "",
     "options": [
       "<img src='images/padma_837_opt_1.jpeg' style='max-width:100%; border-radius:8px;'>",
@@ -8369,7 +8369,7 @@
   },
   {
     "id": 838,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "Errors and warnings",
     "options": [
       "Details about the warnings",
@@ -8382,7 +8382,7 @@
   },
   {
     "id": 839,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "Switch when released",
     "options": [
       "Switch until released",
@@ -8395,7 +8395,7 @@
   },
   {
     "id": 840,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "50 times",
     "options": [
       "49 times",
@@ -8408,7 +8408,7 @@
   },
   {
     "id": 841,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "",
     "options": [
       "A:  Make Data Array Out into a Type Def, Create a copy of Data Array Out, change the copy to a control, and replace Data Array In with the new control.",
@@ -8424,7 +8424,7 @@
   },
   {
     "id": 842,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "What values will be displayed in the Output Cluster indicator after the VI completes execution?",
     "options": [
       "<img src='images/padma_842_opt_0.jpeg' style='max-width:100%; border-radius:8px;'>",
@@ -8437,7 +8437,7 @@
   },
   {
     "id": 843,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "ANSWER KEY :",
     "options": [
       "Correct Answer: C",
@@ -8450,7 +8450,7 @@
   },
   {
     "id": 844,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "JUSTIFICATION: Merge Errors outputs the first error it finds in the errors clusters wired into it in a top-down fashion. Error 7 is wired into the top input, so it is the error outputted by Merge Errors.",
     "options": [
       "Correct Answer: B",
@@ -8463,7 +8463,7 @@
   },
   {
     "id": 845,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "Justification: The iteration terminal is only a count of the iteration number and can not control how many loops occur.",
     "options": [
       "Correct Answer: D Topic: Error Handling",
@@ -8476,7 +8476,7 @@
   },
   {
     "id": 846,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "Justification: Since the display index value for columns is '2', that means there are two columns not show (4 elements), along with the 6 visible elements, this array has exactly 10 elements.",
     "options": [
       "Correct Answer: D",
@@ -8489,7 +8489,7 @@
   },
   {
     "id": 847,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "Ans : A",
     "options": [
       "Correct Answer: A Topic: Data Types",
@@ -8502,7 +8502,7 @@
   },
   {
     "id": 848,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "Correct Answer: A",
     "options": [
       "Topic: Data Types",
@@ -8515,7 +8515,7 @@
   },
   {
     "id": 849,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "Justification: Definition of Type Def",
     "options": [
       "Correct Answer: A",
@@ -8528,7 +8528,7 @@
   },
   {
     "id": 850,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "Correct Answer : C",
     "options": [
       "Correct Answer : B",
@@ -8541,7 +8541,7 @@
   },
   {
     "id": 851,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "Correct Answer: D",
     "options": [
       "Topic: Sequence Structures",
@@ -8554,7 +8554,7 @@
   },
   {
     "id": 852,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "Justification: LabVIEW represents arrays as a list of bytes containing a header and array data. The header contains a 4-byte integer for each dimension that specifies the length of that dimension. Following the header is the actual array data. In the question, the array has two dimensions. There are 4 bytes in the header for each dimension for a total of 8 bytes in the header. Since the array is composed of six  8-bit, or 1-byte integers, there is a total of 6  bytes of actual array data. This makes a total of 14 bytes being written to file.",
     "options": [
       "Correct Answer : D",
@@ -8567,7 +8567,7 @@
   },
   {
     "id": 853,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "Justification: A is the only case that checks the data and leaves the timing state, and has persistent start time (stored in the shift register)",
     "options": [
       "Correct Answer: B",
@@ -8580,7 +8580,7 @@
   },
   {
     "id": 854,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "Correct Answer: B",
     "options": [
       "Topic: Case Structures",
@@ -8593,7 +8593,7 @@
   },
   {
     "id": 855,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "Justification: The While Loop has a FALSE Boolean wired to its conditional terminal, which is set to Stop if TRUE. Thus, there is no condition that causes this While Loop to stop. So, the While Loop could run infinitely and the VI must be aborted.",
     "options": [
       "Correct Answer: A",
@@ -8606,7 +8606,7 @@
   },
   {
     "id": 856,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "Correct Answer: C",
     "options": [
       "Topic: Loops",
@@ -8619,7 +8619,7 @@
   },
   {
     "id": 857,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "Justification: String comparisons and searches in LabVIEW are case-sensitive and exact.",
     "options": [
       "Correct Answer: C",
@@ -8632,7 +8632,7 @@
   },
   {
     "id": 858,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "Topic: Data Types",
     "options": [
       "Justification: Rounds towards positive value without changing the datatype.",
@@ -8645,7 +8645,7 @@
   },
   {
     "id": 859,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "Topic: General Programming Functions",
     "options": [
       "Justification: The Tick Count (ms) is the only timer that rolls over to 0.",
@@ -8658,7 +8658,7 @@
   },
   {
     "id": 860,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "Correct Answer: A",
     "options": [
       "Topic: LabVIEW Environment",
@@ -8671,7 +8671,7 @@
   },
   {
     "id": 861,
-    "topic": "CLAD QUESTIONS padmakshya",
+    "topic": "CLAD Practice Test 3",
     "text": "Justification: The iteration terminal in While Loops and For Loops always starts counting at zero. It returns 0 on the first iteration, 1 on the second iteration, etc. Since the While Loop is configured to stop when the output of the iteration terminal is greater than or equal to 50, we know that the iteration terminal must output a value of at least 50. The first time this happens is after 51 iterations",
     "options": [
       "Correct Answer : A",
@@ -8679,5 +8679,896 @@
     ],
     "original_q_num": 62,
     "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 862,
+    "topic": "CLAD Practice Test 4",
+    "text": "1)\n\n\n\n",
+    "options": [
+      "<img src='images/pav_1_opt_1.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/pav_1_opt_2.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/pav_1_opt_3.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/pav_1_opt_4.png' style='max-width:100%; border-radius:8px;'>"
+    ],
+    "original_q_num": 1,
+    "image": [
+      "images/pav_1_q.png"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 863,
+    "topic": "CLAD Practice Test 4",
+    "text": "10)\n\n",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "original_q_num": 10,
+    "image": [
+      "images/pav_10_q.png"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 864,
+    "topic": "CLAD Practice Test 4",
+    "text": "11)\nYou select only the For Loop as shown by the dashed line in the image, and then select Edit\u00bbCreate SubVI from the Edit menu.\nWhat will the code on the block diagram look like immediately after creating the subVI?\na)\n\n\nB)\n\n\n\n\nd)\n",
+    "options": [
+      "<img src='images/pav_11_opt_1.jpg' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/pav_11_opt_2.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/pav_11_opt_3.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/pav_11_opt_4.png' style='max-width:100%; border-radius:8px;'>"
+    ],
+    "original_q_num": 11,
+    "correctAnswer": 3
+  },
+  {
+    "id": 865,
+    "topic": "CLAD Practice Test 4",
+    "text": "12)\nWhich method is most commonly employed to ensure that subVIs execute in a well-defined order?\na)\nAdd hardware timing to all subVIs and set the delay time\nb)\nWire the error in/out terminals of the subVIs to define their execution order\nc)\nAdd software timing to all subVIs and set the delay time\nd)\nPlace the subVIs in order on a block diagram from top to bottom\n",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "original_q_num": 12
+  },
+  {
+    "id": 866,
+    "topic": "CLAD Practice Test 4",
+    "text": "13)\nWhich use case is solved with a local variable?\na)\nPassing Values into a SubVI when Connected Pane is Full\nb)\nProgrammatically firing a \"Value Change\" event in an Event Structure\nc)\nPassing information between loops that cannot be connected with a wire\n\nPassing information between VIs that are running on different targets\n",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "original_q_num": 13
+  },
+  {
+    "id": 867,
+    "topic": "CLAD Practice Test 4",
+    "text": "14)\nWhich combination of Name and ID will return a value of \"TRUE\" for Member?\n\nName = Sam, ID = 201\nName = Kate, ID = 201\nName = Fred, ID = 200\nName = Kate, ID = 202\n\n",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "original_q_num": 14,
+    "image": [
+      "images/pav_14_q.jpg"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 868,
+    "topic": "CLAD Practice Test 4",
+    "text": "15)\nAfter running this VI, approximately what is the value displayed in the duration indicator?\n\n10\nb)\n1\nc)\n1000\nd)\n100\n",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "original_q_num": 15,
+    "image": [
+      "images/pav_15_q.png"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 869,
+    "topic": "CLAD Practice Test 4",
+    "text": "16)\nThe array constant contains exactly 7 elements. After running this VI, what are the values of the Iterations and Output indicators?\n\n\nIterations = 5, Output = 11\nIterations = 4, Output = 6\nIterations = 7, Output = 2\nIterations = 5, Output = 6\n",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "original_q_num": 16,
+    "image": [
+      "images/pav_16_q.jpg"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 870,
+    "topic": "CLAD Practice Test 4",
+    "text": "17)\nThe Array constant contains exactly 5 elements. What value will be displayed in the index of element indicator after the VI completes execution?\n\na)\n3\nb)\n1\nc)\n0\nd)\n-1\n",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "original_q_num": 17,
+    "image": [
+      "images/pav_17_q.png"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 871,
+    "topic": "CLAD Practice Test 4",
+    "text": "18)\nWhat value will be displayed in the array w/ subset deleted and the deleted portion indicators after the VI completes execution?\n\n\n\n\nb)\n\nc)\n\nd)\n\n",
+    "options": [
+      "<img src='images/pav_18_opt_1.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/pav_18_opt_2.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/pav_18_opt_3.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/pav_18_opt_4.png' style='max-width:100%; border-radius:8px;'>"
+    ],
+    "original_q_num": 18,
+    "image": [
+      "images/pav_18_q.png"
+    ]
+  },
+  {
+    "id": 872,
+    "topic": "CLAD Practice Test 4",
+    "text": "19)\nThis subVI has an incoming error in value of \"Error 7: File not found\" and an incoming Temp C in value of \"100\".\nWhat is the value of Temp F out after the code runs?\n\nA) NaN\nB) 0\nC) 212\nD) 32\n",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "original_q_num": 19,
+    "image": [
+      "images/pav_19_q.png"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 873,
+    "topic": "CLAD Practice Test 4",
+    "text": "2)\n\n\n",
+    "options": [
+      "<img src='images/pav_2_opt_1.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/pav_2_opt_2.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/pav_2_opt_3.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/pav_2_opt_4.png' style='max-width:100%; border-radius:8px;'>"
+    ],
+    "original_q_num": 2,
+    "image": [
+      "images/pav_2_q.png"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 874,
+    "topic": "CLAD Practice Test 4",
+    "text": "20)\n\nWhich block diagram implements the functionality to add the cost of a New Purchase to the Total Purchases for a customer? Note that Total Purchases is stored as a string value in the cluster.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nANSWERS:\n\n1. Error Cluster \u2014 Option D\nThe No Error case executes when the Status Boolean = FALSE.\n2. . Merge Errors \u2014 option A\nThere are two errors:\nError 7\nError 1430\nThe Retain All Errors option is unchecked. Therefore, the Merge Errors function keeps the first error in the merge order.\n3. Enqueue Element \u2014 Option D\nEnqueue Element requires a queue reference as an input.\nThe element and timeout are wired, but a required input terminal is not connected.\ntimeout = -1 is actually valid\u2014it means wait indefinitely.\n4. Error Cluster From Error Code \u2014 Option B\nError Cluster From Error Code.vi can automatically add useful source information, including the VI call chain, to the error source.\n5. Dataflow \u2014 Option C\nLook at the dependencies:\nAdd Array Elements \u2192 Divide\nand then:\nboth Divide outputs \u2192 Greater?\nTherefore, Greater? cannot execute until both Divide operations have completed.\nSo among the listed functions, Greater? is the last one to execute.\n6. Waveform Graph \u2014 Option C\nThe graph contains two separate sine-wave plots:\nPlot 0 \u2192 higher frequency\nPlot 1 \u2192 lower frequency\nTo send two separate waveform arrays to a Waveform Graph, they need to be combined into a 2D array.\nBuild Array creates that combined array.\n7. Option B\nNumeric = 15\nNumeric 2 = 10\nThe key point is how the For Loop output tunnels behave. The two arrays have different lengths, so the loop's final available values are not both 15. The output indicators therefore show 15 and 10\n8. Global Variables \u2014 Option A\nThe question asks which statement is FALSE.\nThe false statement is:\nGlobal variables can transfer data faster than long wires.\n9.option c\n10. For Loop calculation \u2014 Option A\nThe loop runs 4 iterations.\nInitial value = 1\nThe loop adds the iteration number i:\nIteration 0: 1 + 0 = 1\nIteration 1: 1 + 1 = 2\nIteration 2: 2 + 2 = 4\nIteration 3: 4 + 3 = 7\nTherefore:\nNumeric = 7\n11. Create SubVI \u2014 Option D\nWhen only the For Loop is selected and Edit \u2192 Create SubVI is used, the selected code becomes a subVI node.\nThe loop depends on:\nInput Numeric\nInput Array\nand produces:\nOutput Array\nTherefore, the resulting block diagram must have both inputs wired into the new subVI.\n12.option c\n13.option c\n14. Name + ID \u2014 Option B: Kate, 201\nThe arrays correspond by index:\nIndex Name ID\nTherefore:\nKate + 201 \u2192 TRUE\n15. Duration \u2014 Option D\nThe sequence structure records the starting time.\nInside the loop:\nN = 10\nWait = approximately 10 ms per iteration\nSo:\n10 \u00d7 10 ms = 100 ms\nTherefore the duration is approximately:\n100 ms\n16. Iterations and Output \u2014 Option A\nArray:\n1, 3, 2, 6, 11, 4, 2\nThe loop stops when the value becomes greater than 10.\nIteration values:\n1 \u2192 continue\n3 \u2192 continue\n2 \u2192 continue\n6 \u2192 continue\n11 \u2192 stop\nSo the loop performs 5 iterations.\nThe output is 11.\n17. Search 1D Array \u2014 Option D: \u22121\nArray:\n0, 2, 4, 6, 8\nSearch element:\n3\nThere is no 3 in the array.\nSearch 1D Array returns \u22121 when the element is not found.\n18.option c\n19. Error case + temperature \u2014 Option B:\nIncoming error:\nError 7: File not found\nTherefore the Case Structure does not execute the \"No Error\" case.\nThe temperature conversion:\nTemp F = (Temp C \u00d7 9/5) + 32\nwould give 212\u00b0F only if the No Error case executed.\nBecause there is an error, that calculation doesn't execute, and the numeric output tunnel takes its default value:\n0\n20. Customer Total Purchases \u2014 Option A\nCurrent Total Purchases is stored as a string:\n$125.20\nNew Purchase:\n$55.30\nRequired result:\n125.20 + 55.30 = 180.50\nBecause Total Purchases is a string, the correct process is:\nString \u2192 Number \u2192 Add New Purchase \u2192 Number \u2192 String \u2192 Bundle back into cluster\nThe first diagram performs this conversion/addition/update process.\n\n\n",
+    "options": [
+      "<img src='images/pav_20_opt_1.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/pav_20_opt_2.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/pav_20_opt_3.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/pav_20_opt_4.png' style='max-width:100%; border-radius:8px;'>"
+    ],
+    "original_q_num": 20,
+    "image": [
+      "images/pav_20_q.png"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 875,
+    "topic": "CLAD Practice Test 4",
+    "text": "3)\n\n\n",
+    "options": [
+      "<img src='images/pav_3_opt_1.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/pav_3_opt_2.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/pav_3_opt_3.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/pav_3_opt_4.png' style='max-width:100%; border-radius:8px;'>"
+    ],
+    "original_q_num": 3,
+    "image": [
+      "images/pav_3_q.png"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 876,
+    "topic": "CLAD Practice Test 4",
+    "text": "4)\n\n\n\n",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "original_q_num": 4,
+    "image": [
+      "images/pav_4_q.png"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 877,
+    "topic": "CLAD Practice Test 4",
+    "text": "5)\n\n\n",
+    "options": [
+      "<img src='images/pav_5_opt_1.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/pav_5_opt_2.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/pav_5_opt_3.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/pav_5_opt_4.png' style='max-width:100%; border-radius:8px;'>"
+    ],
+    "original_q_num": 5,
+    "image": [
+      "images/pav_5_q.png"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 878,
+    "topic": "CLAD Practice Test 4",
+    "text": "6)\n\n\n\n\n",
+    "options": [
+      "<img src='images/pav_6_opt_1.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/pav_6_opt_2.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/pav_6_opt_3.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/pav_6_opt_4.png' style='max-width:100%; border-radius:8px;'>"
+    ],
+    "original_q_num": 6,
+    "image": [
+      "images/pav_6_q.png"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 879,
+    "topic": "CLAD Practice Test 4",
+    "text": "7)\n\n\n",
+    "options": [
+      "<img src='images/pav_7_opt_1.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/pav_7_opt_2.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/pav_7_opt_3.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/pav_7_opt_4.png' style='max-width:100%; border-radius:8px;'>"
+    ],
+    "original_q_num": 7,
+    "image": [
+      "images/pav_7_q.png"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 880,
+    "topic": "CLAD Practice Test 4",
+    "text": "8)\n\n\n\n\n",
+    "options": [
+      "<img src='images/pav_8_opt_1.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/pav_8_opt_2.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/pav_8_opt_3.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/pav_8_opt_4.png' style='max-width:100%; border-radius:8px;'>"
+    ],
+    "original_q_num": 8,
+    "image": [
+      "images/pav_8_q.png"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 881,
+    "topic": "CLAD Practice Test 4",
+    "text": "9)\n\n",
+    "options": [
+      "<img src='images/pav_9_opt_1.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/pav_9_opt_2.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/pav_9_opt_3.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/pav_9_opt_4.png' style='max-width:100%; border-radius:8px;'>"
+    ],
+    "original_q_num": 9,
+    "image": [
+      "images/pav_9_q.png"
+    ]
+  },
+  {
+    "id": 882,
+    "topic": "CLAD Practice Test 5",
+    "text": "Question #1\nThis VI is opened and then run twice. What value is displayed in the\u00a0Array\u00a0indicator after the second run?\n\n\n\n\n\nAns:A\nJustification: The For Loop runs 3 times and auto-indexing processses the input array values sequentially.\n",
+    "options": [
+      "<img src='images/sup_1_opt_1.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/sup_1_opt_2.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/sup_1_opt_3.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/sup_1_opt_4.png' style='max-width:100%; border-radius:8px;'>"
+    ],
+    "original_q_num": 1,
+    "image": [
+      "images/sup_1_q.png"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 883,
+    "topic": "CLAD Practice Test 5",
+    "text": "Question #10\nThe\u00a0Student Data\u00a0constant contains exactly 4 elements. What value is displayed in the\u00a0Final Data\u00a0indicator after the VI runs?\n\nTop of Form\n\n\n\n\nAns: C\nJustifiction: The Cluster to Array and Array Size functions output a value of 3 based on the number of elements in the student cluster.The Replace Array Subset function uses that index to replace the fourth element (\"Kelly\") with an empty string.Bottom of Form\n\nBottom of Form\nBottom of Form",
+    "options": [
+      "<img src='images/sup_10_opt_1.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/sup_10_opt_2.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/sup_10_opt_3.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/sup_10_opt_4.png' style='max-width:100%; border-radius:8px;'>"
+    ],
+    "original_q_num": 10,
+    "image": [
+      "images/sup_10_q.png"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 884,
+    "topic": "CLAD Practice Test 5",
+    "text": "Question #11\nWhich of the following statements is TRUE regarding the execution of this code?\n\nTop of Form\nThe\u00a0State\u00a0indicator will display \"Initialize\" for one second, then it will display \"Running\".\nThe\u00a0State\u00a0indicator will display \"Running\" for one second, then it will display \"Initialize\".\nThe\u00a0State\u00a0indicator will never display \"Initialize\".\nThe\u00a0State\u00a0indicator will never display \"Running\".\nAns:B\nJustification: The First Call? function outputs True only when the code starts. This runs the True case, writing \"Running\" to the indicator for one second (due to the 1000ms wait). On all next loop cycles, First Call? outputs False. This switches execution to the False case, which updates and keeps the indicator on \"Initialize\".\n",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "original_q_num": 11,
+    "image": [
+      "images/sup_11_q.png"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 885,
+    "topic": "CLAD Practice Test 5",
+    "text": "Question #12\nWhen you add a new frame to your state machine, this is the resulting broken code:\n\nWhich LabVIEW feature would have automatically created pass-through VISA reference and error wires for you?\nTop of Form\nA.Linked Input Tunnels\nAuto-Indexing Tunnels\nC.Concatenating Tunnels\nD.None of the above\nANS: A\nJustification: It's automatically route wires through unconfigured cases by creating a link between input and output tunnels, which prevents broken wires when a new frame is added.\n",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "original_q_num": 12,
+    "image": [
+      "images/sup_12_q.png"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 886,
+    "topic": "CLAD Practice Test 5",
+    "text": "Question #13\nThe\u00a0PROCESS.vi\u00a0subVI represents a test that outputs one line of text each time the test runs.\nWhen the calling VI stops, we need to have a log showing every\u00a0line of data output from\u00a0PROCESS.vi.\nWhich of the following VIs meets all these requirements in the\u00a0most efficient manner?\nTop of Form\nA.\n\n\n\n\nBottom of Form\nBottom of Form\nAns:D\nJustification: Efficiency: Writing to the file exactly once outside the loop avoids the high disk I/O overhead of writing on every single iteration (which makes option A inefficient).Since the Write to Text File function only accepts a single string input (not an array of strings), using an auto-indexing tunnel (as seen in B and D) results in a broken wire, leaving C as the only valid and efficient solution that accumulates the data into a single string using a shift register.",
+    "options": [
+      "<img src='images/sup_13_opt_1.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/sup_13_opt_2.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/sup_13_opt_3.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/sup_13_opt_4.png' style='max-width:100%; border-radius:8px;'>"
+    ],
+    "original_q_num": 13,
+    "correctAnswer": 3
+  },
+  {
+    "id": 887,
+    "topic": "CLAD Practice Test 5",
+    "text": "Question #14\nBoolean Master,\u00a0Boolean 1,\u00a0Boolean 2\u00a0and\u00a0Boolean 3\u00a0are all set to TRUE before the VI runs.\n\nThe following actions are performed:\n1. The VI is run.\n2. After 1 second,\u00a0Boolean Master\u00a0is set to FALSE.\n3. The\u00a0stop\u00a0button is clicked.\nWhat are the values of\u00a0Boolean 1,\u00a0Boolean 2, and\u00a0Boolean 3\u00a0after these actions are performed?\nTop of Form\n\n\n\n\nBottom of Form\nBottom of Form\nANS: A\nJustification: Boolean 1\u00a0is outside the While Loop, so it reads\u00a0Boolean Master\u00a0only once, when the VI starts. Since Master is initially\u00a0TRUE, Boolean 1 remains\u00a0TRUE. Boolean 2\u00a0is\u00a0inside the While Loop, so it repeatedly reads Boolean Master. After 1 second, Master is changed to\u00a0FALSE, so Boolean 2 becomes\u00a0FALSE. Clicking\u00a0Stop\u00a0ends the loop.\u00a0Boolean 3, which is after the loop, then executes and reads the current value of Master, which is\u00a0FALSE.\n",
+    "options": [
+      "<img src='images/sup_14_opt_1.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/sup_14_opt_2.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/sup_14_opt_3.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/sup_14_opt_4.png' style='max-width:100%; border-radius:8px;'>"
+    ],
+    "original_q_num": 14,
+    "image": [
+      "images/sup_14_q.png"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 888,
+    "topic": "CLAD Practice Test 5",
+    "text": "Question #15\nThe values returned from a serial device are equivalent to the states in your state machine. Which data type is\u00a0most appropriate\u00a0for the Case Structure selector terminal in this state machine?\nTop of Form\nA.Numeric\nEnum\nRing\nString\nAns:D\njustification:The serial device returns values as text (characters/strings). Since these returned values directly represent the states of the state machine, the Case Structure selector should be a String.\n",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "original_q_num": 15,
+    "correctAnswer": 3
+  },
+  {
+    "id": 889,
+    "topic": "CLAD Practice Test 5",
+    "text": "Question #16\nWhat is the order of execution of the subVIs in this diagram, from first to last?\n\nA. Top of For\nTest A\nTest B and Test D in parallel\nTest C\nB.Test A\nTest B\nTest C\nTest D\n\nTest A and Test D in parallel\nTest B\nTest C\n\nThis VI is broken.\nAns:C\nJustification: Test A and Test D have no data dependency, so they can execute in parallel; the sequence then proceeds to B and finally C.",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "original_q_num": 16,
+    "image": [
+      "images/sup_16_q.png"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 890,
+    "topic": "CLAD Practice Test 5",
+    "text": "Question #17\nWhich object is\u00a0NOT\u00a0a standard component of a Simple State Machine?\nTop of Form\nA.Global Variable\nCase Structure\nShift Register\nWhile Loop\nAns: C\njustification:  it is not a standard component of a Simple State Machine.\n\n\nBottom of Form",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "original_q_num": 17,
+    "correctAnswer": 2
+  },
+  {
+    "id": 891,
+    "topic": "CLAD Practice Test 5",
+    "text": "Question #18\nWhich diagram illustrates the\u00a0most performant\u00a0way to save data to a text file\u00a0inside a While Loop?Top of Form\n\nB.\nC.\nD.\nAns: A\njustification:Open the file once before the While Loop, write data inside the loop, and close it once after the loop. This avoids repeated file open/close operations, making it the most performant method.\nBottom of Form\n",
+    "options": [
+      "<img src='images/sup_18_opt_1.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/sup_18_opt_2.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/sup_18_opt_3.png' style='max-width:100%; border-radius:8px;'>",
+      "Option D"
+    ],
+    "original_q_num": 18,
+    "image": [
+      "images/sup_18_q.png"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 892,
+    "topic": "CLAD Practice Test 5",
+    "text": "Question #19\nThe operator of this VI clicks the run arrow, then clicks the\u00a0Start\u00a0button on the front panel.\nAfter 3 seconds\u00a0the subVI in the \"Run\" case returns a \"True\" value for \"Process Complete.\"\nWhat is the entire sequence of States this VI goes through, starting when the run arrow is clicked?\n\nTop of Form\nA.Run, Wait for Start, End.\nWait for Start, Run, End, Wait for Start\nWait for Start, Run, End.\nRun, Wait for Start, End, Wait for Start.\nAns: D\nJustification: It sequentially manages transitions between operational phases\u2014moving from \"Wait for Start\" to \"Run\", \"End\", and back to \"Wait for Start\"\u2014based on user inputs and software conditions.\nBottom of Form\nBottom of Form\nBottom of Form\nBottom of Form\n\nBottom of Form",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "original_q_num": 19,
+    "image": [
+      "images/sup_19_q.png"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 893,
+    "topic": "CLAD Practice Test 5",
+    "text": "Question #2\nHow is the complex numeric data type represented on a front panel?\nTop of Form\nA.A cluster control containing two numeric values displaying the real and imaginary components\nTwo separate scalar numeric controls displaying the real and imaginary components\nA scalar numeric control displaying the real and imaginary components\nAn array control containing two numeric values displaying the\u00a0real and imaginary components\nAns:A\nJustification:A complex numeric data type is represented on the Front Panel as a cluster containing two numeric values.",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "original_q_num": 2,
+    "correctAnswer": 0
+  },
+  {
+    "id": 894,
+    "topic": "CLAD Practice Test 5",
+    "text": "Question #20\nWhat is the best programmatic way to get the file path for\u00a0Configuration.ini\u00a0when the file is stored in\u00a0the same directory as the project?\nTop of Form\nA.\n\n\n\nAns: D\nJustification: Application Directory.vi dynamically returns the file path to the directory containing the running application or project file (.lvproj).By wiring this path into the Build Path function along with the string constant \"Configuration.ini\", LabVIEW reliably creates the correct relative path to the file regardless of where the project folder is moved on the computerBottom of Form\nBottom of Form\nBottom of Form\n\nBottom of Form",
+    "options": [
+      "<img src='images/sup_20_opt_1.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/sup_20_opt_2.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/sup_20_opt_3.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/sup_20_opt_4.png' style='max-width:100%; border-radius:8px;'>"
+    ],
+    "original_q_num": 20,
+    "correctAnswer": 3
+  },
+  {
+    "id": 895,
+    "topic": "CLAD Practice Test 5",
+    "text": "Question #21\nIf the\u00a0Process.vi\u00a0subVI generates\u00a0an error, the calling code should clear the error and retry running the subVI\u00a0a maximum of two more times to give it a chance to succeed. \u00a0Which of the following VIs\u00a0best meets these requirements?\nTop of Form\nA.\n\n\n\nAns:C\nJustification: checks the error status at the conditional terminal before clearing it, allowing the loop to decide whether to retry or stop early if successful.\n",
+    "options": [
+      "<img src='images/sup_21_opt_1.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/sup_21_opt_2.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/sup_21_opt_3.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/sup_21_opt_4.png' style='max-width:100%; border-radius:8px;'>"
+    ],
+    "original_q_num": 21,
+    "correctAnswer": 2
+  },
+  {
+    "id": 896,
+    "topic": "CLAD Practice Test 5",
+    "text": "Question #22\nWhy is this VI broken?\n\nTop of Form\nNone of the required output terminals of\u00a0Enqueue Element\u00a0are wired.\nThe\u00a0error in\u00a0terminal of\u00a0Enqueue Element\u00a0is not wired.\nThe \"element\" control is not a valid data type.\nA required terminal for\u00a0Enqueue Element\u00a0is not wired.\nAns: D\nJustification: the Enqueue Element function requires a valid queue reference input wired to its top-left terminal so it knows which queue to add data to. Because this mandatory input terminal is left completely unwired, the block diagram contains an error and the VI is broken.\nBottom of Form\n\nBottom of Form",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "original_q_num": 22,
+    "image": [
+      "images/sup_22_q.png"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 897,
+    "topic": "CLAD Practice Test 5",
+    "text": "Question #23\nWhich\u00a0tool advances a paused VI to the next node and pauses the VI again?\nTop of Form\nProbe\nStep Into\nHighlight Execution\nBreakpoint\nAns: B\nJustification: Step Into is a debugging button used when a VI (Virtual Instrument) is paused.Clicking it tells LabVIEW to run only the very next node or action in line, and then immediately pause again.\n",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "original_q_num": 23,
+    "correctAnswer": 1
+  },
+  {
+    "id": 898,
+    "topic": "CLAD Practice Test 5",
+    "text": "Question #24\nIs this VI broken? If so, why?\n\nTop of Form\nA.The VI is broken because it contains a nested While Loop.\nThe VI is broken because unmatched data types are wired to the Add function.\nThe VI is broken because there is an unwired numeric constant.\nThe VI is not broken.\nAns: D\nJustification: : Both While Loops have properly connected conditional terminals, ensuring the VI is completely executable and valid.\n",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "original_q_num": 24,
+    "image": [
+      "images/sup_24_q.png"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 899,
+    "topic": "CLAD Practice Test 5",
+    "text": "Question #25\nWhich of the following tasks\u00a0CANNOT\u00a0be performed by\u00a0the Performance and Memory window?\nTop of Form\nA.Find the number of times a subVI is called\nBenchmark\u00a0the execution time of a single function\nShow memory usage for top-level VIs and subVIs\nShow timing statistics for top-level VIs and subVIs\nAns:B\nJustification: Benchmark the execution time of a single function.\n",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "original_q_num": 25,
+    "correctAnswer": 1
+  },
+  {
+    "id": 900,
+    "topic": "CLAD Practice Test 5",
+    "text": "Question #26\nWhy is this VI broken?\n\nTop of Form\nA.Mismatched data types.\nA required terminal is not wired.\n\"Input X\" must be wired directly to \"Product\".\nA control terminal is wired to another control terminal.\nAns: B\nJustification: The Multiply (\u00d7) function requires two input terminals, but only Input X is connected. Therefore, the VI is broken because a required terminal is unwired.\nBottom of Form\nBottom of Form\n",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "original_q_num": 26,
+    "image": [
+      "images/sup_26_q.png"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 901,
+    "topic": "CLAD Practice Test 5",
+    "text": "Question #27\nThe file\u00a0C:\\data.txt\u00a0does not exist. \u00a0Automatic error handling is\u00a0disabled.\nWhich diagram will display a\u00a0Simple Error Handler\u00a0dialog box and stop within\u00a0100 ms?\nTop of Form\nA.\nB.\nC.\nD\nAns:C\nJustification: The error from opening C:\\data.txt is sent directly to the Simple Error Handler inside the loop, which displays the error dialog and stops the loop immediately\u2014so it stops within 100 ms.\nBottom of Form\nBottom of Form\nBottom of Form\nBottom of Form\n",
+    "options": [
+      "<img src='images/sup_27_opt_1.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/sup_27_opt_2.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/sup_27_opt_3.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/sup_27_opt_4.png' style='max-width:100%; border-radius:8px;'>"
+    ],
+    "original_q_num": 27,
+    "correctAnswer": 2
+  },
+  {
+    "id": 902,
+    "topic": "CLAD Practice Test 5",
+    "text": "Question #28\nIf the\u00a0Startup.vi\u00a0subVI returns an error, which diagram illustrates the propagation of that error to the\u00a0Shutdown\u00a0case?\nNote that automatic error handling is\u00a0disabled\u00a0in this VI.\nTop of Form\nA.\nB.\nC\nD\nAns: A\nJustification: The error from Startup.vi is passed through the error cluster, which causes the state machine to enter the Error case; that case sets the next state to Shutdown and sends the error to the error handler.\nBottom of FormQuestion #29\nA block diagram has a broken wire. Which of the following tools is\u00a0NOT\u00a0useful in determining the cause?\nTop of Form\nRunning the VI and viewing the results displayed in the\u00a0General Error Handler\u00a0dialog box\nHovering over the broken wire and viewing the Context Help window\nHovering over the broken wire and viewing the tip strip\nClicking the broken\u00a0Run\u00a0arrow and viewing the Error\u00a0List window\nAns: A\nJustification:  Running the VI and viewing the result display in the general error handler dialog box.\n",
+    "options": [
+      "<img src='images/sup_28_opt_1.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/sup_28_opt_2.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/sup_28_opt_3.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/sup_28_opt_4.png' style='max-width:100%; border-radius:8px;'>"
+    ],
+    "original_q_num": 28,
+    "correctAnswer": 0
+  },
+  {
+    "id": 903,
+    "topic": "CLAD Practice Test 5",
+    "text": "Question #3\nWhy is there a broken wire?\n\nTop of Form\nA.\u00a0The control names\u00a0must be different than the cluster element names.\nThe output\u00a0Cluster\u00a0is not a Type Definition.\nThe input cluster for the\u00a0Bundle by Name\u00a0function is not wired.\nDifferent data types cannot be bundled into the same cluster.\nAns: C\nJustification: Bundle by name requires an existing cluster as input, but the diagram only wires individual control, causing the broken wire.\n",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "original_q_num": 3,
+    "image": [
+      "images/sup_3_q.jpg"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 904,
+    "topic": "CLAD Practice Test 5",
+    "text": "Question #30\nWhich behavior would you expect from a VI when\u00a0Highlight Execution\u00a0is enabled?\nTop of Form\nA.Slower execution\nFaster execution\nReduced memory usage\nAutomatic error handling\nAns: A\nJustification: Highlight Execution animates the flow of data with bubbles moving along the wires, which deliberately slows down the program so you can see the execution step-by-step for debugging.\nBottom of Form\nBottom of Form\n",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "original_q_num": 30,
+    "correctAnswer": 0
+  },
+  {
+    "id": 905,
+    "topic": "CLAD Practice Test 5",
+    "text": "Question #31\nWhy is\u00a0the\u00a0Highlight Execution\u00a0button hidden for this VI?\n\nTop of Form\nA.The window appearance for the VI is set to\u00a0Top-level application window.\nThe VI has the\u00a0Allow debugging\u00a0setting unchecked.\nThe VI has the\u00a0Separate compiled code from source file\u00a0setting checked.\nThe window appearance for the VI is set to\u00a0Dialog.\nAns: B\nJustification:  The VI has the Allow debugging setting unchecked\nBottom of Form",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "original_q_num": 31,
+    "image": [
+      "images/sup_31_q.png"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 906,
+    "topic": "CLAD Practice Test 5",
+    "text": "Question #32\nThis VI is opened and then run three times. What value is displayed in the\u00a0Array\u00a0indicator after the third run?\n\nTop of Form\nA.\n\n\n\nAns:C\nJustification: The input is an empty array, so the For loop executes 0 times, leaving Result 1 = 9. The While loop execute once and increments 9 to Result 2 = 10\nBottom of Form",
+    "options": [
+      "<img src='images/sup_32_opt_1.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/sup_32_opt_2.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/sup_32_opt_3.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/sup_32_opt_4.png' style='max-width:100%; border-radius:8px;'>"
+    ],
+    "original_q_num": 32,
+    "image": [
+      "images/sup_32_q.png"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 907,
+    "topic": "CLAD Practice Test 5",
+    "text": "Question #33\nWhat values will be displayed in the\u00a0Result 1\u00a0and\u00a0Result 2\u00a0indicators after the VI completes execution?\n\nTop of Form\nA.\n\n\n\nAns:C\nJustification: The For Loop executes 0 times because the input array is empty, so Result 1 = 9. The While Loop runs once and increments 9 by 1, giving Result 2 = 10.\n",
+    "options": [
+      "<img src='images/sup_33_opt_1.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/sup_33_opt_2.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/sup_33_opt_3.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/sup_33_opt_4.png' style='max-width:100%; border-radius:8px;'>"
+    ],
+    "original_q_num": 33,
+    "image": [
+      "images/sup_33_q.png"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 908,
+    "topic": "CLAD Practice Test 5",
+    "text": "Question #34\nWhich block diagram implements the functionality to\u00a0add the cost of a\u00a0New Purchase\u00a0to the\u00a0Total Purchases\u00a0for a customer? Note that\u00a0Total Purchases\u00a0is stored as a string value in the cluster.\n\nTop of Form\nA.\nB.\nC.\nD.\nAns:A\nJustification: Since Total Purchases is stored as a string, option A first converts it to a number, adds the New Purchase value, and then converts the result back to a string for the cluster.\nBottom of Form\nBottom of Form",
+    "options": [
+      "<img src='images/sup_34_opt_1.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/sup_34_opt_2.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/sup_34_opt_3.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/sup_34_opt_4.png' style='max-width:100%; border-radius:8px;'>"
+    ],
+    "original_q_num": 34,
+    "image": [
+      "images/sup_34_q.png"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 909,
+    "topic": "CLAD Practice Test 5",
+    "text": "Question #35\nWhich combination of\u00a0Name\u00a0and\u00a0ID\u00a0will return a value of \"TRUE\" for\u00a0Member?\n\nTop of Form\nA.Name = Kate, ID = 201\nName = Fred, ID = 200\nName = Sam, ID = 201\nName = Kate, ID = 202\nAns: A\nJustification: This LabVIEW diagram searches a string array for the input Name to find its index position, then uses that same index to retrieve an ID from a parallel numeric array. If the retrieved ID perfectly matches the input ID, the comparison outputs TRUE to indicate membership.",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "original_q_num": 35,
+    "image": [
+      "images/sup_35_q.jpg"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 910,
+    "topic": "CLAD Practice Test 5",
+    "text": "Question #36\nThis subVI has an incoming\u00a0error in\u00a0value of \"Error 7: File not found\" and an incoming\u00a0Temp C in\u00a0value of \"100\".\nWhat is the value\u00a0of\u00a0Temp F out\u00a0after the code runs?\n\nTop of Form\nA.\u00a00\n212\n32\nNaN\nAns: A\nJustification: there is an incoming error, the LabVIEW Case Structure executes the \"Error\" case instead of the \"No Error\" calculation code. Since the calculation is skipped, the output tunnel reverts to its default numeric value, which is 0.\nBottom of Form",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "original_q_num": 36,
+    "image": [
+      "images/sup_36_q.png"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 911,
+    "topic": "CLAD Practice Test 5",
+    "text": "Question #37\nWhen\u00a0Time Target (s)\u00a0is set to 5, which option best describes the VI state\u00a04 seconds\u00a0after the VI started running and\u00a06 seconds\u00a0after the VI started running?\n\nTop of Form\n\nAt 4 seconds the VI is running and\u00a0Elapsed Time (s)\u00a0is 0.\nAt 6\u00a0seconds the VI is idle and\u00a0Elapsed Time (s)\u00a0is 0.\n\nAt 4 seconds the VI is running and\u00a0Elapsed Time (s)\u00a0is 4.\nAt 6 seconds the VI is idle and\u00a0Elapsed Time (s)\u00a0is 5.\n\n\nTop of Form\nAt 4 seconds the VI is\u00a0running and\u00a0Elapsed Time (s)\u00a0is\u00a00.\nAt 6 seconds the VI is running and\u00a0Elapsed Time (s)\u00a0is\u00a05.\n\nAt 4 seconds the VI is running and\u00a0Elapsed Time (s)\u00a0is\u00a04.\nAt 6 seconds the VI is running and\u00a0Elapsed Time (s)\u00a0is\u00a01.\nAns: D\nJustification: At 4 seconds the VI is running and Elapsed Time (s) is 4. At 6 seconds the VI is running and Elapsed Time (s) is 1.\n\nBottom of Form\nBottom of Form\nBottom of Form",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "original_q_num": 37,
+    "image": [
+      "images/sup_37_q.png"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 912,
+    "topic": "CLAD Practice Test 5",
+    "text": "Question #38\nWhen you run this VI, you are prompted to select a file. Assuming you select a valid text file containing multiple lines, what is the value of the first element of\u00a0Array\u00a0when the VI finishes running?\n\nTop of Form\nThe first character of the file\nThe first line of the file\nThe entire file\nAn empty string\nANS: B\nJustification: The Read from Text File function reads one line per loop iteration, so the first array element contains the file\u2019s first line.\n",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "original_q_num": 38,
+    "image": [
+      "images/sup_38_q.png"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 913,
+    "topic": "CLAD Practice Test 5",
+    "text": "Question #39\nWhat is the\u00a0most likely\u00a0cause of the coercion dot in this VI?\n\nTop of Form\nWait\u00a0is a reserved item name for enum items.\nOuter terminals of enum shift registers always display coercion dots.\nThe two enum constants contains different items.\nThe shift register\u00a0is coercing the enum constants into their string values.\nAns: C\nJustification: Coercion dot appears because the two Enum constants have different item lists, causing LabVIEW to convert one Enum to match the other.",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "original_q_num": 39,
+    "image": [
+      "images/sup_39_q.png"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 914,
+    "topic": "CLAD Practice Test 5",
+    "text": "Question #4\nWhich of the following statements will always be\u00a0TRUE when this VI runs?\n\nTop of Form\nA.For Loop 1\u00a0and\u00a0For Loop 2\u00a0will start at exactly the same time.\nThe loop with a lower number of iterations will finish first.\nThe top\u00a0Divide\u00a0function\u00a0will execute after both\u00a0Add Array Elements\u00a0functions execute.\nGreater?\u00a0will be the last function that executes.\nAns: D\nJustification: LabVIEW follows dataflow, so Greater? executes only after both Divide functions produce their outputs.\n",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "original_q_num": 4,
+    "image": [
+      "images/sup_4_q.png"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 915,
+    "topic": "CLAD Practice Test 5",
+    "text": "Question #40\nWhy is this VI broken?\n\nTop of Form\nA.The Case Structure does not have a \"Default\" case defined.\nThe \"False\" case of the Case Structure has an unwired output tunnel.\nThe\u00a0Delete From Array\u00a0function has an unwired output terminal.\nTop of Form\nD.The\u00a0Delete From Array\u00a0function has an unwired input terminal.\nAns: B\nJustifiction:The \u201cFalse\u201d case of the Case structure has an unwired output tunnel.\nBottom of Form\nBottom of Form\nBottom of Form\nBottom of Form\n",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "original_q_num": 40,
+    "image": [
+      "images/sup_40_q.png"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 916,
+    "topic": "CLAD Practice Test 5",
+    "text": "Question #5\nAfter running this VI, approximately what is the value\u00a0displayed in the\u00a0duration\u00a0indicator?\n\nTop of Form\nA.\u00a0100\n1\n10\n1000\nAns: A\nJustification: The For Loop executes 10 iterations, and each iteration pauses for 10 milliseconds using the Wait function.Therefore, the total elapsed time measured between the two Tick Count functions is approximately 100 milliseconds ((10 times 10 = 100)).\n",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "original_q_num": 5,
+    "image": [
+      "images/sup_5_q.png"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 917,
+    "topic": "CLAD Practice Test 5",
+    "text": "Question #6\nWhich\u00a0method is most\u00a0commonly employed to ensure that\u00a0subVIs execute in a well-defined order?\nTop of Form\nA.Add software timing to all subVIs and set the delay time\nPlace the subVIs in order\u00a0on a block diagram from top to bottom\nAdd hardware timing to all subVIs and set the delay time\nWire the error in/out terminals of the subVIs to define their execution order\nAns: D\nJustification: LabVIEW relies on dataflow, meaning a subVI cannot execute until it receives all required input data. Wiring the error in/out terminals creates a strict data dependency that forces the subVIs to execute sequentially.\n",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "original_q_num": 6,
+    "correctAnswer": 3
+  },
+  {
+    "id": 918,
+    "topic": "CLAD Practice Test 5",
+    "text": "Question #7\nWhen\u00a0making a SubVI from the VI shown, which connector pane configuration would be most in line with LabVIEW programming best practices?\n\nTop of Form\nA.\n\n\n\nAns: C\nJustification: National Instruments (NI) recommends a strict convention for wiring the standard 4x2x2x4 connector pane to ensure code readability and consistency\n",
+    "options": [
+      "<img src='images/sup_7_opt_1.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/sup_7_opt_2.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/sup_7_opt_3.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/sup_7_opt_4.png' style='max-width:100%; border-radius:8px;'>"
+    ],
+    "original_q_num": 7,
+    "image": [
+      "images/sup_7_q.png"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 919,
+    "topic": "CLAD Practice Test 5",
+    "text": "Question #8\nYou are asked to write a VI with the following requirements:\n\nData In\u00a0- 2D numeric array input\nData Out\u00a0- 1D numeric array output containing all positive numeric values present in\u00a0Data In\nWhich VI satisfies these requirements?\nTop of Form\nA.\n\n\n\nAns:C\nJustification: The outer loop auto-indexes the 2D array (Data In), breaking it down row-by-row into 1D arrays.The inner loop auto-indexes each 1D array row, reducing it element-by-element into individual scalar values.",
+    "options": [
+      "<img src='images/sup_8_opt_1.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/sup_8_opt_2.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/sup_8_opt_3.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/sup_8_opt_4.png' style='max-width:100%; border-radius:8px;'>"
+    ],
+    "original_q_num": 8,
+    "correctAnswer": 2
+  },
+  {
+    "id": 920,
+    "topic": "CLAD Practice Test 5",
+    "text": "Question #9\nWhat value will be displayed in the\u00a0index of element\u00a0indicator after the VI completes execution?\n\nTop of Form\nA.1\n-1\n0\n2\nANS: ABottom of Form\nJustification: Search 1D Array requires an exact, case-sensitive match, so searching for \"abc\" in an array containing \"abcdefg\", \"ab\", and \"Abc\" finds no match and returns -1.\n",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "original_q_num": 9,
+    "image": [
+      "images/sup_9_q.png"
+    ]
   }
 ]

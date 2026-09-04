@@ -337,12 +337,7 @@ async function initApp() {
     // Setup Admin Test Selector options (Mock Test 1 to 25)
     const adminTestSelect = document.getElementById('admin-test-select');
     if (adminTestSelect) {
-        for (let i = 1; i <= 25; i++) {
-            const opt = document.createElement('option');
-            opt.value = `Mock Test ${i}`;
-            opt.textContent = `Mock Test ${i}`;
-            adminTestSelect.appendChild(opt);
-        }
+        // Mock Tests 1-25 are hidden as requested
         
         // Add specific tests dynamically
         if (allQuestions && allQuestions.length > 0) {
