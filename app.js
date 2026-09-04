@@ -576,9 +576,13 @@ function downloadQuestionPaper() {
                 const imgSrc = opt.replace('IMAGE: ', '');
                 optText = `<img src="${imgSrc}" style="max-height: 80px; vertical-align: middle;">`;
             }
+            const isUserSelected = userAnswers[idx] === optIdx;
+            const bgStyle = isUserSelected ? 'background-color: #f1f5f9; border: 1px solid #cbd5e1; padding: 4px; border-radius: 4px;' : '';
+            const badgeStyle = isUserSelected ? 'background-color: #3b82f6; color: white; border-color: #3b82f6;' : '';
+            
             optionsHtml += `
-                <div style="display: flex; align-items: flex-start; gap: 10px; font-size: 14px;">
-                    <span style="display: inline-block; width: 22px; height: 22px; border: 1px solid #94a3b8; border-radius: 50%; text-align: center; line-height: 20px; font-weight: 700; font-size: 12px; color: #334155; flex-shrink: 0;">${letters[optIdx]}</span>
+                <div style="display: flex; align-items: flex-start; gap: 10px; font-size: 14px; ${bgStyle}">
+                    <span style="display: inline-block; width: 22px; height: 22px; border: 1px solid #94a3b8; border-radius: 50%; text-align: center; line-height: 20px; font-weight: 700; font-size: 12px; color: #334155; flex-shrink: 0; ${badgeStyle}">${letters[optIdx]}</span>
                     <span style="color: #1e293b;">${optText}</span>
                 </div>
             `;
@@ -934,28 +938,30 @@ function finishAssessment() {
     questions.forEach((q, i) => {
         const userAns = userAnswers[i];
         if (userAns !== null) attemptedCount++;
-        const isCorrect = userAns === q.correctAnswer;
+        const hasAnswer = q.correctAnswer !== undefined && q.correctAnswer !== null;
+        const isCorrect = hasAnswer ? userAns === q.correctAnswer : false;
         if (isCorrect) correctCount++;
 
         const item = document.createElement('div');
-        item.className = `key-item ${isCorrect ? 'correct' : 'incorrect'}`;
+        item.className = `key-item ${hasAnswer ? (isCorrect ? 'correct' : 'incorrect') : 'unknown'}`;
 
-        let optText = q.options[userAns] || "Not Answered";
-        let correctOptText = q.options[q.correctAnswer] || "N/A";
+        let optText = userAns !== null ? q.options[userAns] || "Not Answered" : "Not Answered";
+        let correctOptText = hasAnswer ? (q.options[q.correctAnswer] || "N/A") : "Unknown";
 
         if (typeof optText === 'string' && optText.startsWith('IMAGE: ')) optText = "[Image Option]";
         if (typeof correctOptText === 'string' && correctOptText.startsWith('IMAGE: ')) correctOptText = "[Image Option]";
 
         let userAnsText = userAns !== null ? `${letters[userAns]}) ${optText}` : 'Not Answered';
-        let correctAnsText = `${letters[q.correctAnswer]}) ${correctOptText}`;
+        let correctAnsText = hasAnswer ? `${letters[q.correctAnswer]}) ${correctOptText}` : 'Please search and find the answer.';
 
         item.innerHTML = `
             <div class="key-question">Q${i + 1}: ${q.text}</div>
             <div class="key-answers">
-                <div class="user-ans ${!isCorrect ? 'wrong' : ''}">
+                <div class="user-ans ${hasAnswer && !isCorrect ? 'wrong' : ''}">
                     <strong>Your Answer:</strong> ${userAnsText}
                 </div>
-                ${!isCorrect ? `<div class="correct-ans"><strong>Correct Answer:</strong> ${correctAnsText}</div>` : ''}
+                ${(hasAnswer && !isCorrect) ? `<div class="correct-ans"><strong>Correct Answer:</strong> ${correctAnsText}</div>` : ''}
+                ${(!hasAnswer) ? `<div class="correct-ans" style="color: #64748b;"><strong>Note:</strong> ${correctAnsText}</div>` : ''}
             </div>
             ${q.explanation ? `<div class="explanation"><strong>Explanation:</strong> ${q.explanation}</div>` : ''}
         `;

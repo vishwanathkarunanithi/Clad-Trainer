@@ -13,8 +13,7 @@
       "The numeric is not the right kind for the cluster.",
       "The controls contain different types of data than the cluster."
     ],
-    "correctAnswer": 1,
-    "explanation": "The input cluster wired to the top terminal of Bundle By Name is not linked/defined, leading to a broken wire."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 2,
@@ -29,8 +28,7 @@
       "4",
       "6"
     ],
-    "correctAnswer": 1,
-    "explanation": "Array Size returns 3 because the input array contains 3 elements [23, 123, 2]."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 3,
@@ -45,8 +43,7 @@
       "4",
       "6"
     ],
-    "correctAnswer": 2,
-    "explanation": "The For Loop executes for iteration values i = 0, 1, 2, 3, 4 and terminates when i = 5, outputting 5."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 4,
@@ -61,8 +58,7 @@
       "5",
       "6"
     ],
-    "correctAnswer": 3,
-    "explanation": "The loop condition evaluates 6 times in total (iterations 0 through 5) before stopping."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 8,
@@ -75,8 +71,7 @@
       "SubVIs allows more rapid creation of repeated code.",
       "SubVIs eliminates race conditions."
     ],
-    "correctAnswer": 0,
-    "explanation": "Final Data retains the updated array elements [\"Student Name\", \"Grade\", \"Subject\"]."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 9,
@@ -91,8 +86,7 @@
       "Max Value = 5, Min Value = 2",
       "Max Value = 4, Min Value = 3"
     ],
-    "correctAnswer": 2,
-    "explanation": "Latching mechanical action requires reading the terminal inside the event structure to properly reset state."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 10,
@@ -107,8 +101,7 @@
       "Once and stops",
       "Indefinitely"
     ],
-    "correctAnswer": 0,
-    "explanation": "The Result indicator receives 8, but appears grayed out because its control state is set to Disabled and Grayed Out."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 11,
@@ -123,8 +116,7 @@
       "Loop 2 runs after Loop 1 stops",
       "Loop 1 and Loop 2 are deadlocked."
     ],
-    "correctAnswer": 3,
-    "explanation": "SubVIs organize diagram code and improve readability, but do not inherently prevent race conditions."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 12,
@@ -139,8 +131,7 @@
       "13 Bytes",
       "17 Bytes"
     ],
-    "correctAnswer": 0,
-    "explanation": "Array Subset (start 2, length 4) extracts [2, 4, 3, 3]; Array Max & Min finds Max = 4 and Min = 2."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 15,
@@ -155,8 +146,7 @@
       "Display an OK Message dialog box that will display the waveform generation VI error with an OK button to acknowledge the error. It will pass that cluster to the error out terminal.",
       "Display an OK Message dialog box that will display the waveform generation VI error with an OK button to acknowledge the error. It will then pass a default\u201dno error\u201d cluster."
     ],
-    "correctAnswer": 3,
-    "explanation": "The While Loop conditional terminal receives a constant FALSE, causing it to run indefinitely."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 17,
@@ -169,8 +159,7 @@
       "Use a property to change the disabled property value.",
       "Use an invoke node and use the reinitialize method."
     ],
-    "correctAnswer": 2,
-    "explanation": "Dataflow enforces that Loop 2 cannot execute until Loop 1 finishes and passes data through the wire."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 18,
@@ -185,8 +174,7 @@
       "2.",
       "Infinite."
     ],
-    "correctAnswer": 3,
-    "explanation": "17 Bytes total: 8 bytes array header (2 dimensions \u00d7 4 bytes) plus 9 bytes of U8 data elements."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 19,
@@ -201,8 +189,7 @@
       "All Six mechanical actions.",
       "Only Switch when Pressed."
     ],
-    "correctAnswer": 0,
-    "explanation": "A For Loop configured with N = 100 and auto-indexing enabled outputs a 100-element 1D array."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 20,
@@ -217,8 +204,7 @@
       "Element 3.",
       "Element1Element2Element3."
     ],
-    "correctAnswer": 1,
-    "explanation": "A For Loop with N = 3 combined with a conditional terminal stops early upon successful execution."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 21,
@@ -231,8 +217,7 @@
       "The controls reference.",
       "The controls data type."
     ],
-    "correctAnswer": 2,
-    "explanation": "Merge Errors prioritizes errors top-down; it reports the top input (waveform generation error) first."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 22,
@@ -245,8 +230,7 @@
       "Wiring a path to a case selector.",
       "Wiring together incompatible data types."
     ],
-    "correctAnswer": 0,
-    "explanation": "The shift register initializes at 0 and increments by 1 on each iteration, producing [0, 1]."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 24,
@@ -259,8 +243,7 @@
       "Indication that an event occurred and labview processed the event.",
       "Indication that an event occurred and the event will be processed depending on the case."
     ],
-    "correctAnswer": 2,
-    "explanation": "Property Nodes allow dynamic modification of Front Panel control properties (e.g., Disabled property) during execution."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 25,
@@ -275,8 +258,7 @@
       "The output of the sub tractor function will always be 0.",
       "The ADD function is guaranteed to be the last function to execute on this diagram."
     ],
-    "correctAnswer": 1,
-    "explanation": "The unwired shift register executes the While Loop exactly 1 time because default control logic evaluates once."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 26,
@@ -291,8 +273,7 @@
       "1.",
       "2."
     ],
-    "correctAnswer": 0,
-    "explanation": "Only Switch mechanical actions are valid when referencing controls via Local Variables; Latching actions cause compile errors."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 27,
@@ -307,8 +288,7 @@
       "The status indicator will display \u201crunning\u201d once, then it will display \u201cinitialize\u201d.",
       "The status indicator will display \u201cInitialize\u201d once, then it will display \u201cRunning\u201d"
     ],
-    "correctAnswer": 1,
-    "explanation": "Due to FIFO queue structure, the 5th iteration reads the repeating queue sequence, returning \"Element2\"."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 28,
@@ -323,8 +303,7 @@
       "255",
       "264"
     ],
-    "correctAnswer": 2,
-    "explanation": ""
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 30,
@@ -339,8 +318,7 @@
       "Linked input tunnel requires atleast one input tunnel",
       "Linked input tunnel  is only enabled on input tunnels"
     ],
-    "correctAnswer": 2,
-    "explanation": "Passing the control's reference to a SubVI enables full programmatic control over the main VI object."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 31,
@@ -355,8 +333,7 @@
       "Create the enum as an type definition were the type def of the element",
       "Create the while loop terminal with tunnel"
     ],
-    "correctAnswer": 1,
-    "explanation": "Property node path DigNum $ ightarrow$ NumText.TextColor dynamically modifies digital numeric text color."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 32,
@@ -372,8 +349,7 @@
       "d)",
       "IMAGE: images/CLAD1 (1)_p11_q32_9481.jpeg"
     ],
-    "correctAnswer": 0,
-    "explanation": "Numeric indicators display the last indexed values: Numeric = 10, Numeric 2 = 15."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 33,
@@ -389,8 +365,7 @@
       "Upper limit=6,lower limit=1",
       "Upper limit=6,lower limit=2"
     ],
-    "correctAnswer": 1,
-    "explanation": "Mouse Down event inside a single-iteration loop executes the Increment function exactly 1 time."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 34,
@@ -405,8 +380,7 @@
       "The VI containing this value should have an broken run arrow",
       "LABVIEW will return an error while running this program"
     ],
-    "correctAnswer": 0,
-    "explanation": "Multiplying DBL and U32 numeric types coerces the operation to the higher precision DBL data type. The output of the Multiply function will be DBL."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 35,
@@ -421,8 +395,7 @@
       "012345",
       "123456"
     ],
-    "correctAnswer": 1,
-    "explanation": "Comparison functions on arrays perform element-by-element evaluation, producing Result 2 boolean array."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 36,
@@ -437,8 +410,7 @@
       "Yes, but only once, not on each iteration of the loop",
       "No"
     ],
-    "correctAnswer": 2,
-    "explanation": "Notify events inform the application that an event occurred and LabVIEW has already processed it."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 37,
@@ -453,8 +425,7 @@
       "Use the mouse up event instead of value change event",
       "Use filter event"
     ],
-    "correctAnswer": 3,
-    "explanation": "Dataflow rules guarantee that a node executes only after all its required input terminals receive data."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 38,
@@ -469,8 +440,7 @@
       "Indefinity",
       "It does not  wait it returned immediatly"
     ],
-    "correctAnswer": 3,
-    "explanation": "Search 1D Array looks for \"abc\" starting at index 0, locating it at element index 2."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 39,
@@ -483,8 +453,7 @@
       "A SubVI with a uninitialized shift register and holds global data",
       "A SubVI with a initialized shift register and holds global data"
     ],
-    "correctAnswer": 2,
-    "explanation": "The status indicator displays \"Running\" during execution and updates to \"Initialize\" upon loop completion."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 40,
@@ -499,8 +468,7 @@
       "New elements will continuously overwrite the one element in the queue",
       "The queue will return ten elements for each dequeu"
     ],
-    "correctAnswer": 2,
-    "explanation": "Using U8 data types, $255 + 0 = 255$. (Wrap-around occurs only when exceeding 255)."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 41,
@@ -513,8 +481,7 @@
       "The control's reference",
       "The control's data type"
     ],
-    "correctAnswer": 0,
-    "explanation": "Concatenated tunnel flattens the nested loop outputs into a single 1D Array [1, 2, 3, 4, 5, 6, 7, 8, 9]."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 43,
@@ -527,8 +494,7 @@
       "No, since the Error Out terminal from the subVI is not wired in the calling VI.",
       "Yes, since the Error Out terminal from the subVI is not wired in the calling VI."
     ],
-    "correctAnswer": 2,
-    "explanation": "Linked Input Tunnel requires at least one established input tunnel on the structure to establish pairing."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 45,
@@ -541,8 +507,7 @@
       "It does not have a Goto function to control execution",
       "The memory location in which data is stored changes each iteration"
     ],
-    "correctAnswer": 2,
-    "explanation": "Defining enums as Type Definitions ensures type consistency across all callers and prevents coercion dots."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 46,
@@ -557,8 +522,7 @@
       "Number of seconds elapsed since January 1, 1970",
       "The time elapsed in milliseconds during the execution of the sequence structure"
     ],
-    "correctAnswer": 3,
-    "explanation": "Numeric indicators display the last indexed values: Numeric = 10, Numeric 2 = 15."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 48,
@@ -571,8 +535,7 @@
       "Control of multiple DAQ inputs through alias names",
       "Ability to wire from controls to functions and SubVIs"
     ],
-    "correctAnswer": 1,
-    "explanation": "Setting Upper Limit = 5 and Lower Limit = 2 properly bounds the coercion range to produce the front panel display."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 50,
@@ -583,8 +546,7 @@
       "Yes",
       "No"
     ],
-    "correctAnswer": 0,
-    "explanation": "Multiplying DBL and U32 numeric types coerces the operation to the higher precision DBL data type."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 51,
@@ -597,8 +559,7 @@
       "A compiled version of code mostly used for final deployment of an application",
       "A file that contains references to, and provides organization for all files pertaining to an application"
     ],
-    "correctAnswer": 2,
-    "explanation": "Concatenating converted string digits across 6 loop iterations ($i = 0$ to $5$) yields \"012345\"."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 52,
@@ -611,8 +572,7 @@
       "Create an Event structure to handle the error event",
       "Use the Error Handler VI to automatically handle the error"
     ],
-    "correctAnswer": 2,
-    "explanation": "Automatic Error Handling pops up an error dialog once on the first iteration where the file error occurs."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 53,
@@ -625,8 +585,7 @@
       "A type definition containing a cluster.",
       "An array with three elements."
     ],
-    "correctAnswer": 1,
-    "explanation": "Placing the Event Structure inside a While Loop ensures it continuously intercepts every Value Change event."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 54,
@@ -639,8 +598,7 @@
       "TDM",
       "Datalog"
     ],
-    "correctAnswer": 2,
-    "explanation": "An unwired timeout terminal on Dequeue Element defaults to -1, causing it to wait indefinitely for data."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 56,
@@ -653,8 +611,7 @@
       "Block Diagram",
       "Code"
     ],
-    "correctAnswer": 2,
-    "explanation": "A Functional Global Variable is a non-reentrant SubVI containing an uninitialized shift register storing state data."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 57,
@@ -666,8 +623,7 @@
       "One of the two is a dependency",
       "They cannot exist in the same project"
     ],
-    "correctAnswer": 1,
-    "explanation": "When a fixed-size queue is full, Enqueue Element blocks until space is freed by a Dequeue function."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 58,
@@ -680,8 +636,7 @@
       "Drop a Polymorphic VI function from the Function Palette >> Application Control, right-click it and choose \u2018Configure\u2019, and select the VIs that you would like to include.",
       "Highlight two SubVIs on a block diagram, in the toolbar select Edit >> Create Polymorphic VI."
     ],
-    "correctAnswer": 0,
-    "explanation": "The For Loop executes zero times due to empty array auto-indexing; shift register passes initial value 1."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 59,
@@ -694,8 +649,7 @@
       "Indication that an event occurred and LabVIEW processed the event",
       "Indication that an event did NOT occur but specified Event timeout did occur"
     ],
-    "correctAnswer": 2,
-    "explanation": "Both Numeric indicators evaluate to 3 after shift register accumulation completes all loop iterations."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 60,
@@ -708,8 +662,7 @@
       "More than one Property Node can be used for a single front panel object.",
       "Property Nodes contained in a SubVI will always cause the front panel to be loaded in memory."
     ],
-    "correctAnswer": 2,
-    "explanation": "Appended array formats elements into the structure shown in choice (c)."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 61,
@@ -724,8 +677,7 @@
       "Error",
       "0"
     ],
-    "correctAnswer": 0,
-    "explanation": "The icon represents the \"To Variant\" function used in generic data type handling."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 62,
@@ -740,8 +692,7 @@
       "3,3",
       "0,1"
     ],
-    "correctAnswer": 1,
-    "explanation": "LabVIEW uses dataflow programming: execution order depends strictly on data availability at node inputs."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 65,
@@ -756,8 +707,7 @@
       "round off",
       "none of these"
     ],
-    "correctAnswer": 2,
-    "explanation": "Evaluating Boolean logic gates with inputs FALSE, TRUE, TRUE yields TRUE for both output indicators a and b."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 66,
@@ -772,8 +722,7 @@
       "TRUE, TRUE",
       "TRUE, FALSE"
     ],
-    "correctAnswer": 0,
-    "explanation": "Tick Count (ms) difference measured across sequence frames computes the execution time of the SubVI."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 67,
@@ -788,8 +737,7 @@
       "19",
       "20"
     ],
-    "correctAnswer": 3,
-    "explanation": "Concatenating all input strings produces a combined string of length 20 characters."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 68,
@@ -804,8 +752,7 @@
       "1,FALE",
       "0,FALSE"
     ],
-    "correctAnswer": 2,
-    "explanation": "Automatic error handling posts a dialog on the first occurrence of an unhandled error inside a loop."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 69,
@@ -820,8 +767,7 @@
       "8 bytes",
       "it will ask the path during the execution"
     ],
-    "correctAnswer": 0,
-    "explanation": "Input value $x = 5$ lies within range $[0, 34]$, so Coerced $= 5$ and In Range $= ext{TRUE}$."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 71,
@@ -834,8 +780,7 @@
       "Sweep chart",
       "XY chart"
     ],
-    "correctAnswer": 1,
-    "explanation": "Control References grant SubVIs access to inspect and modify Front Panel object properties programmatically."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 72,
@@ -846,8 +791,7 @@
       "Yes",
       "No"
     ],
-    "correctAnswer": 3,
-    "explanation": "Unwired file path terminal on Open/Create/Replace File causes LabVIEW to display a file dialog at runtime."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 73,
@@ -860,8 +804,7 @@
       "A control that outputs a cluster of the controls / indicators on the tabs",
       "A controls that outputs the tab order of the controls on the front panel"
     ],
-    "correctAnswer": 2,
-    "explanation": "Snippet C routes error clusters directly to the loop conditional terminal, stopping execution and reporting errors."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 74,
@@ -874,8 +817,7 @@
       "You can flatten the data to a string to improve code performance",
       "Causes dynamically loaded VIs to be loaded at the start of execution"
     ],
-    "correctAnswer": 1,
-    "explanation": "Function connector terminals consist of 1 Required, 1 Recommended, and 1 Optional terminal."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 75,
@@ -888,8 +830,7 @@
       "A data buffer is created to handle data conversion",
       "Data values are being coerced because they are out of range"
     ],
-    "correctAnswer": 1,
-    "explanation": "Modifying a standard Control (.ctl) does NOT automatically update existing Front Panel instances (requires Type Def)."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 76,
@@ -902,8 +843,7 @@
       "SubVIs",
       "Local Variables"
     ],
-    "correctAnswer": 0,
-    "explanation": "Waveform Charts default to Strip Chart display mode, continuously scrolling new data left-to-right."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 77,
@@ -916,8 +856,7 @@
       "Notifiers",
       "Local variables"
     ],
-    "correctAnswer": 3,
-    "explanation": "A LabVIEW Project file (.lvproj) maintains file paths, dependencies, and organization for application components."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 78,
@@ -930,8 +869,7 @@
       "You must have an icon/connector to use a SubVI",
       "A SubVI icon can be edited from the functions palette"
     ],
-    "correctAnswer": 1,
-    "explanation": "Wires cannot connect parallel loops directly; data transfer requires queues, local variables, or notifiers."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 79,
@@ -944,8 +882,7 @@
       "The diagram becomes significantly larger when changing from a general architecture to a State Machine",
       "State Machines cannot acquire data or use DAQ functions"
     ],
-    "correctAnswer": 1,
-    "explanation": "Connecting the Status boolean wire from an error cluster to the conditional terminal cleanly halts loop execution."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 80,
@@ -958,8 +895,7 @@
       "Use a local variable",
       "Use a functional global variable"
     ],
-    "correctAnswer": 1,
-    "explanation": "Tab Control is an enumerated control outputting integer values corresponding to active tab indices."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 81,
@@ -972,8 +908,7 @@
       "To look into a SubVI, as the process is running",
       "To slowdown the VI and show data values in wires"
     ],
-    "correctAnswer": 2,
-    "explanation": "A Type Definition containing a Cluster allows adding future data fields without breaking caller compatibility."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 82,
@@ -986,8 +921,7 @@
       "You can make a Cluster of Arrays.",
       "You can make an Array of Clusters."
     ],
-    "correctAnswer": 0,
-    "explanation": "Strictly Typed VI Refnums enforce strict type checking on target VI parameters at compile time."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 83,
@@ -1002,8 +936,7 @@
       "",
       "None of the above."
     ],
-    "correctAnswer": 0,
-    "explanation": "Tab-delimited ASCII files are easily imported, parsed, and analyzed directly within Microsoft Excel."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 84,
@@ -1017,8 +950,7 @@
       "and",
       ""
     ],
-    "correctAnswer": 2,
-    "explanation": "A coercion dot indicates that LabVIEW allocated a memory buffer to convert data between differing types."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 85,
@@ -1031,8 +963,7 @@
       "They allow you to use the same code for many future applications.",
       "All of the above statements are true."
     ],
-    "correctAnswer": 0,
-    "explanation": "Multiplying $i+1$ by 2 produces values [6, 8, 10] for indices [2, 3, 4], matching the Waveform Graph display."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 86,
@@ -1045,8 +976,7 @@
       "A 2-D Array has both a column index and a row index.",
       "All of the above statements are true."
     ],
-    "correctAnswer": 3,
-    "explanation": "Local Variables bypass traditional dataflow rules, enabling reading/writing data outside standard wire paths."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 87,
@@ -1059,8 +989,7 @@
       "Automatic Wiring",
       "Retain Wire Values"
     ],
-    "correctAnswer": 0,
-    "explanation": "Data Space is always resident in memory for SubVIs to store state variables and local data allocations."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 88,
@@ -1073,8 +1002,7 @@
       "Automatic Tool Selector",
       "Operate Tool"
     ],
-    "correctAnswer": 0,
-    "explanation": "Semaphores protect shared resources and synchronize code execution, but do not transmit data values."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 89,
@@ -1087,8 +1015,7 @@
       "Select Tool",
       "Shortcut Menu Tool"
     ],
-    "correctAnswer": 2,
-    "explanation": "Two VIs with identical names cannot exist within the same project context due to namespace conflicts."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 90,
@@ -1101,8 +1028,7 @@
       "Wiring Diagram",
       "VI Icon"
     ],
-    "correctAnswer": 3,
-    "explanation": "SubVI icons are edited using the Icon Editor window, not directly from the Functions Palette."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 91,
@@ -1117,8 +1043,7 @@
       "Unknown",
       "None of the above"
     ],
-    "correctAnswer": 1,
-    "explanation": "Polymorphic VIs combine multiple VIs sharing identical connector patterns into a single interface."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 92,
@@ -1133,8 +1058,7 @@
       "Has no data type associated with",
       "Numeric"
     ],
-    "correctAnswer": 1,
-    "explanation": "If multiple state transitions trigger simultaneously without queueing, unhandled state changes are overwritten."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 93,
@@ -1149,8 +1073,7 @@
       "The loop will not execute since 2 values are flowing into it.",
       "The loop will iterate once since, it is a while loop even though it will not execute."
     ],
-    "correctAnswer": 2,
-    "explanation": "Notify events confirm that an event occurred and LabVIEW has already executed its default processing."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 94,
@@ -1163,8 +1086,7 @@
       "Instead of auto \u2013 update option, update from type def option will be there.",
       "None of the above."
     ],
-    "correctAnswer": 1,
-    "explanation": "Wiring directly to an indicator terminal represents the cleanest, most efficient method in dataflow programming."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 95,
@@ -1177,8 +1099,7 @@
       "Controls , Type definitions",
       "Controls , Indicators"
     ],
-    "correctAnswer": 0,
-    "explanation": "Property Nodes programmatically alter panel object attributes, and multiple nodes can target a single object."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 96,
@@ -1191,8 +1112,7 @@
       "LabVIEW will replace all the numeric values in the form of ASCII codes and display the respective ASCII string.",
       "LabVIEW will repeat the same numeric values in the string controls/indicators"
     ],
-    "correctAnswer": 1,
-    "explanation": "The Probe Tool displays live values passing through specific diagram wires in real-time without slowing execution."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 97,
@@ -1207,8 +1127,7 @@
       "Error in custom controls",
       "Both b and c"
     ],
-    "correctAnswer": 1,
-    "explanation": "LabVIEW prohibits creating an Array of Arrays; multidimensional arrays are used instead."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 98,
@@ -1221,8 +1140,7 @@
       "None of the above.",
       "A and B"
     ],
-    "correctAnswer": 0,
-    "explanation": "Connector Pane terminals can only be linked to controls and indicators located on the Front Panel."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 99,
@@ -1237,8 +1155,7 @@
       "None of the above.",
       "1D array(1,5,7)"
     ],
-    "correctAnswer": 2,
-    "explanation": "Auto-indexing defaults to enabled for For Loops and disabled for While Loops when wiring arrays."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 100,
@@ -1249,8 +1166,7 @@
       "Yes",
       "No"
     ],
-    "correctAnswer": 0,
-    "explanation": "SubVIs promote modular code reuse and debugging, but do not inherently reduce memory footprint."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 101,
@@ -1263,8 +1179,7 @@
       "4",
       "32"
     ],
-    "correctAnswer": 1,
-    "explanation": "Array indexing in LabVIEW is zero-based, spanning from index $0$ to $n-1$ for an $n$-element array."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 102,
@@ -1277,8 +1192,7 @@
       "Charlie",
       "The value can\u2019t be determined from the given information"
     ],
-    "correctAnswer": 2,
-    "explanation": "Automatic Wiring connects node terminals automatically when placed close to existing compatible wires."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 103,
@@ -1291,8 +1205,7 @@
       "The path is on a remote drive and the  network connection failed",
       "The file is missing"
     ],
-    "correctAnswer": 2,
-    "explanation": "Automatic Tool Selector dynamically switches active editing tools based on cursor position over objects."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 104,
@@ -1305,8 +1218,7 @@
       "Default Values Reinitialize All To Default",
       "Terminal Bounds Area Width"
     ],
-    "correctAnswer": 0,
-    "explanation": "The Operate Tool (pointing finger) allows users to interact with and change control values at runtime."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 107,
@@ -1321,8 +1233,7 @@
       "3",
       "infinite"
     ],
-    "correctAnswer": 0,
-    "explanation": "A Broken Run Arrow (white broken arrow on gray) signifies syntax or wiring errors that prevent execution."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 108,
@@ -1335,8 +1246,7 @@
       "Changing the values of front panel controls",
       "Changing the values on the wire at the breakpoint"
     ],
-    "correctAnswer": 2,
-    "explanation": "Execution order between parallel independent functions (Add vs. Divide) is non-deterministic (Unknown)."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 109,
@@ -1349,8 +1259,7 @@
       "Retain wire values allows you to see all the values from each loop iteration after execution",
       "Setting probes on a wire allows you to see the last value of an iteration of a loop after execution"
     ],
-    "correctAnswer": 3,
-    "explanation": "Orange border and '1.23' glyph identify a Double-precision Numeric data type."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 110,
@@ -1365,8 +1274,7 @@
       "0",
       "Indeterminate"
     ],
-    "correctAnswer": 0,
-    "explanation": "Control references pass valid object handles across structure boundaries, allowing loop code to execute."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 113,
@@ -1383,8 +1291,7 @@
       "No continuously",
       "Every 1 Millisecond"
     ],
-    "correctAnswer": 0,
-    "explanation": "Strict Type Definitions automatically update all instances across the application, removing manual update options."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 115,
@@ -1400,8 +1307,7 @@
       "Cluster, class & variant Palette>> Build Cluster array",
       "Create>>Indicator"
     ],
-    "correctAnswer": 2,
-    "explanation": "Standard controls break file links upon placement, whereas Type Definitions maintain persistent links."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 116,
@@ -1416,8 +1322,7 @@
       "Max Value = 5, Min Value = 0",
       "Max Value = 5, Min Value = 1"
     ],
-    "correctAnswer": 0,
-    "explanation": "Evaluating arithmetic logic yields waveform amplitude curve starting at 4 and rising to 14."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 117,
@@ -1430,8 +1335,7 @@
       "Waveform Chart",
       "Dynamic Chart"
     ],
-    "correctAnswer": 1,
-    "explanation": "A 16-bit DAQ board over $10 ext{V}$ range gives resolution $ rac{10}{2^{16}} = 0.15 ext{mV}$, easily resolving $2.1 ext{mV}$."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 118,
@@ -1449,8 +1353,7 @@
       "Case 2",
       "Case 3"
     ],
-    "correctAnswer": 1,
-    "explanation": "Array Subset with start index 2 and length 3 extracts 1D Array {6, 8, 10}."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 119,
@@ -1466,8 +1369,7 @@
       "Upper Limit = 6, Lower Limit = 1",
       "Upper Limit = 6, Lower Limit = 2"
     ],
-    "correctAnswer": 0,
-    "explanation": "Indexing element at index 2 (value 6) and appending array {7, 9, 1} yields {6, 7, 9, 1}."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 120,
@@ -1482,8 +1384,7 @@
       "2",
       "5"
     ],
-    "correctAnswer": 0,
-    "explanation": "Clicking 'Step Over' executes the selected node as a single unit without single-stepping internal code."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 121,
@@ -1498,8 +1399,7 @@
       "No, no error is displayed because closing the file reference clears the error.",
       "Yes, twice, once for the simple error handler VI and once when automatic error handling displays the error from the unwired error out of simple error handler VI."
     ],
-    "correctAnswer": 1,
-    "explanation": "Append Table to Report VI requires wiring 'report in' (bold terminal) to operate."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 122,
@@ -1514,8 +1414,7 @@
       "Create the enum as a Type definition and only use the Type def on the diagram.",
       "Create the While Loop terminal with indexing enabled"
     ],
-    "correctAnswer": 2,
-    "explanation": "Nested For Loops (outer N=3, inner N=4) auto-index to generate a 2D Array of 3 rows by 4 columns."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 123,
@@ -1528,8 +1427,7 @@
       "Default values Reinitialize All TO Default",
       "Terminal Bounds Area Width"
     ],
-    "correctAnswer": 3,
-    "explanation": "Diagram D correctly scales random numbers and updates the Waveform Chart display."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 124,
@@ -1545,8 +1443,7 @@
       "Array Out 1 is a 2D array and Array Out 2 is a 3D array",
       "Array Out 1 is a 3D array and Array Out 2 is a 2D array"
     ],
-    "correctAnswer": 2,
-    "explanation": "Documentation and help descriptions can be entered on front panel/diagram free labels or VI Properties."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 125,
@@ -1561,8 +1458,7 @@
       "LabVIEW will execute the square function and then highlight the next node to be executed as you continue single stepping through the VI.",
       "LabVIEW will complete the execution of the VI and return to the calling VI (if one exits)."
     ],
-    "correctAnswer": 1,
-    "explanation": "Numeric Constants are block diagram objects and cannot be placed on the Front Panel."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 126,
@@ -1575,8 +1471,7 @@
       "Prevent, detect, and resolve incorrect links.",
       "Preserve Links when moving or renaming files."
     ],
-    "correctAnswer": 3,
-    "explanation": "String display options include Normal, 'x' Codes, Password, and Hex display modes."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 127,
@@ -1589,8 +1484,7 @@
       "Using \u201cNaN\u201d for the value of a DBL numeric control.",
       "Using- Inf for the value of a I32 numeric control."
     ],
-    "correctAnswer": 2,
-    "explanation": "A While Loop combined with a Case Structure and shift register forms a classic State Machine VI."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 128,
@@ -1603,8 +1497,7 @@
       "Switch when Released ,  , Latch When Released and , Latch When Pressed",
       "Switch When Pressed, Switch when Released and Switch Until Released"
     ],
-    "correctAnswer": 2,
-    "explanation": "SubVIs are inserted by dragging icons onto diagrams or selecting File >> Select a VI from palettes."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 130,
@@ -1617,8 +1510,7 @@
       "Use a property to change the Disabled property value.",
       "Use an Invoke Node and use the reinitialize to default method."
     ],
-    "correctAnswer": 1,
-    "explanation": "Express VIs are selected and placed directly from the Functions Palette on the Block Diagram."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 131,
@@ -1633,8 +1525,7 @@
       "2",
       "infinite"
     ],
-    "correctAnswer": 2,
-    "explanation": "Given $N = 6$: Multiply $6 imes 4 = 24$; Add $6 + 2 = 8$; Divide $ rac{24}{8} = 3$; Final output $T = 16$."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 132,
@@ -1647,8 +1538,7 @@
       "Waveform chart",
       "Dynamic chart"
     ],
-    "correctAnswer": 2,
-    "explanation": "DAQmx virtual channels specify channels, measurement types, and scaling, but exclude base I/O hardware addresses."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 133,
@@ -1661,8 +1551,7 @@
       "A SubVI must have an icon and connector pane",
       "You can open a subVI from the front panel of the Mani VI."
     ],
-    "correctAnswer": 1,
-    "explanation": "For Loops use Count Terminal [N] for total iterations; Iteration Terminal [i] returns current iteration count ($0$ to $N-1$)."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 134,
@@ -1677,8 +1566,7 @@
       "Data.txt  Data.bin will write identical files",
       "A latch condition will prohibit the two files from writing data at the same type"
     ],
-    "correctAnswer": 3,
-    "explanation": "Deleting 1 element at index 1 across 3 iterations removes elements to leave 1D array {3, 3, 4}."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 135,
@@ -1693,8 +1581,7 @@
       "Labview displays the error handling dialog box 10 times listing close file as the source of the error",
       "Labview displays the error handling dialog box 9 times listing close file as the source of the error"
     ],
-    "correctAnswer": 0,
-    "explanation": "An Error Cluster with non-zero code and status = FALSE indicates a non-fatal warning condition."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 136,
@@ -1709,8 +1596,7 @@
       "5",
       "8"
     ],
-    "correctAnswer": 0,
-    "explanation": "Changing underlying data types resets instance default values to system defaults (0 or empty string)."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 137,
@@ -1726,8 +1612,7 @@
       "The operation terminal is not set to create",
       "The access is not set to write"
     ],
-    "correctAnswer": 0,
-    "explanation": "The 'OK' button confirms valid custom control edits before saving changes to disk."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 138,
@@ -1740,8 +1625,7 @@
       "While loop",
       "Sequence structure"
     ],
-    "correctAnswer": 3,
-    "explanation": "Strings store user messages and format command strings for instrument communication protocols."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 139,
@@ -1756,8 +1640,7 @@
       "Loop 2 runs after loop 1 stops",
       "Loop 1 and loop 2 are deadlocked"
     ],
-    "correctAnswer": 1,
-    "explanation": "Delete From Array starting at index 3 with length 4 removes elements [0, 5, 3], leaving 1D array [0, 1, 5]."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 140,
@@ -1773,8 +1656,7 @@
       "Labview will open up the square function and then highlight the next node to be executed as you continue single-stepping through the VI",
       "Labview will complete the execution of the VI and return  to the calling VI(if one exit)"
     ],
-    "correctAnswer": 0,
-    "explanation": "Data types strictly dictate compatible wiring connections between block diagram terminals."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 142,
@@ -1787,8 +1669,7 @@
       "Retain  wire value  allows  you  to  see the value from  each  loop  iteration  after execution",
       "Setting probes on a wire allows you to see the last value of an iteration of a loop after execution"
     ],
-    "correctAnswer": 0,
-    "explanation": "LabVIEW represents Boolean values in memory as 8-bit (1 byte) integers (0 = FALSE, 1 = TRUE)."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 144,
@@ -1803,8 +1684,7 @@
       "Time counting up with the string format similar to 4:05.2",
       "Time counting down with the string format similar to 4:05.2"
     ],
-    "correctAnswer": 2,
-    "explanation": "Open VI Properties >> Execution category and uncheck \"Allow Debugging\" to turn off debugging."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 147,
@@ -1819,8 +1699,7 @@
       "It contains exactly 3 elements",
       "It is two dimension"
     ],
-    "correctAnswer": 2,
-    "explanation": "For Loops declare total iteration count upfront, allowing pre-allocation of output array memory buffers."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 150,
@@ -1835,8 +1714,7 @@
       "2",
       "The code will run indefinitely"
     ],
-    "correctAnswer": 4,
-    "explanation": "Clusters group heterogeneous data types together and clean up diagram wiring by bundling signals into single wires."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 152,
@@ -1851,8 +1729,7 @@
       "2",
       "4"
     ],
-    "correctAnswer": 3,
-    "explanation": "The core purpose of a Cluster is grouping diverse data types into clean logical data structures."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 154,
@@ -1865,8 +1742,7 @@
       "Connect the error out terminal of the SubVI to a tunnel terminal or indicator in the calling VI",
       "Uncheck  enable  automatic  error  handling  on  the  execution  page  of  the  VI properties dialog box of the SubVI"
     ],
-    "correctAnswer": 3,
-    "explanation": "Sweep Chart update mode displays incoming data separated from old data by a moving vertical line."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 155,
@@ -1881,8 +1757,7 @@
       "2",
       "3"
     ],
-    "correctAnswer": 2,
-    "explanation": "Array Subset (index 2, length 3) extracts elements at indices 2, 3, 4, returning {6, 8, 10}."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 156,
@@ -1897,8 +1772,7 @@
       "Yes, but only once, not on each iteration of the loop",
       "No"
     ],
-    "correctAnswer": 0,
-    "explanation": "Array Max & Min finds maximum value = 7 located at array index 3."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 157,
@@ -1913,8 +1787,7 @@
       "4D",
       "1D"
     ],
-    "correctAnswer": 2,
-    "explanation": "Evaluating arithmetic logic inside the For Loop generates the exact amplitude response curve shown in Graph C."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 159,
@@ -1927,8 +1800,7 @@
       "Retain wire value allows you to see the value from each loop iteration after execution",
       "Setting probes on a wire allows you to see the last value of an iteration of a loop after execution"
     ],
-    "correctAnswer": 0,
-    "explanation": "Subtracting scalar 5 inside an infinite loop continues iterating until the Stop button is pressed."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 160,
@@ -1943,8 +1815,7 @@
       "19 bytes",
       "17 bytes"
     ],
-    "correctAnswer": 1,
-    "explanation": "Plotting array values with offset X0 = 10 and delta X = 25 generates graph response B."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 161,
@@ -1959,8 +1830,7 @@
       "Array[1,2,3],deleted portion=0",
       "The vi does not delete any portion"
     ],
-    "correctAnswer": 3,
-    "explanation": "Legend items: A - Plot Legend, B - Scale Legend, C - Graph Palette, D - Cursor Legend."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 162,
@@ -1973,8 +1843,7 @@
       "Plots, graphs",
       "Charts, graphs"
     ],
-    "correctAnswer": 1,
-    "explanation": "DAQ Assistant supports analog/digital I/O and frequency measurement, but not arbitrary waveform generation."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 163,
@@ -1987,8 +1856,7 @@
       "Functional global variable",
       "Local variable"
     ],
-    "correctAnswer": 0,
-    "explanation": "Diagram comments should explain complex logic or unfamiliar functions, keeping basic code clean."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 164,
@@ -2001,8 +1869,7 @@
       "Indication that an event occurred and LABVIEW  process the event",
       "Indication that an event occurred and the event would be process depending on the case"
     ],
-    "correctAnswer": 2,
-    "explanation": "Index Array extracts a single element or sub-array starting at a specified index from an N-dimensional array."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 165,
@@ -2017,8 +1884,7 @@
       "Time counting up with the string format similar to 4:05.2",
       "Time counting down with the string format similar to 4:05.2"
     ],
-    "correctAnswer": 2,
-    "explanation": "Placing extensive code sequentially inside flat cases makes block diagrams overly large and difficult to maintain."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 166,
@@ -2033,8 +1899,7 @@
       "8",
       "NAN"
     ],
-    "correctAnswer": 2,
-    "explanation": "While Loops terminate when conditional terminal receives TRUE (Stop on True) or FALSE (Continue if True)."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 167,
@@ -2047,8 +1912,7 @@
       "to, X, Y",
       "to, dt, dy"
     ],
-    "correctAnswer": 1,
-    "explanation": "Case Structures feature a Selector Terminal that evaluates input values to choose execution cases."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 168,
@@ -2061,8 +1925,7 @@
       "Mouse down",
       "Mouse down?"
     ],
-    "correctAnswer": 2,
-    "explanation": "Auto-indexing enabled on For Loop outputs creates a 1D Array containing all 10 generated elements."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 169,
@@ -2077,8 +1940,7 @@
       "The selector tunnel is not wired within the case structure",
       "The case structure does not have a default case"
     ],
-    "correctAnswer": 0,
-    "explanation": "Simple VIs excel at performing atomic data conversions or modular calculations as reusable SubVIs."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 170,
@@ -2093,8 +1955,7 @@
       "Use the mouse up event instead of value change event",
       "Use filter event"
     ],
-    "correctAnswer": 0,
-    "explanation": "When Number = -49, False case executes, displaying dialog box and returning value -99999."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 171,
@@ -2107,8 +1968,7 @@
       "XY graph",
       "Intensity graph"
     ],
-    "correctAnswer": 1,
-    "explanation": "Offset Past Match returns the character index in the input string directly following the matched string."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 172,
@@ -2123,8 +1983,7 @@
       "Create histogram",
       "Curve fitting"
     ],
-    "correctAnswer": 3,
-    "explanation": "Strip Chart mode scrolls data continuously from left to right across the plot area."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 173,
@@ -2137,8 +1996,7 @@
       "Highlighting the SubVI node or function when the error occurred",
       "Displaying an error dialog box"
     ],
-    "correctAnswer": 1,
-    "explanation": "LabVIEW executes block diagram nodes according to dataflow: nodes run as soon as input data is available."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 174,
@@ -2153,8 +2011,7 @@
       "Labview will open up the square function and then highlight the next node to be executed as you continue single-stepping through the VI",
       "Labview will complete the execution of the VI and return  to the calling VI(if one exit)"
     ],
-    "correctAnswer": 3,
-    "explanation": "Inserting array elements at index 1 updates data array to {1, 8, 6, 2}."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 175,
@@ -2167,8 +2024,7 @@
       "Local variable",
       "Shared variable"
     ],
-    "correctAnswer": 3,
-    "explanation": "Compound Arithmetic evaluates branches: $10 imes 12 = 120$; $ rac{12}{2} = 6$; $9 + 3 = 12$; sum $= 270$."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 177,
@@ -2183,8 +2039,7 @@
       "It contain each 3 element",
       "It is a two dimensional"
     ],
-    "correctAnswer": 0,
-    "explanation": "XY Graphs require bundling X and Y array pairs into clusters and building an array of those clusters."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 179,
@@ -2199,8 +2054,7 @@
       "Loop 2 runs loop 1 stop",
       "Loop 1 and 2 are dead lock"
     ],
-    "correctAnswer": 0,
-    "explanation": "Channel gain settings are best configured globally inside Measurement & Automation Explorer (MAX)."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 180,
@@ -2215,8 +2069,7 @@
       "Create the enum  as type definition and only use the type def",
       "Create the while loop terminal with indicating enable"
     ],
-    "correctAnswer": 1,
-    "explanation": "Clusters can group mixed controls and indicators; Arrays are limited to uniform controls or indicators."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 181,
@@ -2232,8 +2085,7 @@
       "Array out 1 is a 2d array and array out 2 is a 3d",
       "Array out 1 is a 3d array and array out 2 is a2d array"
     ],
-    "correctAnswer": 0,
-    "explanation": "SubVIs improve modularity and debugging, but overhead memory allocation means they do not reduce total memory."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 182,
@@ -2248,8 +2100,7 @@
       "123456",
       "012345"
     ],
-    "correctAnswer": 3,
-    "explanation": "Context Help bold text indicates required terminals; plain text indicates recommended or optional terminals."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 184,
@@ -2262,8 +2113,7 @@
       "While loop",
       "Sequence structure"
     ],
-    "correctAnswer": 2,
-    "explanation": "The icon labeled 'C' with a magnifying glass over wire represents the Probe Tool on the Tools Palette."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 185,
@@ -2278,8 +2128,7 @@
       "A negative value in error code of the error cluster",
       "A true value is the status Boolean of the error cluster"
     ],
-    "correctAnswer": 2,
-    "explanation": "Array Size returns a 1D integer array containing element counts for each dimension of the input array."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 186,
@@ -2292,8 +2141,7 @@
       "One while loop",
       "Two for loops"
     ],
-    "correctAnswer": 1,
-    "explanation": "Evaluating Boolean logic ($1 ext{ OR } 0 = 1$; $1 ext{ AND } 0 = 0$; $1 ext{ XOR } 0 = 1$) outputs True."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 187,
@@ -2308,8 +2156,7 @@
       "Charlie",
       "The value can\u2019t be determine"
     ],
-    "correctAnswer": 0,
-    "explanation": "Clusters hold heterogeneous data types, whereas Arrays require all elements to be of identical type."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 188,
@@ -2324,8 +2171,7 @@
       "5",
       "8"
     ],
-    "correctAnswer": 2,
-    "explanation": "Evaluating formula $W + X imes (Y - Z)$ with $W=0, X=3, Y=17, Z=6$ gives $0 + 3 imes 11 = 34$."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 189,
@@ -2340,8 +2186,7 @@
       "25",
       "49"
     ],
-    "correctAnswer": 1,
-    "explanation": "The iteration terminal [i] provides the current loop iteration index ($0, 1, 2, \\dots$)."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 190,
@@ -2354,8 +2199,7 @@
       "40",
       "indefinite"
     ],
-    "correctAnswer": 3,
-    "explanation": "Bold terminal labels in Context Help represent mandatory (required) connections."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 191,
@@ -2368,8 +2212,7 @@
       "Intensity graph",
       "Waveform"
     ],
-    "correctAnswer": 0,
-    "explanation": "In State Machines lacking event queues, simultaneous events result in processing the first while losing the second."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 192,
@@ -2384,8 +2227,7 @@
       "The count terminal is unwired",
       "A scalar cannot be multipled with an array"
     ],
-    "correctAnswer": 2,
-    "explanation": "A For Loop requires a wired Count Terminal [N] or an auto-indexing input array. If the Count terminal is unwired with no array input, LabVIEW cannot determine iteration count and the run arrow becomes broken."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 193,
@@ -2398,8 +2240,7 @@
       "The path is on a remote driving and the network connected failed",
       "The file is missing"
     ],
-    "correctAnswer": 0,
-    "explanation": "Block diagram comments should focus on explaining complex, non-obvious, or unfamiliar functions."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 194,
@@ -2414,8 +2255,7 @@
       "TRUE=1.000000=1",
       "1=1=1.000000"
     ],
-    "correctAnswer": 2,
-    "explanation": "Green color convention on LabVIEW block diagrams and front panels represents Boolean data types."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 196,
@@ -2430,8 +2270,7 @@
       "3",
       "1 and 3"
     ],
-    "correctAnswer": 3,
-    "explanation": "Right-clicking empty block diagram space opens the Functions Palette for function selection."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 197,
@@ -2444,8 +2283,7 @@
       "Invoke node",
       "Variable node"
     ],
-    "correctAnswer": 3,
-    "explanation": "Disabling auto-indexing on a For Loop output tunnel passes only the single element from the final iteration."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 198,
@@ -2460,8 +2298,7 @@
       "Time counting up with the string format similar to 04.05.2",
       "Time counting down with the string format similar to 3.55.5.20"
     ],
-    "correctAnswer": 1,
-    "explanation": "When creating SubVI connector panes, input pattern terminals must match the number of parameter controls."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 199,
@@ -2476,8 +2313,7 @@
       "10",
       "Undefined. The VI runs indefinitely and must be aborted."
     ],
-    "correctAnswer": 1,
-    "explanation": "Adding scalar 8 to 1D array {12, 4, 7} adds 8 to each element, producing {20, 12, 15}."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 200,
@@ -2492,8 +2328,7 @@
       "There is no way to know",
       "0"
     ],
-    "correctAnswer": 3,
-    "explanation": "Adding 1D arrays of differing lengths evaluates up to the shortest length, producing 1D Array {120, 30}."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 201,
@@ -2506,8 +2341,7 @@
       "Wiring a path to a case selector",
       "Wiring together incompatible data types"
     ],
-    "correctAnswer": 0,
-    "explanation": "Standard error handling passes incoming error clusters directly to outputs, bypassing execution inside nodes."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 202,
@@ -2523,8 +2357,7 @@
       "LabVIEW will open up the block diagram of Square Function VI to allow you to single step through the code inside the function",
       "LabVIEW will execute the Square Function. i and then highlight the next node to be executes as you continue Single-Stepping through the VI."
     ],
-    "correctAnswer": 0,
-    "explanation": "Bundling random signals into a cluster repeatedly updates multiple plot traces on a single Waveform Chart."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 203,
@@ -2539,8 +2372,7 @@
       "The Output of the Subtraction function will always be 0.",
       "The Add function is guaranteed to be the Last function to execute on this diagram"
     ],
-    "correctAnswer": 0,
-    "explanation": "Selecting Browse >> Show VI Hierarchy displays a graphical hierarchy tree of all called SubVIs."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 204,
@@ -2555,8 +2387,7 @@
       "Indeterminate Must see the code in other cases to the determine the value",
       "The VI does not stop execution and runs indefinitely"
     ],
-    "correctAnswer": 2,
-    "explanation": "Value property node returns string label \"Charlie\" associated with the active enum index."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 205,
@@ -2571,8 +2402,7 @@
       "Only Cluster and Strings",
       "Only Numeric and Boolean"
     ],
-    "correctAnswer": 0,
-    "explanation": "Operating system Error 8 (\"File Permission Error\") occurs when lacking write access to target directories."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 207,
@@ -2585,8 +2415,7 @@
       "Wiring a path to a case selector",
       "Wiring together incompatible data type"
     ],
-    "correctAnswer": 2,
-    "explanation": "Default Values >> Reinitialize All To Default is a standard method of the VI Server VI class."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 208,
@@ -2601,8 +2430,7 @@
       "4000 bytes",
       "8000 bytes"
     ],
-    "correctAnswer": 0,
-    "explanation": "Tick Count (ms) reads CPU clock time in milliseconds and rolls over to zero approximately every 49.7 days."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 209,
@@ -2617,8 +2445,7 @@
       "It was not dropped within Cluster and Instead is Overlapping it",
       "Clusters and contain only one datatype"
     ],
-    "correctAnswer": 1,
-    "explanation": "Deleting 2 elements starting at index 1 removes [2, 3], leaving array [1, 4, 5, 0] and deleted portion [2, 3]."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 211,
@@ -2635,8 +2462,7 @@
       "LabVIEW will open up the block diagram of Square Function VI to allow you to single step through the code inside the function",
       "LabVIEW will execute the Square Function. I and then highlight the next node to be executes as you continue Single-Stepping through the VI."
     ],
-    "correctAnswer": 1,
-    "explanation": "Latch when pressed switches state until read by LabVIEW; holding for 2s completes iteration count 2."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 212,
@@ -2651,8 +2477,7 @@
       "The value of the Loop iteration terminal is equal to the value of the Loop Count terminal",
       "The value of the Loop iteration terminal is one more than the value of the Loop Count terminal"
     ],
-    "correctAnswer": 3,
-    "explanation": "When paused at a breakpoint, wire data values cannot be directly edited on the diagram."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 213,
@@ -2667,8 +2492,7 @@
       "Finish Frame of the structure",
       "Un-pause and continue execution"
     ],
-    "correctAnswer": 2,
-    "explanation": "Retain Wire Values retains only the single final value passing through wires upon completion, not iteration history."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 215,
@@ -2681,8 +2505,7 @@
       "Connect the Error Out terminals of the sub VI to a tunnel, the terminal or indicator in the calling VI",
       "Uncheck Enable  automatic error handling on the Execution page of the VI Properties dialog box of the sub VI"
     ],
-    "correctAnswer": 1,
-    "explanation": "Uninitialized shift register retains value 2 from previous execution, adding 1 to display 3."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 216,
@@ -2697,8 +2520,7 @@
       "The Count terminal is unwired",
       "A scalar cannot be Multiplied with an array"
     ],
-    "correctAnswer": 0,
-    "explanation": "The coercion dot on the Multiply function indicates LabVIEW is converting data types to match. A coercion dot itself does not cause a broken run arrow, but if dimension mismatches exist between scalar and array connections it can."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 217,
@@ -2713,8 +2535,7 @@
       "10",
       "Undefined. The VI runs indefinitely and must be aborted."
     ],
-    "correctAnswer": 1,
-    "explanation": "Diagram B correctly uses For Loop N=3 with conditional terminal to retry execution upon error."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 218,
@@ -2729,8 +2550,7 @@
       "10",
       "LabVIEW will throw 3 run time error"
     ],
-    "correctAnswer": 1,
-    "explanation": "The event timeout is set to 1000ms, updating the Time indicator every 1 second (1000 ms)."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 219,
@@ -2743,8 +2563,7 @@
       "Wiring a path",
       "Wiring together incompatible data types"
     ],
-    "correctAnswer": 2,
-    "explanation": "Case Structure evaluating codes \"1,2\" clears incoming error clusters in matching cases."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 220,
@@ -2759,8 +2578,7 @@
       "Array=[1,2,3],deleted element=0",
       "The VI is broken because the index input to Delete From Array is unwired"
     ],
-    "correctAnswer": 0,
-    "explanation": "Selecting \"Use Default If Unwired\" on tunnel outputs avoids broken wires across unhandled cases."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 221,
@@ -2773,8 +2591,7 @@
       "Knob, waveform, Graph, OK button",
       "Dial, Tab Control, Property Node"
     ],
-    "correctAnswer": 0,
-    "explanation": "Array Max & Min finds Max Value = 4 and Min Value = 0 after element insertion completes."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 222,
@@ -2791,8 +2608,7 @@
       "Every 1000 seconds",
       "Every 10000 seconds"
     ],
-    "correctAnswer": 0,
-    "explanation": "XY Graph plots arbitrary 2D data points, making it ideal for displaying geometric shapes like circles."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 224,
@@ -2808,8 +2624,7 @@
       "LabVIEW will execute the Square function and then highlights the next node to be executes as you continue single-step through the VI",
       "LabVIEW will complete the execution of the VI and return to the calling VI (if one exists)"
     ],
-    "correctAnswer": 2,
-    "explanation": "A SubVI connector pane pattern supports a maximum configuration of 28 terminals."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 225,
@@ -2824,8 +2639,7 @@
       "New elements will continuously overwrite the one element in the queue",
       "The queue will return ten elements for each dequeue"
     ],
-    "correctAnswer": 2,
-    "explanation": "On the first iteration ($i=0$), shift register $2 + i(0) = 2$, displaying 2 at indicator H."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 226,
@@ -2840,8 +2654,7 @@
       "The value of the Loop iteration terminal is equal to the value of the Loop Count terminal",
       "The value of the Loop iteration terminal is one more than the value of the Loop Count terminal"
     ],
-    "correctAnswer": 0,
-    "explanation": "Express VIs are placed on the diagram by selecting them from the Functions Palette."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 227,
@@ -2854,8 +2667,7 @@
       "Invoke node",
       "Variable node"
     ],
-    "correctAnswer": 2,
-    "explanation": "Simple Error Handler VI traps incoming error wires and displays user-facing error dialog windows."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 228,
@@ -2870,8 +2682,7 @@
       "Time counting up with the string format similar to 04.05.2",
       "Time counting down with the string format similar to 3.55.5.20"
     ],
-    "correctAnswer": 2,
-    "explanation": "Auto-indexing defaults to enabled on For Loops and disabled on While Loops for array data wires."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 229,
@@ -2886,8 +2697,7 @@
       "Make sure that all the String constant are selected before creating Sub VI",
       "Make Sure all controls and indicators are selected before creating the Sub VI"
     ],
-    "correctAnswer": 0,
-    "explanation": "Deleting length 1 at index 1 across loop iterations leaves 1D array {3, 3, 4}."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 230,
@@ -2898,8 +2708,7 @@
       "4",
       "32"
     ],
-    "correctAnswer": 2,
-    "explanation": "Right-clicking empty block diagram workspace displays the Functions Palette."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 231,
@@ -2912,8 +2721,7 @@
       "Latch when pressed",
       "Latch Until released"
     ],
-    "correctAnswer": 3,
-    "explanation": "Dragging an array directly inside another array shell is invalid syntax for creating 2D arrays."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 232,
@@ -2928,8 +2736,7 @@
       "1D array of {9,9,9,9,9,9,9,9,9}",
       "None of the above"
     ],
-    "correctAnswer": 0,
-    "explanation": "To Upper Case converts all string characters to uppercase, outputting \"HELLO WORLD!\"."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 233,
@@ -2942,8 +2749,7 @@
       "True",
       "False"
     ],
-    "correctAnswer": 3,
-    "explanation": "The array structure shown displays 2 index dimensions (Row and Column), identifying it as 2D."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 234,
@@ -2958,8 +2764,7 @@
       "10",
       "Indeterminate"
     ],
-    "correctAnswer": 0,
-    "explanation": "Output matches array display structure shown in Option A."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 235,
@@ -2974,8 +2779,7 @@
       "2",
       "Indeterminate"
     ],
-    "correctAnswer": 0,
-    "explanation": "Concatenating 1D arrays end-to-end yields a flattened 1D Array."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 236,
@@ -2988,8 +2792,7 @@
       "Error cluster",
       "None of the above"
     ],
-    "correctAnswer": 0,
-    "explanation": "Numeric expression calculation completes evaluating to output value 0."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 238,
@@ -3002,8 +2805,7 @@
       "-1",
       "None of the above"
     ],
-    "correctAnswer": 0,
-    "explanation": "Tick Count (ms) reads system uptime and rolls over to 0 every $2^{32}-1$ milliseconds (~49.7 days)."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 239,
@@ -3018,8 +2820,7 @@
       "Both i & iii",
       "i, ii, & iii"
     ],
-    "correctAnswer": 2,
-    "explanation": "Shift register accumulation across iterations increments numeric indicator to final value 2."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 240,
@@ -3034,8 +2835,7 @@
       "1D array of {0,1,2,3,4,5,6,7,8,9}",
       "1D array of {0,1,3,6,10,15,21,28,36,45}"
     ],
-    "correctAnswer": 0,
-    "explanation": "Output indicator displays output pattern A upon completion."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 241,
@@ -3050,8 +2850,7 @@
       "Red",
       "All will be in true state for equal amount of time"
     ],
-    "correctAnswer": 2,
-    "explanation": "Wiring Error Out from a SubVI to a tunnel or indicator suppresses Automatic Error Handling dialogs."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 242,
@@ -3064,8 +2863,7 @@
       "Bundle",
       "Container"
     ],
-    "correctAnswer": 1,
-    "explanation": "Clicking a latching Boolean control once invokes the Value Change event case exactly 1 time."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 243,
@@ -3080,8 +2878,7 @@
       "STRUMENTS",
       "TS"
     ],
-    "correctAnswer": 2,
-    "explanation": "Automatic error handling displays an error dialog box once on the first iteration where error occurs."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 244,
@@ -3094,8 +2891,7 @@
       "Cluster will get disabled",
       "LabVIEW throws an error"
     ],
-    "correctAnswer": 3,
-    "explanation": "Enabling Concatenate Inputs on Build Array combining 1D inputs outputs a 1D Array."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 245,
@@ -3108,8 +2904,7 @@
       "Reference cluster terminal of  Bundle by name  function is recommended",
       "Reference cluster terminal of  Bundle  function is recommended"
     ],
-    "correctAnswer": 0,
-    "explanation": "Array processing logic evaluates to display output structure A."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 246,
@@ -3122,8 +2917,7 @@
       "Formula node",
       "Object-Oriented structure"
     ],
-    "correctAnswer": 2,
-    "explanation": "Retain Wire Values retains only the single final value passing through wires, not all loop iterations."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 247,
@@ -3134,8 +2928,7 @@
       "Yes",
       "No"
     ],
-    "correctAnswer": 3,
-    "explanation": "U8 array size writing 9 elements plus 8-byte array header totals 17 bytes on disk."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 248,
@@ -3148,8 +2941,7 @@
       "State machine",
       "While loop"
     ],
-    "correctAnswer": 1,
-    "explanation": "Deleting index 1 removes element 3, leaving Array [2, 3] and deleted portion = 1."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 249,
@@ -3164,8 +2956,7 @@
       "3",
       "4"
     ],
-    "correctAnswer": 0,
-    "explanation": "Waveform Graphs display complete arrays over pre-allocated data; Charts update periodically with history."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 250,
@@ -3178,8 +2969,7 @@
       "Notifiers",
       "Local variables"
     ],
-    "correctAnswer": 2,
-    "explanation": "Iterating through cases increments state value to complete execution at \"Case2\"."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 251,
@@ -3194,8 +2984,7 @@
       "1D array {4,5,1,2,3}",
       "1D array {5,1,2,3,4}"
     ],
-    "correctAnswer": 3,
-    "explanation": "The Rotate 1D Array function with n = -4 shifts the array left by 4 positions. For the input {1, 2, 3, 4, 5}, this results in {5, 1, 2, 3, 4}."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 252,
@@ -3210,8 +2999,7 @@
       "24 bytes",
       "17 bytes"
     ],
-    "correctAnswer": 1,
-    "explanation": "Upper Limit = 5 and Lower Limit = 2 correctly bound input values to generate display outputs."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 253,
@@ -3226,8 +3014,7 @@
       "infinite",
       "None of the above"
     ],
-    "correctAnswer": 2,
-    "explanation": "Notify events inform LabVIEW that an event occurred and default processing has completed."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 254,
@@ -3246,8 +3033,7 @@
       "A number, a Boolean and an Enum Type",
       "None of the previous options"
     ],
-    "correctAnswer": 2,
-    "explanation": "Filtering logic produces an output array containing exactly 2 elements."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 255,
@@ -3262,8 +3048,7 @@
       "I64",
       "I32"
     ],
-    "correctAnswer": 3,
-    "explanation": "Count in minutes = 4 formats timer output counting down from 4:05.2."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 256,
@@ -3276,8 +3061,7 @@
       "The I16 has 17 bits, one of them for the sign and the U16 has 16 bits",
       "Both can represent the same amount of numbers"
     ],
-    "correctAnswer": 2,
-    "explanation": "Closing file reference handles and clears error state, suppressing automatic error dialog pop-ups."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 257,
@@ -3292,8 +3076,7 @@
       "3D array",
       "scalar element"
     ],
-    "correctAnswer": 2,
-    "explanation": "Indexing element index 2 from array yields output value 8."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 258,
@@ -3306,8 +3089,7 @@
       "Use a local variable",
       "Use a global local variable"
     ],
-    "correctAnswer": 2,
-    "explanation": "Creating enums as Type Definitions eliminates coercion dots by enforcing data type uniformity."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 259,
@@ -3320,8 +3102,7 @@
       "To look into a VI, as a process is running",
       "To slow down the VI, and show data values in wires"
     ],
-    "correctAnswer": 1,
-    "explanation": "Waveform data types consist of 3 main components: $t_0$ (start time), $dt$ (sample interval), and $Y$ (data array)."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 262,
@@ -3336,8 +3117,7 @@
       "1D array {0,1,1,2,3}",
       "1D array {1,1,2,3,4}"
     ],
-    "correctAnswer": 2,
-    "explanation": "Reinitialize All To Default is a standard method provided by the VI Server class."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 263,
@@ -3352,8 +3132,7 @@
       "Replace the While loop with a case structure.",
       "Change the time constant to a non-zero number."
     ],
-    "correctAnswer": 0,
-    "explanation": "Moving mouse over a control triggers Mouse Enter before Key Down events occur."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 264,
@@ -3366,8 +3145,7 @@
       "Radix",
       "Distribute objects"
     ],
-    "correctAnswer": 3,
-    "explanation": "Array Out 1 has 3 index displays (3D Array); Array Out 2 has 2 index displays (2D Array)."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 265,
@@ -3380,8 +3158,7 @@
       "queue with timeout 0",
       "queue with timeout 1"
     ],
-    "correctAnswer": 3,
-    "explanation": "A Case Structure wired to string inputs breaks if it lacks a mandatory Default case."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 266,
@@ -3394,8 +3171,7 @@
       "User interface event",
       "User event"
     ],
-    "correctAnswer": 1,
-    "explanation": "Pressing 'Step Into' on a SubVI opens its block diagram to single-step through internal subVI code."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 267,
@@ -3408,8 +3184,7 @@
       "Property node",
       "Control"
     ],
-    "correctAnswer": 1,
-    "explanation": "Moving the Event Structure inside the While Loop allows continuously handling control Value Change events."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 268,
@@ -3422,8 +3197,7 @@
       "Waveform Chart",
       "Dynamic Chart"
     ],
-    "correctAnswer": 1,
-    "explanation": "LabVIEW Project Explorer organizes disk files and references, but file duplication is managed via OS/ disk menus."
+    "explanation": "Please search and find the answer for this."
   },
   {
     "id": 288,
@@ -6777,7 +6551,7 @@
       "The VI executes without error because the missing file is created by Open/Create/Replace \nFile."
     ],
     "original_q_num": 7,
-    "correctAnswer": 1,
+    "correctAnswer": 2,
     "image": "images/qb3_q497_0.jpeg"
   },
   {
@@ -6791,7 +6565,7 @@
       "To ensure a valid reference is passed out of the loop if it runs zero times."
     ],
     "original_q_num": 1,
-    "correctAnswer": 1,
+    "correctAnswer": 4,
     "image": "images/qb3_q498_0.png"
   },
   {
@@ -6805,7 +6579,7 @@
       "The Enum constants are not Type Defs."
     ],
     "original_q_num": 8,
-    "correctAnswer": 2,
+    "correctAnswer": 4,
     "image": "images/qb3_q499_0.png"
   },
   {
@@ -6819,7 +6593,7 @@
       "Display \"Initialize\" once, then it will display \"Running\"."
     ],
     "original_q_num": 12,
-    "correctAnswer": 1,
+    "correctAnswer": 4,
     "image": "images/qb3_q500_0.png"
   },
   {
@@ -6833,7 +6607,7 @@
       "<img src='images/qb3_q501_7.png' style='max-width:100%; border-radius:8px;'>"
     ],
     "original_q_num": 14,
-    "correctAnswer": 4
+    "correctAnswer": 3
   },
   {
     "id": 502,
@@ -6846,7 +6620,7 @@
       "Test A Test B Test C Test D"
     ],
     "original_q_num": 1,
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "image": "images/qb3_q502_0.png"
   },
   {
@@ -6971,7 +6745,7 @@
       "<img src='images/qb3_q511_8.png' style='max-width:100%; border-radius:8px;'>"
     ],
     "original_q_num": 12,
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "image": "images/qb3_q511_0.png"
   },
   {
@@ -7355,5 +7129,1555 @@
     "image": [
       "images/indravarun_q622_0.png"
     ]
+  },
+  {
+    "id": 700,
+    "topic": "CLAD 40 QUESTIONS indra",
+    "text": "Question #1\nWhat is the\u00a0most likely\u00a0cause of the coercion dot in this VI?",
+    "options": [
+      "The shift register\u00a0is coercing the enum constants into their string values.",
+      "The two enum constants contains different items.",
+      "Outer terminals of enum shift registers always display coercion dots.",
+      "Wait\u00a0is a reserved item name for enum items."
+    ],
+    "original_q_num": 1,
+    "correctAnswer": 2,
+    "image": [
+      "images/indra_700_0.png"
+    ]
+  },
+  {
+    "id": 701,
+    "topic": "CLAD 40 QUESTIONS indra",
+    "text": "Question #2\nYou want to initialize a state machine with values read from an INI file. You need to read the values from the INI file\u00a0only once\u00a0on initialization, and you do not need to modify the values\u00a0in that\u00a0file.\nWhich\u00a0diagram is the\u00a0best implementation of the\u00a0Initialize\u00a0case?",
+    "options": [
+      "<img src='images/indra_701_0.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/indra_701_1.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/indra_701_2.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/indra_701_3.png' style='max-width:100%; border-radius:8px;'>"
+    ],
+    "original_q_num": 2,
+    "correctAnswer": 1
+  },
+  {
+    "id": 702,
+    "topic": "CLAD 40 QUESTIONS indra",
+    "text": "Question #3\nWhen using the DAQmx API to acquire data from hardware, what is an\u00a0advantage of using a state machine architecture, with cases for initialization, configuration, reading, stopping and closing?",
+    "options": [
+      "Select\u00a0ALL\u00a0that apply.",
+      "The use of different states makes it easier to isolate changes to specific functionality.",
+      "DAQmx subVIs execute faster when they are in different cases of a Case Structure.",
+      "You can use\u00a0a single analog channel as both input and output.",
+      "You can programmatically reconfigure the DAQ task without stopping the VI."
+    ],
+    "original_q_num": 3,
+    "correctAnswer": 1
+  },
+  {
+    "id": 703,
+    "topic": "CLAD 40 QUESTIONS indra",
+    "text": "Question #4\nIn the following state diagram for an NI-DAQmx application, which state\u00a0most likely\u00a0contains the\u00a0DAQmx Timing\u00a0VI?",
+    "options": [
+      "Config",
+      "Acquire",
+      "Exit",
+      "There is no\u00a0DAQmx Timing\u00a0VI in the DAQmx API"
+    ],
+    "original_q_num": 4,
+    "correctAnswer": 2,
+    "image": [
+      "images/indra_703_0.png"
+    ]
+  },
+  {
+    "id": 704,
+    "topic": "CLAD 40 QUESTIONS indra",
+    "text": "Question #5\nWhen is it appropriate to create a state diagram?",
+    "options": [
+      "Select\u00a0ALL\u00a0that apply.Top of Form",
+      "When planning and designing the application, before writing any code",
+      "While writing code, as a way to keep project documentation up to date",
+      "When discussing initial application requirements with the end user of an application",
+      "After completing the application, to document its actual behavior."
+    ],
+    "original_q_num": 5,
+    "correctAnswer": 1
+  },
+  {
+    "id": 705,
+    "topic": "CLAD 40 QUESTIONS indra",
+    "text": "Question #6\nBoolean Master,\u00a0Boolean 1,\u00a0Boolean 2\u00a0and\u00a0Boolean 3\u00a0are all set to TRUE before the VI runs.Bottom of Form",
+    "options": [
+      "The following actions are performed:"
+    ],
+    "original_q_num": 6,
+    "correctAnswer": 1,
+    "image": [
+      "images/indra_705_0.png"
+    ]
+  },
+  {
+    "id": 706,
+    "topic": "CLAD 40 QUESTIONS indra",
+    "text": "Question #1\nThe VI is run.",
+    "options": [],
+    "original_q_num": 1,
+    "correctAnswer": 1
+  },
+  {
+    "id": 707,
+    "topic": "CLAD 40 QUESTIONS indra",
+    "text": "Question #2\nAfter 1 second,\u00a0Boolean Master\u00a0is set to FALSE.",
+    "options": [],
+    "original_q_num": 2,
+    "correctAnswer": 1
+  },
+  {
+    "id": 708,
+    "topic": "CLAD 40 QUESTIONS indra",
+    "text": "Question #3\nThe\u00a0stop\u00a0button is clicked.",
+    "options": [
+      "What are the values of\u00a0Boolean 1,\u00a0Boolean 2, and\u00a0Boolean 3\u00a0after these actions are performed?"
+    ],
+    "original_q_num": 3,
+    "correctAnswer": 1,
+    "image": [
+      "images/indra_708_0.png"
+    ]
+  },
+  {
+    "id": 709,
+    "topic": "CLAD 40 QUESTIONS indra",
+    "text": "Question #7\nWhat is the best practice to prevent coercion dots like the\u00a0one on this VI?",
+    "options": [
+      "Create the While Loop terminals with indexing enabled.",
+      "Wire a Numeric into the Selector terminal of the Case Structure.",
+      "Convert all Enums to separate Type Definitions.",
+      "Replace all instances of the Enum with the same Type Definition."
+    ],
+    "original_q_num": 7,
+    "correctAnswer": 1,
+    "image": [
+      "images/indra_709_0.png"
+    ]
+  },
+  {
+    "id": 710,
+    "topic": "CLAD 40 QUESTIONS indra",
+    "text": "Question #8\nYou have created a new subVI for other team members to use in their applications.",
+    "options": [
+      "Of the following choices, what is the\u00a0most\u00a0helpful thing you can do for users of your subVI?Top of Form",
+      "Removing optional error statuses from\u00a0each\u00a0subVI terminal",
+      "Assigning required/recommended/optional settings for each subVI terminal",
+      "Turning off debugging on the subVI",
+      "Saving the subVI in a project libraryANSAAABottom of Form"
+    ],
+    "original_q_num": 8,
+    "correctAnswer": 2
+  },
+  {
+    "id": 711,
+    "topic": "CLAD 40 QUESTIONS indra",
+    "text": "Question #9\nWhich diagram illustrates the\u00a0most performant\u00a0way to save data to a text file\u00a0inside a While Loop?",
+    "options": [
+      "a)",
+      "b)",
+      "c)",
+      "d)"
+    ],
+    "original_q_num": 9,
+    "correctAnswer": 4,
+    "image": [
+      "images/indra_711_0.png",
+      "images/indra_711_1.png",
+      "images/indra_711_2.png",
+      "images/indra_711_3.png"
+    ]
+  },
+  {
+    "id": 712,
+    "topic": "CLAD 40 QUESTIONS indra",
+    "text": "Question #10\nWhich object is\u00a0NOT\u00a0a standard component of a Simple State Machine?Top of Form",
+    "options": [
+      "Case Structure",
+      "Shift Register",
+      "Global Variable",
+      "While Loop",
+      "Bottom of Form"
+    ],
+    "original_q_num": 10,
+    "correctAnswer": 2
+  },
+  {
+    "id": 713,
+    "topic": "CLAD 40 QUESTIONS indra",
+    "text": "Question #11\nWhich VI will log\u00a0every sample\u00a0above the\u00a0Threshold\u00a0value to a\u00a0comma-separated text file?",
+    "options": [
+      "The \"False\" case of each case structure passes the error wire and the reference wire (if present) straight through without modification."
+    ],
+    "original_q_num": 11,
+    "correctAnswer": 2,
+    "image": [
+      "images/indra_713_0.png",
+      "images/indra_713_1.png"
+    ]
+  },
+  {
+    "id": 714,
+    "topic": "CLAD 40 QUESTIONS indra",
+    "text": "Question #12\nWhat are the advantages of using a\u00a0state machine design pattern over a\u00a0Flat Sequence Structure to\u00a0enforce sequential\u00a0execution in code?",
+    "options": [
+      "Select\u00a0ALL\u00a0that apply.Top of Form",
+      "Adding\u00a0a case or frame in the middle of a sequence is easier",
+      "Merging\u00a0code from two states or sequences is easier",
+      "Changing the order of execution is easier",
+      "Creating more compact code on the block diagram is easier"
+    ],
+    "original_q_num": 12,
+    "correctAnswer": 1
+  },
+  {
+    "id": 715,
+    "topic": "CLAD 40 QUESTIONS indra",
+    "text": "Question #13\nWhat do the small white arrows on the\u00a0VISA resource name\u00a0tunnels signify?",
+    "options": [
+      "The tunnels will be automatically connected when new cases are added.",
+      "The\u00a0VISA Read\u00a0function will operate on the VISA reference in-place.",
+      "The output tunnel will return a default value if unwired.",
+      "The reference wire is broken in another frame."
+    ],
+    "original_q_num": 13,
+    "correctAnswer": 3,
+    "image": [
+      "images/indra_715_0.png"
+    ]
+  },
+  {
+    "id": 716,
+    "topic": "CLAD 40 QUESTIONS indra",
+    "text": "Question #14\nWhat is the best practice to prevent coercion dots like the\u00a0one on this VI?",
+    "options": [
+      "Convert all Enums to separate Type Definitions.",
+      "Replace all instances of the Enum with the same Type Definition.",
+      "Wire a Numeric into the Selector terminal of the Case Structure.",
+      "Create the While Loop terminals with indexing enabled."
+    ],
+    "original_q_num": 14,
+    "correctAnswer": 2,
+    "image": [
+      "images/indra_716_0.png"
+    ]
+  },
+  {
+    "id": 717,
+    "topic": "CLAD 40 QUESTIONS indra",
+    "text": "Question #15\nWhen you run this VI, you are prompted to select a file. Assuming you select a valid text file containing multiple lines, what is the value of the first element of\u00a0Array\u00a0when the VI finishes running?",
+    "options": [
+      "The first character of the file",
+      "The first line of the file",
+      "The entire file",
+      "An empty string"
+    ],
+    "original_q_num": 15,
+    "correctAnswer": 2,
+    "image": [
+      "images/indra_717_0.png",
+      "images/indra_717_1.png"
+    ]
+  },
+  {
+    "id": 718,
+    "topic": "CLAD 40 QUESTIONS indra",
+    "text": "Question #16\nWhich of the following statements is TRUE regarding the execution of this code?",
+    "options": [
+      "The\u00a0State\u00a0indicator will display \"Running\" for one second, then it will display \"Initialize\".",
+      "The\u00a0State\u00a0indicator will never display \"Initialize\".",
+      "The\u00a0State\u00a0indicator will never display \"Running\".",
+      "The\u00a0State\u00a0indicator will display \"Initialize\" for one second, then it will display \"Running\"."
+    ],
+    "original_q_num": 16,
+    "correctAnswer": 1,
+    "image": [
+      "images/indra_718_0.png"
+    ]
+  },
+  {
+    "id": 719,
+    "topic": "CLAD 40 QUESTIONS indra",
+    "text": "Question #17\nWhat is the order of execution of the subVIs in this diagram, from first to last?",
+    "options": [
+      "Test A",
+      "Test B and Test D in parallel",
+      "Test C",
+      "Test A",
+      "Test B",
+      "Test C",
+      "Test D",
+      "Test A and Test D in parallel",
+      "Test B",
+      "Test C",
+      "This VI is broken."
+    ],
+    "original_q_num": 17,
+    "correctAnswer": 3,
+    "image": [
+      "images/indra_719_0.png"
+    ]
+  },
+  {
+    "id": 720,
+    "topic": "CLAD 40 QUESTIONS indra",
+    "text": "Question #18\nIn the For Loop, why is the DAQmx task reference\u00a0passed through shift registers instead of tunnels?",
+    "options": [
+      "Loops cannot have a mixture of tunnels and shift registers.",
+      "The DAQmx Read VI changes the value of the reference from one iteration to the next.",
+      "To ensure a valid reference is passed out of the loop if it runs zero times.",
+      "Shift registers are more\u00a0efficient\u00a0than tunnels."
+    ],
+    "original_q_num": 18,
+    "correctAnswer": 3,
+    "image": [
+      "images/indra_720_0.png"
+    ]
+  },
+  {
+    "id": 721,
+    "topic": "CLAD 40 QUESTIONS indra",
+    "text": "Question #19\nWhich is\u00a0NOT\u00a0a\u00a0benefit of using subVIs?Top of Form",
+    "options": [
+      "Less duplicated code",
+      "Smaller block diagrams",
+      "More modular code",
+      "Fewer files on disk"
+    ],
+    "original_q_num": 19,
+    "correctAnswer": 4
+  },
+  {
+    "id": 722,
+    "topic": "CLAD 40 QUESTIONS indra",
+    "text": "Question #20\nWhen you add a new frame to your state machine, this is the resulting broken code:",
+    "options": [
+      "Which LabVIEW feature would have automatically created pass-through VISA reference and error wires for you?",
+      "Linked Input Tunnels",
+      "Auto-Indexing Tunnels",
+      "Concatenating Tunnels",
+      "None of the above"
+    ],
+    "original_q_num": 20,
+    "correctAnswer": 1,
+    "image": [
+      "images/indra_722_0.png"
+    ]
+  },
+  {
+    "id": 723,
+    "topic": "CLAD 40 QUESTIONS indra",
+    "text": "Question #21\nThis VI reads temperature \u00a0in degrees Celsius but needs to display the rolling average and current temperature in degrees Fahrenheit. \u00a0Temperature conversion must be done outside the loop to initialize the shift registers, and also inside the loop for the current temperature. \u00a0Which would be the best way to simplify this code?",
+    "options": [
+      "<img src='images/indra_723_1.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/indra_723_2.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/indra_723_3.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/indra_723_4.png' style='max-width:100%; border-radius:8px;'>"
+    ],
+    "original_q_num": 21,
+    "correctAnswer": 2,
+    "image": "images/indra_723_0.png"
+  },
+  {
+    "id": 724,
+    "topic": "CLAD 40 QUESTIONS indra",
+    "text": "Question #22\nWhy is there a coercion dot on the bottom input of the\u00a0Add\u00a0function?",
+    "options": [
+      "The inputs have different representations",
+      "The array contains more than one element",
+      "The inputs have different dimensions",
+      "The Add function expects integer inputs"
+    ],
+    "original_q_num": 22,
+    "correctAnswer": 1,
+    "image": [
+      "images/indra_724_0.png"
+    ]
+  },
+  {
+    "id": 725,
+    "topic": "CLAD 40 QUESTIONS indra",
+    "text": "Question #23\nAssuming the subVI does not return an error, in what order will the functions execute?",
+    "options": [
+      "The\u00a0Starting Test\u00a0dialog box, then the subVI, then the\u00a0Test Complete\u00a0dialog box.",
+      "Order of execution is unknown.",
+      "The subVI, then the\u00a0Test Complete\u00a0dialog box, then the\u00a0Starting Test\u00a0dialog box.",
+      "The subVI, then the\u00a0Starting Test\u00a0dialog box, then the\u00a0Test Complete\u00a0dialog box."
+    ],
+    "original_q_num": 23,
+    "correctAnswer": 1,
+    "image": [
+      "images/indra_725_0.png"
+    ]
+  },
+  {
+    "id": 726,
+    "topic": "CLAD 40 QUESTIONS indra",
+    "text": "Question #24\nWhat value is displayed in the\u00a0Numeric\u00a0indicator after\u00a0this code executes?",
+    "options": [
+      "Top of Form",
+      "5",
+      "6",
+      "4",
+      "7"
+    ],
+    "original_q_num": 24,
+    "correctAnswer": 4,
+    "image": [
+      "images/indra_726_0.png"
+    ]
+  },
+  {
+    "id": 727,
+    "topic": "CLAD 40 QUESTIONS indra",
+    "text": "Question #25\nWhen placed at the \"INSERT CODE HERE\" location, which function or subVI can be used to extract one of the waveform channels output by the DAQmx Read VI?",
+    "options": [
+      "Top of Form"
+    ],
+    "original_q_num": 25,
+    "correctAnswer": 4,
+    "image": [
+      "images/indra_727_0.png",
+      "images/indra_727_1.png",
+      "images/indra_727_2.png",
+      "images/indra_727_3.png",
+      "images/indra_727_4.png"
+    ]
+  },
+  {
+    "id": 728,
+    "topic": "CLAD 40 QUESTIONS indra",
+    "text": "Question #26\nAfter running this VI, what is the value of\u00a0Array?",
+    "options": [
+      "Top of Form"
+    ],
+    "original_q_num": 26,
+    "correctAnswer": 4,
+    "image": [
+      "images/indra_728_0.png",
+      "images/indra_728_1.png",
+      "images/indra_728_2.png",
+      "images/indra_728_3.png",
+      "images/indra_728_4.png"
+    ]
+  },
+  {
+    "id": 729,
+    "topic": "CLAD 40 QUESTIONS indra",
+    "text": "Question #27\nAfter running this VI for at least two seconds, what is the value of the\u00a0Final Scaled Output\u00a0indicator after the user clicks\u00a0stop\u00a0on the front panel?",
+    "options": [
+      "Top of Form",
+      "0",
+      "Input B\u00a0+ 3",
+      "Result\u00a0+ 5",
+      "Result\u00a0+ 5 +\u00a0Input B\u00a0+ 3"
+    ],
+    "original_q_num": 27,
+    "correctAnswer": 2,
+    "image": [
+      "images/indra_729_0.png"
+    ]
+  },
+  {
+    "id": 730,
+    "topic": "CLAD 40 QUESTIONS indra",
+    "text": "Question #28\nYour application has item prices stored as numeric values in the format XXX.XX. \u00a0Your VI must\u00a0convert the price to text in the format $XXX.XX\u00a0and make the text\u00a0price available for later display. \u00a0The original numeric value must also be retained.",
+    "options": [
+      "Which VI best meets these requirements?",
+      "Top of Form"
+    ],
+    "original_q_num": 28,
+    "correctAnswer": 1,
+    "image": [
+      "images/indra_730_0.png",
+      "images/indra_730_1.png",
+      "images/indra_730_2.png",
+      "images/indra_730_3.png"
+    ]
+  },
+  {
+    "id": 731,
+    "topic": "CLAD 40 QUESTIONS indra",
+    "text": "Question #29\nWhat string will be displayed in the\u00a0Result\u00a0indicator after the VI completes execution?",
+    "options": [
+      "Top of Form",
+      "\"\"012345",
+      "12345",
+      "\"\"12345",
+      "012345",
+      "\u200bJustification: The For Loop runs 5 times (i = 0 to 4), converting each iteration integer into a string and concatenating it onto the shift register string initialized as empty, yielding \"01234\", followed by adding 5 after the loop completes to form \"012345\"."
+    ],
+    "original_q_num": 29,
+    "correctAnswer": 4,
+    "image": [
+      "images/indra_731_0.png"
+    ]
+  },
+  {
+    "id": 732,
+    "topic": "CLAD 40 QUESTIONS indra",
+    "text": "Question #30\nWhich For Loop will remove all values in the array between 2 and 3?Top of Form",
+    "options": [
+      "<img src='images/indra_732_0.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/indra_732_1.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/indra_732_2.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/indra_732_3.png' style='max-width:100%; border-radius:8px;'>"
+    ],
+    "original_q_num": 30,
+    "correctAnswer": 4
+  },
+  {
+    "id": 733,
+    "topic": "CLAD 40 QUESTIONS indra",
+    "text": "Question #31\nWhat value will be displayed in the\u00a0index of element\u00a0indicator after the VI completes execution?",
+    "options": [
+      "Top of Form",
+      "-1",
+      "0",
+      "1",
+      "2"
+    ],
+    "original_q_num": 31,
+    "correctAnswer": 1,
+    "image": [
+      "images/indra_733_0.png"
+    ]
+  },
+  {
+    "id": 734,
+    "topic": "CLAD 40 QUESTIONS indra",
+    "text": "Question #32\nWhen the cursor is over the broken wire, the error message shown is displayed.",
+    "options": [
+      "Data Array In\u00a0is correct. \u00a0How would this error best be corrected?",
+      "Top of Form",
+      "Right-click on\u00a0Data Array In, choose \"Open Type Def,\" then choose \"Apply Changes\" in the File menu of the\u00a0Type Def.",
+      "Replace\u00a0Data Array Out\u00a0with the source Type Def for\u00a0Data Array In.",
+      "Move the\u00a0Bundle By Name\u00a0function outside the loop.",
+      "Copy\u00a0the missing element to\u00a0Data Array Out,\u00a0then\u00a0save\u00a0Data Array Out\u00a0as a Type Def."
+    ],
+    "original_q_num": 32,
+    "correctAnswer": 2,
+    "image": [
+      "images/indra_734_0.png"
+    ]
+  },
+  {
+    "id": 735,
+    "topic": "CLAD 40 QUESTIONS indra",
+    "text": "Question #33\nHow does this VI behave after the Run button is clicked?",
+    "options": [
+      "Top of Form",
+      "Pressing the\u00a0stop\u00a0button does not stop the VI.",
+      "Pressing the\u00a0stop\u00a0button stops the VI.",
+      "Numeric\u00a0increments until the\u00a0stop\u00a0button is pressed.",
+      "Numeric\u00a0begins incrementing after the\u00a0stop\u00a0button is pressed."
+    ],
+    "original_q_num": 33,
+    "correctAnswer": 1,
+    "image": [
+      "images/indra_735_0.png"
+    ]
+  },
+  {
+    "id": 736,
+    "topic": "CLAD 40 QUESTIONS indra",
+    "text": "Question #34\nWhich is\u00a0NOT\u00a0a valid data type for the selector terminal on a Case structure?Top of Form",
+    "options": [
+      "Enum",
+      "Reference",
+      "Error cluster",
+      "String"
+    ],
+    "original_q_num": 34,
+    "correctAnswer": 2
+  },
+  {
+    "id": 737,
+    "topic": "CLAD 40 QUESTIONS indra",
+    "text": "Question #35\nWhen\u00a0Time Target (s)\u00a0is set to 5, which option best describes the VI state\u00a04 seconds\u00a0after the VI started running and\u00a06 seconds\u00a0after the VI started running?",
+    "options": [
+      "Top of Form",
+      "a) At 4 seconds the VI is running and\u00a0Elapsed Time (s)\u00a0is 0.",
+      "At 6\u00a0seconds the VI is idle and\u00a0Elapsed Time (s)\u00a0is 0.",
+      "b) At 4 seconds the VI is running and\u00a0Elapsed Time (s)\u00a0is\u00a04.",
+      "At 6 seconds the VI is running and\u00a0Elapsed Time (s)\u00a0is\u00a01.",
+      "c)At 4 seconds the VI is\u00a0running and\u00a0Elapsed Time (s)\u00a0is\u00a00.",
+      "At 6 seconds the VI is running and\u00a0Elapsed Time (s)\u00a0is\u00a05.",
+      "d)At 4 seconds the VI is running and\u00a0Elapsed Time (s)\u00a0is 4.",
+      "At 6 seconds the VI is idle and\u00a0Elapsed Time (s)\u00a0is 5."
+    ],
+    "original_q_num": 35,
+    "correctAnswer": 2,
+    "image": [
+      "images/indra_737_0.png"
+    ]
+  },
+  {
+    "id": 738,
+    "topic": "CLAD 40 QUESTIONS indra",
+    "text": "Question #36\nWhat value will be displayed in the\u00a0Numeric\u00a0indicator when the VI completes execution?",
+    "options": [
+      "Top of Form",
+      "1",
+      "4",
+      "0",
+      "2",
+      "\u200bJustification: The inner loop runs 1 time (N=1) starting from an initial value of 2, decrements it once (2 - 1 = 1), and auto-indexing tunnels on both loops output the last value passed through from the final iteration.",
+      "Bottom of Form"
+    ],
+    "original_q_num": 36,
+    "correctAnswer": 1,
+    "image": [
+      "images/indra_738_0.png"
+    ]
+  },
+  {
+    "id": 739,
+    "topic": "CLAD 40 QUESTIONS indra",
+    "text": "Question #37\nControl Cluster\u00a0and\u00a0Control Cluster 2\u00a0are both linked to a Type Definition called\u00a0Control Cluster Master.",
+    "options": [
+      "The Type Definition is\u00a0opened (left front panel image).\u00a0 The \u201cString Input\u201d is deleted from the Type Def cluster and a new numerical input is placed in the cluster (right front panel image).\u00a0 The changes are applied\u00a0in the Type Def window.",
+      "What will be the result on the block diagram?",
+      "Top of Form",
+      "Bottom of Form",
+      "Bottom of Form"
+    ],
+    "original_q_num": 37,
+    "correctAnswer": 1,
+    "image": [
+      "images/indra_739_0.png",
+      "images/indra_739_1.png",
+      "images/indra_739_2.jpeg",
+      "images/indra_739_3.jpeg",
+      "images/indra_739_4.jpeg",
+      "images/indra_739_5.jpeg"
+    ]
+  },
+  {
+    "id": 740,
+    "topic": "CLAD 40 QUESTIONS indra",
+    "text": "Question #38\nThis VI is opened and then run 3 times. What values are displayed in the\u00a0Loop Iterations\u00a0and\u00a0Time\u00a0indicators after the third run?",
+    "options": [
+      "Top of Form",
+      "Loop Iterations = 3, Time = Seconds\u00a0between the 2nd and 3rd runs of the VI",
+      "Loop Iterations = 0, Time = Seconds\u00a0between the 2nd and 3rd runs of the VI",
+      "Loop Iterations = 0, Time = Seconds\u00a0between the 1st and 3rd runs of the VI",
+      "Loop Iterations = 3, Time = Seconds\u00a0between the 1st and 3rd runs of the VI"
+    ],
+    "original_q_num": 38,
+    "correctAnswer": 2,
+    "image": [
+      "images/indra_740_0.png"
+    ]
+  },
+  {
+    "id": 741,
+    "topic": "CLAD 40 QUESTIONS indra",
+    "text": "Question #39\nWhich is\u00a0NOT\u00a0an element of the Waveform data type?Top of Form",
+    "options": [
+      "Array of data points (Y)",
+      "Start time (t0)",
+      "Sampling rate (Hz)",
+      "Time interval (dt)",
+      "Bottom of Form"
+    ],
+    "original_q_num": 39,
+    "correctAnswer": 2
+  },
+  {
+    "id": 742,
+    "topic": "CLAD 40 QUESTIONS indra",
+    "text": "Question #40\nWhich VI will generate this\u00a0Waveform Graph\u00a0value?",
+    "options": [
+      "Top of Form"
+    ],
+    "original_q_num": 40,
+    "correctAnswer": 2,
+    "image": [
+      "images/indra_742_0.png",
+      "images/indra_742_1.png",
+      "images/indra_742_2.png",
+      "images/indra_742_3.png",
+      "images/indra_742_4.png"
+    ]
+  },
+  {
+    "id": 800,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "What value is displayed in the Value Out indicator after the VI completes execution?",
+    "options": [
+      "0",
+      "4",
+      "5",
+      "6"
+    ],
+    "original_q_num": 1,
+    "image": [
+      "images/padma_800_opt_0.jpeg"
+    ],
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 801,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "What error is reported to the user?",
+    "options": [
+      "Error 1014, because Merge Errors outputs the first error to occur chronologically",
+      "Error 7, because Merge Errors outputs the first error wired in to it from the top down",
+      "Error 1, because Merge Errors outputs the most significant error of the errors wired in to it",
+      "All three errors are reported, because Merge Errors concatenates the errors into a single error message to display to the user"
+    ],
+    "original_q_num": 2,
+    "image": [
+      "images/padma_801_opt_0.jpeg"
+    ],
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 802,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "Which Property Node can change the text color attributes of ANY digital numeric control used on the panel of a VI?",
+    "options": [
+      "<img src='images/padma_802_opt_0.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/padma_802_opt_0.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/padma_802_opt_0.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "D"
+    ],
+    "original_q_num": 3,
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 803,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "",
+    "options": [
+      "Which of the following terminals cannot control how many times a For loop executes?",
+      "<img src='images/padma_803_opt_1.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/padma_803_opt_1.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "C"
+    ],
+    "original_q_num": 4,
+    "image": [
+      "images/padma_803_q_0.jpeg"
+    ],
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 804,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "",
+    "options": [
+      "<img src='images/padma_804_opt_1.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "What VI or function is typically used to display an error dialogue?",
+      "Merge Errors function",
+      "One Button Dialog function"
+    ],
+    "original_q_num": 5,
+    "image": [
+      "images/padma_804_q_0.jpeg"
+    ],
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 805,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "Generate Front Panel Activity function",
+    "options": [
+      "Simple Error Handler.vi",
+      "<img src='images/padma_805_opt_0.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "It is an indicator",
+      "It contains exactly 10 elements"
+    ],
+    "original_q_num": 6,
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 806,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "It contains exactly 12 elements",
+    "options": [
+      "It contains exactly 8 elements",
+      "<img src='images/padma_806_opt_0.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "An error is returned if the control is not initialized",
+      "The Control takes on only generic properties"
+    ],
+    "original_q_num": 7,
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 807,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "The Control Refnum changes into that control",
+    "options": [
+      "The Control Refnum becomes strictly typed",
+      "<img src='images/padma_807_opt_0.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/padma_807_opt_0.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/padma_807_opt_0.jpeg' style='max-width:100%; border-radius:8px;'>"
+    ],
+    "original_q_num": 8,
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 808,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "D:",
+    "options": [
+      "What values will be displayed in the Output Cluster indicator after the VI completes execution?",
+      "<img src='images/padma_808_opt_1.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/padma_808_opt_1.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/padma_808_opt_1.jpeg' style='max-width:100%; border-radius:8px;'>"
+    ],
+    "original_q_num": 9,
+    "image": [
+      "images/padma_808_q_0.jpeg"
+    ],
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 809,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "D:",
+    "options": [
+      "<img src='images/padma_809_opt_1.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/padma_809_opt_1.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/padma_809_opt_1.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "C"
+    ],
+    "original_q_num": 10,
+    "image": [
+      "images/padma_809_q_0.jpeg"
+    ],
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 810,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "",
+    "options": [
+      "<img src='images/padma_810_opt_1.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "11. The VI begins execution with the values of X = 127 and Y = 1.",
+      "<img src='images/padma_810_opt_1.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "0"
+    ],
+    "original_q_num": 11,
+    "image": [
+      "images/padma_810_q_0.jpeg"
+    ],
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 811,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "128",
+    "options": [
+      "-128",
+      "-127",
+      "<img src='images/padma_811_opt_0.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "Coercion Dot"
+    ],
+    "original_q_num": 12,
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 812,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "Data truncation Dot",
+    "options": [
+      "Data typecast Dot",
+      "Buffer allocation Dot",
+      "What settings should be selected for a custom control so that all copies of the control are of the same data type yet have the flexibility to use different colors and styles?",
+      "Control"
+    ],
+    "original_q_num": 13,
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 813,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "Type Def.",
+    "options": [
+      "Strict Type Def.",
+      "Flex Def.",
+      "In a Simple State Machine design pattern, which of the following stores the state information?",
+      "Shift Register"
+    ],
+    "original_q_num": 14,
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 814,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "Queue",
+    "options": [
+      "Notifier",
+      "Functional global variable",
+      "You are asked to write a VI that will take a 2D array and output all the positive values in a 1D array.  Which VI satisfies these requirements?",
+      "<img src='images/padma_814_opt_0.jpeg' style='max-width:100%; border-radius:8px;'>"
+    ],
+    "original_q_num": 15,
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 815,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "B:",
+    "options": [
+      "<img src='images/padma_815_opt_1.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/padma_815_opt_1.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "You select only the For Loop as shown by the dashed line in the image, and then select Edit\u00bbCreate SubVI from the Edit menu.  What will the code on the block diagram look like immediately after creating the SubVI?",
+      "<img src='images/padma_815_opt_1.jpeg' style='max-width:100%; border-radius:8px;'>"
+    ],
+    "original_q_num": 16,
+    "image": [
+      "images/padma_815_q_0.jpeg"
+    ],
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 816,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "B:",
+    "options": [
+      "<img src='images/padma_816_opt_1.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/padma_816_opt_1.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/padma_816_opt_1.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "Which VI will correctly extract and display all the data from channel ai2?"
+    ],
+    "original_q_num": 17,
+    "image": [
+      "images/padma_816_q_0.jpeg"
+    ],
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 817,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "A:",
+    "options": [
+      "<img src='images/padma_817_opt_1.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/padma_817_opt_1.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/padma_817_opt_1.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "What will be the value of the concatenated string indicator after the VI completes execution?"
+    ],
+    "original_q_num": 18,
+    "image": [
+      "images/padma_817_q_0.jpeg"
+    ],
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 818,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "",
+    "options": [
+      "<img src='images/padma_818_opt_1.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/padma_818_opt_1.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/padma_818_opt_1.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "D"
+    ],
+    "original_q_num": 19,
+    "image": [
+      "images/padma_818_q_0.jpeg"
+    ],
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 819,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "",
+    "options": [
+      "Which statement about sequence structures is FALSE?",
+      "Sequence structures support parallel operations within frames.",
+      "Terminating the execution of a sequence structure before the entire sequence is completed is not possible without aborting.",
+      "Sequence structures execute frames in a sequential order."
+    ],
+    "original_q_num": 20,
+    "image": [
+      "images/padma_819_q_0.jpeg"
+    ],
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 820,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "Sequence structures stop when an error is detected.",
+    "options": [
+      "<img src='images/padma_820_opt_0.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "5 Bytes",
+      "6 Bytes",
+      "12 Bytes"
+    ],
+    "original_q_num": 21,
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 821,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "14 Bytes",
+    "options": [
+      "The SubVI PROCESS represents a test that outputs a string each time the test runs, with no Carriage Return or End of Line constant in the string.",
+      "Your VI must repeat the SubVI PROCESS until the user pushes the \"Stop\" button, then allow the user to select the location for the log.  The VI must log all the data, putting data from each run of PROCESS on a separate line.",
+      "Which of the following VIs meets these requirements?",
+      "<img src='images/padma_821_opt_0.jpeg' style='max-width:100%; border-radius:8px;'>"
+    ],
+    "original_q_num": 22,
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 822,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "B:",
+    "options": [
+      "<img src='images/padma_822_opt_1.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/padma_822_opt_1.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/padma_822_opt_1.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "123"
+    ],
+    "original_q_num": 23,
+    "image": [
+      "images/padma_822_q_0.jpeg"
+    ],
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 823,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "0123",
+    "options": [
+      "1.00 2.00 3.00",
+      "0.001.002.003.00",
+      "You are required to use the Get Date/Time in Seconds function for timing in a state machine.  The state machine has an acquire state and must acquire for 5 seconds. If the hardware fails during acquisition the state machine must be able to transition to the stop state. Which of the following design patterns will provide timing for a state machine and allow responsiveness to acquire state requirements?",
+      "A"
+    ],
+    "original_q_num": 24,
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 824,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "",
+    "options": [
+      "<img src='images/padma_824_opt_1.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/padma_824_opt_1.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/padma_824_opt_1.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "What is the purpose of these block diagram toolbar buttons?"
+    ],
+    "original_q_num": 25,
+    "image": [
+      "images/padma_824_q_0.jpeg"
+    ],
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 825,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "",
+    "options": [
+      "To display the data flowing through wires as the VI runs",
+      "To step through the block diagram when execution is paused",
+      "To start or skip SubVIs",
+      "To run the VI in continuous or single run mode"
+    ],
+    "original_q_num": 26,
+    "image": [
+      "images/padma_825_q_0.jpeg"
+    ],
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 826,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "What value will be displayed in the Out indicator when this VI completes execution?",
+    "options": [
+      "Case0",
+      "Case1",
+      "Case2",
+      "Case3"
+    ],
+    "original_q_num": 27,
+    "image": [
+      "images/padma_826_opt_0.jpeg"
+    ],
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 827,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "Which of the following statements is TRUE about the following code segment?",
+    "options": [
+      "The loop will execute once and the indicator Iteration will have a value of one",
+      "The loop will execute once and the indicator Iteration will have a value of zero",
+      "The loop will execute continuously and the program will have to be aborted",
+      "The loop will not execute and the indicator Iteration will have a value of zero"
+    ],
+    "original_q_num": 28,
+    "image": [
+      "images/padma_827_opt_0.jpeg"
+    ],
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 828,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "Why is a shift register used for the file refnum input on the For Loop?",
+    "options": [
+      "If the Values to Write to File array is empty, the For Loop will run zero times, but the refnum value will be passed through to the shift register output",
+      "The Write to Text File function modifies the value of the refnum on each For Loop iteration",
+      "It is the only way to prevent the For Loop from building an array at the refnum output terminal",
+      "No reason. A regular tunnel would provide identical functionality to the shift register"
+    ],
+    "original_q_num": 29,
+    "image": [
+      "images/padma_828_opt_0.jpeg"
+    ],
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 829,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "Which VI will acquire 1000 samples immediately after PFI0 transitions from low to high?",
+    "options": [
+      "<img src='images/padma_829_opt_0.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/padma_829_opt_0.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/padma_829_opt_0.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/padma_829_opt_0.jpeg' style='max-width:100%; border-radius:8px;'>"
+    ],
+    "original_q_num": 30,
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 830,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "What value is displayed in the Numeric indicator after the VI executes?",
+    "options": [
+      "0",
+      "4",
+      "5",
+      "The While Loop iterates indefinitely"
+    ],
+    "original_q_num": 31,
+    "image": [
+      "images/padma_830_opt_0.jpeg"
+    ],
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 831,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "The \"start index (0)\" input terminal of Search 1D Array is unwired.",
+    "options": [
+      "<img src='images/padma_831_opt_0.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "0",
+      "2",
+      "3"
+    ],
+    "original_q_num": 32,
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 832,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "D .4",
+    "options": [
+      "You have a front panel control on a top-level VI that you must manipulate from within a SubVI.",
+      "Which of the following could you pass to the SubVI to accomplish this?",
+      "The control's properties",
+      "The control's methods"
+    ],
+    "original_q_num": 33,
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 833,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "The control's reference",
+    "options": [
+      "The control's data type",
+      "<img src='images/padma_833_opt_0.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "I32 with value -4",
+      "I32 with value -3"
+    ],
+    "original_q_num": 34,
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 834,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "DBL  with value -4",
+    "options": [
+      "DBL  with value -3",
+      "The reply from an equipment query produces a string of up to 5 comma-separated parameters.  Which VI parses the reply and places the values in order in a numeric array?",
+      "<img src='images/padma_834_opt_0.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/padma_834_opt_0.jpeg' style='max-width:100%; border-radius:8px;'>"
+    ],
+    "original_q_num": 35,
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 835,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "C:",
+    "options": [
+      "D:",
+      "<img src='images/padma_835_opt_1.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/padma_835_opt_1.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/padma_835_opt_1.jpeg' style='max-width:100%; border-radius:8px;'>"
+    ],
+    "original_q_num": 36,
+    "image": [
+      "images/padma_835_q_0.jpeg"
+    ],
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 836,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "C:",
+    "options": [
+      "<img src='images/padma_836_opt_1.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "Which timing function can result in logic errors when it rolls over to zero?",
+      "<img src='images/padma_836_opt_1.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "B"
+    ],
+    "original_q_num": 37,
+    "image": [
+      "images/padma_836_q_0.jpeg"
+    ],
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 837,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "",
+    "options": [
+      "<img src='images/padma_837_opt_1.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/padma_837_opt_1.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "When clicking a broken run arrow, the Error list window shows all of the following EXCEPT:",
+      "Items with errors"
+    ],
+    "original_q_num": 38,
+    "image": [
+      "images/padma_837_q_0.jpeg"
+    ],
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 838,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "Errors and warnings",
+    "options": [
+      "Details about the warnings",
+      "Error Codes",
+      "Which Mechanical Action changes a Boolean when the button is pressed and returns it to its default value after LabVIEW reads the value?",
+      "Latch when pressed"
+    ],
+    "original_q_num": 39,
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 839,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "Switch when released",
+    "options": [
+      "Switch until released",
+      "Latch when released",
+      "<img src='images/padma_839_opt_0.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "51 times"
+    ],
+    "original_q_num": 40,
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 840,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "50 times",
+    "options": [
+      "49 times",
+      "a random number of times",
+      "When the cursor is over the broken arrow, the error message shown is displayed.",
+      "Data Array Out is the cluster with the correct content.  How could this error be corrected?"
+    ],
+    "original_q_num": 41,
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 841,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "",
+    "options": [
+      "A:  Make Data Array Out into a Type Def, Create a copy of Data Array Out, change the copy to a control, and replace Data Array In with the new control.",
+      "B:  Delete the extra element from Data Array In, then save Data Array Out as a Type Def.",
+      "C:  Right-click on Data Array In, choose \"Open Type Def,\" then choose \"Apply Changes\" in the File menu of the Type Def.",
+      "D:  Delete Data Array In, hit ctl-B to clear the broken arrow, then Right-click on the loop input terminal and select \"Create -- Control\"."
+    ],
+    "original_q_num": 42,
+    "image": [
+      "images/padma_841_q_0.jpeg"
+    ],
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 842,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "What values will be displayed in the Output Cluster indicator after the VI completes execution?",
+    "options": [
+      "<img src='images/padma_842_opt_0.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/padma_842_opt_0.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/padma_842_opt_0.jpeg' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/padma_842_opt_0.jpeg' style='max-width:100%; border-radius:8px;'>"
+    ],
+    "original_q_num": 43,
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 843,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "ANSWER KEY :",
+    "options": [
+      "Correct Answer: C",
+      "Topic: Loops",
+      "Justification: An empty array is wired to the For Loop using an auto-indexing tunnel. This causes the For Loop to iterate once for every element in the array, which, in this case, is zero. However, the value 5 is written to the shift register before loop execution, and since the loop iterates zero times, the same value of 5 is present at the output shift register.",
+      "Correct Answer: B Topic: Error Handling"
+    ],
+    "original_q_num": 44,
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 844,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "JUSTIFICATION: Merge Errors outputs the first error it finds in the errors clusters wired into it in a top-down fashion. Error 7 is wired into the top input, so it is the error outputted by Merge Errors.",
+    "options": [
+      "Correct Answer: B",
+      "Topic: VI Server",
+      "Justification: Strict property nodes require precise knowledge of the numeric          representation. Since the question asks for the means to change the text color of any control, a strict Property Node does not suffice. An implicit Property Node (C), can only be used locally. Answer D shows a property that is not even relevant to the question. Thus, option B is the best answer.",
+      "Correct Answer: A Topic: Loops"
+    ],
+    "original_q_num": 45,
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 845,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "Justification: The iteration terminal is only a count of the iteration number and can not control how many loops occur.",
+    "options": [
+      "Correct Answer: D Topic: Error Handling",
+      "Justification: The Merge Errors VI does not display any dialog. The One Button Dialog function has no error input, and would therefore require additional coding.  The Generate Front Panel Activity function does not generate a dialog.  Therefore the Simple Error Handler is the best choice because it accepts an error cluster as an input and displays a dialog to the user in the event of an error.",
+      "Correct Answer: B",
+      "Topic: LabVIEW Environment"
+    ],
+    "original_q_num": 46,
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 846,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "Justification: Since the display index value for columns is '2', that means there are two columns not show (4 elements), along with the 6 visible elements, this array has exactly 10 elements.",
+    "options": [
+      "Correct Answer: D",
+      "Topic: VI Server",
+      "Justification: Drag a control into the front panel control refnum control to remove the original control and create a strictly typed control refnum. Strictly typed control refnums accept only control refnums of exactly the same data type.",
+      "Ans : B"
+    ],
+    "original_q_num": 47,
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 847,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "Ans : A",
+    "options": [
+      "Correct Answer: A Topic: Data Types",
+      "Justification: The \"element\" input terminal contains the value each element of the initialized array will contain, and the \"dimension size\" input terminal dictates the size of each dimension of the initialized array.  Since there is only one dimension size input terminal, the array will be only 1 dimensional. The array elements will be initialized to the value of the element.",
+      "Correct Answer: C Topic: Data Types",
+      "Justification: The maximum positive number that a I8 can represent is 127.  When the sum of two I8 number is greater than 127, the answer wraps around to -128 ."
+    ],
+    "original_q_num": 48,
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 848,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "Correct Answer: A",
+    "options": [
+      "Topic: Data Types",
+      "Justification: Definition of Coercion Dot",
+      "Correct Answer: B",
+      "Topic: Data Types"
+    ],
+    "original_q_num": 49,
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 849,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "Justification: Definition of Type Def",
+    "options": [
+      "Correct Answer: A",
+      "Topic: Design Patterns",
+      "Justification: Definition of Shift Register",
+      "Correct Answer : A"
+    ],
+    "original_q_num": 50,
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 850,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "Correct Answer : C",
+    "options": [
+      "Correct Answer : B",
+      "Correct Answer: A",
+      "Topic: Data Types",
+      "Justification: When constant is set to \"\\\" codes display, \"\\s\" is a space character, otherwise in normal display \"\\s\" is literally \\s."
+    ],
+    "original_q_num": 51,
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 851,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "Correct Answer: D",
+    "options": [
+      "Topic: Sequence Structures",
+      "Justification: Sequence Structures have no error terminals",
+      "Correct Answer: D",
+      "Topic: Data Types"
+    ],
+    "original_q_num": 52,
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 852,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "Justification: LabVIEW represents arrays as a list of bytes containing a header and array data. The header contains a 4-byte integer for each dimension that specifies the length of that dimension. Following the header is the actual array data. In the question, the array has two dimensions. There are 4 bytes in the header for each dimension for a total of 8 bytes in the header. Since the array is composed of six  8-bit, or 1-byte integers, there is a total of 6  bytes of actual array data. This makes a total of 14 bytes being written to file.",
+    "options": [
+      "Correct Answer : D",
+      "Correct Answer: D Topic: Data types",
+      "Justification: Because we are starting with an empty string, the output of the \"Concatenate Strings\" function is purely the concatenation of the iterations, displayed with two digit precision with no spaces and converted into text.  The loop runs 4 times (until i=3), so first time is 0.00, second time 1.00, etc.",
+      "Correct Answer: A Topic: Design Patterns"
+    ],
+    "original_q_num": 53,
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 853,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "Justification: A is the only case that checks the data and leaves the timing state, and has persistent start time (stored in the shift register)",
+    "options": [
+      "Correct Answer: B",
+      "Topic: Debugging tools",
+      "Justification: The single step debugging tools are used when execution is paused.",
+      "-9-"
+    ],
+    "original_q_num": 54,
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 854,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "Correct Answer: B",
+    "options": [
+      "Topic: Case Structures",
+      "Justification: Dataflow and correct steps, track shift register and index to get answer.",
+      "Correct Answer: C",
+      "Topic: Loops"
+    ],
+    "original_q_num": 55,
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 855,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "Justification: The While Loop has a FALSE Boolean wired to its conditional terminal, which is set to Stop if TRUE. Thus, there is no condition that causes this While Loop to stop. So, the While Loop could run infinitely and the VI must be aborted.",
+    "options": [
+      "Correct Answer: A",
+      "Topic: Loops",
+      "Justification: For Loops can run zero times, and using a shift register is the recommended way to preserve pass-through data in this scenario.",
+      "Correct Answer :  B"
+    ],
+    "original_q_num": 56,
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 856,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "Correct Answer: C",
+    "options": [
+      "Topic: Loops",
+      "Justification: Loop runs 1 time, use data flow to calculate the values.",
+      "Correct Answer: D",
+      "Topic: Data Types"
+    ],
+    "original_q_num": 57,
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 857,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "Justification: String comparisons and searches in LabVIEW are case-sensitive and exact.",
+    "options": [
+      "Correct Answer: C",
+      "Topic: VI Server",
+      "Justification: The only answer option that can be passed from calling VI to subVI is the control reference. The reference can then be used with Property Nodes and Invoke Nodes to call properties and methods, respectively. The data type is a property of the control.",
+      "Correct Answer: D"
+    ],
+    "original_q_num": 58,
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 858,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "Topic: Data Types",
+    "options": [
+      "Justification: Rounds towards positive value without changing the datatype.",
+      "Correct Answer : C",
+      "Correct Answer :D",
+      "Correct Answer: B"
+    ],
+    "original_q_num": 59,
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 859,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "Topic: General Programming Functions",
+    "options": [
+      "Justification: The Tick Count (ms) is the only timer that rolls over to 0.",
+      "Correct Answer: D",
+      "Topic: LabVIEW Environment",
+      "Justification: You must either look at an output error cluster or an error dialog to find the error code."
+    ],
+    "original_q_num": 60,
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 860,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "Correct Answer: A",
+    "options": [
+      "Topic: LabVIEW Environment",
+      "Justification: Definition of Latched in LabVIEW.  Can not be Latch when released, the question only describes the action of the button being pressed, not released.",
+      "Correct Answer: A",
+      "Topic: Loops"
+    ],
+    "original_q_num": 61,
+    "explanation": "Please search and find the answer for this."
+  },
+  {
+    "id": 861,
+    "topic": "CLAD QUESTIONS padmakshya",
+    "text": "Justification: The iteration terminal in While Loops and For Loops always starts counting at zero. It returns 0 on the first iteration, 1 on the second iteration, etc. Since the While Loop is configured to stop when the output of the iteration terminal is greater than or equal to 50, we know that the iteration terminal must output a value of at least 50. The first time this happens is after 51 iterations",
+    "options": [
+      "Correct Answer : A",
+      "Correct Answer : B"
+    ],
+    "original_q_num": 62,
+    "explanation": "Please search and find the answer for this."
   }
 ]
