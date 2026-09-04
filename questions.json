@@ -6538,7 +6538,7 @@
       "<img src='images/qb3_q496_7.png' style='max-width:100%; border-radius:8px;'>"
     ],
     "original_q_num": 5,
-    "correctAnswer": 4
+    "correctAnswer": 3
   },
   {
     "id": 497,
@@ -6551,7 +6551,7 @@
       "The VI executes without error because the missing file is created by Open/Create/Replace \nFile."
     ],
     "original_q_num": 7,
-    "correctAnswer": 2,
+    "correctAnswer": 1,
     "image": "images/qb3_q497_0.jpeg"
   },
   {
@@ -6565,7 +6565,7 @@
       "To ensure a valid reference is passed out of the loop if it runs zero times."
     ],
     "original_q_num": 1,
-    "correctAnswer": 4,
+    "correctAnswer": 3,
     "image": "images/qb3_q498_0.png"
   },
   {
@@ -6579,7 +6579,7 @@
       "The Enum constants are not Type Defs."
     ],
     "original_q_num": 8,
-    "correctAnswer": 4,
+    "correctAnswer": 3,
     "image": "images/qb3_q499_0.png"
   },
   {
@@ -6593,7 +6593,7 @@
       "Display \"Initialize\" once, then it will display \"Running\"."
     ],
     "original_q_num": 12,
-    "correctAnswer": 4,
+    "correctAnswer": 3,
     "image": "images/qb3_q500_0.png"
   },
   {
@@ -6607,7 +6607,7 @@
       "<img src='images/qb3_q501_7.png' style='max-width:100%; border-radius:8px;'>"
     ],
     "original_q_num": 14,
-    "correctAnswer": 3
+    "correctAnswer": 2
   },
   {
     "id": 502,
@@ -6620,7 +6620,7 @@
       "Test A Test B Test C Test D"
     ],
     "original_q_num": 1,
-    "correctAnswer": 3,
+    "correctAnswer": 2,
     "image": "images/qb3_q502_0.png"
   },
   {
@@ -6634,7 +6634,7 @@
       "Case2"
     ],
     "original_q_num": 9,
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "image": "images/qb3_q503_0.png"
   },
   {
@@ -6648,7 +6648,7 @@
       "<img src='images/qb3_q504_7.png' style='max-width:100%; border-radius:8px;'>"
     ],
     "original_q_num": 14,
-    "correctAnswer": 4
+    "correctAnswer": 3
   },
   {
     "id": 505,
@@ -6661,7 +6661,7 @@
       "Prompt for the location of an existing file and read all data from that file 5 times."
     ],
     "original_q_num": 13,
-    "correctAnswer": 4,
+    "correctAnswer": 3,
     "image": "images/qb3_q505_0.png"
   },
   {
@@ -6675,7 +6675,7 @@
       "<img src='images/qb3_q506_8.png' style='max-width:100%; border-radius:8px;'>"
     ],
     "original_q_num": 3,
-    "correctAnswer": 2,
+    "correctAnswer": 1,
     "image": "images/qb3_q506_0.png"
   },
   {
@@ -6689,7 +6689,7 @@
       "<img src='images/qb3_q507_8.png' style='max-width:100%; border-radius:8px;'>"
     ],
     "original_q_num": 5,
-    "correctAnswer": 4,
+    "correctAnswer": 3,
     "image": "images/qb3_q507_0.png"
   },
   {
@@ -6703,7 +6703,7 @@
       "Loop Iterations = 0, Time = Seconds between the 1st and 3rd time the VI ran."
     ],
     "original_q_num": 7,
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "image": "images/qb3_q508_0.png"
   },
   {
@@ -6717,7 +6717,7 @@
       "130"
     ],
     "original_q_num": 9,
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "image": "images/qb3_q509_0.png"
   },
   {
@@ -6731,7 +6731,7 @@
       "array = [1, 2, 3], deleted element = 0"
     ],
     "original_q_num": 10,
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "image": "images/qb3_q510_0.png"
   },
   {
@@ -6745,7 +6745,7 @@
       "<img src='images/qb3_q511_8.png' style='max-width:100%; border-radius:8px;'>"
     ],
     "original_q_num": 12,
-    "correctAnswer": 3,
+    "correctAnswer": 2,
     "image": "images/qb3_q511_0.png"
   },
   {
@@ -6759,7 +6759,7 @@
       "<img src='images/qb3_q512_8.png' style='max-width:100%; border-radius:8px;'>"
     ],
     "original_q_num": 1,
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "image": "images/qb3_q512_0.png"
   },
   {
@@ -6773,7 +6773,7 @@
       "10"
     ],
     "original_q_num": 8,
-    "correctAnswer": 2,
+    "correctAnswer": 1,
     "image": "images/qb3_q513_0.png"
   },
   {
@@ -6787,7 +6787,7 @@
       "LabVIEW executes all nodes in the VI without displaying any error information."
     ],
     "original_q_num": 12,
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "image": "images/qb3_q514_0.png"
   },
   {
@@ -6801,7 +6801,7 @@
       "Wait\u00a0is a reserved item name for enum items."
     ],
     "original_q_num": 1,
-    "correctAnswer": 2,
+    "correctAnswer": 1,
     "image": [
       "images/indravarun_q600_0.png"
     ]
@@ -6817,7 +6817,7 @@
       "<img src='images/indravarun_q601_3.png' style='max-width:100%; border-radius:8px;'>"
     ],
     "original_q_num": 2,
-    "correctAnswer": 1
+    "correctAnswer": 0
   },
   {
     "id": 602,
@@ -6831,7 +6831,7 @@
       "You can programmatically reconfigure the DAQ task without stopping the VI."
     ],
     "original_q_num": 3,
-    "correctAnswer": 1
+    "correctAnswer": 0
   },
   {
     "id": 603,
@@ -6844,7 +6844,7 @@
       "There is no\u00a0DAQmx Timing\u00a0VI in the DAQmx API"
     ],
     "original_q_num": 4,
-    "correctAnswer": 2,
+    "correctAnswer": 1,
     "image": [
       "images/indravarun_q603_0.png"
     ]
@@ -6861,7 +6861,7 @@
       "After completing the application, to document its actual behavior."
     ],
     "original_q_num": 5,
-    "correctAnswer": 1
+    "correctAnswer": 0
   },
   {
     "id": 605,
@@ -6871,7 +6871,7 @@
       "The following actions are performed:"
     ],
     "original_q_num": 6,
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "image": [
       "images/indravarun_q605_0.png"
     ]
@@ -6882,7 +6882,7 @@
     "text": "Question #1\nThe VI is run.",
     "options": [],
     "original_q_num": 1,
-    "correctAnswer": 1
+    "correctAnswer": 0
   },
   {
     "id": 607,
@@ -6890,7 +6890,7 @@
     "text": "Question #2\nAfter 1 second,\u00a0Boolean Master\u00a0is set to FALSE.",
     "options": [],
     "original_q_num": 2,
-    "correctAnswer": 1
+    "correctAnswer": 0
   },
   {
     "id": 608,
@@ -6900,7 +6900,7 @@
       "What are the values of\u00a0Boolean 1,\u00a0Boolean 2, and\u00a0Boolean 3\u00a0after these actions are performed?"
     ],
     "original_q_num": 3,
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "image": [
       "images/indravarun_q608_0.png"
     ]
@@ -6916,7 +6916,7 @@
       "Replace all instances of the Enum with the same Type Definition."
     ],
     "original_q_num": 7,
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "image": [
       "images/indravarun_q609_0.png"
     ]
@@ -6933,7 +6933,7 @@
       "Saving the subVI in a project libraryANSAAABottom of Form"
     ],
     "original_q_num": 8,
-    "correctAnswer": 2
+    "correctAnswer": 1
   },
   {
     "id": 611,
@@ -6946,7 +6946,7 @@
       "d)"
     ],
     "original_q_num": 9,
-    "correctAnswer": 4,
+    "correctAnswer": 3,
     "image": [
       "images/indravarun_q611_0.png",
       "images/indravarun_q611_1.png",
@@ -6966,7 +6966,7 @@
       "Bottom of Form"
     ],
     "original_q_num": 10,
-    "correctAnswer": 2
+    "correctAnswer": 1
   },
   {
     "id": 613,
@@ -6976,7 +6976,7 @@
       "The \"False\" case of each case structure passes the error wire and the reference wire (if present) straight through without modification."
     ],
     "original_q_num": 11,
-    "correctAnswer": 2,
+    "correctAnswer": 1,
     "image": [
       "images/indravarun_q613_0.png",
       "images/indravarun_q613_1.png"
@@ -6994,7 +6994,7 @@
       "Creating more compact code on the block diagram is easier"
     ],
     "original_q_num": 12,
-    "correctAnswer": 1
+    "correctAnswer": 0
   },
   {
     "id": 615,
@@ -7007,7 +7007,7 @@
       "The reference wire is broken in another frame."
     ],
     "original_q_num": 13,
-    "correctAnswer": 3,
+    "correctAnswer": 2,
     "image": [
       "images/indravarun_q615_0.png"
     ]
@@ -7023,7 +7023,7 @@
       "Create the While Loop terminals with indexing enabled."
     ],
     "original_q_num": 14,
-    "correctAnswer": 2,
+    "correctAnswer": 1,
     "image": [
       "images/indravarun_q616_0.png"
     ]
@@ -7039,7 +7039,7 @@
       "An empty string"
     ],
     "original_q_num": 15,
-    "correctAnswer": 2,
+    "correctAnswer": 1,
     "image": [
       "images/indravarun_q617_0.png",
       "images/indravarun_q617_1.png"
@@ -7056,7 +7056,7 @@
       "The\u00a0State\u00a0indicator will display \"Initialize\" for one second, then it will display \"Running\"."
     ],
     "original_q_num": 16,
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "image": [
       "images/indravarun_q618_0.png"
     ]
@@ -7079,7 +7079,7 @@
       "This VI is broken."
     ],
     "original_q_num": 17,
-    "correctAnswer": 3,
+    "correctAnswer": 2,
     "image": [
       "images/indravarun_q619_0.png"
     ]
@@ -7095,7 +7095,7 @@
       "Shift registers are more\u00a0efficient\u00a0than tunnels."
     ],
     "original_q_num": 18,
-    "correctAnswer": 3,
+    "correctAnswer": 2,
     "image": [
       "images/indravarun_q620_0.png"
     ]
@@ -7111,7 +7111,7 @@
       "Fewer files on disk"
     ],
     "original_q_num": 19,
-    "correctAnswer": 4
+    "correctAnswer": 3
   },
   {
     "id": 622,
@@ -7125,7 +7125,7 @@
       "None of the above"
     ],
     "original_q_num": 20,
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "image": [
       "images/indravarun_q622_0.png"
     ]
@@ -7141,7 +7141,7 @@
       "Wait\u00a0is a reserved item name for enum items."
     ],
     "original_q_num": 1,
-    "correctAnswer": 2,
+    "correctAnswer": 1,
     "image": [
       "images/indra_700_0.png"
     ]
@@ -7157,7 +7157,7 @@
       "<img src='images/indra_701_3.png' style='max-width:100%; border-radius:8px;'>"
     ],
     "original_q_num": 2,
-    "correctAnswer": 1
+    "correctAnswer": 0
   },
   {
     "id": 702,
@@ -7171,7 +7171,7 @@
       "You can programmatically reconfigure the DAQ task without stopping the VI."
     ],
     "original_q_num": 3,
-    "correctAnswer": 1
+    "correctAnswer": 0
   },
   {
     "id": 703,
@@ -7184,7 +7184,7 @@
       "There is no\u00a0DAQmx Timing\u00a0VI in the DAQmx API"
     ],
     "original_q_num": 4,
-    "correctAnswer": 2,
+    "correctAnswer": 1,
     "image": [
       "images/indra_703_0.png"
     ]
@@ -7201,7 +7201,7 @@
       "After completing the application, to document its actual behavior."
     ],
     "original_q_num": 5,
-    "correctAnswer": 1
+    "correctAnswer": 0
   },
   {
     "id": 705,
@@ -7211,7 +7211,7 @@
       "The following actions are performed:"
     ],
     "original_q_num": 6,
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "image": [
       "images/indra_705_0.png"
     ]
@@ -7222,7 +7222,7 @@
     "text": "Question #1\nThe VI is run.",
     "options": [],
     "original_q_num": 1,
-    "correctAnswer": 1
+    "correctAnswer": 0
   },
   {
     "id": 707,
@@ -7230,7 +7230,7 @@
     "text": "Question #2\nAfter 1 second,\u00a0Boolean Master\u00a0is set to FALSE.",
     "options": [],
     "original_q_num": 2,
-    "correctAnswer": 1
+    "correctAnswer": 0
   },
   {
     "id": 708,
@@ -7240,7 +7240,7 @@
       "What are the values of\u00a0Boolean 1,\u00a0Boolean 2, and\u00a0Boolean 3\u00a0after these actions are performed?"
     ],
     "original_q_num": 3,
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "image": [
       "images/indra_708_0.png"
     ]
@@ -7256,7 +7256,7 @@
       "Replace all instances of the Enum with the same Type Definition."
     ],
     "original_q_num": 7,
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "image": [
       "images/indra_709_0.png"
     ]
@@ -7273,7 +7273,7 @@
       "Saving the subVI in a project libraryANSAAABottom of Form"
     ],
     "original_q_num": 8,
-    "correctAnswer": 2
+    "correctAnswer": 1
   },
   {
     "id": 711,
@@ -7286,7 +7286,7 @@
       "d)"
     ],
     "original_q_num": 9,
-    "correctAnswer": 4,
+    "correctAnswer": 3,
     "image": [
       "images/indra_711_0.png",
       "images/indra_711_1.png",
@@ -7306,7 +7306,7 @@
       "Bottom of Form"
     ],
     "original_q_num": 10,
-    "correctAnswer": 2
+    "correctAnswer": 1
   },
   {
     "id": 713,
@@ -7316,7 +7316,7 @@
       "The \"False\" case of each case structure passes the error wire and the reference wire (if present) straight through without modification."
     ],
     "original_q_num": 11,
-    "correctAnswer": 2,
+    "correctAnswer": 1,
     "image": [
       "images/indra_713_0.png",
       "images/indra_713_1.png"
@@ -7334,7 +7334,7 @@
       "Creating more compact code on the block diagram is easier"
     ],
     "original_q_num": 12,
-    "correctAnswer": 1
+    "correctAnswer": 0
   },
   {
     "id": 715,
@@ -7347,7 +7347,7 @@
       "The reference wire is broken in another frame."
     ],
     "original_q_num": 13,
-    "correctAnswer": 3,
+    "correctAnswer": 2,
     "image": [
       "images/indra_715_0.png"
     ]
@@ -7363,7 +7363,7 @@
       "Create the While Loop terminals with indexing enabled."
     ],
     "original_q_num": 14,
-    "correctAnswer": 2,
+    "correctAnswer": 1,
     "image": [
       "images/indra_716_0.png"
     ]
@@ -7379,7 +7379,7 @@
       "An empty string"
     ],
     "original_q_num": 15,
-    "correctAnswer": 2,
+    "correctAnswer": 1,
     "image": [
       "images/indra_717_0.png",
       "images/indra_717_1.png"
@@ -7396,7 +7396,7 @@
       "The\u00a0State\u00a0indicator will display \"Initialize\" for one second, then it will display \"Running\"."
     ],
     "original_q_num": 16,
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "image": [
       "images/indra_718_0.png"
     ]
@@ -7419,7 +7419,7 @@
       "This VI is broken."
     ],
     "original_q_num": 17,
-    "correctAnswer": 3,
+    "correctAnswer": 2,
     "image": [
       "images/indra_719_0.png"
     ]
@@ -7435,7 +7435,7 @@
       "Shift registers are more\u00a0efficient\u00a0than tunnels."
     ],
     "original_q_num": 18,
-    "correctAnswer": 3,
+    "correctAnswer": 2,
     "image": [
       "images/indra_720_0.png"
     ]
@@ -7451,7 +7451,7 @@
       "Fewer files on disk"
     ],
     "original_q_num": 19,
-    "correctAnswer": 4
+    "correctAnswer": 3
   },
   {
     "id": 722,
@@ -7465,7 +7465,7 @@
       "None of the above"
     ],
     "original_q_num": 20,
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "image": [
       "images/indra_722_0.png"
     ]
@@ -7481,7 +7481,7 @@
       "<img src='images/indra_723_4.png' style='max-width:100%; border-radius:8px;'>"
     ],
     "original_q_num": 21,
-    "correctAnswer": 2,
+    "correctAnswer": 1,
     "image": "images/indra_723_0.png"
   },
   {
@@ -7495,7 +7495,7 @@
       "The Add function expects integer inputs"
     ],
     "original_q_num": 22,
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "image": [
       "images/indra_724_0.png"
     ]
@@ -7511,7 +7511,7 @@
       "The subVI, then the\u00a0Starting Test\u00a0dialog box, then the\u00a0Test Complete\u00a0dialog box."
     ],
     "original_q_num": 23,
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "image": [
       "images/indra_725_0.png"
     ]
@@ -7528,7 +7528,7 @@
       "7"
     ],
     "original_q_num": 24,
-    "correctAnswer": 4,
+    "correctAnswer": 3,
     "image": [
       "images/indra_726_0.png"
     ]
@@ -7541,7 +7541,7 @@
       "Top of Form"
     ],
     "original_q_num": 25,
-    "correctAnswer": 4,
+    "correctAnswer": 3,
     "image": [
       "images/indra_727_0.png",
       "images/indra_727_1.png",
@@ -7558,7 +7558,7 @@
       "Top of Form"
     ],
     "original_q_num": 26,
-    "correctAnswer": 4,
+    "correctAnswer": 3,
     "image": [
       "images/indra_728_0.png",
       "images/indra_728_1.png",
@@ -7579,7 +7579,7 @@
       "Result\u00a0+ 5 +\u00a0Input B\u00a0+ 3"
     ],
     "original_q_num": 27,
-    "correctAnswer": 2,
+    "correctAnswer": 1,
     "image": [
       "images/indra_729_0.png"
     ]
@@ -7593,7 +7593,7 @@
       "Top of Form"
     ],
     "original_q_num": 28,
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "image": [
       "images/indra_730_0.png",
       "images/indra_730_1.png",
@@ -7614,7 +7614,7 @@
       "\u200bJustification: The For Loop runs 5 times (i = 0 to 4), converting each iteration integer into a string and concatenating it onto the shift register string initialized as empty, yielding \"01234\", followed by adding 5 after the loop completes to form \"012345\"."
     ],
     "original_q_num": 29,
-    "correctAnswer": 4,
+    "correctAnswer": 3,
     "image": [
       "images/indra_731_0.png"
     ]
@@ -7630,7 +7630,7 @@
       "<img src='images/indra_732_3.png' style='max-width:100%; border-radius:8px;'>"
     ],
     "original_q_num": 30,
-    "correctAnswer": 4
+    "correctAnswer": 3
   },
   {
     "id": 733,
@@ -7644,7 +7644,7 @@
       "2"
     ],
     "original_q_num": 31,
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "image": [
       "images/indra_733_0.png"
     ]
@@ -7662,7 +7662,7 @@
       "Copy\u00a0the missing element to\u00a0Data Array Out,\u00a0then\u00a0save\u00a0Data Array Out\u00a0as a Type Def."
     ],
     "original_q_num": 32,
-    "correctAnswer": 2,
+    "correctAnswer": 1,
     "image": [
       "images/indra_734_0.png"
     ]
@@ -7679,7 +7679,7 @@
       "Numeric\u00a0begins incrementing after the\u00a0stop\u00a0button is pressed."
     ],
     "original_q_num": 33,
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "image": [
       "images/indra_735_0.png"
     ]
@@ -7695,7 +7695,7 @@
       "String"
     ],
     "original_q_num": 34,
-    "correctAnswer": 2
+    "correctAnswer": 1
   },
   {
     "id": 737,
@@ -7713,7 +7713,7 @@
       "At 6 seconds the VI is idle and\u00a0Elapsed Time (s)\u00a0is 5."
     ],
     "original_q_num": 35,
-    "correctAnswer": 2,
+    "correctAnswer": 1,
     "image": [
       "images/indra_737_0.png"
     ]
@@ -7732,7 +7732,7 @@
       "Bottom of Form"
     ],
     "original_q_num": 36,
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "image": [
       "images/indra_738_0.png"
     ]
@@ -7749,7 +7749,7 @@
       "Bottom of Form"
     ],
     "original_q_num": 37,
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "image": [
       "images/indra_739_0.png",
       "images/indra_739_1.png",
@@ -7771,7 +7771,7 @@
       "Loop Iterations = 3, Time = Seconds\u00a0between the 1st and 3rd runs of the VI"
     ],
     "original_q_num": 38,
-    "correctAnswer": 2,
+    "correctAnswer": 1,
     "image": [
       "images/indra_740_0.png"
     ]
@@ -7788,7 +7788,7 @@
       "Bottom of Form"
     ],
     "original_q_num": 39,
-    "correctAnswer": 2
+    "correctAnswer": 1
   },
   {
     "id": 742,
@@ -7798,7 +7798,7 @@
       "Top of Form"
     ],
     "original_q_num": 40,
-    "correctAnswer": 2,
+    "correctAnswer": 1,
     "image": [
       "images/indra_742_0.png",
       "images/indra_742_1.png",

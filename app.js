@@ -346,7 +346,7 @@ async function initApp() {
         
         // Add specific tests dynamically
         if (allQuestions && allQuestions.length > 0) {
-            const specificTopics = [...new Set(allQuestions.map(q => q.topic))].filter(t => t && (t.startsWith('Company Specific') || t.startsWith('Industry Specific')));
+            const specificTopics = [...new Set(allQuestions.map(q => q.topic))].filter(t => t && (t.startsWith('Company Specific') || t.startsWith('Industry Specific') || t.startsWith('CLAD ')));
             specificTopics.forEach(topic => {
                 const opt = document.createElement('option');
                 opt.value = topic;
