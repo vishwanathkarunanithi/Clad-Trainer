@@ -249,7 +249,7 @@ function selectQuestions(allQs, testConfig) {
     
     pool.forEach(q => {
         const topic = q.topic || "LabVIEW Programming Principles";
-        const isTheory = !q.image || (Array.isArray(q.image) && q.image.length === 0);
+        const isTheory = !q.image || (Array.isArray(q.image) ? q.image.length === 0 : false);
         
         if (isTheory) {
             if (!groupedTheory[topic]) groupedTheory[topic] = [];
@@ -558,12 +558,15 @@ function downloadQuestionPaper() {
 
     questions.forEach((q, idx) => {
         let imageHtml = '';
-        if (q.image && Array.isArray(q.image) && q.image.length > 0) {
-            imageHtml = `<div style="text-align: center; margin: 15px 0;">`;
-            q.image.forEach(imgSrc => {
-                imageHtml += `<img src="${imgSrc}" style="max-width: 90%; max-height: 280px; object-fit: contain; border: 1px solid #e2e8f0; border-radius: 4px; padding: 4px; margin: 4px;">`;
-            });
-            imageHtml += `</div>`;
+        if (q.image) {
+            const images = Array.isArray(q.image) ? q.image : [q.image];
+            if (images.length > 0) {
+                imageHtml = `<div style="text-align: center; margin: 15px 0;">`;
+                images.forEach(imgSrc => {
+                    imageHtml += `<img src="${imgSrc}" style="max-width: 90%; max-height: 280px; object-fit: contain; border: 1px solid #e2e8f0; border-radius: 4px; padding: 4px; margin: 4px;">`;
+                });
+                imageHtml += `</div>`;
+            }
         }
 
         let optionsHtml = '<div style="display: flex; flex-direction: column; gap: 8px; margin-top: 10px;">';
@@ -867,14 +870,19 @@ function renderQuestion() {
     qText.textContent = q.text;
 
     qImageContainer.innerHTML = '';
-    if (q.image && Array.isArray(q.image) && q.image.length > 0) {
-        q.image.forEach(imgSrc => {
-            const img = document.createElement('img');
-            img.src = imgSrc;
-            img.alt = 'Question Diagram';
-            qImageContainer.appendChild(img);
-        });
-        qImageContainer.style.display = 'block';
+    if (q.image) {
+        const images = Array.isArray(q.image) ? q.image : [q.image];
+        if (images.length > 0) {
+            images.forEach(imgSrc => {
+                const img = document.createElement('img');
+                img.src = imgSrc;
+                img.alt = 'Question Diagram';
+                qImageContainer.appendChild(img);
+            });
+            qImageContainer.style.display = 'block';
+        } else {
+            qImageContainer.style.display = 'none';
+        }
     } else {
         qImageContainer.style.display = 'none';
     }

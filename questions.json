@@ -7015,5 +7015,345 @@
     "original_q_num": 12,
     "correctAnswer": 1,
     "image": "images/qb3_q514_0.png"
+  },
+  {
+    "id": 600,
+    "topic": "CLAD PRACTICE QUESTIONS indravarun",
+    "text": "Question #1\nWhat is the\u00a0most likely\u00a0cause of the coercion dot in this VI?",
+    "options": [
+      "The shift register\u00a0is coercing the enum constants into their string values.",
+      "The two enum constants contains different items.",
+      "Outer terminals of enum shift registers always display coercion dots.",
+      "Wait\u00a0is a reserved item name for enum items."
+    ],
+    "original_q_num": 1,
+    "correctAnswer": 2,
+    "image": [
+      "images/indravarun_q600_0.png"
+    ]
+  },
+  {
+    "id": 601,
+    "topic": "CLAD PRACTICE QUESTIONS indravarun",
+    "text": "Question #2\nYou want to initialize a state machine with values read from an INI file. You need to read the values from the INI file\u00a0only once\u00a0on initialization, and you do not need to modify the values\u00a0in that\u00a0file.\nWhich\u00a0diagram is the\u00a0best implementation of the\u00a0Initialize\u00a0case?",
+    "options": [
+      "<img src='images/indravarun_q601_0.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/indravarun_q601_1.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/indravarun_q601_2.png' style='max-width:100%; border-radius:8px;'>",
+      "<img src='images/indravarun_q601_3.png' style='max-width:100%; border-radius:8px;'>"
+    ],
+    "original_q_num": 2,
+    "correctAnswer": 1
+  },
+  {
+    "id": 602,
+    "topic": "CLAD PRACTICE QUESTIONS indravarun",
+    "text": "Question #3\nWhen using the DAQmx API to acquire data from hardware, what is an\u00a0advantage of using a state machine architecture, with cases for initialization, configuration, reading, stopping and closing?",
+    "options": [
+      "Select\u00a0ALL\u00a0that apply.",
+      "The use of different states makes it easier to isolate changes to specific functionality.",
+      "DAQmx subVIs execute faster when they are in different cases of a Case Structure.",
+      "You can use\u00a0a single analog channel as both input and output.",
+      "You can programmatically reconfigure the DAQ task without stopping the VI."
+    ],
+    "original_q_num": 3,
+    "correctAnswer": 1
+  },
+  {
+    "id": 603,
+    "topic": "CLAD PRACTICE QUESTIONS indravarun",
+    "text": "Question #4\nIn the following state diagram for an NI-DAQmx application, which state\u00a0most likely\u00a0contains the\u00a0DAQmx Timing\u00a0VI?",
+    "options": [
+      "Config",
+      "Acquire",
+      "Exit",
+      "There is no\u00a0DAQmx Timing\u00a0VI in the DAQmx API"
+    ],
+    "original_q_num": 4,
+    "correctAnswer": 2,
+    "image": [
+      "images/indravarun_q603_0.png"
+    ]
+  },
+  {
+    "id": 604,
+    "topic": "CLAD PRACTICE QUESTIONS indravarun",
+    "text": "Question #5\nWhen is it appropriate to create a state diagram?",
+    "options": [
+      "Select\u00a0ALL\u00a0that apply.Top of Form",
+      "When planning and designing the application, before writing any code",
+      "While writing code, as a way to keep project documentation up to date",
+      "When discussing initial application requirements with the end user of an application",
+      "After completing the application, to document its actual behavior."
+    ],
+    "original_q_num": 5,
+    "correctAnswer": 1
+  },
+  {
+    "id": 605,
+    "topic": "CLAD PRACTICE QUESTIONS indravarun",
+    "text": "Question #6\nBoolean Master,\u00a0Boolean 1,\u00a0Boolean 2\u00a0and\u00a0Boolean 3\u00a0are all set to TRUE before the VI runs.Bottom of Form",
+    "options": [
+      "The following actions are performed:"
+    ],
+    "original_q_num": 6,
+    "correctAnswer": 1,
+    "image": [
+      "images/indravarun_q605_0.png"
+    ]
+  },
+  {
+    "id": 606,
+    "topic": "CLAD PRACTICE QUESTIONS indravarun",
+    "text": "Question #1\nThe VI is run.",
+    "options": [],
+    "original_q_num": 1,
+    "correctAnswer": 1
+  },
+  {
+    "id": 607,
+    "topic": "CLAD PRACTICE QUESTIONS indravarun",
+    "text": "Question #2\nAfter 1 second,\u00a0Boolean Master\u00a0is set to FALSE.",
+    "options": [],
+    "original_q_num": 2,
+    "correctAnswer": 1
+  },
+  {
+    "id": 608,
+    "topic": "CLAD PRACTICE QUESTIONS indravarun",
+    "text": "Question #3\nThe\u00a0stop\u00a0button is clicked.",
+    "options": [
+      "What are the values of\u00a0Boolean 1,\u00a0Boolean 2, and\u00a0Boolean 3\u00a0after these actions are performed?"
+    ],
+    "original_q_num": 3,
+    "correctAnswer": 1,
+    "image": [
+      "images/indravarun_q608_0.png"
+    ]
+  },
+  {
+    "id": 609,
+    "topic": "CLAD PRACTICE QUESTIONS indravarun",
+    "text": "Question #7\nWhat is the best practice to prevent coercion dots like the\u00a0one on this VI?",
+    "options": [
+      "Create the While Loop terminals with indexing enabled.",
+      "Wire a Numeric into the Selector terminal of the Case Structure.",
+      "Convert all Enums to separate Type Definitions.",
+      "Replace all instances of the Enum with the same Type Definition."
+    ],
+    "original_q_num": 7,
+    "correctAnswer": 1,
+    "image": [
+      "images/indravarun_q609_0.png"
+    ]
+  },
+  {
+    "id": 610,
+    "topic": "CLAD PRACTICE QUESTIONS indravarun",
+    "text": "Question #8\nYou have created a new subVI for other team members to use in their applications.",
+    "options": [
+      "Of the following choices, what is the\u00a0most\u00a0helpful thing you can do for users of your subVI?Top of Form",
+      "Removing optional error statuses from\u00a0each\u00a0subVI terminal",
+      "Assigning required/recommended/optional settings for each subVI terminal",
+      "Turning off debugging on the subVI",
+      "Saving the subVI in a project libraryANSAAABottom of Form"
+    ],
+    "original_q_num": 8,
+    "correctAnswer": 2
+  },
+  {
+    "id": 611,
+    "topic": "CLAD PRACTICE QUESTIONS indravarun",
+    "text": "Question #9\nWhich diagram illustrates the\u00a0most performant\u00a0way to save data to a text file\u00a0inside a While Loop?",
+    "options": [
+      "a)",
+      "b)",
+      "c)",
+      "d)"
+    ],
+    "original_q_num": 9,
+    "correctAnswer": 4,
+    "image": [
+      "images/indravarun_q611_0.png",
+      "images/indravarun_q611_1.png",
+      "images/indravarun_q611_2.png",
+      "images/indravarun_q611_3.png"
+    ]
+  },
+  {
+    "id": 612,
+    "topic": "CLAD PRACTICE QUESTIONS indravarun",
+    "text": "Question #10\nWhich object is\u00a0NOT\u00a0a standard component of a Simple State Machine?Top of Form",
+    "options": [
+      "Case Structure",
+      "Shift Register",
+      "Global Variable",
+      "While Loop",
+      "Bottom of Form"
+    ],
+    "original_q_num": 10,
+    "correctAnswer": 2
+  },
+  {
+    "id": 613,
+    "topic": "CLAD PRACTICE QUESTIONS indravarun",
+    "text": "Question #11\nWhich VI will log\u00a0every sample\u00a0above the\u00a0Threshold\u00a0value to a\u00a0comma-separated text file?",
+    "options": [
+      "The \"False\" case of each case structure passes the error wire and the reference wire (if present) straight through without modification."
+    ],
+    "original_q_num": 11,
+    "correctAnswer": 2,
+    "image": [
+      "images/indravarun_q613_0.png",
+      "images/indravarun_q613_1.png"
+    ]
+  },
+  {
+    "id": 614,
+    "topic": "CLAD PRACTICE QUESTIONS indravarun",
+    "text": "Question #12\nWhat are the advantages of using a\u00a0state machine design pattern over a\u00a0Flat Sequence Structure to\u00a0enforce sequential\u00a0execution in code?",
+    "options": [
+      "Select\u00a0ALL\u00a0that apply.Top of Form",
+      "Adding\u00a0a case or frame in the middle of a sequence is easier",
+      "Merging\u00a0code from two states or sequences is easier",
+      "Changing the order of execution is easier",
+      "Creating more compact code on the block diagram is easier"
+    ],
+    "original_q_num": 12,
+    "correctAnswer": 1
+  },
+  {
+    "id": 615,
+    "topic": "CLAD PRACTICE QUESTIONS indravarun",
+    "text": "Question #13\nWhat do the small white arrows on the\u00a0VISA resource name\u00a0tunnels signify?",
+    "options": [
+      "The tunnels will be automatically connected when new cases are added.",
+      "The\u00a0VISA Read\u00a0function will operate on the VISA reference in-place.",
+      "The output tunnel will return a default value if unwired.",
+      "The reference wire is broken in another frame."
+    ],
+    "original_q_num": 13,
+    "correctAnswer": 3,
+    "image": [
+      "images/indravarun_q615_0.png"
+    ]
+  },
+  {
+    "id": 616,
+    "topic": "CLAD PRACTICE QUESTIONS indravarun",
+    "text": "Question #14\nWhat is the best practice to prevent coercion dots like the\u00a0one on this VI?",
+    "options": [
+      "Convert all Enums to separate Type Definitions.",
+      "Replace all instances of the Enum with the same Type Definition.",
+      "Wire a Numeric into the Selector terminal of the Case Structure.",
+      "Create the While Loop terminals with indexing enabled."
+    ],
+    "original_q_num": 14,
+    "correctAnswer": 2,
+    "image": [
+      "images/indravarun_q616_0.png"
+    ]
+  },
+  {
+    "id": 617,
+    "topic": "CLAD PRACTICE QUESTIONS indravarun",
+    "text": "Question #15\nWhen you run this VI, you are prompted to select a file. Assuming you select a valid text file containing multiple lines, what is the value of the first element of\u00a0Array\u00a0when the VI finishes running?",
+    "options": [
+      "The first character of the file",
+      "The first line of the file",
+      "The entire file",
+      "An empty string"
+    ],
+    "original_q_num": 15,
+    "correctAnswer": 2,
+    "image": [
+      "images/indravarun_q617_0.png",
+      "images/indravarun_q617_1.png"
+    ]
+  },
+  {
+    "id": 618,
+    "topic": "CLAD PRACTICE QUESTIONS indravarun",
+    "text": "Question #16\nWhich of the following statements is TRUE regarding the execution of this code?",
+    "options": [
+      "The\u00a0State\u00a0indicator will display \"Running\" for one second, then it will display \"Initialize\".",
+      "The\u00a0State\u00a0indicator will never display \"Initialize\".",
+      "The\u00a0State\u00a0indicator will never display \"Running\".",
+      "The\u00a0State\u00a0indicator will display \"Initialize\" for one second, then it will display \"Running\"."
+    ],
+    "original_q_num": 16,
+    "correctAnswer": 1,
+    "image": [
+      "images/indravarun_q618_0.png"
+    ]
+  },
+  {
+    "id": 619,
+    "topic": "CLAD PRACTICE QUESTIONS indravarun",
+    "text": "Question #17\nWhat is the order of execution of the subVIs in this diagram, from first to last?",
+    "options": [
+      "Test A",
+      "Test B and Test D in parallel",
+      "Test C",
+      "Test A",
+      "Test B",
+      "Test C",
+      "Test D",
+      "Test A and Test D in parallel",
+      "Test B",
+      "Test C",
+      "This VI is broken."
+    ],
+    "original_q_num": 17,
+    "correctAnswer": 3,
+    "image": [
+      "images/indravarun_q619_0.png"
+    ]
+  },
+  {
+    "id": 620,
+    "topic": "CLAD PRACTICE QUESTIONS indravarun",
+    "text": "Question #18\nIn the For Loop, why is the DAQmx task reference\u00a0passed through shift registers instead of tunnels?",
+    "options": [
+      "Loops cannot have a mixture of tunnels and shift registers.",
+      "The DAQmx Read VI changes the value of the reference from one iteration to the next.",
+      "To ensure a valid reference is passed out of the loop if it runs zero times.",
+      "Shift registers are more\u00a0efficient\u00a0than tunnels."
+    ],
+    "original_q_num": 18,
+    "correctAnswer": 3,
+    "image": [
+      "images/indravarun_q620_0.png"
+    ]
+  },
+  {
+    "id": 621,
+    "topic": "CLAD PRACTICE QUESTIONS indravarun",
+    "text": "Question #19\nWhich is\u00a0NOT\u00a0a\u00a0benefit of using subVIs?Top of Form",
+    "options": [
+      "Less duplicated code",
+      "Smaller block diagrams",
+      "More modular code",
+      "Fewer files on disk"
+    ],
+    "original_q_num": 19,
+    "correctAnswer": 4
+  },
+  {
+    "id": 622,
+    "topic": "CLAD PRACTICE QUESTIONS indravarun",
+    "text": "Question #20\nWhen you add a new frame to your state machine, this is the resulting broken code:",
+    "options": [
+      "Which LabVIEW feature would have automatically created pass-through VISA reference and error wires for you?",
+      "Linked Input Tunnels",
+      "Auto-Indexing Tunnels",
+      "Concatenating Tunnels",
+      "None of the above"
+    ],
+    "original_q_num": 20,
+    "correctAnswer": 1,
+    "image": [
+      "images/indravarun_q622_0.png"
+    ]
   }
 ]
